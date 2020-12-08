@@ -1,0 +1,19 @@
+{
+  "name": "@marco.jacovone/cnodes",
+  "version": "0.0.1",
+  "description": "A representation-agnostic process engine based on task/functional nodes",
+  "main": "cnodes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/marco-jacovone/cnodes.git"
+  },
+  "author": "Marco Jacovone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marco-jacovone/cnodes/issues"
+  },
+  "homepage": "https://github.com/marco-jacovone/cnodes#readme"
+}
