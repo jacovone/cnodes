@@ -51,7 +51,9 @@ export class InputValueSocket extends ValueSocket {
   }
   evaluate() {
     if (this.peer !== null) {
-    //   this.peer.node.process();
+      if (this.peer.node && this.peer.node.functional) {
+        this.peer.node.process();
+      }
       this.type = this.peer.type;
       this.value = this.peer.value;
     }

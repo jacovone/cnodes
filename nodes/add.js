@@ -4,6 +4,7 @@ import { InputFlowSocket, InputValueSocket, OutputFlowSocket, OutputValueSocket 
 export class Add extends Node {
   constructor() {
     super("Add");
+    this.functional = true;
     this.inputs = [
       new InputValueSocket("Val1", this, typeof 0, 0),
       new InputValueSocket("Val2", this, typeof 0, 0),

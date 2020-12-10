@@ -4,6 +4,7 @@ export class Node {
   constructor(name) {
     this._id = uuidv4();
     this._name = "";
+    this._functional = false;
     this._inputs = [];
     this._outputs = [];
     this._nexts = [];
@@ -18,6 +19,12 @@ export class Node {
   }
   set name(val) {
     this._name = val;
+  }
+  get functional() {
+    return this._functional;
+  }
+  set functional(val) {
+    this._functional = val;
   }
   get inputs() {
     return this._inputs;
