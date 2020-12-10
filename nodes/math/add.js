@@ -1,5 +1,5 @@
-import { Node, Result } from "./node.js";
-import { InputFlowSocket, InputValueSocket, OutputFlowSocket, OutputValueSocket } from "./socket.js";
+import { Node, Result } from "../../core/node.js";
+import { InputFlowSocket, InputValueSocket, OutputFlowSocket, OutputValueSocket } from "../../core/socket.js";
 
 export class Add extends Node {
   constructor() {

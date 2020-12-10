@@ -1,5 +1,5 @@
-import { Node, Result } from "./node.js";
-import { InputValueSocket, OutputFlowSocket, InputFlowSocket, OutputValueSocket } from "./socket.js";
+import { Node, Result } from "../core/node.js";
+import { InputValueSocket, OutputFlowSocket, InputFlowSocket, OutputValueSocket } from "../core/socket.js";
 
 export class Getvar extends Node {
   constructor() {

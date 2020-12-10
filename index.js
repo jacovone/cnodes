@@ -1,5 +1,5 @@
-import { program, Program } from "./nodes/program.js";
-import { addNode } from "./nodes/add.js";
+import { program, Program } from "./core/program.js";
+import { addNode } from "./nodes/math/add.js";
 import { consoleNode } from "./nodes/console.js";
 import { ifNode } from "./nodes/if.js";
 import { setvarNode } from "./nodes/setvar.js";
