@@ -82,6 +82,8 @@ function test3() {
     n6.next('Then').connect(n2.prev('In'));
     n6.prev('In').connect(n5.next('Out'));
 
+    // console.log(program('main').addNode(n, true).addNode(n2).addNode(n3).addNode(n4).addNode(n5))
+
     program('main').addNode(n, true).addNode(n2).addNode(n3).addNode(n4).addNode(n5).process();
 }
 
