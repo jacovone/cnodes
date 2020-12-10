@@ -1,15 +1,14 @@
 import { Node, Result } from "../core/node.js";
 import { InputSocket, NextSocket, PrevSocket, OutputSocket } from "../core/socket.js";
 
-export class Getvar extends Node {
+export class FGetvar extends Node {
   constructor() {
-    super("Getvar");
+    super("FGetvar");
+    this.functional = true;
     this.inputs = [new InputSocket("Name", this, typeof '', '')];
     this.outputs = [new OutputSocket("Val", this, typeof '', '')];
-    this.nexts = [
-      new NextSocket('Out', this)
-    ];
-    this.prev = new PrevSocket('In', this);
+    this.nexts = [];
+    this.prev = null;
   }
 
   process() {
@@ -17,11 +16,9 @@ export class Getvar extends Node {
 
     let varName = this.input('Name').value;
     this.output('Val').value = this.program.vars.get(varName);
-
-    return this.getFlowResult(this.next('Out'));
   }
 }
 
-export function getvarNode() {
-  return new Getvar();
+export function fgetvarNode() {
+  return new FGetvar();
 }

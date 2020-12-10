@@ -8,25 +8,25 @@
  */
 
 import { Node } from "../../core/node.js";
-import { InputValueSocket, OutputValueSocket } from "../../core/socket.js";
-import { type, TypeEnum } from "../../core/type.js";
+import { InputSocket, OutputSocket } from "../../core/socket.js";
+import { type, Types } from "../../core/type.js";
 
 /**
  * This class implements a functional node for adding numeric values.
  * Supports a indefinite number of value inputs and one single output
  */
-export class Add extends Node {
+export class FAdd extends Node {
   constructor() {
-    super("Add");
+    super("FAdd");
     // The node is pure functional
     this.functional = true;
     // Default to two numeric inputs
     this.inputs = [
-      new InputValueSocket("Val1", this, type(TypeEnum.NUMBER, false), 0),
-      new InputValueSocket("Val2", this, type(TypeEnum.NUMBER, false), 0),
+      new InputSocket("Val1", this, type(Types.NUMBER, false), 0),
+      new InputSocket("Val2", this, type(Types.NUMBER, false), 0),
     ];
-    this.outputs = [new OutputValueSocket("Val", this, type(TypeEnum.NUMBER, false), 0)];
-    this.prevs = [];
+    this.outputs = [new OutputSocket("Val", this, type(Types.NUMBER, false), 0)];
+    this.prev = null;
     this.nexts = [];
   }
 
@@ -39,13 +39,13 @@ export class Add extends Node {
     for (let inp of this.inputs) {
       sum += inp.value;
     }
-    this.outputs[0].value = sum;
+    this.output('Val').value = sum;
   }
 }
 
 /**
  * Helper fuction to create the node
  */
-export function addNode() {
-    return new Add();
+export function faddNode() {
+    return new FAdd();
 }

@@ -1,13 +1,14 @@
 
-export const TypeEnum = {
+export const Types = {
     NUMBER: 'number',
     STRING: 'string',
     BOOLEAN: 'boolean',
-    OBJECT: 'object'
+    OBJECT: 'object',
+    ANY: 'any',
 }
 
 export class Type {
-    #type = TypeEnum.NUMBER;
+    #type = Types.NUMBER;
     #isArray = false;
 
     constructor(type, isArray) {

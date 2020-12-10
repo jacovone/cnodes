@@ -12,7 +12,7 @@
     "url": "git+ssh://git@github.com/marco-jacovone/cnodes.git"
   },
   "author": "Marco Jacovone",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/marco-jacovone/cnodes/issues"
   },

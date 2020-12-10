@@ -27,6 +27,11 @@ p.addNome(n2, true); // First node to execute
 p.process(); // Expected result: 5
 ```
 
+Short form:
+
+```js
+process().addNode(n1).addNode(n2, true).process();
+```
 
 ## Examples
 

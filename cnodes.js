@@ -1,9 +1,11 @@
 import { program, Program } from "./core/program.js";
-import { addNode } from "./nodes/math/add.js";
+import { faddNode } from "./nodes/math/fadd.js";
 import { consoleNode } from "./nodes/console.js";
 import { ifNode } from "./nodes/if.js";
 import { setvarNode } from "./nodes/setvar.js";
 import { getvarNode } from "./nodes/getvar.js";
+import { fgetvarNode } from "./nodes/fgetvar.js";
+import { Comparision, fcompareNode } from "./nodes/bool/fcompare.js";
 
 function test1() {
     let n = addNode();
@@ -62,30 +64,73 @@ function test3() {
     
     let n2 = getvarNode();
     n2.input('Name').value = 'variable';
-    n2.prev('In').connect(n.next('Out'));
+    n2.prev.connect(n.next());
 
     let n3 = consoleNode();
     n3.input('Val').connect(n2.output('Val'));
-    n3.prev('In').connect(n2.next('Out'));
+    n3.prev.connect(n2.next());
 
-    let n4 = addNode();
+    let n4 = faddNode();
     n4.input('Val1').value = -1;
     n4.input('Val2').connect(n2.output('Val'));
 
     let n5 = setvarNode();
     n5.input('Name').value = 'variable';
     n5.input('Val').connect(n4.output('Val'));
-    n5.prev('In').connect(n3.next('Out'));
+    n5.prev.connect(n3.next());
 
     let n6 = ifNode();
     n6.input('Condition').connect(n5.output('Val'));
-    n6.next('Then').connect(n2.prev('In'));
-    n6.prev('In').connect(n5.next('Out'));
+    n6.next('Then').connect(n2.prev);
+    n6.prev.connect(n5.next());
 
     // console.log(program('main').addNode(n, true).addNode(n2).addNode(n3).addNode(n4).addNode(n5))
 
     program('main').addNode(n, true).addNode(n2).addNode(n3).addNode(n4).addNode(n5).process();
 }
 
+function test4() {
 
-test3();
+    let ninit = setvarNode();
+    ninit.input('Name').value = 'N';
+    ninit.input('Val').value = 0;
+
+    let ngetvar = fgetvarNode();
+    ngetvar.input('Name').value = 'N';
+
+    let nconsole = consoleNode();
+    nconsole.prev.connect(ninit.next())
+    nconsole.input('Val').connect(ngetvar.output('Val'));
+
+    let nadd = faddNode();
+    nadd.input('Val1').connect(ngetvar.output('Val'));
+    nadd.input('Val2').value = 1;
+
+    let nSetVar = setvarNode();
+    nSetVar.input('Name').value = 'N';
+    nSetVar.input('Val').connect(nadd.output('Val'));
+    nSetVar.prev.connect(nconsole.next());
+    
+    let ngte = fcompareNode();
+    ngte.comparision = Comparision.GTE;
+    ngte.input('Val1').connect(ngetvar.output('Val'));
+    ngte.input('Val2').value = 10;
+
+    let nIf = ifNode();
+    nIf.input('Condition').connect(ngte.output('Val'));
+    nIf.prev.connect(nSetVar.next());
+    nIf.next('Else').connect(nconsole.prev);
+
+    program('main')
+        .addNode(ninit, true)
+        .addNode(ngetvar)
+        .addNode(nadd)
+        .addNode(nSetVar)
+        .addNode(ngte)
+        .addNode(nIf)
+        .process();
+
+}
+
+
+test4();

@@ -1,4 +1,4 @@
-import { TypeEnum, Type, type } from './type.js';
+import { Types, Type, type } from './type.js';
 
 export class Socket {
 
@@ -24,10 +24,10 @@ export class Socket {
 }
 
 export class ValueSocket extends Socket {
-  #type = type(TypeEnum.NUMBER, false);
+  #type = type(Types.NUMBER, false);
   #value = 0;
 
-  constructor(name, node, type = type(TypeEnum.NUMBER, false), value = 0) {
+  constructor(name, node, type = type(Types.NUMBER, false), value = 0) {
     super(name, node);
   }
   get type() {
@@ -41,11 +41,10 @@ export class ValueSocket extends Socket {
   }
   set value(val) {
     this.#value = val;
-    this.#type = typeof val;
   }
 }
 
-export class InputValueSocket extends ValueSocket {
+export class InputSocket extends ValueSocket {
   #peer = null;
 
   constructor(name, node, type, value) {
@@ -81,7 +80,7 @@ export class InputValueSocket extends ValueSocket {
   }
 }
 
-export class OutputValueSocket extends ValueSocket {
+export class OutputSocket extends ValueSocket {
   #peers = [];
 
   constructor(name, node, type, value) {
@@ -114,7 +113,7 @@ export class FlowSocket extends Socket {
   }
 }
 
-export class InputFlowSocket extends FlowSocket {
+export class PrevSocket extends FlowSocket {
   #peers = [];
   constructor(name, node) {
     super(name, node);
@@ -140,7 +139,7 @@ export class InputFlowSocket extends FlowSocket {
   }
 }
 
-export class OutputFlowSocket extends FlowSocket {
+export class NextSocket extends FlowSocket {
   #peer = null;
   constructor(name, node) {
     super(name, node);

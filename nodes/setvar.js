@@ -1,20 +1,18 @@
 import { Node, Result } from "../core/node.js";
-import { InputValueSocket, OutputFlowSocket, InputFlowSocket, OutputValueSocket } from "../core/socket.js";
+import { InputSocket, NextSocket, PrevSocket, OutputSocket } from "../core/socket.js";
 
 export class Setvar extends Node {
   constructor() {
     super("Setvar");
     this.inputs = [
-      new InputValueSocket("Name", this, typeof '', ''),
-      new InputValueSocket("Val", this, typeof '', '')
+      new InputSocket("Name", this, typeof '', ''),
+      new InputSocket("Val", this, typeof '', '')
     ];
-    this.outputs = [new OutputValueSocket("Val", this, typeof '', '')];
+    this.outputs = [new OutputSocket("Val", this, typeof '', '')];
     this.nexts = [
-      new OutputFlowSocket('Out', this)
+      new NextSocket('Out', this)
     ];
-    this.prevs = [
-      new InputFlowSocket('In', this)
-    ]
+    this.prev = new PrevSocket('In', this);
   }
 
   process() {

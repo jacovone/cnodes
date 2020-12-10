@@ -1,18 +1,16 @@
 import { Node, Result } from "../core/node.js";
-import { InputValueSocket, OutputFlowSocket, InputFlowSocket } from "../core/socket.js";
+import { InputSocket, NextSocket as NextSocket, PrevSocket } from "../core/socket.js";
 
 export class If extends Node {
   constructor() {
     super("If");
-    this.inputs = [new InputValueSocket("Condition", this, typeof true, false)];
+    this.inputs = [new InputSocket("Condition", this, typeof true, false)];
     this.outputs = [];
     this.nexts = [
-      new OutputFlowSocket('Then', this),
-      new OutputFlowSocket('Else', this)
+      new NextSocket('Then', this),
+      new NextSocket('Else', this)
     ];
-    this.prevs = [
-      new InputFlowSocket('In', this)
-    ]
+    this.prev = new PrevSocket('In', this);
   }
 
   process() {

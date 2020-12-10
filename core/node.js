@@ -8,7 +8,7 @@ export class Node {
   #inputs = [];
   #outputs = [];
   #nexts = [];
-  #prevs = [];
+  #prev = null;
   #program = null;
 
   constructor(name) {}
@@ -45,11 +45,11 @@ export class Node {
   set nexts(val) {
     this.#nexts = val;
   }
-  get prevs() {
-    return this.#prevs;
+  get prev() {
+    return this.#prev;
   }
-  set prevs(val) {
-    this.#prevs = val;
+  set prev(val) {
+    this.#prev = val;
   }
   get program() {
     return this.#program;
@@ -64,10 +64,10 @@ export class Node {
     return this.outputs.find((o) => o.name === name);
   }
   next(name) {
+    if(!name) {
+      return this.nexts[0];
+    }
     return this.nexts.find((n) => n.name === name);
-  }
-  prev(name) {
-    return this.prevs.find((p) => p.name === name);
   }
   evaluateInputs() {
     for (let inp of this.inputs) {

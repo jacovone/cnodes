@@ -1,17 +1,16 @@
 import { Node, Result } from "../core/node.js";
-import { InputValueSocket, OutputFlowSocket, InputFlowSocket } from "../core/socket.js";
+import { InputSocket, NextSocket, PrevSocket } from "../core/socket.js";
+import { type, Types } from "../core/type.js";
 
 export class Console extends Node {
   constructor() {
     super("Console");
-    this.inputs = [new InputValueSocket("Val", this, typeof 0, 0)];
+    this.inputs = [new InputSocket("Val", this, type(Types.ANY, false), 0)];
     this.outputs = [];
     this.nexts = [
-      new OutputFlowSocket('Out', this)
+      new NextSocket('Out', this)
     ];
-    this.prevs = [
-      new InputFlowSocket('In', this)
-    ]
+    this.prev = new PrevSocket('In', this);
   }
 
   process() {
