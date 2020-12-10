@@ -37,6 +37,12 @@ export class Node {
   set nexts(val) {
     this._nexts = val;
   }
+  get prevs() {
+    return this._prevs;
+  }
+  set prevs(val) {
+    this._prevs = val;
+  }
   get program() {
     return this._program;
   }
@@ -58,6 +64,13 @@ export class Node {
   evaluateInputs() {
     for (let inp of this.inputs) {
       inp.evaluate();
+    }
+  }
+  getFlowResult(socket) {
+    if(socket.peer) {
+        return new Result(socket.peer.node);
+    } else {
+        return new Result();
     }
   }
   toString() {
@@ -87,64 +100,5 @@ export class Result {
   }
   set next(val) {
     this._next = val;
-  }
-}
-
-export class Program extends Node {
-  constructor(name) {
-    super(name);
-    this._nodes = new Map();
-    this._start = null;
-  }
-  get start() {
-    return this._start;
-  }
-  set start(val) {
-    this._start = val;
-  }
-  get nodes() {
-    return this._nodes;
-  }
-  set nodes(val) {
-    this._nodes = val;
-  }
-  addNode(node, isStart) {
-    this._nodes.set(node.id, node);
-    if (isStart) {
-      this._start = node;
-    }
-    node.program = this;
-  }
-  removeNode(node) {
-    if (this.start && this.start.id === node.id) {
-      this.start = null;
-    }
-    this._nodes.delete(node.id);
-    node.program = null;
-  }
-  clear() {
-    this._nodes = [];
-  }
-  toString() {
-    return (
-      "P{'" +
-      this._name +
-      "',{" +
-      this._nodes.reduce(
-        (t, n, i, a) => t + n.toString() + (i < a.length - 1 ? "," : ""),
-        ""
-      ) +
-      "}"
-    );
-  }
-  process() {
-    if (!this._start) {
-      return new Result();
-    }
-    let currentNode = this._start;
-    while (currentNode !== null) {
-      let result = currentNode.process();
-      currentNode = result.next;
-    }
   }
 }

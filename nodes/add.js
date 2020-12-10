@@ -1,5 +1,5 @@
 import { Node, Result } from "./node.js";
-import { InputValueSocket, OutputValueSocket } from "./socket.js";
+import { InputFlowSocket, InputValueSocket, OutputFlowSocket, OutputValueSocket } from "./socket.js";
 
 export class Add extends Node {
   constructor() {
@@ -8,7 +8,13 @@ export class Add extends Node {
       new InputValueSocket("Val1", this, typeof 0, 0),
       new InputValueSocket("Val2", this, typeof 0, 0),
     ];
-    this.outputs = [new OutputValueSocket("Result", this, typeof 0, 0)];
+    this.outputs = [new OutputValueSocket("Val", this, typeof 0, 0)];
+    this.prevs = [
+        new InputFlowSocket('In', this)
+    ];
+    this.nexts = [
+        new OutputFlowSocket('Out', this)
+    ];
   }
 
   process() {
@@ -20,7 +26,7 @@ export class Add extends Node {
     this.outputs[0].type = this.inputs[0].type;
     this.outputs[0].value = sum;
 
-    return new Result();
+    return this.getFlowResult(this.next('Out'));
   }
 }
 

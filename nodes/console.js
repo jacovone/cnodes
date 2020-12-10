@@ -19,11 +19,7 @@ export class Console extends Node {
     console.log(this.input('Val').value);
 
     let res = new Result();
-    if(this.next('Out').peer) {
-      return new Result(this.next('Out').peer.node)
-    } else {
-      return new Result();
-    }
+    return this.getFlowResult(this.next('Out'));
   }
 }
 

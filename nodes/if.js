@@ -24,7 +24,7 @@ export class If extends Node {
       flow = this.next('Else');
     }
 
-    return new Result(flow.peer.node);
+    return this.getFlowResult(flow);
   }
 }
 

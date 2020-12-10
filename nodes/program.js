@@ -6,6 +6,13 @@ export class Program extends Node {
       super(name);
       this._nodes = new Map();
       this._start = null;
+      this._vars = new Map();
+    }
+    get vars() {
+        return this._vars;
+    }
+    set vars(val) {
+        this._vars = val;
     }
     get start() {
       return this._start;
@@ -25,6 +32,7 @@ export class Program extends Node {
         this._start = node;
       }
       node.program = this;
+      return this;
     }
     removeNode(node) {
       if (this.start && this.start.id === node.id) {
@@ -32,9 +40,11 @@ export class Program extends Node {
       }
       this._nodes.delete(node.id);
       node.program = null;
+      return this;
     }
     clear() {
       this._nodes = [];
+      return this;
     }
     toString() {
       return (
@@ -49,6 +59,7 @@ export class Program extends Node {
       );
     }
     process() {
+        this.vars.set('start_timestamp', new Date().getTime());
       if (!this._start) {
         return new Result();
       }
@@ -58,5 +69,9 @@ export class Program extends Node {
         currentNode = result.next;
       }
     }
+  }
+
+  export function program(name) {
+      return new Program(name);
   }
   
