@@ -1,3 +1,5 @@
+import { TypeEnum, Type, type } from './type.js';
+
 export class Socket {
 
   #name = '';
@@ -22,10 +24,10 @@ export class Socket {
 }
 
 export class ValueSocket extends Socket {
-  #type = typeof 0;
+  #type = type(TypeEnum.NUMBER, false);
   #value = 0;
 
-  constructor(name, node, type = typeof 0, value = 0) {
+  constructor(name, node, type = type(TypeEnum.NUMBER, false), value = 0) {
     super(name, node);
   }
   get type() {

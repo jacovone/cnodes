@@ -58,7 +58,7 @@ function test3() {
 
     let n = setvarNode();
     n.input('Name').value = 'variable';
-    n.input('Val').value = 120;
+    n.input('Val').value = 12000;
     
     let n2 = getvarNode();
     n2.input('Name').value = 'variable';

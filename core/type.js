@@ -27,3 +27,7 @@ export class Type {
         this.#isArray = val;
     }
 }
+
+export function type(type, isArray) {
+    return new Type(type, isArray);
+}
