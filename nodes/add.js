@@ -10,12 +10,8 @@ export class Add extends Node {
       new InputValueSocket("Val2", this, typeof 0, 0),
     ];
     this.outputs = [new OutputValueSocket("Val", this, typeof 0, 0)];
-    this.prevs = [
-        new InputFlowSocket('In', this)
-    ];
-    this.nexts = [
-        new OutputFlowSocket('Out', this)
-    ];
+    this.prevs = [];
+    this.nexts = [];
   }
 
   process() {
@@ -26,8 +22,6 @@ export class Add extends Node {
     }
     this.outputs[0].type = this.inputs[0].type;
     this.outputs[0].value = sum;
-
-    return this.getFlowResult(this.next('Out'));
   }
 }
 

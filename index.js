@@ -71,12 +71,11 @@ function test3() {
     let n4 = addNode();
     n4.input('Val1').value = -1;
     n4.input('Val2').connect(n2.output('Val'));
-    n4.prev('In').connect(n3.next('Out'));
 
     let n5 = setvarNode();
     n5.input('Name').value = 'variable';
     n5.input('Val').connect(n4.output('Val'));
-    n5.prev('In').connect(n4.next('Out'));
+    n5.prev('In').connect(n3.next('Out'));
 
     let n6 = ifNode();
     n6.input('Condition').connect(n5.output('Val'));
@@ -87,4 +86,4 @@ function test3() {
 }
 
 
-test2();
+test3();
