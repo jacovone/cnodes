@@ -8,24 +8,24 @@ export const Types = {
 }
 
 export class Type {
-    #type = Types.NUMBER;
-    #isArray = false;
+    _type = Types.NUMBER;
+    _isArray = false;
 
     constructor(type, isArray) {
-        this.#type = type;
-        this.#isArray = isArray;
+        this._type = type;
+        this._isArray = isArray;
     }
     get type() {
-        return this.#type;
+        return this._type;
     }
     set type(val) {
-        this.#type = val;
+        this._type = val;
     }
     get isArray() {
-        return this.#isArray;
+        return this._isArray;
     }
     set isArray(val) {
-        this.#isArray = val;
+        this._isArray = val;
     }
 }
 

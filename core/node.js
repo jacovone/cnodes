@@ -2,60 +2,60 @@ import { v4 as uuidv4 } from "uuid";
 
 export class Node {
 
-  #id = uuidv4();
-  #name = "";
-  #functional = false;
-  #inputs = [];
-  #outputs = [];
-  #nexts = [];
-  #prev = null;
-  #program = null;
+  _id = uuidv4();
+  _name = "";
+  _functional = false;
+  _inputs = [];
+  _outputs = [];
+  _nexts = [];
+  _prev = null;
+  _program = null;
 
   constructor(name) {}
   get id() {
-    return this.#id;
+    return this._id;
   }
   get name() {
-    return this.#name;
+    return this._name;
   }
   set name(val) {
-    this.#name = val;
+    this._name = val;
   }
   get functional() {
-    return this.#functional;
+    return this._functional;
   }
   set functional(val) {
-    this.#functional = val;
+    this._functional = val;
   }
   get inputs() {
-    return this.#inputs;
+    return this._inputs;
   }
   set inputs(val) {
-    this.#inputs = val;
+    this._inputs = val;
   }
   get outputs() {
-    return this.#outputs;
+    return this._outputs;
   }
   set outputs(val) {
-    this.#outputs = val;
+    this._outputs = val;
   }
   get nexts() {
-    return this.#nexts;
+    return this._nexts;
   }
   set nexts(val) {
-    this.#nexts = val;
+    this._nexts = val;
   }
   get prev() {
-    return this.#prev;
+    return this._prev;
   }
   set prev(val) {
-    this.#prev = val;
+    this._prev = val;
   }
   get program() {
-    return this.#program;
+    return this._program;
   }
   set program(val) {
-    this.#program = val;
+    this._program = val;
   }
   input(name) {
     return this.inputs.find((i) => i.name === name);
@@ -84,13 +84,13 @@ export class Node {
   toString() {
     return (
       "N('" +
-      this.#id +
+      this._id +
       "'," +
-      this.#inputs.length +
+      this._inputs.length +
       "i," +
-      this.#outputs.length +
+      this._outputs.length +
       "o," +
-      this.#nexts.length +
+      this._nexts.length +
       "n)"
     );
   }
@@ -100,14 +100,14 @@ export class Node {
 }
 
 export class Result {
-  #next = null;
+  _next = null;
   constructor(next = null) {
-    this.#next = next;
+    this._next = next;
   }
   get next() {
-    return this.#next;
+    return this._next;
   }
   set next(val) {
-    this.#next = val;
+    this._next = val;
   }
 }

@@ -3,35 +3,35 @@ import { Node } from './node.js'
 
 export class Program extends Node {
 
-  #nodes = new Map();
-  #start = null;
-  #vars = new Map();
+  _nodes = new Map();
+  _start = null;
+  _vars = new Map();
 
   constructor(name) {
       super(name);
     }
     get vars() {
-        return this.#vars;
+        return this._vars;
     }
     set vars(val) {
-        this.#vars = val;
+        this._vars = val;
     }
     get start() {
-      return this.#start;
+      return this._start;
     }
     set start(val) {
-      this.#start = val;
+      this._start = val;
     }
     get nodes() {
-      return this.#nodes;
+      return this._nodes;
     }
     set nodes(val) {
-      this.#nodes = val;
+      this._nodes = val;
     }
     addNode(node, isStart) {
-      this.#nodes.set(node.id, node);
+      this._nodes.set(node.id, node);
       if (isStart) {
-        this.#start = node;
+        this._start = node;
       }
       node.program = this;
       return this;
@@ -40,12 +40,12 @@ export class Program extends Node {
       if (this.start && this.start.id === node.id) {
         this.start = null;
       }
-      this.#nodes.delete(node.id);
+      this._nodes.delete(node.id);
       node.program = null;
       return this;
     }
     clear() {
-      this.#nodes = [];
+      this._nodes = [];
       return this;
     }
     toString() {
@@ -53,7 +53,7 @@ export class Program extends Node {
         "P{'" +
         this.name +
         "',{" +
-        this.#nodes.reduce(
+        this._nodes.reduce(
           (t, n, i, a) => t + n.toString() + (i < a.length - 1 ? "," : ""),
           ""
         ) +
@@ -61,11 +61,11 @@ export class Program extends Node {
       );
     }
     process() {
-        this.vars.set('start#timestamp', new Date().getTime());
-      if (!this.#start) {
+        this.vars.set('start_timestamp', new Date().getTime());
+      if (!this._start) {
         return new Result();
       }
-      let currentNode = this.#start;
+      let currentNode = this._start;
       while (currentNode !== null) {
         let result = currentNode.process();
         currentNode = result.next;

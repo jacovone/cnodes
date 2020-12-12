@@ -2,59 +2,59 @@ import { Types, Type, type } from './type.js';
 
 export class Socket {
 
-  #name = '';
-  #node = null;
+  _name = '';
+  _node = null;
 
   constructor(name, node) {
-    this.#name = name;
-    this.#node = node;
+    this._name = name;
+    this._node = node;
   }
   get name() {
-    return this.#name;
+    return this._name;
   }
   set name(val) {
-    this.#name = val;
+    this._name = val;
   }
   get node() {
-    return this.#node;
+    return this._node;
   }
   set node(val) {
-    this.#node = val;
+    this._node = val;
   }
 }
 
 export class ValueSocket extends Socket {
-  #type = type(Types.NUMBER, false);
-  #value = 0;
+  _type = type(Types.NUMBER, false);
+  _value = 0;
 
   constructor(name, node, type = type(Types.NUMBER, false), value = 0) {
     super(name, node);
   }
   get type() {
-    return this.#type;
+    return this._type;
   }
   set type(val) {
-    this.#type = val;
+    this._type = val;
   }
   get value() {
-    return this.#value;
+    return this._value;
   }
   set value(val) {
-    this.#value = val;
+    this._value = val;
   }
 }
 
 export class InputSocket extends ValueSocket {
-  #peer = null;
+  _peer = null;
 
   constructor(name, node, type, value) {
     super(name, node, type, value);
   }
   get peer() {
-    return this.#peer;
+    return this._peer;
   }
   set peer(val) {
-    this.#peer = val;
+    this._peer = val;
   }
   evaluate() {
     if (this.peer !== null) {
@@ -81,16 +81,16 @@ export class InputSocket extends ValueSocket {
 }
 
 export class OutputSocket extends ValueSocket {
-  #peers = [];
+  _peers = [];
 
   constructor(name, node, type, value) {
     super(name, node, value, type);
   }
   get peers() {
-    return this.#peers;
+    return this._peers;
   }
   set peers(val) {
-    this.#peers = val;
+    this._peers = val;
   }
   connect(socket) {
     if (this.peers.find((s) => s.peer === socket) === undefined) {
@@ -114,15 +114,15 @@ export class FlowSocket extends Socket {
 }
 
 export class PrevSocket extends FlowSocket {
-  #peers = [];
+  _peers = [];
   constructor(name, node) {
     super(name, node);
   }
   get peers() {
-    return this.#peers;
+    return this._peers;
   }
   set peers(val) {
-    this.#peers = val;
+    this._peers = val;
   }
   connect(socket) {
     if (this.peers.find((s) => s.peer === socket) === undefined) {
@@ -140,15 +140,15 @@ export class PrevSocket extends FlowSocket {
 }
 
 export class NextSocket extends FlowSocket {
-  #peer = null;
+  _peer = null;
   constructor(name, node) {
     super(name, node);
   }
   get peer() {
-    return this.#peer;
+    return this._peer;
   }
   set peer(val) {
-    this.#peer = val;
+    this._peer = val;
   }
   connect(socket) {
     this.peer = socket;
