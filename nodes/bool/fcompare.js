@@ -24,7 +24,7 @@ export const Comparision = {
  * This class implements a functional node for compairing numeric values.
  */
 export class FCompare extends Node {
-  _comparision = Comparision.EQUAL;
+  #comparision = Comparision.EQUAL;
   constructor(comparision = Comparision.EQUAL) {
     super("FCompare");
     this.comparision = comparision;
@@ -41,10 +41,10 @@ export class FCompare extends Node {
   }
 
   get comparision() {
-    return this._comparision;
+    return this.#comparision;
   }
   set comparision(val) {
-    this._comparision = val;
+    this.#comparision = val;
   }
 
   /**
