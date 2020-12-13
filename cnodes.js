@@ -139,7 +139,7 @@ function test4() {
     .addNode(ngte)
     .addNode(nIf);
 
-  console.log(p);
+  console.log(p.toString());
 
   p.process();
 }

@@ -1,10 +1,27 @@
-import { Types, type } from './type.js';
+/**
+ * cnodes
+ *
+ * A representation-agnostic library to define and execute nodes based processes
+ * License: MIT
+ * Author: Marco Jacovone
+ * Year: 2020
+ */
+
+import { Types, type } from "./type.js";
 import { v4 as uuidv4 } from "uuid";
 
+/**
+ * A socket is an object that represent an input,
+ * output, next or prev for the node
+ */
 export class Socket {
+  /** The internal id of the socket */
+  #id = "";
 
-  #id = '';
-  #name = '';
+  /** The name of this socket */
+  #name = "";
+
+  /** The parent node */
   #node = null;
 
   constructor(name, node) {
@@ -29,13 +46,21 @@ export class Socket {
   }
 }
 
+/**
+ * The value socket represent a input or a output value
+ * for the node, so it has a value and a type
+ */
 export class ValueSocket extends Socket {
+  /** The type for the socket's value */
   #type = type(Types.NUMBER, false);
+
+  /** The stored value */
   #value = 0;
 
   constructor(name, node, type = type(Types.NUMBER, false), value = 0) {
     super(name, node);
   }
+
   get type() {
     return this.#type;
   }
@@ -50,7 +75,13 @@ export class ValueSocket extends Socket {
   }
 }
 
+/**
+ * This is an input socket value for the node, it
+ * can have only a peer socket, because its value
+ * have to be defined in a deterministic way
+ */
 export class InputSocket extends ValueSocket {
+  /** The only peer socket */
   #peer = null;
 
   constructor(name, node, type, value) {
@@ -62,6 +93,13 @@ export class InputSocket extends ValueSocket {
   set peer(val) {
     this.#peer = val;
   }
+
+  /**
+   * Evaluate the socket value. If the socket is connected,
+   * this method goes to the peer socket and take the value.
+   * If the peer socket is part of a functional node, the process()
+   * method is executed before taking the value
+   */
   evaluate() {
     if (this.peer !== null) {
       if (this.peer.node && this.peer.node.functional) {
@@ -71,12 +109,22 @@ export class InputSocket extends ValueSocket {
       this.value = this.peer.value;
     }
   }
+
+  /**
+   * Connect this socket to another (output) socket
+   * @param {*} socket The output socket to connect
+   */
   connect(socket) {
     this.peer = socket;
     if (socket.peers.find((s) => s.peer === this) === undefined) {
       socket.peers.push(this);
     }
   }
+
+  /**
+   * Disconnects thi socket from its peer
+   * @param {*} socket Peer socket to disconnect
+   */
   disconnect(socket) {
     this.peer = null;
     let index = socket.peers.findIndex((s) => s.peer === this);
@@ -86,7 +134,14 @@ export class InputSocket extends ValueSocket {
   }
 }
 
+/**
+ * This is a output value socket and represent an output
+ * value for the node. Output value socket can be connected to
+ * many peer input value sockets, because many socket would like
+ * to take the value from this.
+ */
 export class OutputSocket extends ValueSocket {
+  /** A list of input value connected sockets */
   #peers = [];
 
   constructor(name, node, type, value) {
@@ -98,12 +153,19 @@ export class OutputSocket extends ValueSocket {
   set peers(val) {
     this.#peers = val;
   }
+
+  /**
+   * Connects this socket to a input socket
+   * @param {*} socket
+   */
   connect(socket) {
     if (this.peers.find((s) => s.peer === socket) === undefined) {
       this.peers.push(socket);
     }
     socket.peer = this;
   }
+
+  /** Disconnect this socket from a specific input peer */
   disconnect(socket) {
     let index = this.peers.find((s) => s.peer === socket);
     if (index !== undefined) {
@@ -113,14 +175,26 @@ export class OutputSocket extends ValueSocket {
   }
 }
 
+/**
+ * A flow socket is a socket to connect two nodes in
+ * terms of execution flow
+ */
 export class FlowSocket extends Socket {
   constructor(name, node) {
     super(name, node);
   }
 }
 
+/**
+ * This class representa a prev socket, a socket that
+ * can be connected to other nexts sockets. The prev socket
+ * cab have many peer (next) socket because the execution
+ * can come from anywhere in the program
+ */
 export class PrevSocket extends FlowSocket {
+  /** List of (next) peer sockets */
   #peers = [];
+
   constructor(name, node) {
     super(name, node);
   }
@@ -130,12 +204,22 @@ export class PrevSocket extends FlowSocket {
   set peers(val) {
     this.#peers = val;
   }
+
+  /**
+   * COnnect this socket to a next socket
+   * @param {*} socket The next socket to connect
+   */
   connect(socket) {
     if (this.peers.find((s) => s.peer === socket) === undefined) {
       this.peers.push(socket);
     }
     socket.peer = this;
   }
+
+  /**
+   * Disconnect this socket from a next socket
+   * @param {*} socket The next socket to disconnect
+   */
   disconnect(socket) {
     let index = this.peers.find((s) => s.peer === socket);
     if (index !== undefined) {
@@ -145,8 +229,16 @@ export class PrevSocket extends FlowSocket {
   }
 }
 
+/**
+ * This class represents a socket to redirect the flow
+ * to another node via a node's prev socket. This socket can
+ * be connected to only one (prev) socket, because the program
+ * flow have to be well defined
+ */
 export class NextSocket extends FlowSocket {
+  /** The peer (prev) socket */
   #peer = null;
+
   constructor(name, node) {
     super(name, node);
   }
@@ -156,12 +248,22 @@ export class NextSocket extends FlowSocket {
   set peer(val) {
     this.#peer = val;
   }
+
+  /**
+   * Connect this socket to another (prev) socket
+   * @param {*} socket The prev socket to connect to
+   */
   connect(socket) {
     this.peer = socket;
     if (socket.peers.find((s) => s.peer === this) === undefined) {
       socket.peers.push(this);
     }
   }
+
+  /**
+   * Thisconnect this socket from the peer
+   * @param {*} socket The peer to disconnect
+   */
   disconnect(socket) {
     this.peer = null;
     let index = socket.peers.findIndex((s) => s.peer === this);
