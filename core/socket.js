@@ -1,13 +1,19 @@
-import { Types, Type, type } from './type.js';
+import { Types, type } from './type.js';
+import { v4 as uuidv4 } from "uuid";
 
 export class Socket {
 
+  #id = '';
   #name = '';
   #node = null;
 
   constructor(name, node) {
+    this.#id = uuidv4();
     this.#name = name;
     this.#node = node;
+  }
+  get id() {
+    return this.#id;
   }
   get name() {
     return this.#name;

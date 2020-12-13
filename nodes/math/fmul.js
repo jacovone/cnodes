@@ -1,6 +1,6 @@
 /**
  * cnodes
- * 
+ *
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
@@ -25,7 +25,9 @@ export class FMul extends Node {
       new InputSocket("Val1", this, type(Types.NUMBER, false), 0),
       new InputSocket("Val2", this, type(Types.NUMBER, false), 0),
     ];
-    this.outputs = [new OutputSocket("Val", this, type(Types.NUMBER, false), 0)];
+    this.outputs = [
+      new OutputSocket("Val", this, type(Types.NUMBER, false), 0),
+    ];
     this.prev = null;
     this.nexts = [];
   }
@@ -39,7 +41,7 @@ export class FMul extends Node {
     for (let inp of this.inputs) {
       mul *= inp.value;
     }
-    this.output('Val').value = mul;
+    this.output("Val").value = mul;
   }
 }
 
@@ -47,5 +49,5 @@ export class FMul extends Node {
  * Helper fuction to create the node
  */
 export function fmulNode() {
-    return new FMul();
+  return new FMul();
 }

@@ -11,6 +11,9 @@ import { Node } from "../../core/node.js";
 import { InputSocket, OutputSocket } from "../../core/socket.js";
 import { type, Types } from "../../core/type.js";
 
+/**
+ * Supported comparision types
+ */
 export const Comparision = {
   EQUAL: 'equal',
   GT: 'gt',
@@ -24,7 +27,10 @@ export const Comparision = {
  * This class implements a functional node for compairing numeric values.
  */
 export class FCompare extends Node {
+
+  /** Configured comparision for this node */
   #comparision = Comparision.EQUAL;
+
   constructor(comparision = Comparision.EQUAL) {
     super("FCompare");
     this.comparision = comparision;
@@ -51,6 +57,7 @@ export class FCompare extends Node {
    * The process override
    */
   process() {
+
     this.evaluateInputs();
     let val1 = this.input('Val1').value;
     let val2 = this.input('Val2').value;
