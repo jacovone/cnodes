@@ -152,7 +152,7 @@ export class Node {
   toString() {
     return (
       "N('" +
-      this.#id +
+      this.#name +
       "'," +
       this.#inputs.length +
       "i," +
