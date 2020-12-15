@@ -11,10 +11,12 @@ import { program } from "./core/program.js";
 import { faddNode } from "./nodes/math/fadd.js";
 import { consoleNode } from "./nodes/console.js";
 import { ifNode } from "./nodes/if.js";
+import { whileNode } from "./nodes/while.js";
 import { setvarNode } from "./nodes/setvar.js";
 import { getvarNode } from "./nodes/getvar.js";
 import { fgetvarNode } from "./nodes/fgetvar.js";
 import { Comparision, fcompareNode } from "./nodes/bool/fcompare.js";
+import { forNode } from "./nodes/for.js";
 
 // Some simple test
 
@@ -144,4 +146,20 @@ function test4() {
   p.process();
 }
 
-test4();
+function test5() {
+  let for_Node = forNode();
+  for_Node.input("From").value = 5;
+  for_Node.input("To").value = 10;
+
+  let console_Node = consoleNode();
+  console_Node.input("Val").connect(for_Node.output("Index"));
+  console_Node.prev.connect(for_Node.next("Do"));
+
+  let p = program().addNode(for_Node, true).addNode(console_Node);
+
+  console.log(p);
+
+  p.process();
+}
+
+test5();

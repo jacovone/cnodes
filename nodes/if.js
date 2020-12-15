@@ -13,6 +13,7 @@ import {
   NextSocket as NextSocket,
   PrevSocket,
 } from "../core/socket.js";
+import { Type, Types } from "../core/type.js";
 
 /**
  * This class implements a node that is able to
@@ -22,7 +23,9 @@ import {
 export class If extends Node {
   constructor() {
     super("If");
-    this.inputs = [new InputSocket("Condition", this, typeof true, false)];
+    this.inputs = [
+      new InputSocket("Condition", this, new Type(Types.BOOLEAN, false), false),
+    ];
     this.outputs = [];
     this.nexts = [new NextSocket("Then", this), new NextSocket("Else", this)];
     this.prev = new PrevSocket("In", this);

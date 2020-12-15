@@ -7,7 +7,7 @@
  * Year: 2020
  */
 
-import { Node } from "./node.js";
+import { Node, Result } from "./node.js";
 
 /**
  * A program is a special node that contains nodes. The program
@@ -21,6 +21,9 @@ export class Program extends Node {
 
   /** The start node */
   #start = null;
+
+  /** The instruction pointer equivalent :) */
+  #currentNode = null;
 
   /** The variable global space */
   #vars = new Map();
@@ -39,6 +42,12 @@ export class Program extends Node {
   }
   set start(val) {
     this.#start = val;
+  }
+  get currentNode() {
+    return this.#currentNode;
+  }
+  set currentNode(val) {
+    this.#currentNode = val;
   }
   get nodes() {
     return this.#nodes;
@@ -105,14 +114,21 @@ export class Program extends Node {
    * cycle over nexts returned by the process functions of nodes.
    */
   process() {
-    this.vars.set("start_timestamp", new Date().getTime());
-    if (!this.#start) {
-      return new Result();
+    if (this.#start) {
+      this.processFrom(this.#start);
     }
-    let currentNode = this.#start;
-    while (currentNode !== null) {
-      let result = currentNode.process();
-      currentNode = result.next;
+    return new Result();
+  }
+
+  /**
+   * Execute a program useng node as starting point
+   * @param {*} node Starting point node
+   */
+  processFrom(node) {
+    this.currentNode = node;
+    while (this.currentNode !== null) {
+      let result = this.currentNode.process();
+      this.currentNode = result.next;
     }
   }
 }
