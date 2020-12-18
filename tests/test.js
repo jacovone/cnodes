@@ -29,12 +29,16 @@ n3.input("Val").connect(n2.output("Val"));
 
 // n4.next("Out").connect(n5.prev);
 
-let program = cnodes.program("main").addNode(n).addNode(n2).addNode(n3, true);
+let program = cnodes.program("main").addNode(n).addNode(n2).addNode(n3);
+
+n3.prev.connect(program.enter.next("Begin"));
+n3.next("Out").connect(program.exit.prev);
 
 program.process();
 
 Env.init();
 let exp = Env.export(program);
-console.log(JSON.stringify(exp));
+// console.log(JSON.stringify(exp));
 let ppp = Env.import(exp);
-console.log(JSON.stringify(Env.export(ppp)));
+// console.log(JSON.stringify(Env.export(ppp)));
+ppp.process();

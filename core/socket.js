@@ -50,8 +50,6 @@ export class Socket {
   set node(val) {
     this.#node = val;
   }
-
-  export() {}
 }
 
 /**
@@ -257,29 +255,6 @@ export class NextSocket extends FlowSocket {
   }
   set peer(val) {
     this.#peer = val;
-  }
-
-  /**
-   * Export the socket
-   */
-  export() {
-    return {
-      id: this.id,
-      name: this.name,
-      node: this.node.id,
-      peer: this.peer ? this.peer.id : null,
-    };
-  }
-
-  /**
-   * Import the socket from data
-   * @param {*} data The data to import
-   */
-  static import(data) {
-    let socket = new NextSocket(data.name, data.node);
-    socket.id = data.id;
-    socket.peer = data.peer;
-    return socket;
   }
 
   /**

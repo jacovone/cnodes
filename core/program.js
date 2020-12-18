@@ -7,12 +7,16 @@
  * Year: 2020
  */
 
+import { Enter } from "./enter.js";
+import { Exit } from "./exit.js";
 import { Node, Result } from "./node.js";
+import { InputSocket, NextSocket, OutputSocket, PrevSocket } from "./socket.js";
+import { type, Type, Types } from "./type.js";
 
 /**
  * A program is a special node that contains nodes. The program
  * manages the flow of the global execution by starting from the
- * "start" node, call its process() method and receive the next
+ * "Enter" default, autocreated node, call its process() method and receive the next
  * "next". A program also store a global variable space
  */
 export class Program extends Node {
@@ -22,8 +26,11 @@ export class Program extends Node {
   /** The nodes in this program */
   #nodes = [];
 
-  /** The start node */
-  #start = null;
+  /** The Enter node */
+  #enter = null;
+
+  /** The Exit node */
+  #exit = null;
 
   /** The instruction pointer equivalent :) */
   #currentNode = null;
@@ -33,18 +40,34 @@ export class Program extends Node {
 
   constructor() {
     super("Program");
+    this.inputs = [new InputSocket("Val", this, type(Types.ANY, false), 0)];
+    this.outputs = [new OutputSocket("Val", this, type(Types.ANY, false), 0)];
+    this.nexts = [new NextSocket("Out", this)];
+    this.prev = new PrevSocket("In", this);
+
+    // Create default enter, exit nodes
+    this.addNode((this.#enter = new Enter())).addNode(
+      (this.#exit = new Exit())
+    );
   }
+
   get vars() {
     return this.#vars;
   }
   set vars(val) {
     this.#vars = val;
   }
-  get start() {
-    return this.#start;
+  get enter() {
+    return this.#enter;
   }
-  set start(val) {
-    this.#start = val;
+  set enter(val) {
+    this.#enter = val;
+  }
+  get exit() {
+    return this.#exit;
+  }
+  set exit(val) {
+    this.#exit = val;
   }
   get currentNode() {
     return this.#currentNode;
@@ -64,11 +87,8 @@ export class Program extends Node {
    * @param {*} node The node to add
    * @param {*} isStart Is that node the start node?
    */
-  addNode(node, isStart) {
+  addNode(node) {
     this.#nodes.push(node);
-    if (isStart) {
-      this.#start = node;
-    }
 
     // Set this program to the node
     node.program = this;
@@ -76,35 +96,36 @@ export class Program extends Node {
   }
 
   /**
-   * Removes a node from this program
+   * Removes a node from this program, disconnect all sockets
    * @param {*} node The node to remove
    */
   removeNode(node) {
-    if (this.start && this.start.id === node.id) {
-      this.start = null;
-    }
+    // Disconnect its sockets
+    node.disconnectAllSockets();
+
     this.#nodes = this.#nodes.filter((n) => n.id !== node.id);
     node.program = null;
     return this;
   }
 
   /**
-   * Removes all nodes
-   */
-  clear() {
-    this.#nodes = [];
-    return this;
-  }
-
-  /**
-   * The process function will start from the start node and
+   * The process function will start from the Enter node and
    * cycle over nexts returned by the process functions of nodes.
    */
   process() {
-    if (this.#start) {
-      this.processFrom(this.#start);
-    }
-    return new Result();
+    this.evaluateInputs();
+
+    // Copy input to enter's input
+    this.#enter.input("Val").value = this.input("Val").value;
+    this.#enter.input("Val").type = this.input("Val").type;
+
+    this.processFrom(this.#enter);
+
+    // Copy output to exit's output
+    this.output("Val").value = this.#exit.output("Val").value;
+    this.output("Val").type = this.#exit.output("Val").type;
+
+    return this.getFlowResult(this.next("Out"));
   }
 
   /**
@@ -124,6 +145,6 @@ export class Program extends Node {
  * A helper function to create the program
  * @param {*} name The name of the program
  */
-export function program(name) {
-  return new Program(name);
+export function program() {
+  return new Program();
 }

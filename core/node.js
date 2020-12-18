@@ -152,20 +152,27 @@ export class Node {
   }
 
   /**
-   * A string representation of this node
+   * This method disconnect all sockets from the node
    */
-  toString() {
-    return (
-      "N('" +
-      this.#name +
-      "'," +
-      this.#inputs.length +
-      "i," +
-      this.#outputs.length +
-      "o," +
-      this.#nexts.length +
-      "n)"
-    );
+  disconnectAllSockets() {
+    if (this.#prev && this.#prev.peer) {
+      this.#prev.disconnect();
+    }
+    for (let i of this.#inputs) {
+      if (i.peer) {
+        i.disconnect();
+      }
+    }
+    for (let o of this.#outputs) {
+      while (o.peers.length > 0) {
+        o.peers[0].disconnect();
+      }
+    }
+    for (let n of this.#nexts) {
+      if (n.peer) {
+        n.disconnect();
+      }
+    }
   }
 
   /** The base version of the node does nothing */

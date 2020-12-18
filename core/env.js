@@ -7,6 +7,9 @@
  * Year: 2020
  */
 
+import { enterNode } from "../core/enter.js";
+import { exitNode } from "../core/exit.js";
+
 import { callNode } from "../nodes/call.js";
 import { consoleNode } from "../nodes/console.js";
 import { fgetvarNode } from "../nodes/fgetvar.js";
@@ -65,6 +68,8 @@ export class Env {
     Env.registerNode("If", "Core", ifNode);
     Env.registerNode("Setvar", "Core", setvarNode);
     Env.registerNode("While", "Core", whileNode);
+    Env.registerNode("Enter", "Core", enterNode);
+    Env.registerNode("Exit", "Core", exitNode);
 
     // Math nodes
     Env.registerNode("FAdd", "Math", faddNode);
@@ -143,6 +148,8 @@ export class Env {
       version: Program.version,
       lastNodeIndex: Node.lastNodeIdIndex,
       lastSocketIndex: Socket.lastSocketIdIndex,
+      enter: program.enter.id,
+      exit: program.exit.id,
       nodes: [],
       connections: [],
     };
@@ -282,6 +289,9 @@ export class Env {
     }
 
     let p = new Program();
+    p.removeNode(p.enter);
+    p.removeNode(p.exit);
+
     Program.version = data.version;
 
     // Now import nodes without connections
@@ -332,6 +342,9 @@ export class Env {
 
       p.addNode(node);
     }
+
+    p.enter = p.nodes.find((n) => n.id === data.enter);
+    p.exit = p.nodes.find((n) => n.id === data.exit);
 
     // Now import connections
     for (let connectionData of data.connections) {

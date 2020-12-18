@@ -30,8 +30,6 @@ export class Console extends Node {
   process() {
     this.evaluateInputs();
     console.log(this.input("Val").value);
-
-    let res = new Result();
     return this.getFlowResult(this.next("Out"));
   }
 }
