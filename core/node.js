@@ -7,8 +7,6 @@
  * Year: 2020
  */
 
-import { v4 as uuidv4 } from "uuid";
-
 /**
  * This is the base node class. A node have some input and output
  * to exchange data with other nodes, some nexts to determine next
@@ -19,8 +17,11 @@ import { v4 as uuidv4 } from "uuid";
  * the last computed value. Each node has a unique id to identify it
  */
 export class Node {
+  /** An incremental index to generate unique node IDs */
+  static lastNodeIdIndex = 0;
+
   /** The internal unique identifier */
-  #id = uuidv4();
+  #id = null;
 
   /** The internal name of the node */
   #name = "";
@@ -45,10 +46,14 @@ export class Node {
 
   constructor(name) {
     this.#name = name;
+    this.#id = "NID_" + Node.lastNodeIdIndex++;
   }
 
   get id() {
     return this.#id;
+  }
+  set id(val) {
+    this.#id = val;
   }
   get name() {
     return this.#name;

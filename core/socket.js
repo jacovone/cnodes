@@ -7,14 +7,16 @@
  * Year: 2020
  */
 
-import { Types, type } from "./type.js";
-import { v4 as uuidv4 } from "uuid";
+import { Types, Type, type } from "./type.js";
 
 /**
  * A socket is an object that represent an input,
  * output, next or prev for the node
  */
 export class Socket {
+  /** An incremental index to generate unique socket IDs */
+  static lastSocketIdIndex = 0;
+
   /** The internal id of the socket */
   #id = "";
 
@@ -25,12 +27,16 @@ export class Socket {
   #node = null;
 
   constructor(name, node) {
-    this.#id = uuidv4();
+    this.#id = "SID_" + Socket.lastSocketIdIndex++;
+
     this.#name = name;
     this.#node = node;
   }
   get id() {
     return this.#id;
+  }
+  set id(val) {
+    this.#id = val;
   }
   get name() {
     return this.#name;
@@ -44,6 +50,8 @@ export class Socket {
   set node(val) {
     this.#node = val;
   }
+
+  export() {}
 }
 
 /**
@@ -59,6 +67,8 @@ export class ValueSocket extends Socket {
 
   constructor(name, node, type = type(Types.NUMBER, false), value = 0) {
     super(name, node);
+    this.type = type;
+    this.value = value;
   }
 
   get type() {
@@ -84,7 +94,7 @@ export class InputSocket extends ValueSocket {
   /** The only peer socket */
   #peer = null;
 
-  constructor(name, node, type, value) {
+  constructor(name, node, type = type(Types.NUMBER, false), value = 0) {
     super(name, node, type, value);
   }
   get peer() {
@@ -144,8 +154,8 @@ export class OutputSocket extends ValueSocket {
   /** A list of input value connected sockets */
   #peers = [];
 
-  constructor(name, node, type, value) {
-    super(name, node, value, type);
+  constructor(name, node, type = type(Types.NUMBER, false), value = 0) {
+    super(name, node, type, value);
   }
   get peers() {
     return this.#peers;
@@ -206,7 +216,7 @@ export class PrevSocket extends FlowSocket {
   }
 
   /**
-   * COnnect this socket to a next socket
+   * Connect this socket to a next socket
    * @param {*} socket The next socket to connect
    */
   connect(socket) {
@@ -247,6 +257,29 @@ export class NextSocket extends FlowSocket {
   }
   set peer(val) {
     this.#peer = val;
+  }
+
+  /**
+   * Export the socket
+   */
+  export() {
+    return {
+      id: this.id,
+      name: this.name,
+      node: this.node.id,
+      peer: this.peer ? this.peer.id : null,
+    };
+  }
+
+  /**
+   * Import the socket from data
+   * @param {*} data The data to import
+   */
+  static import(data) {
+    let socket = new NextSocket(data.name, data.node);
+    socket.id = data.id;
+    socket.peer = data.peer;
+    return socket;
   }
 
   /**

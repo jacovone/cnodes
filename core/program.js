@@ -16,8 +16,11 @@ import { Node, Result } from "./node.js";
  * "next". A program also store a global variable space
  */
 export class Program extends Node {
+  /** Engine version */
+  static version = 1;
+
   /** The nodes in this program */
-  #nodes = new Map();
+  #nodes = [];
 
   /** The start node */
   #start = null;
@@ -28,8 +31,8 @@ export class Program extends Node {
   /** The variable global space */
   #vars = new Map();
 
-  constructor(name) {
-    super(name);
+  constructor() {
+    super("Program");
   }
   get vars() {
     return this.#vars;
@@ -62,7 +65,7 @@ export class Program extends Node {
    * @param {*} isStart Is that node the start node?
    */
   addNode(node, isStart) {
-    this.#nodes.set(node.id, node);
+    this.#nodes.push(node);
     if (isStart) {
       this.#start = node;
     }
@@ -80,7 +83,7 @@ export class Program extends Node {
     if (this.start && this.start.id === node.id) {
       this.start = null;
     }
-    this.#nodes.delete(node.id);
+    this.#nodes = this.#nodes.filter((n) => n.id !== node.id);
     node.program = null;
     return this;
   }
@@ -91,22 +94,6 @@ export class Program extends Node {
   clear() {
     this.#nodes = [];
     return this;
-  }
-
-  /**
-   * A string representation of this node
-   */
-  toString() {
-    return (
-      "P{'" +
-      this.name +
-      "',{" +
-      Array.from(this.#nodes.values()).reduce(
-        (t, n, i, a) => t + n.toString() + (i < a.length - 1 ? "," : ""),
-        ""
-      ) +
-      "}"
-    );
   }
 
   /**

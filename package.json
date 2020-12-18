@@ -1,6 +1,6 @@
 {
   "name": "@marco.jacovone/cnodes",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A representation-agnostic process engine based on task/functional nodes",
   "main": "cnodes.js",
   "type": "module",
@@ -17,7 +17,5 @@
     "url": "https://github.com/marco-jacovone/cnodes/issues"
   },
   "homepage": "https://github.com/marco-jacovone/cnodes#readme",
-  "dependencies": {
-    "uuid": "^8.3.2"
-  }
+  "dependencies": {}
 }

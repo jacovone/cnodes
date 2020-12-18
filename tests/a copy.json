@@ -1,0 +1,159 @@
+{
+    "id": "NID_3",
+    "version": 1,
+    "lastNodeIndex": 4,
+    "lastSocketIndex": 9,
+    "nodes": [
+        {
+            "id": "NID_0",
+            "name": "FAdd",
+            "functional": true,
+            "inputs": [
+                {
+                    "id": "SID_0",
+                    "name": "Val1",
+                    "node": null,
+                    "type": {
+                        "type": "number",
+                        "isArray": false
+                    },
+                    "value": 12,
+                    "peer": null
+                },
+                {
+                    "id": "SID_1",
+                    "name": "Val2",
+                    "node": null,
+                    "type": {
+                        "type": "number",
+                        "isArray": false
+                    },
+                    "value": 2,
+                    "peer": null
+                }
+            ],
+            "outputs": [
+                {
+                    "id": "SID_2",
+                    "name": "Val",
+                    "node": null,
+                    "type": {
+                        "type": "number",
+                        "isArray": false
+                    },
+                    "value": 14,
+                    "peers": []
+                }
+            ],
+            "prev": null,
+            "nexts": []
+        },
+        {
+            "id": "NID_1",
+            "name": "FAdd",
+            "functional": true,
+            "inputs": [
+                {
+                    "id": "SID_3",
+                    "name": "Val1",
+                    "node": null,
+                    "type": {
+                        "type": "number",
+                        "isArray": false
+                    },
+                    "value": 10,
+                    "peer": null
+                },
+                {
+                    "id": "SID_4",
+                    "name": "Val2",
+                    "node": null,
+                    "type": {
+                        "type": "number",
+                        "isArray": false
+                    },
+                    "value": 14,
+                    "peer": null
+                }
+            ],
+            "outputs": [
+                {
+                    "id": "SID_5",
+                    "name": "Val",
+                    "node": null,
+                    "type": {
+                        "type": "number",
+                        "isArray": false
+                    },
+                    "value": 24,
+                    "peers": []
+                }
+            ],
+            "prev": null,
+            "nexts": []
+        },
+        {
+            "id": "NID_2",
+            "name": "Console",
+            "functional": false,
+            "inputs": [
+                {
+                    "id": "SID_6",
+                    "name": "Val",
+                    "node": null,
+                    "type": {
+                        "type": "number",
+                        "isArray": false
+                    },
+                    "value": 24,
+                    "peer": null
+                }
+            ],
+            "outputs": [],
+            "prev": {
+                "id": "SID_8",
+                "name": "In",
+                "node": null,
+                "peers": []
+            },
+            "nexts": [
+                {
+                    "id": "SID_7",
+                    "name": "Out",
+                    "node": null,
+                    "peer": null
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "type": "io",
+            "sourceNode": "NID_0",
+            "sourceSocket": "SID_2",
+            "targetNode": "NID_1",
+            "targetSocket": "SID_4"
+        },
+        {
+            "type": "io",
+            "sourceNode": "NID_0",
+            "sourceSocket": "SID_2",
+            "targetNode": "NID_1",
+            "targetSocket": "SID_4"
+        },
+        {
+            "type": "io",
+            "sourceNode": "NID_1",
+            "sourceSocket": "SID_5",
+            "targetNode": "NID_2",
+            "targetSocket": "SID_6"
+        },
+        {
+            "type": "io",
+            "sourceNode": "NID_1",
+            "sourceSocket": "SID_5",
+            "targetNode": "NID_2",
+            "targetSocket": "SID_6"
+        }
+    ]
+}
