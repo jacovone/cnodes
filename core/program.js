@@ -109,8 +109,17 @@ export class Program extends Node {
   }
 
   /**
-   * The process function will start from the Enter node and
+   * The process method will start from the Enter node and
    * cycle over nexts returned by the process functions of nodes.
+   * The Program node couldn't be a top-level program, but a sub-nod
+   * of another program. For that reason, the process() method copy the
+   * value of the only input in the Program node to the only one
+   * input of the "Enter" forst node.
+   * This is a limitation: The Program node can be actually only 1 input
+   * and only 1 output. At the same, Enter and Exit nodes will have only
+   * 1 input and output respectively.
+   * At the end, the process() methos of the Program node, will copy the
+   * value of the Exit's output to the unique output of the Program node
    */
   process() {
     this.evaluateInputs();
