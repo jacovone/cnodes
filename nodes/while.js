@@ -48,10 +48,7 @@ export class While extends Node {
     // Let's cycle while condition is true
     while (this.input("Condition").value) {
       // If there's a node connected to the "Do" next socket...
-      if (
-        this.nexts("Do").peer !== null &&
-        this.nexts("Do").peer.node !== null
-      ) {
+      if (this.next("Do").peer !== null && this.next("Do").peer.node !== null) {
         // Set the "Index" output value to Index
         this.output("Index").value = index;
 

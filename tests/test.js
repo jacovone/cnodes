@@ -1,45 +1,58 @@
 import * as cnodes from "../cnodes.js";
 import { Env } from "../core/env.js";
-import { Program } from "../core/program.js";
+import { program, Program } from "../core/program.js";
+import { fgteNode } from "../nodes/bool/fgte.js";
+import { consoleNode } from "../nodes/console.js";
+import { fgetvarNode } from "../nodes/fgetvar.js";
+import { ifNode } from "../nodes/if.js";
+import { faddNode } from "../nodes/math/fadd.js";
+import { setvarNode } from "../nodes/setvar.js";
 
-let n = cnodes.faddNode();
-n.input("Val1").value = 12;
-n.input("Val2").value = 2;
+let ninit = setvarNode();
+ninit.input("Name").value = "N";
+ninit.input("Val").value = 0;
 
-let n2 = cnodes.faddNode();
-n2.input("Val1").value = 10;
-n2.input("Val2").connect(n.output("Val"));
+let ngetvar = fgetvarNode();
+ngetvar.input("Name").value = "N";
 
-let n3 = cnodes.consoleNode();
-n3.input("Val").connect(n2.output("Val"));
-n3.input("Val").disconnect(n2.output("Val"));
+let nconsole = consoleNode();
+nconsole.prev.connect(ninit.next());
+nconsole.input("Val").connect(ngetvar.output("Val"));
 
-// let n4 = cnodes.consoleNode();
-// n4.input("Val").value = "Ciao";
-// n3.next("Out").connect(n4.prev);
+let nadd = faddNode();
+nadd.input("Val1").connect(ngetvar.output("Val"));
+nadd.input("Val2").value = 1;
 
-// let n6 = cnodes.consoleNode();
-// n6.input("Val").value = "True";
-// let n7 = cnodes.consoleNode();
-// n7.input("Val").value = "False";
+let nSetVar = setvarNode();
+nSetVar.input("Name").value = "N";
+nSetVar.input("Val").connect(nadd.output("Val"));
+nSetVar.prev.connect(nconsole.next());
 
-// let n5 = cnodes.ifNode();
-// n5.input("Condition").connect(n.output("Val"));
-// n5.next("Then").connect(n6.prev);
-// n5.next("Else").connect(n7.prev);
+let ngte = fgteNode();
+ngte.input("Val1").connect(ngetvar.output("Val"));
+ngte.input("Val2").value = 10;
 
-// n4.next("Out").connect(n5.prev);
+let nIf = ifNode();
+nIf.input("Condition").connect(ngte.output("Val"));
+nIf.prev.connect(nSetVar.next());
+nIf.next("Else").connect(nconsole.prev);
 
-let program = cnodes.program("main").addNode(n).addNode(n2).addNode(n3);
+let prg = program()
+  .addNode(ninit)
+  .addNode(ngetvar)
+  .addNode(nconsole)
+  .addNode(nadd)
+  .addNode(nSetVar)
+  .addNode(ngte)
+  .addNode(nIf);
 
-n3.prev.connect(program.enter.next("Begin"));
-n3.next("Out").connect(program.exit.prev);
+ninit.prev.connect(prg.enter.next("Begin"));
 
-program.process();
+prg.process();
 
 Env.init();
-let exp = Env.export(program);
-// console.log(JSON.stringify(exp));
-let ppp = Env.import(exp);
+let exp = Env.export(prg);
+console.log(JSON.stringify(exp));
+// let ppp = Env.import(exp);
 // console.log(JSON.stringify(Env.export(ppp)));
-ppp.process();
+// ppp.process();

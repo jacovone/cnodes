@@ -1,6 +1,6 @@
 /**
  * cnodes
- * 
+ *
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
@@ -15,19 +15,18 @@ import { type, Types } from "../../core/type.js";
  * Supported comparision types
  */
 export const Comparision = {
-  EQUAL: 'equal',
-  GT: 'gt',
-  GTE: 'gte',
-  LT: 'lt',
-  LTE: 'lte',
-  NOT_EQUAL: 'not_equal'
+  EQUAL: "equal",
+  GT: "gt",
+  GTE: "gte",
+  LT: "lt",
+  LTE: "lte",
+  NOT_EQUAL: "not_equal",
 };
 
 /**
  * This class implements a functional node for compairing numeric values.
  */
 export class FCompare extends Node {
-
   /** Configured comparision for this node */
   #comparision = Comparision.EQUAL;
 
@@ -41,7 +40,9 @@ export class FCompare extends Node {
       new InputSocket("Val1", this, type(Types.NUMBER, false), 0),
       new InputSocket("Val2", this, type(Types.NUMBER, false), 0),
     ];
-    this.outputs = [new OutputSocket("Val", this, type(Types.BOOLEAN, false), 0)];
+    this.outputs = [
+      new OutputSocket("Val", this, type(Types.BOOLEAN, false), 0),
+    ];
     this.prev = null;
     this.nexts = [];
   }
@@ -57,16 +58,15 @@ export class FCompare extends Node {
    * The process override
    */
   process() {
-
     this.evaluateInputs();
-    let val1 = this.input('Val1').value;
-    let val2 = this.input('Val2').value;
+    let val1 = this.input("Val1").value;
+    let val2 = this.input("Val2").value;
 
     let ret;
-    switch(this.comparision) {
+    switch (this.comparision) {
       case Comparision.EQUAL: {
         ret = val1 === val2;
-        bresk;
+        break;
       }
       case Comparision.NOT_EQUAL: {
         ret = val1 !== val2;
@@ -89,11 +89,11 @@ export class FCompare extends Node {
         break;
       }
       default: {
-        throw 'Comparision type not valid';
+        throw "Comparision type not valid";
       }
     }
 
-    this.output('Val').value = ret;
+    this.output("Val").value = ret;
   }
 }
 
@@ -101,5 +101,5 @@ export class FCompare extends Node {
  * Helper fuction to create the node
  */
 export function fcompareNode() {
-    return new FCompare();
+  return new FCompare();
 }
