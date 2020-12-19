@@ -44,6 +44,9 @@ export class Node {
   /** Reference to the enclosing program */
   #program = null;
 
+  /** Additional info (UIs can write anything to store graphical behaviors) */
+  #meta = null;
+
   constructor(name) {
     this.#name = name;
     this.#id = "NID_" + Node.lastNodeIdIndex++;
@@ -96,6 +99,12 @@ export class Node {
   }
   set program(val) {
     this.#program = val;
+  }
+  get meta() {
+    return this.#meta;
+  }
+  set meta(val) {
+    this.#meta = val;
   }
 
   /**

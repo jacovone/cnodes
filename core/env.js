@@ -159,6 +159,7 @@ export class Env {
         id: node.id,
         name: node.name,
         functional: node.functional,
+        meta: node.meta,
         inputs: node.inputs.map((inp) => {
           return {
             id: inp.id,
@@ -289,6 +290,9 @@ export class Env {
     }
 
     let p = new Program();
+
+    // Removes enter and exit auto-nodes, these
+    // will be re-created by import procedure
     p.removeNode(p.enter);
     p.removeNode(p.exit);
 
@@ -309,6 +313,7 @@ export class Env {
       }
       node.id = nodeData.id;
       node.functional = nodeData.functional;
+      node.meta = nodeData.meta;
       for (let inpData of nodeData.inputs) {
         let inp = new InputSocket(
           inpData.name,

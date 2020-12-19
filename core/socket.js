@@ -7,7 +7,7 @@
  * Year: 2020
  */
 
-import { Types, Type, type } from "./type.js";
+import { Types, type } from "./type.js";
 
 /**
  * A socket is an object that represent an input,
