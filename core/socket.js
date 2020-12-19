@@ -124,18 +124,18 @@ export class InputSocket extends ValueSocket {
    */
   connect(socket) {
     this.peer = socket;
-    if (socket.peers.find((s) => s.peer === this) === undefined) {
+    if (socket.peers.find((s) => s === this) === undefined) {
       socket.peers.push(this);
     }
   }
 
   /**
-   * Disconnects thi socket from its peer
+   * Disconnects this socket from its peer
    * @param {*} socket Peer socket to disconnect
    */
   disconnect(socket) {
     this.peer = null;
-    let index = socket.peers.findIndex((s) => s.peer === this);
+    let index = socket.peers.findIndex((s) => s === this);
     if (index !== -1) {
       socket.peers.splice(index, 1);
     }
@@ -167,7 +167,7 @@ export class OutputSocket extends ValueSocket {
    * @param {*} socket
    */
   connect(socket) {
-    if (this.peers.find((s) => s.peer === socket) === undefined) {
+    if (this.peers.find((s) => s === socket) === undefined) {
       this.peers.push(socket);
     }
     socket.peer = this;
@@ -175,7 +175,7 @@ export class OutputSocket extends ValueSocket {
 
   /** Disconnect this socket from a specific input peer */
   disconnect(socket) {
-    let index = this.peers.find((s) => s.peer === socket);
+    let index = this.peers.find((s) => s === socket);
     if (index !== undefined) {
       this.peers.splice(index, 1);
       socket.peer = null;
@@ -218,7 +218,7 @@ export class PrevSocket extends FlowSocket {
    * @param {*} socket The next socket to connect
    */
   connect(socket) {
-    if (this.peers.find((s) => s.peer === socket) === undefined) {
+    if (this.peers.find((s) => s === socket) === undefined) {
       this.peers.push(socket);
     }
     socket.peer = this;
@@ -229,7 +229,7 @@ export class PrevSocket extends FlowSocket {
    * @param {*} socket The next socket to disconnect
    */
   disconnect(socket) {
-    let index = this.peers.find((s) => s.peer === socket);
+    let index = this.peers.find((s) => s === socket);
     if (index !== undefined) {
       this.peers.splice(index, 1);
       socket.peer = null;
@@ -263,7 +263,7 @@ export class NextSocket extends FlowSocket {
    */
   connect(socket) {
     this.peer = socket;
-    if (socket.peers.find((s) => s.peer === this) === undefined) {
+    if (socket.peers.find((s) => s === this) === undefined) {
       socket.peers.push(this);
     }
   }
@@ -274,7 +274,7 @@ export class NextSocket extends FlowSocket {
    */
   disconnect(socket) {
     this.peer = null;
-    let index = socket.peers.findIndex((s) => s.peer === this);
+    let index = socket.peers.findIndex((s) => s === this);
     if (index !== -1) {
       socket.peers.splice(index, 1);
     }

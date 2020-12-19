@@ -12,6 +12,7 @@ n2.input("Val2").connect(n.output("Val"));
 
 let n3 = cnodes.consoleNode();
 n3.input("Val").connect(n2.output("Val"));
+n3.input("Val").disconnect(n2.output("Val"));
 
 // let n4 = cnodes.consoleNode();
 // n4.input("Val").value = "Ciao";
