@@ -14,6 +14,7 @@ import {
   PrevSocket,
   OutputSocket,
 } from "../core/socket.js";
+import { Type, Types } from "../core/type.js";
 
 /**
  * This class implements a node to get a variable's value
@@ -23,8 +24,12 @@ import {
 export class Getvar extends Node {
   constructor() {
     super("Getvar");
-    this.inputs = [new InputSocket("Name", this, typeof "", "")];
-    this.outputs = [new OutputSocket("Val", this, typeof "", "")];
+    this.inputs = [
+      new InputSocket("Name", this, new Type(Types.STRING, false), ""),
+    ];
+    this.outputs = [
+      new OutputSocket("Val", this, new Type(Types.ANY, false), ""),
+    ];
     this.nexts = [new NextSocket("Out", this)];
     this.prev = new PrevSocket("In", this);
   }

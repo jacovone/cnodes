@@ -40,7 +40,8 @@ export class FDiv extends Node {
   process() {
     this.evaluateInputs();
     this.output("Val").value =
-      this.input("Val1").value / this.input("Val2").value;
+      parseFloat(this.input("Val1").value) /
+      parseFloat(this.input("Val2").value);
   }
 }
 

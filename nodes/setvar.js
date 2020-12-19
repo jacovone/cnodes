@@ -14,6 +14,7 @@ import {
   PrevSocket,
   OutputSocket,
 } from "../core/socket.js";
+import { Type, Types } from "../core/type.js";
 
 /**
  * This class implements a node to set a variable
@@ -24,8 +25,8 @@ export class Setvar extends Node {
   constructor() {
     super("Setvar");
     this.inputs = [
-      new InputSocket("Name", this, typeof "", ""),
-      new InputSocket("Val", this, typeof "", ""),
+      new InputSocket("Name", this, new Type(Types.NUMBER, false), 0),
+      new InputSocket("Val", this, new Type(Types.NUMBER, false), 0),
     ];
     this.outputs = [new OutputSocket("Val", this, typeof "", "")];
     this.nexts = [new NextSocket("Out", this)];

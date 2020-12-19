@@ -1,6 +1,6 @@
 /**
  * cnodes
- * 
+ *
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
@@ -25,7 +25,9 @@ export class FAdd extends Node {
       new InputSocket("Val1", this, type(Types.NUMBER, false), 0),
       new InputSocket("Val2", this, type(Types.NUMBER, false), 0),
     ];
-    this.outputs = [new OutputSocket("Val", this, type(Types.NUMBER, false), 0)];
+    this.outputs = [
+      new OutputSocket("Val", this, type(Types.NUMBER, false), 0),
+    ];
     this.prev = null;
     this.nexts = [];
   }
@@ -37,9 +39,9 @@ export class FAdd extends Node {
     let sum = 0;
     this.evaluateInputs();
     for (let inp of this.inputs) {
-      sum += inp.value;
+      sum += parseFloat(inp.value);
     }
-    this.output('Val').value = sum;
+    this.output("Val").value = sum;
   }
 }
 
@@ -47,5 +49,5 @@ export class FAdd extends Node {
  * Helper fuction to create the node
  */
 export function faddNode() {
-    return new FAdd();
+  return new FAdd();
 }

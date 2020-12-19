@@ -25,8 +25,8 @@ export class For extends Node {
   constructor() {
     super("For");
     this.inputs = [
-      new InputSocket("From", this, new Type(Types.NUMBER, false), false),
-      new InputSocket("To", this, new Type(Types.NUMBER, false), false),
+      new InputSocket("From", this, new Type(Types.NUMBER, 0), false),
+      new InputSocket("To", this, new Type(Types.NUMBER, 0), false),
     ];
     this.outputs = [
       new OutputSocket("Index", this, new Type(Types.NUMBER, false), false),
@@ -60,7 +60,7 @@ export class For extends Node {
       }
     }
 
-    // Restore the currentprogram's node
+    // Restore the current program's node
     this.program.currentNode = prevCurrentNode;
 
     return this.getFlowResult(this.next("Out"));

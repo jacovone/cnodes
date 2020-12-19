@@ -8,13 +8,7 @@
  */
 
 import { Node } from "../core/node.js";
-import {
-  InputSocket,
-  NextSocket,
-  OutputSocket,
-  PrevSocket,
-} from "../core/socket.js";
-import { Type, Types } from "../core/type.js";
+import { NextSocket, PrevSocket } from "../core/socket.js";
 
 /**
  * This class implements a subroutine/function call

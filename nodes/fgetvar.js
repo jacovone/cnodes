@@ -9,6 +9,7 @@
 
 import { Node } from "../core/node.js";
 import { InputSocket, OutputSocket } from "../core/socket.js";
+import { Type, Types } from "../core/type.js";
 
 /**
  * This class implements a functional GetVar node,
@@ -19,8 +20,12 @@ export class FGetvar extends Node {
   constructor() {
     super("FGetvar");
     this.functional = true;
-    this.inputs = [new InputSocket("Name", this, typeof "", "")];
-    this.outputs = [new OutputSocket("Val", this, typeof "", "")];
+    this.inputs = [
+      new InputSocket("Name", this, new Type(Types.STRING, false), ""),
+    ];
+    this.outputs = [
+      new OutputSocket("Val", this, new Type(Types.ANY, false), ""),
+    ];
     this.nexts = [];
     this.prev = null;
   }

@@ -36,10 +36,10 @@ export class FMul extends Node {
    * The process override
    */
   process() {
-    let mul = 0;
+    let mul = 1;
     this.evaluateInputs();
     for (let inp of this.inputs) {
-      mul *= inp.value;
+      mul *= parseFloat(inp.value);
     }
     this.output("Val").value = mul;
   }
