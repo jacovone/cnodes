@@ -15,7 +15,7 @@ import { Comparision } from "./fcompare.js";
  */
 export class FGT extends FCompare {
   constructor() {
-    super(Comparision.FGT);
+    super(Comparision.GT);
     this.name = "FGT";
   }
 }

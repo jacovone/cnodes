@@ -32,7 +32,8 @@ export class FCompare extends Node {
 
   constructor(comparision = Comparision.EQUAL) {
     super("FCompare");
-    this.comparision = comparision;
+    this.#comparision = comparision;
+
     // The node is pure functional
     this.functional = true;
     // Default to two numeric inputs
@@ -94,6 +95,13 @@ export class FCompare extends Node {
     }
 
     this.output("Val").value = ret;
+  }
+
+  get comparision() {
+    return this.#comparision;
+  }
+  set comparision(val) {
+    this.#comparision = val;
   }
 }
 
