@@ -15,7 +15,7 @@ import { Comparision } from "./fcompare.js";
  */
 export class FNotEqual extends FCompare {
   constructor() {
-    super(Comparision.FNotEqual);
+    super(Comparision.NOT_EQUAL);
     this.name = "FNotEqual";
   }
 }
