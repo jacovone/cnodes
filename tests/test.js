@@ -1,58 +1,28 @@
-import * as cnodes from "../cnodes.js";
-import { Env } from "../core/env.js";
-import { program, Program } from "../core/program.js";
-import { fgteNode } from "../nodes/bool/fgte.js";
+import { program } from "../core/program.js";
 import { consoleNode } from "../nodes/console.js";
-import { fgetvarNode } from "../nodes/fgetvar.js";
-import { ifNode } from "../nodes/if.js";
-import { faddNode } from "../nodes/math/fadd.js";
-import { setvarNode } from "../nodes/setvar.js";
+import { forNode } from "../nodes/for.js";
+import { Env } from "../core/env.js";
 
-let ninit = setvarNode();
-ninit.input("Name").value = "N";
-ninit.input("Val").value = 0;
+// Create a new program
+let prg = program();
 
-let ngetvar = fgetvarNode();
-ngetvar.input("Name").value = "N";
+// create the "For" node
+let fn = forNode();
+// Define console node
+let cn = consoleNode();
 
-let nconsole = consoleNode();
-nconsole.prev.connect(ninit.next());
-nconsole.input("Val").connect(ngetvar.output("Val"));
+// Create flow connections and inputs/outputs
+fn.prev.connect(prg.enter.next("Begin"));
+fn.input("From").connect(prg.enter.output("Val"));
+fn.input("To").value = 10;
 
-let nadd = faddNode();
-nadd.input("Val1").connect(ngetvar.output("Val"));
-nadd.input("Val2").value = 1;
+prg.exit.prev.connect(fn.next("Out"));
+cn.prev.connect(fn.next("Do"));
+cn.input("Val").connect(fn.output("Index"));
 
-let nSetVar = setvarNode();
-nSetVar.input("Name").value = "N";
-nSetVar.input("Val").connect(nadd.output("Val"));
-nSetVar.prev.connect(nconsole.next());
+// Execute
+prg.addNode(fn).addNode(cn).process();
 
-let ngte = fgteNode();
-ngte.input("Val1").connect(ngetvar.output("Val"));
-ngte.input("Val2").value = 10;
-
-let nIf = ifNode();
-nIf.input("Condition").connect(ngte.output("Val"));
-nIf.prev.connect(nSetVar.next());
-nIf.next("Else").connect(nconsole.prev);
-
-let prg = program()
-  .addNode(ninit)
-  .addNode(ngetvar)
-  .addNode(nconsole)
-  .addNode(nadd)
-  .addNode(nSetVar)
-  .addNode(ngte)
-  .addNode(nIf);
-
-ninit.prev.connect(prg.enter.next("Begin"));
-
-prg.process();
-
-Env.init();
-let exp = Env.export(prg);
-console.log(JSON.stringify(exp));
-// let ppp = Env.import(exp);
-// console.log(JSON.stringify(Env.export(ppp)));
-// ppp.process();
+// Export
+let dmp = Env.export(prg);
+console.log(JSON.stringify(dmp));
