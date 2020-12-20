@@ -46,6 +46,12 @@ The resulting graph with cnodes-ui looks like this:
 
 ![Screenshot2](https://github.com/marco-jacovone/cnodes-ui/blob/main/doc/images/screenshot2.png?raw=true)
 
+## Demo
+
+Try a demo test board at:
+
+[DEMO Test board](https://unpkg.com/@marco.jacovone/cnodes-ui/dist/index.html)
+
 ## State of the art
 
 The project is actually in a early alpha stage, but is growing rapidly ;-)
