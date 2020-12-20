@@ -25,6 +25,7 @@ export class While extends Node {
   constructor() {
     super("While");
     this.inputs = [
+      new InputSocket("Index", this, new Type(Types.NUMBER, 0), false),
       new InputSocket("Condition", this, new Type(Types.BOOLEAN, false), false),
     ];
     this.outputs = [
@@ -43,14 +44,20 @@ export class While extends Node {
     // Save the current program's node
     let prevCurrentNode = this.program.currentNode;
     // A bouns index variable ;-)
-    let index = 0;
+    let index = parseFloat(this.input("Index").value);
+
+    // Set the "Index" output value to Index
+    this.output("Index").value = index;
+
+    // Re evaluate inputs in case of Condition depends on Index output
+    this.evaluateInputs();
 
     // Let's cycle while condition is true
     while (this.input("Condition").value) {
       // If there's a node connected to the "Do" next socket...
       if (this.next("Do").peer !== null && this.next("Do").peer.node !== null) {
         // Set the "Index" output value to Index
-        this.output("Index").value = index;
+        this.output("Index").value = index++;
 
         // Execute a sub program beginning on that node
         this.program.processFrom(this.next("Do").peer.node);

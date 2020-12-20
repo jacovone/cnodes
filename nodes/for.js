@@ -44,6 +44,12 @@ export class For extends Node {
     // Save the current program's node
     let prevCurrentNode = this.program.currentNode;
 
+    // Set the "Index" output value to Index
+    this.output("Index").value = this.input("From").value;
+
+    // Re evaluate inputs in case of Condition depends on Index output
+    this.evaluateInputs();
+
     // Let's cycle from "From" to "To" values
     for (
       let index = this.input("From").value;
