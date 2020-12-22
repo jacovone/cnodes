@@ -49,6 +49,9 @@ export class Node {
   /** Additional info (UIs can write anything to store graphical behaviors) */
   #meta = null;
 
+  /** Can the node be removed by the user? */
+  #removable = true;
+
   constructor(name) {
     this.#name = name;
     this.#id = "NID_" + Node.lastNodeIdIndex++;
@@ -101,6 +104,12 @@ export class Node {
   }
   set program(val) {
     this.#program = val;
+  }
+  get removable() {
+    return this.#removable;
+  }
+  set removable(val) {
+    this.#removable = val;
   }
   get meta() {
     return this.#meta;
