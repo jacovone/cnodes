@@ -7,6 +7,8 @@
  * Year: 2020
  */
 
+import { Socket } from "./socket.js";
+
 /**
  * This is the base node class. A node have some input and output
  * to exchange data with other nodes, some nexts to determine next
@@ -109,7 +111,7 @@ export class Node {
 
   /**
    * Returns the input by name
-   * @param {*} name Name of the input
+   * @param {string} name Name of the input
    */
   input(name) {
     return this.inputs.find((i) => i.name === name);
@@ -117,7 +119,7 @@ export class Node {
 
   /**
    * Returns the output by name
-   * @param {*} name The name of the output
+   * @param {string} name The name of the output
    */
   output(name) {
     return this.outputs.find((o) => o.name === name);
@@ -125,7 +127,7 @@ export class Node {
 
   /**
    * Returns the next by name
-   * @param {*} name The name of the next
+   * @param {string} name The name of the next
    */
   next(name) {
     if (!name) {
@@ -150,7 +152,7 @@ export class Node {
   /**
    * This is an helper method to construct a Result instance
    * by name
-   * @param {*} socket
+   * @param {Socket} socket The Socket on which construct the Result instance
    */
   getFlowResult(socket) {
     if (socket.peer) {

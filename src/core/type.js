@@ -29,6 +29,11 @@ export class Type {
   /** Is this type an array of base type? */
   #isArray = false;
 
+  /**
+   * Construct a new Type
+   * @param {string} type The type
+   * @param {boolean} isArray Is array of this type?
+   */
   constructor(type, isArray) {
     this.#type = type;
     this.#isArray = isArray;
@@ -49,8 +54,8 @@ export class Type {
 
 /**
  * A helper function to create the type
- * @param {*} type The base type
- * @param {*} isArray The array flag
+ * @param {Type} type The base type
+ * @param {boolean} isArray The array flag
  */
 export function type(type, isArray) {
   return new Type(type, isArray);

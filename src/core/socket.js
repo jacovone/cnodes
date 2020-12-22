@@ -7,7 +7,7 @@
  * Year: 2020
  */
 
-import { Types, type } from "./type.js";
+import { Types, type, Type } from "./type.js";
 
 /**
  * A socket is an object that represent an input,
@@ -26,6 +26,11 @@ export class Socket {
   /** The parent node */
   #node = null;
 
+  /**
+   * Construct a new socket on a node with a given name
+   * @param {string} name The name of the socket
+   * @param {Node} node The parent node of the socket
+   */
   constructor(name, node) {
     this.#id = "SID_" + Socket.lastSocketIdIndex++;
 
@@ -63,6 +68,13 @@ export class ValueSocket extends Socket {
   /** The stored value */
   #value = 0;
 
+  /**
+   * Construct a new ValueSocket
+   * @param {string} name Name of the socket
+   * @param {Node} node The parent node
+   * @param {Type} type The type of this socket
+   * @param {any} value The default value of the socket
+   */
   constructor(name, node, type = type(Types.NUMBER, false), value = 0) {
     super(name, node);
     this.type = type;
@@ -92,6 +104,13 @@ export class InputSocket extends ValueSocket {
   /** The only peer socket */
   #peer = null;
 
+  /**
+   * Construct a new InputSocket
+   * @param {string} name The name of the socket
+   * @param {Node} node The parent node
+   * @param {Type} type The type of the socket
+   * @param {any} value The default value of the socket
+   */
   constructor(name, node, type = type(Types.NUMBER, false), value = 0) {
     super(name, node, type, value);
   }
@@ -120,7 +139,7 @@ export class InputSocket extends ValueSocket {
 
   /**
    * Connect this socket to another (output) socket
-   * @param {*} socket The output socket to connect
+   * @param {Socket} socket The output socket to connect
    */
   connect(socket) {
     this.peer = socket;
@@ -131,7 +150,7 @@ export class InputSocket extends ValueSocket {
 
   /**
    * Disconnects this socket from its peer
-   * @param {*} socket Peer socket to disconnect
+   * @param {Socket} socket Peer socket to disconnect
    */
   disconnect(socket) {
     this.peer = null;
@@ -152,6 +171,13 @@ export class OutputSocket extends ValueSocket {
   /** A list of input value connected sockets */
   #peers = [];
 
+  /**
+   * Construct a new OutputSocket
+   * @param {string} name The name of the socket
+   * @param {Node} node The parent node
+   * @param {Type} type The type of the socket
+   * @param {any} value The default value of the socket
+   */
   constructor(name, node, type = type(Types.NUMBER, false), value = 0) {
     super(name, node, type, value);
   }
@@ -164,7 +190,7 @@ export class OutputSocket extends ValueSocket {
 
   /**
    * Connects this socket to a input socket
-   * @param {*} socket
+   * @param {Socket} socket Socket to connect to
    */
   connect(socket) {
     if (this.peers.find((s) => s === socket) === undefined) {
@@ -173,7 +199,10 @@ export class OutputSocket extends ValueSocket {
     socket.peer = this;
   }
 
-  /** Disconnect this socket from a specific input peer */
+  /**
+   * Disconnect this socket from a specific input peer
+   * @param {Socket} socket The socket to disconnect
+   */
   disconnect(socket) {
     let index = this.peers.find((s) => s === socket);
     if (index !== undefined) {
@@ -188,6 +217,11 @@ export class OutputSocket extends ValueSocket {
  * terms of execution flow
  */
 export class FlowSocket extends Socket {
+  /**
+   * Construct a new FlowSocket
+   * @param {sring} name Name of the socket
+   * @param {Node} node The parent node
+   */
   constructor(name, node) {
     super(name, node);
   }
@@ -203,6 +237,11 @@ export class PrevSocket extends FlowSocket {
   /** List of (next) peer sockets */
   #peers = [];
 
+  /**
+   * Construct a new PrevSocket
+   * @param {string} name Name of the socket
+   * @param {Node} node Parent node
+   */
   constructor(name, node) {
     super(name, node);
   }
@@ -215,7 +254,7 @@ export class PrevSocket extends FlowSocket {
 
   /**
    * Connect this socket to a next socket
-   * @param {*} socket The next socket to connect
+   * @param {Socket} socket The next socket to connect
    */
   connect(socket) {
     if (this.peers.find((s) => s === socket) === undefined) {
@@ -226,7 +265,7 @@ export class PrevSocket extends FlowSocket {
 
   /**
    * Disconnect this socket from a next socket
-   * @param {*} socket The next socket to disconnect
+   * @param {Socket} socket The next socket to disconnect
    */
   disconnect(socket) {
     let index = this.peers.find((s) => s === socket);
@@ -247,6 +286,11 @@ export class NextSocket extends FlowSocket {
   /** The peer (prev) socket */
   #peer = null;
 
+  /**
+   * Construct a new NextSocket
+   * @param {string} name Name of the socket
+   * @param {Node} node The parent node of the socket
+   */
   constructor(name, node) {
     super(name, node);
   }
@@ -259,7 +303,7 @@ export class NextSocket extends FlowSocket {
 
   /**
    * Connect this socket to another (prev) socket
-   * @param {*} socket The prev socket to connect to
+   * @param {Socket} socket The prev socket to connect to
    */
   connect(socket) {
     this.peer = socket;
@@ -270,7 +314,7 @@ export class NextSocket extends FlowSocket {
 
   /**
    * Thisconnect this socket from the peer
-   * @param {*} socket The peer to disconnect
+   * @param {Socket} socket The peer to disconnect
    */
   disconnect(socket) {
     this.peer = null;

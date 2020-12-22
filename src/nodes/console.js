@@ -7,7 +7,7 @@
  * Year: 2020
  */
 
-import { Node, Result } from "../core/node.js";
+import { Node } from "../core/node.js";
 import { InputSocket, NextSocket, PrevSocket } from "../core/socket.js";
 import { type, Types } from "../core/type.js";
 

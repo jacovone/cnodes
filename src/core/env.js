@@ -7,8 +7,8 @@
  * Year: 2020
  */
 
-import { enterNode } from "../core/enter.js";
-import { exitNode } from "../core/exit.js";
+import { enterNode } from "./enter.js";
+import { exitNode } from "./exit.js";
 
 import { callNode } from "../nodes/call.js";
 import { consoleNode } from "../nodes/console.js";
@@ -87,9 +87,9 @@ export class Env {
 
   /**
    * Register a node type
-   * @param {*} name The name of the node
-   * @param {*} category The category of the node
-   * @param {*} factory A class that instantiate the node
+   * @param {string} name The name of the node
+   * @param {string} category The category of the node
+   * @param {any} factory A class that instantiate the node
    */
   static registerNode(name, category, factory) {
     Env.#nodeRegistry.set(name, { category: category, factory: factory });
@@ -109,7 +109,7 @@ export class Env {
   /**
    * Return an array of registrations for nodes.
    * Registrations have the sign: {name, category, factory}
-   * @param {*} category The category for which seacrh registrations
+   * @param {string} category The category for which seacrh registrations
    */
   static getCategoryNodes(category) {
     let registrations = [];
@@ -127,7 +127,7 @@ export class Env {
 
   /**
    * Instantiate a node by name
-   * @param {*} name The name of the node
+   * @param {string} name The name of the node
    */
   static getInstance(name) {
     let reg = this.#nodeRegistry.get(name);
@@ -140,7 +140,7 @@ export class Env {
 
   /**
    * Creates and returns a JSON representation of the entire program
-   * @param {*} program The program to export
+   * @param {Program} program The program to export
    */
   static export(program) {
     let exp = {
@@ -203,11 +203,7 @@ export class Env {
 
     /**
      * Define a inner-function that prevent duplicates connections
-     * @param {*} type The type of connection: "io" (from output to input) or "pn" (from next to prev)
-     * @param {*} sourceNode Source node
-     * @param {*} sourceSocket Source socket
-     * @param {*} targetNode Target node
-     * @param {*} targetSocket Target socket
+     * @param {any} connection The connection to push
      */
     function pushConnection(connection) {
       if (
@@ -282,7 +278,7 @@ export class Env {
 
   /**
    * Create a program instance based on export data created with export() method
-   * @param {*} program
+   * @param {any} data A object with the export data format
    */
   static import(data) {
     if (data.version !== 1) {

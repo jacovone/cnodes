@@ -1,7 +1,7 @@
-import { program } from "../core/program.js";
-import { consoleNode } from "../nodes/console.js";
-import { forNode } from "../nodes/for.js";
-import { Env } from "../core/env.js";
+import { program } from "../src/core/program.js";
+import { consoleNode } from "../src/nodes/console.js";
+import { forNode } from "../src/nodes/for.js";
+import { Env } from "../src/core/env.js";
 
 // Create a new program
 let prg = program();

@@ -9,9 +9,9 @@
 
 import { Enter } from "./enter.js";
 import { Exit } from "./exit.js";
-import { Node, Result } from "./node.js";
+import { Node } from "./node.js";
 import { InputSocket, NextSocket, OutputSocket, PrevSocket } from "./socket.js";
-import { type, Type, Types } from "./type.js";
+import { type, Types } from "./type.js";
 
 /**
  * A program is a special node that contains nodes. The program
@@ -84,8 +84,7 @@ export class Program extends Node {
 
   /**
    * Add a new node to this program
-   * @param {*} node The node to add
-   * @param {*} isStart Is that node the start node?
+   * @param {Node} node The node to add
    */
   addNode(node) {
     this.#nodes.push(node);
@@ -97,7 +96,7 @@ export class Program extends Node {
 
   /**
    * Removes a node from this program, disconnect all sockets
-   * @param {*} node The node to remove
+   * @param {Node} node The node to remove
    */
   removeNode(node) {
     // Disconnect its sockets
@@ -139,7 +138,7 @@ export class Program extends Node {
 
   /**
    * Execute a program useng node as starting point
-   * @param {*} node Starting point node
+   * @param {Node} node Starting point node
    */
   processFrom(node) {
     this.currentNode = node;
@@ -152,7 +151,7 @@ export class Program extends Node {
 
 /**
  * A helper function to create the program
- * @param {*} name The name of the program
+ * @param {string} name The name of the program
  */
 export function program() {
   return new Program();
