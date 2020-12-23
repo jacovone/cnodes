@@ -19,6 +19,7 @@ export class Enter extends Node {
   constructor() {
     super("Enter");
     this.removable = false;
+    this.creatable = false;
     this.inputs = [new InputSocket("Val", this, type(Types.ANY, false), 0)];
     this.outputs = [new OutputSocket("Val", this, type(Types.ANY, false), 0)];
     this.nexts = [new NextSocket("Begin", this)];

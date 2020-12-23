@@ -52,6 +52,18 @@ export class Node {
   /** Can the node be removed by the user? */
   #removable = true;
 
+  /** Can the node be created by the user? */
+  #creatable = true;
+
+  /** Can the user add an input? */
+  #canAddInput = false;
+
+  /** Can the user add an output? */
+  #canAddOutput = false;
+
+  /** Can the user add a next? */
+  #canAddNext = false;
+
   constructor(name) {
     this.#name = name;
     this.#id = "NID_" + Node.lastNodeIdIndex++;
@@ -110,6 +122,30 @@ export class Node {
   }
   set removable(val) {
     this.#removable = val;
+  }
+  get creatable() {
+    return this.#creatable;
+  }
+  set creatable(val) {
+    this.#creatable = val;
+  }
+  get canAddInput() {
+    return this.#canAddInput;
+  }
+  set canAddInput(val) {
+    this.#canAddInput = val;
+  }
+  get canAddOutput() {
+    return this.#canAddOutput;
+  }
+  set canAddOutput(val) {
+    this.#canAddOutput = val;
+  }
+  get canAddNext() {
+    return this.#canAddNext;
+  }
+  set canAddNext(val) {
+    this.#canAddNext = val;
   }
   get meta() {
     return this.#meta;
