@@ -175,8 +175,10 @@ export class Node {
    * This method disconnect all sockets from the node
    */
   disconnectAllSockets() {
-    if (this.#prev && this.#prev.peer) {
-      this.#prev.disconnect();
+    if (this.#prev) {
+      while (this.#prev.peers.length > 0) {
+        this.#prev.disconnect(this.#prev.peers[0]);
+      }
     }
     for (let i of this.#inputs) {
       if (i.peer) {

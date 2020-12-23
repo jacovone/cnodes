@@ -150,14 +150,15 @@ export class InputSocket extends ValueSocket {
 
   /**
    * Disconnects this socket from its peer
-   * @param {Socket} socket Peer socket to disconnect
    */
-  disconnect(socket) {
-    this.peer = null;
-    let index = socket.peers.findIndex((s) => s === this);
-    if (index !== -1) {
-      socket.peers.splice(index, 1);
+  disconnect() {
+    if (this.peer) {
+      let index = this.peer.peers.findIndex((s) => s === this);
+      if (index !== -1) {
+        this.peer.peers.splice(index, 1);
+      }
     }
+    this.peer = null;
   }
 }
 
@@ -313,14 +314,15 @@ export class NextSocket extends FlowSocket {
   }
 
   /**
-   * Thisconnect this socket from the peer
-   * @param {Socket} socket The peer to disconnect
+   * Disconnect this socket from the peer
    */
-  disconnect(socket) {
-    this.peer = null;
-    let index = socket.peers.findIndex((s) => s === this);
-    if (index !== -1) {
-      socket.peers.splice(index, 1);
+  disconnect() {
+    if (this.peer) {
+      let index = this.peer.peers.findIndex((s) => s === this);
+      if (index !== -1) {
+        this.peer.peers.splice(index, 1);
+      }
+      this.peer = null;
     }
   }
 }
