@@ -25,11 +25,11 @@ export class For extends Node {
   constructor() {
     super("For");
     this.inputs = [
-      new InputSocket("From", this, new Type(Types.NUMBER, 0), false),
-      new InputSocket("To", this, new Type(Types.NUMBER, 0), false),
+      new InputSocket("From", this, new Type(Types.NUMBER, 0), 0),
+      new InputSocket("To", this, new Type(Types.NUMBER, 0), 0),
     ];
     this.outputs = [
-      new OutputSocket("Index", this, new Type(Types.NUMBER, false), false),
+      new OutputSocket("Index", this, new Type(Types.NUMBER, false), 0),
     ];
     this.nexts = [new NextSocket("Out", this), new NextSocket("Do", this)];
     this.prev = new PrevSocket("In", this);

@@ -25,11 +25,11 @@ export class While extends Node {
   constructor() {
     super("While");
     this.inputs = [
-      new InputSocket("Index", this, new Type(Types.NUMBER, 0), false),
+      new InputSocket("Index", this, new Type(Types.NUMBER, 0), 0),
       new InputSocket("Condition", this, new Type(Types.BOOLEAN, false), false),
     ];
     this.outputs = [
-      new OutputSocket("Index", this, new Type(Types.NUMBER, false), false),
+      new OutputSocket("Index", this, new Type(Types.NUMBER, false), 0),
     ];
     this.nexts = [new NextSocket("Out", this), new NextSocket("Do", this)];
     this.prev = new PrevSocket("In", this);
