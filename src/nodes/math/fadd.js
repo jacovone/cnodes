@@ -20,10 +20,14 @@ export class FAdd extends Node {
     super("FAdd");
     // The node is pure functional
     this.functional = true;
+
+    // This node has a variable number of inputs
+    this.canAddInput = true;
+
     // Default to two numeric inputs
     this.inputs = [
-      new InputSocket("Val1", this, type(Types.NUMBER, false), 0),
-      new InputSocket("Val2", this, type(Types.NUMBER, false), 0),
+      new InputSocket("0", this, type(Types.NUMBER, false), 0),
+      new InputSocket("1", this, type(Types.NUMBER, false), 0),
     ];
     this.outputs = [
       new OutputSocket("Val", this, type(Types.NUMBER, false), 0),
@@ -42,6 +46,15 @@ export class FAdd extends Node {
       sum += parseFloat(inp.value);
     }
     this.output("Val").value = sum;
+  }
+
+  /**
+   * Can this node remove a specific input?
+   * In this case, there must be at least 2 inputs
+   * @param {InputsSocket} input The input to remove
+   */
+  canRemoveInput(input) {
+    return this.inputs.length > 2;
   }
 }
 

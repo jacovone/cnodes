@@ -22,6 +22,7 @@ import { ifNode } from "../nodes/if.js";
 import { faddNode } from "../nodes/math/fadd.js";
 import { fdivNode } from "../nodes/math/fdiv.js";
 import { fmulNode } from "../nodes/math/fmul.js";
+import { fsqrtNode } from "../nodes/math/fsqrt.js";
 
 import { fequalNode } from "../nodes/bool/fequal.js";
 import { fgtNode } from "../nodes/bool/fgt.js";
@@ -75,6 +76,7 @@ export class Env {
     Env.registerNode("FAdd", "Math", faddNode);
     Env.registerNode("FDiv", "Math", fdivNode);
     Env.registerNode("FMul", "Math", fmulNode);
+    Env.registerNode("FSqrt", "Math", fsqrtNode);
 
     // Boolean Nodes
     Env.registerNode("FEqual", "Boolean", fequalNode);

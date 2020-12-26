@@ -29,3 +29,4 @@ export * from "./src/nodes/bool/fcompare.js";
 export * from "./src/nodes/math/fadd.js";
 export * from "./src/nodes/math/fdiv.js";
 export * from "./src/nodes/math/fmul.js";
+export * from "./src/nodes/math/fsqrt.js";

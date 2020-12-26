@@ -7,7 +7,7 @@
  * Year: 2020
  */
 
-import { Socket } from "./socket.js";
+import { InputSocket, Socket } from "./socket.js";
 
 /**
  * This is the base node class. A node have some input and output
@@ -231,6 +231,52 @@ export class Node {
         n.disconnect();
       }
     }
+  }
+
+  /**
+   * If this.#canAddInput is true, the user can add an input
+   * equal to the (at least one) input that already exists
+   */
+  addInput() {
+    if (this.canAddInput && this.#inputs.length > 0) {
+      this.#inputs.push(
+        new InputSocket("", this, this.#inputs[0].type, this.#inputs[0].value)
+      );
+
+      // Rename all inputs to its ordinal number in the inputs array
+      for (let [idx, i] of this.#inputs.entries()) {
+        i.name = "" + idx;
+      }
+    } else {
+      throw new Error("Can't add input!");
+    }
+  }
+
+  /**
+   * This method removes a specific input from the node, if
+   * this is possible whit this instance
+   * @param {*} input The input to remove
+   */
+  removeInput(input) {
+    if (this.canRemoveInput(input)) {
+      this.#inputs = this.#inputs.filter((i) => i !== input);
+
+      // Rename all inputs to its ordinal number in the inputs array
+      for (let [idx, i] of this.#inputs.entries()) {
+        i.name = "" + idx;
+      }
+    } else {
+      throw new Error("Can't remove input");
+    }
+  }
+
+  /**
+   * Can this node remove a specific input?
+   * Subclass with variable number of input should override this method
+   * @param {InputsSocket} input The input to remove
+   */
+  canRemoveInput(input) {
+    return false;
   }
 
   /** The base version of the node does nothing */
