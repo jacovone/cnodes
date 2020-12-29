@@ -1,5 +1,5 @@
 import tap from "tap";
-import { FDiv } from "../src/nodes/math/fdiv.js";
+import { FDiv } from "../lib/nodes/math/fdiv.js";
 
 tap.test("Divide 1 by 2 equals to 0.5", (test) => {
   let n = new FDiv();

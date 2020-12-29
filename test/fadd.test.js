@@ -1,5 +1,5 @@
 import tap from "tap";
-import { FAdd } from "../src/nodes/math/fadd.js";
+import { FAdd } from "../lib/nodes/math/fadd.js";
 
 tap.test("Add 1 + 2 equals to 3", (test) => {
   let n = new FAdd();
