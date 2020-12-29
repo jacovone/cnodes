@@ -8,25 +8,25 @@
  */
 
 // Export core nodes
-export * from "./src/core/env.js";
-export * from "./src/core/node.js";
-export * from "./src/core/program.js";
-export * from "./src/core/socket.js";
-export * from "./src/core/type.js";
-export * from "./src/nodes/call.js";
-export * from "./src/nodes/console.js";
-export * from "./src/nodes/fgetvar.js";
-export * from "./src/nodes/for.js";
-export * from "./src/nodes/getvar.js";
-export * from "./src/nodes/if.js";
-export * from "./src/nodes/setvar.js";
-export * from "./src/nodes/while.js";
+export * from "./lib/core/env.js";
+export * from "./lib/core/node.js";
+export * from "./lib/core/program.js";
+export * from "./lib/core/socket.js";
+export * from "./lib/core/type.js";
+export * from "./lib/nodes/call.js";
+export * from "./lib/nodes/console.js";
+export * from "./lib/nodes/fgetvar.js";
+export * from "./lib/nodes/for.js";
+export * from "./lib/nodes/getvar.js";
+export * from "./lib/nodes/if.js";
+export * from "./lib/nodes/setvar.js";
+export * from "./lib/nodes/while.js";
 
 // Export boolean nodes
-export * from "./src/nodes/bool/fcompare.js";
+export * from "./lib/nodes/bool/fcompare.js";
 
 // Export math nodes
-export * from "./src/nodes/math/fadd.js";
-export * from "./src/nodes/math/fdiv.js";
-export * from "./src/nodes/math/fmul.js";
-export * from "./src/nodes/math/fsqrt.js";
+export * from "./lib/nodes/math/fadd.js";
+export * from "./lib/nodes/math/fdiv.js";
+export * from "./lib/nodes/math/fmul.js";
+export * from "./lib/nodes/math/fsqrt.js";
