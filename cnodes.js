@@ -25,6 +25,10 @@ export * from "./lib/nodes/while.js";
 // Export boolean nodes
 export * from "./lib/nodes/bool/fcompare.js";
 
+// Export string nodes
+export * from "./lib/nodes/string/fsconst.js";
+export * from "./lib/nodes/string/fconcat.js";
+
 // Export math nodes
 export * from "./lib/nodes/math/fadd.js";
 export * from "./lib/nodes/math/fdiv.js";
