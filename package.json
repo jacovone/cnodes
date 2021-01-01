@@ -1,6 +1,6 @@
 {
   "name": "@marco.jacovone/cnodes",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "A representation-agnostic process engine based on task/functional nodes",
   "main": "cnodes.js",
   "type": "module",
