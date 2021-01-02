@@ -21,6 +21,7 @@ export * from "./lib/nodes/getvar.js";
 export * from "./lib/nodes/if.js";
 export * from "./lib/nodes/setvar.js";
 export * from "./lib/nodes/while.js";
+export * from "./lib/nodes/fif.js";
 
 // Export boolean nodes
 export * from "./lib/nodes/bool/fcompare.js";
@@ -30,7 +31,9 @@ export * from "./lib/nodes/string/fsconst.js";
 export * from "./lib/nodes/string/fconcat.js";
 
 // Export math nodes
+export * from "./lib/nodes/math/fnconst.js";
 export * from "./lib/nodes/math/fadd.js";
 export * from "./lib/nodes/math/fdiv.js";
 export * from "./lib/nodes/math/fmul.js";
 export * from "./lib/nodes/math/fsqrt.js";
+export * from "./lib/nodes/math/fmod.js";
