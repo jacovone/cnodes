@@ -1,4 +1,5 @@
 import tap from "tap";
+import { Types } from "../lib/core/type.js";
 import { FMod } from "../lib/nodes/math/fmod.js";
 
 tap.test("10 % 3 === 1", (test) => {
@@ -20,11 +21,7 @@ tap.test("6 % 2 === 0", (t) => {
   t.match(n.output("Val").value, 0);
 
   t.test("Type of number", (t2) => {
-    t2.match(
-      n.output("Val").type,
-      { type: "number", isArray: false },
-      "Type is correct"
-    );
+    t2.match(n.output("Val").type, Types.NUMBER, "Type is correct");
     t2.end();
   });
 

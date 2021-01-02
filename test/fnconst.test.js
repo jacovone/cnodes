@@ -17,6 +17,6 @@ tap.test("Convert a string value to a number", (test) => {
   n.process();
 
   test.match(n.output("Val").value, 99);
-  test.match(n.output("Val").type, { type: Types.NUMBER, isArray: false });
+  test.match(n.output("Val").type, Types.NUMBER);
   test.end();
 });

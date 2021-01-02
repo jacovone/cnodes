@@ -1,4 +1,5 @@
 import tap from "tap";
+import { Types } from "../lib/core/type.js";
 import { FDiv } from "../lib/nodes/math/fdiv.js";
 
 tap.test("Divide 1 by 2 equals to 0.5", (test) => {
@@ -20,11 +21,7 @@ tap.test("Divide 112 by 2 equals to 56 of type number", (t) => {
   t.match(n.output("Val").value, 56);
 
   t.test("Type of number", (t2) => {
-    t2.match(
-      n.output("Val").type,
-      { type: "number", isArray: false },
-      "Type is correct"
-    );
+    t2.match(n.output("Val").type, Types.NUMBER, "Type is correct");
     t2.end();
   });
 

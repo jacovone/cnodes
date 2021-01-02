@@ -1,4 +1,5 @@
 import tap from "tap";
+import { Types } from "../lib/core/type.js";
 import { FAdd } from "../lib/nodes/math/fadd.js";
 
 tap.test("Add 1 + 2 equals to 3", (test) => {
@@ -20,11 +21,7 @@ tap.test("Add 11 - 22 equals to -11 of type number", (t) => {
   t.match(n.output("Val").value, -11);
 
   t.test("Type of number", (t2) => {
-    t2.match(
-      n.output("Val").type,
-      { type: "number", isArray: false },
-      "Type is correct"
-    );
+    t2.match(n.output("Val").type, Types.NUMBER, "Type is correct");
     t2.end();
   });
 
