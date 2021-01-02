@@ -37,3 +37,10 @@ export * from "./lib/nodes/math/fdiv.js";
 export * from "./lib/nodes/math/fmul.js";
 export * from "./lib/nodes/math/fsqrt.js";
 export * from "./lib/nodes/math/fmod.js";
+
+// Export arrays nodes
+export * from "./lib/nodes/array/apush.js";
+export * from "./lib/nodes/array/faconst.js";
+export * from "./lib/nodes/array/famake.js";
+export * from "./lib/nodes/array/faget.js";
+export * from "./lib/nodes/array/falength.js";
