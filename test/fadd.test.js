@@ -8,7 +8,7 @@ tap.test("Add 1 + 2 equals to 3", (test) => {
   n.input("1").value = 2;
   n.process();
 
-  test.match(n.output("Val").value, 3);
+  test.same(n.output("Val").value, 3);
   test.end();
 });
 
@@ -18,10 +18,10 @@ tap.test("Add 11 - 22 equals to -11 of type number", (t) => {
   n.input("1").value = -22;
   n.process();
 
-  t.match(n.output("Val").value, -11);
+  t.same(n.output("Val").value, -11);
 
   t.test("Type of number", (t2) => {
-    t2.match(n.output("Val").type, Types.NUMBER, "Type is correct");
+    t2.same(n.output("Val").type, Types.NUMBER, "Type is correct");
     t2.end();
   });
 

@@ -21,7 +21,7 @@ tap.test("Prograam will export, import then executes", (test) => {
 
   prg.exit.prev.connect(fn.next("Out"));
   prg.exit.input("Val").connect(fn.output("Index"));
-  cn.prev.connect(fn.next("Do"));
+  // cn.prev.connect(fn.next("Do"));
   cn.input("Val").connect(fn.output("Index"));
 
   // Add nodes
@@ -36,6 +36,6 @@ tap.test("Prograam will export, import then executes", (test) => {
 
   program2.process();
 
-  test.match(program2.exit.output("Val").value, 9);
+  test.same(program2.exit.output("Val").value, 9);
   test.end();
 });

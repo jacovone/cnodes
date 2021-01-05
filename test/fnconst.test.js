@@ -7,7 +7,7 @@ tap.test("Define a simple number constant", (test) => {
   n.input("Val").value = 99;
   n.process();
 
-  test.match(n.output("Val").value, 99);
+  test.same(n.output("Val").value, 99);
   test.end();
 });
 
@@ -16,7 +16,7 @@ tap.test("Convert a string value to a number", (test) => {
   n.input("Val").value = "99";
   n.process();
 
-  test.match(n.output("Val").value, 99);
-  test.match(n.output("Val").type, Types.NUMBER);
+  test.same(n.output("Val").value, 99);
+  test.same(n.output("Val").type, Types.NUMBER);
   test.end();
 });

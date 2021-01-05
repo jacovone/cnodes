@@ -5,7 +5,8 @@
   "main": "cnodes.js",
   "type": "module",
   "scripts": {
-    "test": "tap --no-esm",
+    "test": "tap --no-esm --no-coverage",
+    "coverage": "nyc npm run test",
     "jsdoc": "jsdoc -r -p -d ./doc/docs ./lib/*",
     "all": "npm run build && npm run jsdoc && npm version patch && npm publish"
   },

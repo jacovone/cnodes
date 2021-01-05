@@ -7,7 +7,7 @@ tap.test("Concatenate two strings", (test) => {
   n.input("1").value = "second";
   n.process();
 
-  test.match(n.output("Val").value, "firstsecond");
+  test.same(n.output("Val").value, "firstsecond");
   test.end();
 });
 
@@ -17,6 +17,6 @@ tap.test("Concatenate two numbers", (test) => {
   n.input("1").value = 99;
   n.process();
 
-  test.match(n.output("Val").value, "199");
+  test.same(n.output("Val").value, "199");
   test.end();
 });

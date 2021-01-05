@@ -9,7 +9,7 @@ tap.test("Sone array tests", (test) => {
   let n = new FAConst();
   n.input("Val").value = "[0,1,2]";
   n.process();
-  test.match(n.output("Val").value, [0, 1, 2]);
+  test.same(n.output("Val").value, [0, 1, 2]);
 
   n = new FAMake();
   n.input("0").value = 0;
@@ -18,7 +18,7 @@ tap.test("Sone array tests", (test) => {
   n.addInput();
   n.input("2").value = 2;
   n.process();
-  test.match(n.output("Val").value, [0, 1, 2]);
+  test.same(n.output("Val").value, [0, 1, 2]);
 
   let arr = n.output("Val").value;
 
@@ -28,7 +28,7 @@ tap.test("Sone array tests", (test) => {
     n.input("Val").value = 3;
     n.process();
 
-    test2.match(n.output("Val").value, [0, 1, 2, 3]);
+    test2.same(n.output("Val").value, [0, 1, 2, 3]);
     arr = n.output("Val").value;
 
     test.test("Test must have length of 4", (test2) => {
@@ -36,7 +36,7 @@ tap.test("Sone array tests", (test) => {
       n.input("Array").value = arr;
       n.process();
 
-      test2.match(n.output("Val").value, 4);
+      test2.same(n.output("Val").value, 4);
       test2.end();
     });
     test.test("Test must have length of 4", (test2) => {
@@ -45,7 +45,7 @@ tap.test("Sone array tests", (test) => {
       n.input("Index").value = 1;
       n.process();
 
-      test2.match(n.output("Val").value, 1);
+      test2.same(n.output("Val").value, 1);
       test2.end();
     });
 

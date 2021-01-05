@@ -8,7 +8,7 @@ tap.test("Divide 1 by 2 equals to 0.5", (test) => {
   n.input("Val2").value = 2;
   n.process();
 
-  test.match(n.output("Val").value, 0.5);
+  test.same(n.output("Val").value, 0.5);
   test.end();
 });
 
@@ -18,10 +18,10 @@ tap.test("Divide 112 by 2 equals to 56 of type number", (t) => {
   n.input("Val2").value = 2;
   n.process();
 
-  t.match(n.output("Val").value, 56);
+  t.same(n.output("Val").value, 56);
 
   t.test("Type of number", (t2) => {
-    t2.match(n.output("Val").type, Types.NUMBER, "Type is correct");
+    t2.same(n.output("Val").type, Types.NUMBER, "Type is correct");
     t2.end();
   });
 

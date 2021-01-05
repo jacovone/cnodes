@@ -8,7 +8,7 @@ tap.test("10 % 3 === 1", (test) => {
   n.input("Val2").value = 3;
   n.process();
 
-  test.match(n.output("Val").value, 1);
+  test.same(n.output("Val").value, 1);
   test.end();
 });
 
@@ -18,10 +18,10 @@ tap.test("6 % 2 === 0", (t) => {
   n.input("Val2").value = 2;
   n.process();
 
-  t.match(n.output("Val").value, 0);
+  t.same(n.output("Val").value, 0);
 
   t.test("Type of number", (t2) => {
-    t2.match(n.output("Val").type, Types.NUMBER, "Type is correct");
+    t2.same(n.output("Val").type, Types.NUMBER, "Type is correct");
     t2.end();
   });
 

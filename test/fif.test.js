@@ -8,7 +8,7 @@ tap.test("Condition true", (test) => {
   n.input("Condition").value = true;
   n.process();
 
-  test.match(n.output("Val").value, "TRUE");
+  test.same(n.output("Val").value, "TRUE");
   test.end();
 });
 
@@ -19,6 +19,6 @@ tap.test("Condition false", (test) => {
   n.input("Condition").value = false;
   n.process();
 
-  test.match(n.output("Val").value, "FALSE");
+  test.same(n.output("Val").value, "FALSE");
   test.end();
 });
