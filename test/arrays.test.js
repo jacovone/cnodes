@@ -1,6 +1,7 @@
 import tap from "tap";
 import { AMap } from "../lib/nodes/array/amap.js";
 import { APush } from "../lib/nodes/array/apush.js";
+import { AReduce } from "../lib/nodes/array/areduce.js";
 import { FAConst } from "../lib/nodes/array/faconst.js";
 import { FAGet } from "../lib/nodes/array/faget.js";
 import { FALength } from "../lib/nodes/array/falength.js";
@@ -43,6 +44,23 @@ tap.test("Sone array tests", (test) => {
       n.process();
 
       test3.same(n.output("Array").value, [1, 2, 3, 4]);
+      test3.end();
+    });
+
+    test2.test("Try to reduce an array to the sum of its elements", (test3) => {
+      let n = new AReduce();
+      let n1 = new FAdd();
+
+      n1.input("0").connect(n.output("Acc"));
+      n1.input("1").connect(n.output("Item"));
+      n.input("Acc").connect(n1.output("Val"));
+      n.input("Acc0").value = 0;
+      n.input("Array").value = [1, 2, 3, 4];
+
+      n.process();
+
+      test3.same(n.output("Val").value, 10);
+
       test3.end();
     });
 
