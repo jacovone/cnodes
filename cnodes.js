@@ -45,6 +45,7 @@ export * from "./lib/nodes/array/famake.js";
 export * from "./lib/nodes/array/faget.js";
 export * from "./lib/nodes/array/falength.js";
 export * from "./lib/nodes/array/amap.js";
+export * from "./lib/nodes/array/famap.js";
 export * from "./lib/nodes/array/areduce.js";
 
 // Export objects nodes
