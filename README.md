@@ -1,5 +1,7 @@
 # cnodes
 
+![cnodes-logo](https://raw.githubusercontent.com/marco-jacovone/cnodes/master/doc/images/cnodes-logo.png)
+
 ## Introduction
 
 **cnodes** is a representation-agnostic engine that define a process and is able
