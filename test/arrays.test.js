@@ -59,7 +59,7 @@ tap.test("Sone array tests", (test) => {
 
       n.process();
 
-      test3.same(n.output("Val").value, 10);
+      test3.same(n.output("Array").value, 10);
 
       test3.end();
     });
