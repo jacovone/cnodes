@@ -3,15 +3,16 @@ import { program } from "../lib/core/program.js";
 import { consoleNode } from "../lib/nodes/console.js";
 import { forNode } from "../lib/nodes/for.js";
 import { Env } from "../lib/core/env.js";
+import { Log } from "../lib/nodes/log.js";
 
-tap.test("Prograam will export, import then executes", (test) => {
+tap.test("Program will export, import then executes", (test) => {
   // Create a new program
   let prg = program();
 
   // create the "For" node
   let fn = forNode();
   // Define console node
-  let cn = consoleNode();
+  let ln = Log.instance();
 
   // Create flow connections and inputs/outputs
   fn.prev.connect(prg.enter.next("Begin"));
@@ -20,21 +21,21 @@ tap.test("Prograam will export, import then executes", (test) => {
 
   prg.exit.prev.connect(fn.next("Out"));
   prg.exit.input("Val").connect(fn.output("Index"));
-  // cn.prev.connect(fn.next("Do"));
-  cn.input("Val").connect(fn.output("Index"));
+
+  ln.input("Val").connect(fn.output("Index"));
+  ln.prev.connect(fn.next("Do"));
 
   // Add nodes
-  prg.addNode(fn).addNode(cn);
+  prg.addNode(fn).addNode(ln);
 
-  // Export
-  let dmp = Env.export(prg);
-  let dmpStr = JSON.stringify(dmp);
+  let count = 0;
+  prg.events.on("cn:log", (msg) => {
+    count++;
+  });
 
-  Env.init();
-  let program2 = Env.import(JSON.parse(dmpStr));
+  prg.process();
 
-  program2.process();
+  test.same(count, 10, "Logged 10 times");
 
-  test.same(program2.exit.input("Val").value, 9);
   test.end();
 });

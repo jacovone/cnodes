@@ -15,6 +15,7 @@ export * from "./lib/core/socket.js";
 export * from "./lib/core/type.js";
 export * from "./lib/nodes/call.js";
 export * from "./lib/nodes/console.js";
+export * from "./lib/nodes/log.js";
 export * from "./lib/nodes/fgetvar.js";
 export * from "./lib/nodes/for.js";
 export * from "./lib/nodes/getvar.js";
