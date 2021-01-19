@@ -1,23 +1,23 @@
 import tap from "tap";
 import { FIf } from "../lib/nodes/fif.js";
 
-tap.test("Condition true", (test) => {
+tap.test("Condition true", async (test) => {
   let n = new FIf();
   n.input("True").value = "TRUE";
   n.input("False").value = "FALSE";
   n.input("Condition").value = true;
-  n.process();
+  await n.process();
 
   test.same(n.output("Val").value, "TRUE");
   test.end();
 });
 
-tap.test("Condition false", (test) => {
+tap.test("Condition false", async (test) => {
   let n = new FIf();
   n.input("True").value = "TRUE";
   n.input("False").value = "FALSE";
   n.input("Condition").value = false;
-  n.process();
+  await n.process();
 
   test.same(n.output("Val").value, "FALSE");
   test.end();

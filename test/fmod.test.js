@@ -2,21 +2,21 @@ import tap from "tap";
 import { Types } from "../lib/core/type.js";
 import { FMod } from "../lib/nodes/math/fmod.js";
 
-tap.test("10 % 3 === 1", (test) => {
+tap.test("10 % 3 === 1", async (test) => {
   let n = new FMod();
   n.input("Val1").value = 10;
   n.input("Val2").value = 3;
-  n.process();
+  await n.process();
 
   test.same(n.output("Val").value, 1);
   test.end();
 });
 
-tap.test("6 % 2 === 0", (t) => {
+tap.test("6 % 2 === 0", async (t) => {
   let n = new FMod();
   n.input("Val1").value = 6;
   n.input("Val2").value = 2;
-  n.process();
+  await n.process();
 
   t.same(n.output("Val").value, 0);
 

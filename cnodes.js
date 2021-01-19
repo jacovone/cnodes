@@ -23,6 +23,7 @@ export * from "./lib/nodes/if.js";
 export * from "./lib/nodes/setvar.js";
 export * from "./lib/nodes/while.js";
 export * from "./lib/nodes/fif.js";
+export * from "./lib/nodes/wait.js";
 
 // Export boolean nodes
 export * from "./lib/nodes/bool/fcompare.js";
@@ -38,6 +39,7 @@ export * from "./lib/nodes/math/fdiv.js";
 export * from "./lib/nodes/math/fmul.js";
 export * from "./lib/nodes/math/fsqrt.js";
 export * from "./lib/nodes/math/fmod.js";
+export * from "./lib/nodes/math/ftofixed.js";
 
 // Export arrays nodes
 export * from "./lib/nodes/array/apush.js";

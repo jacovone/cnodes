@@ -1,17 +1,17 @@
 import tap from "tap";
-import { program } from "../lib/core/program.js";
-import { consoleNode } from "../lib/nodes/console.js";
-import { forNode } from "../lib/nodes/for.js";
+import { Program } from "../lib/core/program.js";
+import { Console } from "../lib/nodes/console.js";
+import { For } from "../lib/nodes/for.js";
 import { Env } from "../lib/core/env.js";
 
-tap.test("Prograam will export, import then executes", (test) => {
+tap.test("Prograam will export, import then executes", async (test) => {
   // Create a new program
-  let prg = program();
+  let prg = Program.instance();
 
   // create the "For" node
-  let fn = forNode();
+  let fn = For.instance();
   // Define console node
-  let cn = consoleNode();
+  let cn = Console.instance();
 
   // Create flow connections and inputs/outputs
   fn.prev.connect(prg.enter.next("Begin"));
@@ -33,7 +33,7 @@ tap.test("Prograam will export, import then executes", (test) => {
   Env.init();
   let program2 = Env.import(JSON.parse(dmpStr));
 
-  program2.process();
+  await program2.process();
 
   test.same(program2.exit.input("Val").value, 9);
   test.end();

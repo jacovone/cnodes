@@ -1,16 +1,14 @@
 import tap from "tap";
-import { program } from "../lib/core/program.js";
-import { consoleNode } from "../lib/nodes/console.js";
-import { forNode } from "../lib/nodes/for.js";
-import { Env } from "../lib/core/env.js";
+import { Program } from "../lib/core/program.js";
+import { For } from "../lib/nodes/for.js";
 import { Log } from "../lib/nodes/log.js";
 
-tap.test("Program will export, import then executes", (test) => {
+tap.test("Program will export, import then executes", async (test) => {
   // Create a new program
-  let prg = program();
+  let prg = Program.instance();
 
   // create the "For" node
-  let fn = forNode();
+  let fn = For.instance();
   // Define console node
   let ln = Log.instance();
 
@@ -33,7 +31,7 @@ tap.test("Program will export, import then executes", (test) => {
     count++;
   });
 
-  prg.process();
+  await prg.process();
 
   test.same(count, 10, "Logged 10 times");
 

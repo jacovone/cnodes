@@ -1,7 +1,7 @@
 import tap from "tap";
 import { FOBreak } from "../lib/nodes/object/fobreak.js";
 
-tap.test("Break down a simple object", (test) => {
+tap.test("Break down a simple object", async (test) => {
   let n = new FOBreak();
 
   n.input("Val").value = {
@@ -20,7 +20,7 @@ tap.test("Break down a simple object", (test) => {
   n.outputs[2].name = "c";
   n.outputs[3].name = "d";
 
-  n.process();
+  await n.process();
 
   test.same(n.output("a").value, 99);
   test.same(n.output("b").value, "test");
