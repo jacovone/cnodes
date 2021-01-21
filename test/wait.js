@@ -11,8 +11,6 @@ tap.test("Wait 1 second", async (test) => {
 
   let endTime = new Date().getTime();
 
-  console.log(endTime - startTime);
-
   test.assert(endTime > startTime + 100, "1 second passed");
   test.end();
 });
