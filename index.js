@@ -11,7 +11,13 @@
 import { Env } from "./lib/core/env.js";
 import { Node } from "./lib/core/node.js";
 import { Program } from "./lib/core/program.js";
-import { Socket } from "./lib/core/socket.js";
+import {
+  Socket,
+  PrevSocket,
+  NextSocket,
+  InputSocket,
+  OutputSocket,
+} from "./lib/core/socket.js";
 import { Types } from "./lib/core/type.js";
 import { Call } from "./lib/nodes/call.js";
 import { Console } from "./lib/nodes/console.js";
@@ -61,6 +67,10 @@ export {
   Node,
   Program,
   Socket,
+  InputSocket,
+  OutputSocket,
+  PrevSocket,
+  NextSocket,
   Types,
   Call,
   Console,
