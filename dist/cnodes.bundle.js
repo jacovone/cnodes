@@ -1383,8 +1383,8 @@ var Node = /*#__PURE__*/function () {
 
   /**
    * Construct a new Node
-   * @param {string} name The name of the node
-   * @param {string} title The title of the node
+   * @param {string} [name] The name of the node
+   * @param {string} [title] The title of the node
    */
   function Node(name) {
     var title = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : name;
