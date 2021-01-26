@@ -12,10 +12,10 @@ export class Node {
     static lastNodeIdIndex: number;
     /**
      * Construct a new Node
-     * @param {string} name The name of the node
-     * @param {string} title The title of the node
+     * @param {string} [name] The name of the node
+     * @param {string} [title] The title of the node
      */
-    constructor(name: string, title?: string);
+    constructor(name?: string, title?: string);
     set id(arg: any);
     get id(): any;
     set name(arg: string);
