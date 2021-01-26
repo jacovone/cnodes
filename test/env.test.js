@@ -1,8 +1,8 @@
 import tap from "tap";
-import { Program } from "../lib/core/program.js";
-import { Console } from "../lib/nodes/console.js";
-import { For } from "../lib/nodes/for.js";
-import { Env } from "../lib/core/env.js";
+import { Program } from "../src/core/program.js";
+import { Console } from "../src/nodes/console.js";
+import { For } from "../src/nodes/for.js";
+import { Env } from "../src/core/env.js";
 
 tap.test("Prograam will export, import then executes", async (test) => {
   // Create a new program

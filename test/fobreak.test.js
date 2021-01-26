@@ -1,5 +1,5 @@
 import tap from "tap";
-import { FOBreak } from "../lib/nodes/object/fobreak.js";
+import { FOBreak } from "../src/nodes/object/fobreak.js";
 
 tap.test("Break down a simple object", async (test) => {
   let n = new FOBreak();

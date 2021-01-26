@@ -1,9 +1,9 @@
 import tap from "tap";
-import { Env } from "../lib/core/env.js";
-import { Program } from "../lib/core/program.js";
-import { Console } from "../lib/nodes/console.js";
-import { For } from "../lib/nodes/for.js";
-import { FOBreak } from "../lib/nodes/object/fobreak.js";
+import { Env } from "../src/core/env.js";
+import { Program } from "../src/core/program.js";
+import { Console } from "../src/nodes/console.js";
+import { For } from "../src/nodes/for.js";
+import { FOBreak } from "../src/nodes/object/fobreak.js";
 
 tap.test("Break down a simple object (cloned)", async (test) => {
   let n = new FOBreak();

@@ -1,12 +1,12 @@
 import tap from "tap";
-import { AMap } from "../lib/nodes/array/amap.js";
-import { APush } from "../lib/nodes/array/apush.js";
-import { AReduce } from "../lib/nodes/array/areduce.js";
-import { FAConst } from "../lib/nodes/array/faconst.js";
-import { FAGet } from "../lib/nodes/array/faget.js";
-import { FALength } from "../lib/nodes/array/falength.js";
-import { FAMake } from "../lib/nodes/array/famake.js";
-import { FAdd } from "../lib/nodes/math/fadd.js";
+import { AMap } from "../src/nodes/array/amap.js";
+import { APush } from "../src/nodes/array/apush.js";
+import { AReduce } from "../src/nodes/array/areduce.js";
+import { FAConst } from "../src/nodes/array/faconst.js";
+import { FAGet } from "../src/nodes/array/faget.js";
+import { FALength } from "../src/nodes/array/falength.js";
+import { FAMake } from "../src/nodes/array/famake.js";
+import { FAdd } from "../src/nodes/math/fadd.js";
 
 tap.test("Sone array tests", async (test) => {
   let n = new FAConst();

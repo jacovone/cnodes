@@ -1,6 +1,6 @@
 import tap from "tap";
-import { Types } from "../lib/core/type.js";
-import { FNConst } from "../lib/nodes/math/fnconst.js";
+import { Types } from "../src/core/type.js";
+import { FNConst } from "../src/nodes/math/fnconst.js";
 
 tap.test("Define a simple number constant", async (test) => {
   let n = new FNConst();

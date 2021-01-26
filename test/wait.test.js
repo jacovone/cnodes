@@ -1,5 +1,5 @@
 import tap from "tap";
-import { Wait } from "../lib/nodes/wait.js";
+import { Wait } from "../src/nodes/wait.js";
 
 tap.test("Wait 1 second", async (test) => {
   let n = Wait.instance();

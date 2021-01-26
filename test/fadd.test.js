@@ -1,6 +1,6 @@
 import tap from "tap";
-import { Types } from "../lib/core/type.js";
-import { FAdd } from "../lib/nodes/math/fadd.js";
+import { Types } from "../src/core/type.js";
+import { FAdd } from "../src/nodes/math/fadd.js";
 
 tap.test("Add 1 + 2 equals to 3", async (test) => {
   let n = new FAdd();

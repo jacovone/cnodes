@@ -1,10 +1,10 @@
 import tap from "tap";
-import { Types } from "../lib/core/type.js";
-import { FAdd } from "../lib/nodes/math/fadd.js";
-import { FDiv } from "../lib/nodes/math/fdiv.js";
-import { FMul } from "../lib/nodes/math/fmul.js";
-import { FSqrt } from "../lib/nodes/math/fsqrt.js";
-import { FTofixed } from "../lib/nodes/math/ftofixed.js";
+import { Types } from "../src/core/type.js";
+import { FAdd } from "../src/nodes/math/fadd.js";
+import { FDiv } from "../src/nodes/math/fdiv.js";
+import { FMul } from "../src/nodes/math/fmul.js";
+import { FSqrt } from "../src/nodes/math/fsqrt.js";
+import { FTofixed } from "../src/nodes/math/ftofixed.js";
 
 tap.test("Divide 1 by 2 equals to 0.5", async (test) => {
   let n = new FDiv();
