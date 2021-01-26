@@ -11,7 +11,18 @@ export namespace Comparision {
  */
 export class FCompare extends Node {
     static instance: () => FCompare;
-    constructor(comparision?: string);
+    /**
+     * Construct a new FCompare node
+     * @param {Comparision} comparision The comparision type
+     */
+    constructor(comparision?: {
+        EQUAL: string;
+        GT: string;
+        GTE: string;
+        LT: string;
+        LTE: string;
+        NOT_EQUAL: string;
+    });
     set comparision(arg: string);
     get comparision(): string;
     #private;
