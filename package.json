@@ -3,7 +3,6 @@
   "version": "0.16.6",
   "description": "A representation-agnostic process engine based on task/functional nodes",
   "main": "cnodes.js",
-  "type": "module",
   "scripts": {
     "test": "tap --no-esm --no-coverage -R nyan",
     "coverage": "nyc npm run test",

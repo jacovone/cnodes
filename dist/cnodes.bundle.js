@@ -6,7 +6,7 @@ var cn;cn =
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -11773,7 +11773,7 @@ try {
 /*!***************************!*\
   !*** ./src/core/enter.js ***!
   \***************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -11910,7 +11910,7 @@ _defineProperty(Enter, "instance", function () {
 /*!*************************!*\
   !*** ./src/core/env.js ***!
   \*************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -12749,7 +12749,7 @@ var _nodeRegistry = {
 /*!**************************!*\
   !*** ./src/core/exit.js ***!
   \**************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -12890,7 +12890,7 @@ _defineProperty(Exit, "instance", function () {
 /*!**************************!*\
   !*** ./src/core/node.js ***!
   \**************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -13687,7 +13687,7 @@ var Result = /*#__PURE__*/function () {
 /*!*****************************!*\
   !*** ./src/core/program.js ***!
   \*****************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -13695,6 +13695,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Program": () => /* binding */ Program
 /* harmony export */ });
 /* harmony import */ var events__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! events */ "./node_modules/events/events.js");
+/* harmony import */ var events__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(events__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _enter_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./enter.js */ "./src/core/enter.js");
 /* harmony import */ var _exit_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./exit.js */ "./src/core/exit.js");
 /* harmony import */ var _node_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node.js */ "./src/core/node.js");
@@ -14172,7 +14173,7 @@ _defineProperty(Program, "version", 1);
 /*!****************************!*\
   !*** ./src/core/socket.js ***!
   \****************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -14990,7 +14991,7 @@ var NextSocket = /*#__PURE__*/function (_FlowSocket2) {
 /*!**************************!*\
   !*** ./src/core/type.js ***!
   \**************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15024,7 +15025,7 @@ var Types = {
 /*!*********************************!*\
   !*** ./src/nodes/array/amap.js ***!
   \*********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15255,7 +15256,7 @@ _defineProperty(AMap, "instance", function () {
 /*!**********************************!*\
   !*** ./src/nodes/array/apush.js ***!
   \**********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15404,7 +15405,7 @@ _defineProperty(APush, "instance", function () {
 /*!************************************!*\
   !*** ./src/nodes/array/areduce.js ***!
   \************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15636,7 +15637,7 @@ _defineProperty(AReduce, "instance", function () {
 /*!************************************!*\
   !*** ./src/nodes/array/faconst.js ***!
   \************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15794,7 +15795,7 @@ _defineProperty(FAConst, "instance", function () {
 /*!**********************************!*\
   !*** ./src/nodes/array/faget.js ***!
   \**********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15943,7 +15944,7 @@ _defineProperty(FAGet, "instance", function () {
 /*!*************************************!*\
   !*** ./src/nodes/array/falength.js ***!
   \*************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16091,7 +16092,7 @@ _defineProperty(FALength, "instance", function () {
 /*!***********************************!*\
   !*** ./src/nodes/array/famake.js ***!
   \***********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16335,7 +16336,7 @@ _defineProperty(FAMake, "instance", function () {
 /*!**********************************!*\
   !*** ./src/nodes/array/famap.js ***!
   \**********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16436,7 +16437,7 @@ _defineProperty(FAMap, "instance", function () {
 /*!*************************************!*\
   !*** ./src/nodes/array/fareduce.js ***!
   \*************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16537,7 +16538,7 @@ _defineProperty(FAReduce, "instance", function () {
 /*!************************************!*\
   !*** ./src/nodes/bool/fcompare.js ***!
   \************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16753,7 +16754,7 @@ _defineProperty(FCompare, "instance", function () {
 /*!**********************************!*\
   !*** ./src/nodes/bool/fequal.js ***!
   \**********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16850,7 +16851,7 @@ _defineProperty(FEqual, "instance", function () {
 /*!*******************************!*\
   !*** ./src/nodes/bool/fgt.js ***!
   \*******************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16947,7 +16948,7 @@ _defineProperty(FGT, "instance", function () {
 /*!********************************!*\
   !*** ./src/nodes/bool/fgte.js ***!
   \********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17044,7 +17045,7 @@ _defineProperty(FGTE, "instance", function () {
 /*!*******************************!*\
   !*** ./src/nodes/bool/flt.js ***!
   \*******************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17141,7 +17142,7 @@ _defineProperty(FLT, "instance", function () {
 /*!********************************!*\
   !*** ./src/nodes/bool/flte.js ***!
   \********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17238,7 +17239,7 @@ _defineProperty(FLTE, "instance", function () {
 /*!*************************************!*\
   !*** ./src/nodes/bool/fnotequal.js ***!
   \*************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17335,7 +17336,7 @@ _defineProperty(FNotEqual, "instance", function () {
 /*!***************************!*\
   !*** ./src/nodes/call.js ***!
   \***************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17477,7 +17478,7 @@ _defineProperty(Call, "instance", function () {
 /*!******************************!*\
   !*** ./src/nodes/console.js ***!
   \******************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17617,7 +17618,7 @@ _defineProperty(Console, "instance", function () {
 /*!******************************!*\
   !*** ./src/nodes/fgetvar.js ***!
   \******************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17760,7 +17761,7 @@ _defineProperty(FGetvar, "instance", function () {
 /*!**************************!*\
   !*** ./src/nodes/fif.js ***!
   \**************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17901,7 +17902,7 @@ _defineProperty(FIf, "instance", function () {
 /*!**************************!*\
   !*** ./src/nodes/for.js ***!
   \**************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18078,7 +18079,7 @@ _defineProperty(For, "instance", function () {
 /*!*****************************!*\
   !*** ./src/nodes/getvar.js ***!
   \*****************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18221,7 +18222,7 @@ _defineProperty(Getvar, "instance", function () {
 /*!*************************!*\
   !*** ./src/nodes/if.js ***!
   \*************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18370,7 +18371,7 @@ _defineProperty(If, "instance", function () {
 /*!**************************!*\
   !*** ./src/nodes/log.js ***!
   \**************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18511,7 +18512,7 @@ _defineProperty(Log, "instance", function () {
 /*!********************************!*\
   !*** ./src/nodes/math/fadd.js ***!
   \********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18761,7 +18762,7 @@ _defineProperty(FAdd, "instance", function () {
 /*!********************************!*\
   !*** ./src/nodes/math/fdiv.js ***!
   \********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18902,7 +18903,7 @@ _defineProperty(FDiv, "instance", function () {
 /*!********************************!*\
   !*** ./src/nodes/math/fmod.js ***!
   \********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -19043,7 +19044,7 @@ _defineProperty(FMod, "instance", function () {
 /*!********************************!*\
   !*** ./src/nodes/math/fmul.js ***!
   \********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -19293,7 +19294,7 @@ _defineProperty(FMul, "instance", function () {
 /*!***********************************!*\
   !*** ./src/nodes/math/fnconst.js ***!
   \***********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -19434,7 +19435,7 @@ _defineProperty(FNConst, "instance", function () {
 /*!*********************************!*\
   !*** ./src/nodes/math/fsqrt.js ***!
   \*********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -19575,7 +19576,7 @@ _defineProperty(FSqrt, "instance", function () {
 /*!************************************!*\
   !*** ./src/nodes/math/ftofixed.js ***!
   \************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -19717,7 +19718,7 @@ _defineProperty(FTofixed, "instance", function () {
 /*!*************************************!*\
   !*** ./src/nodes/object/fobreak.js ***!
   \*************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -19941,7 +19942,7 @@ _defineProperty(FOBreak, "instance", function () {
 /*!************************************!*\
   !*** ./src/nodes/object/fomake.js ***!
   \************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -20154,7 +20155,7 @@ _defineProperty(FOMake, "instance", function () {
 /*!*****************************!*\
   !*** ./src/nodes/setvar.js ***!
   \*****************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -20299,7 +20300,7 @@ _defineProperty(Setvar, "instance", function () {
 /*!*************************************!*\
   !*** ./src/nodes/string/fconcat.js ***!
   \*************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -20547,7 +20548,7 @@ _defineProperty(FConcat, "instance", function () {
 /*!*************************************!*\
   !*** ./src/nodes/string/fsconst.js ***!
   \*************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -20688,7 +20689,7 @@ _defineProperty(FSConst, "instance", function () {
 /*!***************************!*\
   !*** ./src/nodes/wait.js ***!
   \***************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -20837,7 +20838,7 @@ _defineProperty(Wait, "instance", function () {
 /*!****************************!*\
   !*** ./src/nodes/while.js ***!
   \****************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -21041,6 +21042,18 @@ _defineProperty(While, "instance", function () {
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => module['default'] :
+/******/ 				() => module;
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
