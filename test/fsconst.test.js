@@ -1,5 +1,5 @@
 import tap from "tap";
-import { FSConst } from "../src/nodes/string/fsconst.js";
+import { FSConst } from "../src/nodes/string/fsconst.mjs";
 
 tap.test("Define a simple string constant", async (test) => {
   let n = new FSConst();

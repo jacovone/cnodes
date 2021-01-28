@@ -1,5 +1,5 @@
 import tap from "tap";
-import { FOMake } from "../src/nodes/object/fomake.js";
+import { FOMake } from "../src/nodes/object/fomake.mjs";
 
 tap.test("Make a simple object", async (test) => {
   let n = new FOMake();

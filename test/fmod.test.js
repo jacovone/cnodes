@@ -1,6 +1,6 @@
 import tap from "tap";
-import { Types } from "../src/core/type.js";
-import { FMod } from "../src/nodes/math/fmod.js";
+import { Types } from "../src/core/type.mjs";
+import { FMod } from "../src/nodes/math/fmod.mjs";
 
 tap.test("10 % 3 === 1", async (test) => {
   let n = new FMod();

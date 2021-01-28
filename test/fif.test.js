@@ -1,5 +1,5 @@
 import tap from "tap";
-import { FIf } from "../src/nodes/fif.js";
+import { FIf } from "../src/nodes/fif.mjs";
 
 tap.test("Condition true", async (test) => {
   let n = new FIf();

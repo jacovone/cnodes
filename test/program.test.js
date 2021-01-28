@@ -1,7 +1,7 @@
 import tap from "tap";
-import { Program } from "../src/core/program.js";
-import { For } from "../src/nodes/for.js";
-import { Log } from "../src/nodes/log.js";
+import { Program } from "../src/core/program.mjs";
+import { For } from "../src/nodes/for.mjs";
+import { Log } from "../src/nodes/log.mjs";
 
 tap.test("Program will export, import then executes", async (test) => {
   // Create a new program

@@ -1,5 +1,5 @@
 import tap from "tap";
-import { FConcat } from "../src/nodes/string/fconcat.js";
+import { FConcat } from "../src/nodes/string/fconcat.mjs";
 
 tap.test("Concatenate two strings", async (test) => {
   let n = new FConcat();

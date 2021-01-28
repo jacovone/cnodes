@@ -2,101 +2,101 @@ var cn;cn =
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./index.js":
-/*!******************!*\
-  !*** ./index.js ***!
-  \******************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./index.mjs":
+/*!*******************!*\
+  !*** ./index.mjs ***!
+  \*******************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Env": () => /* reexport safe */ _src_core_env_js__WEBPACK_IMPORTED_MODULE_0__.Env,
-/* harmony export */   "Node": () => /* reexport safe */ _src_core_node_js__WEBPACK_IMPORTED_MODULE_1__.Node,
-/* harmony export */   "Program": () => /* reexport safe */ _src_core_program_js__WEBPACK_IMPORTED_MODULE_2__.Program,
-/* harmony export */   "Socket": () => /* reexport safe */ _src_core_socket_js__WEBPACK_IMPORTED_MODULE_3__.Socket,
-/* harmony export */   "InputSocket": () => /* reexport safe */ _src_core_socket_js__WEBPACK_IMPORTED_MODULE_3__.InputSocket,
-/* harmony export */   "OutputSocket": () => /* reexport safe */ _src_core_socket_js__WEBPACK_IMPORTED_MODULE_3__.OutputSocket,
-/* harmony export */   "PrevSocket": () => /* reexport safe */ _src_core_socket_js__WEBPACK_IMPORTED_MODULE_3__.PrevSocket,
-/* harmony export */   "NextSocket": () => /* reexport safe */ _src_core_socket_js__WEBPACK_IMPORTED_MODULE_3__.NextSocket,
-/* harmony export */   "Types": () => /* reexport safe */ _src_core_type_js__WEBPACK_IMPORTED_MODULE_4__.Types,
-/* harmony export */   "Call": () => /* reexport safe */ _src_nodes_call_js__WEBPACK_IMPORTED_MODULE_5__.Call,
-/* harmony export */   "Console": () => /* reexport safe */ _src_nodes_console_js__WEBPACK_IMPORTED_MODULE_6__.Console,
-/* harmony export */   "Log": () => /* reexport safe */ _src_nodes_log_js__WEBPACK_IMPORTED_MODULE_7__.Log,
-/* harmony export */   "FGetvar": () => /* reexport safe */ _src_nodes_fgetvar_js__WEBPACK_IMPORTED_MODULE_8__.FGetvar,
-/* harmony export */   "For": () => /* reexport safe */ _src_nodes_for_js__WEBPACK_IMPORTED_MODULE_9__.For,
-/* harmony export */   "Getvar": () => /* reexport safe */ _src_nodes_getvar_js__WEBPACK_IMPORTED_MODULE_10__.Getvar,
-/* harmony export */   "If": () => /* reexport safe */ _src_nodes_if_js__WEBPACK_IMPORTED_MODULE_11__.If,
-/* harmony export */   "Setvar": () => /* reexport safe */ _src_nodes_setvar_js__WEBPACK_IMPORTED_MODULE_12__.Setvar,
-/* harmony export */   "While": () => /* reexport safe */ _src_nodes_while_js__WEBPACK_IMPORTED_MODULE_13__.While,
-/* harmony export */   "FIf": () => /* reexport safe */ _src_nodes_fif_js__WEBPACK_IMPORTED_MODULE_14__.FIf,
-/* harmony export */   "Wait": () => /* reexport safe */ _src_nodes_wait_js__WEBPACK_IMPORTED_MODULE_15__.Wait,
-/* harmony export */   "FCompare": () => /* reexport safe */ _src_nodes_bool_fcompare_js__WEBPACK_IMPORTED_MODULE_16__.FCompare,
-/* harmony export */   "FSConst": () => /* reexport safe */ _src_nodes_string_fsconst_js__WEBPACK_IMPORTED_MODULE_17__.FSConst,
-/* harmony export */   "FConcat": () => /* reexport safe */ _src_nodes_string_fconcat_js__WEBPACK_IMPORTED_MODULE_18__.FConcat,
-/* harmony export */   "FNConst": () => /* reexport safe */ _src_nodes_math_fnconst_js__WEBPACK_IMPORTED_MODULE_19__.FNConst,
-/* harmony export */   "FAdd": () => /* reexport safe */ _src_nodes_math_fadd_js__WEBPACK_IMPORTED_MODULE_20__.FAdd,
-/* harmony export */   "FDiv": () => /* reexport safe */ _src_nodes_math_fdiv_js__WEBPACK_IMPORTED_MODULE_21__.FDiv,
-/* harmony export */   "FMul": () => /* reexport safe */ _src_nodes_math_fmul_js__WEBPACK_IMPORTED_MODULE_22__.FMul,
-/* harmony export */   "FSqrt": () => /* reexport safe */ _src_nodes_math_fsqrt_js__WEBPACK_IMPORTED_MODULE_23__.FSqrt,
-/* harmony export */   "FMod": () => /* reexport safe */ _src_nodes_math_fmod_js__WEBPACK_IMPORTED_MODULE_24__.FMod,
-/* harmony export */   "FTofixed": () => /* reexport safe */ _src_nodes_math_ftofixed_js__WEBPACK_IMPORTED_MODULE_25__.FTofixed,
-/* harmony export */   "APush": () => /* reexport safe */ _src_nodes_array_apush_js__WEBPACK_IMPORTED_MODULE_26__.APush,
-/* harmony export */   "FAConst": () => /* reexport safe */ _src_nodes_array_faconst_js__WEBPACK_IMPORTED_MODULE_27__.FAConst,
-/* harmony export */   "FAMake": () => /* reexport safe */ _src_nodes_array_famake_js__WEBPACK_IMPORTED_MODULE_28__.FAMake,
-/* harmony export */   "FAGet": () => /* reexport safe */ _src_nodes_array_faget_js__WEBPACK_IMPORTED_MODULE_29__.FAGet,
-/* harmony export */   "FALength": () => /* reexport safe */ _src_nodes_array_falength_js__WEBPACK_IMPORTED_MODULE_30__.FALength,
-/* harmony export */   "AMap": () => /* reexport safe */ _src_nodes_array_amap_js__WEBPACK_IMPORTED_MODULE_31__.AMap,
-/* harmony export */   "FAMap": () => /* reexport safe */ _src_nodes_array_famap_js__WEBPACK_IMPORTED_MODULE_32__.FAMap,
-/* harmony export */   "AReduce": () => /* reexport safe */ _src_nodes_array_areduce_js__WEBPACK_IMPORTED_MODULE_33__.AReduce,
-/* harmony export */   "FAReduce": () => /* reexport safe */ _src_nodes_array_fareduce_js__WEBPACK_IMPORTED_MODULE_34__.FAReduce,
-/* harmony export */   "FOMake": () => /* reexport safe */ _src_nodes_object_fomake_js__WEBPACK_IMPORTED_MODULE_35__.FOMake,
-/* harmony export */   "FOBreak": () => /* reexport safe */ _src_nodes_object_fobreak_js__WEBPACK_IMPORTED_MODULE_36__.FOBreak
+/* harmony export */   "Env": () => /* reexport safe */ _src_core_env_mjs__WEBPACK_IMPORTED_MODULE_0__.Env,
+/* harmony export */   "Node": () => /* reexport safe */ _src_core_node_mjs__WEBPACK_IMPORTED_MODULE_1__.Node,
+/* harmony export */   "Program": () => /* reexport safe */ _src_core_program_mjs__WEBPACK_IMPORTED_MODULE_2__.Program,
+/* harmony export */   "Socket": () => /* reexport safe */ _src_core_socket_mjs__WEBPACK_IMPORTED_MODULE_3__.Socket,
+/* harmony export */   "InputSocket": () => /* reexport safe */ _src_core_socket_mjs__WEBPACK_IMPORTED_MODULE_3__.InputSocket,
+/* harmony export */   "OutputSocket": () => /* reexport safe */ _src_core_socket_mjs__WEBPACK_IMPORTED_MODULE_3__.OutputSocket,
+/* harmony export */   "PrevSocket": () => /* reexport safe */ _src_core_socket_mjs__WEBPACK_IMPORTED_MODULE_3__.PrevSocket,
+/* harmony export */   "NextSocket": () => /* reexport safe */ _src_core_socket_mjs__WEBPACK_IMPORTED_MODULE_3__.NextSocket,
+/* harmony export */   "Types": () => /* reexport safe */ _src_core_type_mjs__WEBPACK_IMPORTED_MODULE_4__.Types,
+/* harmony export */   "Call": () => /* reexport safe */ _src_nodes_call_mjs__WEBPACK_IMPORTED_MODULE_5__.Call,
+/* harmony export */   "Console": () => /* reexport safe */ _src_nodes_console_mjs__WEBPACK_IMPORTED_MODULE_6__.Console,
+/* harmony export */   "Log": () => /* reexport safe */ _src_nodes_log_mjs__WEBPACK_IMPORTED_MODULE_7__.Log,
+/* harmony export */   "FGetvar": () => /* reexport safe */ _src_nodes_fgetvar_mjs__WEBPACK_IMPORTED_MODULE_8__.FGetvar,
+/* harmony export */   "For": () => /* reexport safe */ _src_nodes_for_mjs__WEBPACK_IMPORTED_MODULE_9__.For,
+/* harmony export */   "Getvar": () => /* reexport safe */ _src_nodes_getvar_mjs__WEBPACK_IMPORTED_MODULE_10__.Getvar,
+/* harmony export */   "If": () => /* reexport safe */ _src_nodes_if_mjs__WEBPACK_IMPORTED_MODULE_11__.If,
+/* harmony export */   "Setvar": () => /* reexport safe */ _src_nodes_setvar_mjs__WEBPACK_IMPORTED_MODULE_12__.Setvar,
+/* harmony export */   "While": () => /* reexport safe */ _src_nodes_while_mjs__WEBPACK_IMPORTED_MODULE_13__.While,
+/* harmony export */   "FIf": () => /* reexport safe */ _src_nodes_fif_mjs__WEBPACK_IMPORTED_MODULE_14__.FIf,
+/* harmony export */   "Wait": () => /* reexport safe */ _src_nodes_wait_mjs__WEBPACK_IMPORTED_MODULE_15__.Wait,
+/* harmony export */   "FCompare": () => /* reexport safe */ _src_nodes_bool_fcompare_mjs__WEBPACK_IMPORTED_MODULE_16__.FCompare,
+/* harmony export */   "FSConst": () => /* reexport safe */ _src_nodes_string_fsconst_mjs__WEBPACK_IMPORTED_MODULE_17__.FSConst,
+/* harmony export */   "FConcat": () => /* reexport safe */ _src_nodes_string_fconcat_mjs__WEBPACK_IMPORTED_MODULE_18__.FConcat,
+/* harmony export */   "FNConst": () => /* reexport safe */ _src_nodes_math_fnconst_mjs__WEBPACK_IMPORTED_MODULE_19__.FNConst,
+/* harmony export */   "FAdd": () => /* reexport safe */ _src_nodes_math_fadd_mjs__WEBPACK_IMPORTED_MODULE_20__.FAdd,
+/* harmony export */   "FDiv": () => /* reexport safe */ _src_nodes_math_fdiv_mjs__WEBPACK_IMPORTED_MODULE_21__.FDiv,
+/* harmony export */   "FMul": () => /* reexport safe */ _src_nodes_math_fmul_mjs__WEBPACK_IMPORTED_MODULE_22__.FMul,
+/* harmony export */   "FSqrt": () => /* reexport safe */ _src_nodes_math_fsqrt_mjs__WEBPACK_IMPORTED_MODULE_23__.FSqrt,
+/* harmony export */   "FMod": () => /* reexport safe */ _src_nodes_math_fmod_mjs__WEBPACK_IMPORTED_MODULE_24__.FMod,
+/* harmony export */   "FTofixed": () => /* reexport safe */ _src_nodes_math_ftofixed_mjs__WEBPACK_IMPORTED_MODULE_25__.FTofixed,
+/* harmony export */   "APush": () => /* reexport safe */ _src_nodes_array_apush_mjs__WEBPACK_IMPORTED_MODULE_26__.APush,
+/* harmony export */   "FAConst": () => /* reexport safe */ _src_nodes_array_faconst_mjs__WEBPACK_IMPORTED_MODULE_27__.FAConst,
+/* harmony export */   "FAMake": () => /* reexport safe */ _src_nodes_array_famake_mjs__WEBPACK_IMPORTED_MODULE_28__.FAMake,
+/* harmony export */   "FAGet": () => /* reexport safe */ _src_nodes_array_faget_mjs__WEBPACK_IMPORTED_MODULE_29__.FAGet,
+/* harmony export */   "FALength": () => /* reexport safe */ _src_nodes_array_falength_mjs__WEBPACK_IMPORTED_MODULE_30__.FALength,
+/* harmony export */   "AMap": () => /* reexport safe */ _src_nodes_array_amap_mjs__WEBPACK_IMPORTED_MODULE_31__.AMap,
+/* harmony export */   "FAMap": () => /* reexport safe */ _src_nodes_array_famap_mjs__WEBPACK_IMPORTED_MODULE_32__.FAMap,
+/* harmony export */   "AReduce": () => /* reexport safe */ _src_nodes_array_areduce_mjs__WEBPACK_IMPORTED_MODULE_33__.AReduce,
+/* harmony export */   "FAReduce": () => /* reexport safe */ _src_nodes_array_fareduce_mjs__WEBPACK_IMPORTED_MODULE_34__.FAReduce,
+/* harmony export */   "FOMake": () => /* reexport safe */ _src_nodes_object_fomake_mjs__WEBPACK_IMPORTED_MODULE_35__.FOMake,
+/* harmony export */   "FOBreak": () => /* reexport safe */ _src_nodes_object_fobreak_mjs__WEBPACK_IMPORTED_MODULE_36__.FOBreak
 /* harmony export */ });
-/* harmony import */ var _src_core_env_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/core/env.js */ "./src/core/env.js");
-/* harmony import */ var _src_core_node_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/core/node.js */ "./src/core/node.js");
-/* harmony import */ var _src_core_program_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/core/program.js */ "./src/core/program.js");
-/* harmony import */ var _src_core_socket_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _src_core_type_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/core/type.js */ "./src/core/type.js");
-/* harmony import */ var _src_nodes_call_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/nodes/call.js */ "./src/nodes/call.js");
-/* harmony import */ var _src_nodes_console_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./src/nodes/console.js */ "./src/nodes/console.js");
-/* harmony import */ var _src_nodes_log_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./src/nodes/log.js */ "./src/nodes/log.js");
-/* harmony import */ var _src_nodes_fgetvar_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./src/nodes/fgetvar.js */ "./src/nodes/fgetvar.js");
-/* harmony import */ var _src_nodes_for_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./src/nodes/for.js */ "./src/nodes/for.js");
-/* harmony import */ var _src_nodes_getvar_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./src/nodes/getvar.js */ "./src/nodes/getvar.js");
-/* harmony import */ var _src_nodes_if_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./src/nodes/if.js */ "./src/nodes/if.js");
-/* harmony import */ var _src_nodes_setvar_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./src/nodes/setvar.js */ "./src/nodes/setvar.js");
-/* harmony import */ var _src_nodes_while_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./src/nodes/while.js */ "./src/nodes/while.js");
-/* harmony import */ var _src_nodes_fif_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/nodes/fif.js */ "./src/nodes/fif.js");
-/* harmony import */ var _src_nodes_wait_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./src/nodes/wait.js */ "./src/nodes/wait.js");
-/* harmony import */ var _src_nodes_bool_fcompare_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/nodes/bool/fcompare.js */ "./src/nodes/bool/fcompare.js");
-/* harmony import */ var _src_nodes_string_fsconst_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./src/nodes/string/fsconst.js */ "./src/nodes/string/fsconst.js");
-/* harmony import */ var _src_nodes_string_fconcat_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/nodes/string/fconcat.js */ "./src/nodes/string/fconcat.js");
-/* harmony import */ var _src_nodes_math_fnconst_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./src/nodes/math/fnconst.js */ "./src/nodes/math/fnconst.js");
-/* harmony import */ var _src_nodes_math_fadd_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./src/nodes/math/fadd.js */ "./src/nodes/math/fadd.js");
-/* harmony import */ var _src_nodes_math_fdiv_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./src/nodes/math/fdiv.js */ "./src/nodes/math/fdiv.js");
-/* harmony import */ var _src_nodes_math_fmul_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./src/nodes/math/fmul.js */ "./src/nodes/math/fmul.js");
-/* harmony import */ var _src_nodes_math_fsqrt_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./src/nodes/math/fsqrt.js */ "./src/nodes/math/fsqrt.js");
-/* harmony import */ var _src_nodes_math_fmod_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./src/nodes/math/fmod.js */ "./src/nodes/math/fmod.js");
-/* harmony import */ var _src_nodes_math_ftofixed_js__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./src/nodes/math/ftofixed.js */ "./src/nodes/math/ftofixed.js");
-/* harmony import */ var _src_nodes_array_apush_js__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./src/nodes/array/apush.js */ "./src/nodes/array/apush.js");
-/* harmony import */ var _src_nodes_array_faconst_js__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./src/nodes/array/faconst.js */ "./src/nodes/array/faconst.js");
-/* harmony import */ var _src_nodes_array_famake_js__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./src/nodes/array/famake.js */ "./src/nodes/array/famake.js");
-/* harmony import */ var _src_nodes_array_faget_js__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./src/nodes/array/faget.js */ "./src/nodes/array/faget.js");
-/* harmony import */ var _src_nodes_array_falength_js__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./src/nodes/array/falength.js */ "./src/nodes/array/falength.js");
-/* harmony import */ var _src_nodes_array_amap_js__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./src/nodes/array/amap.js */ "./src/nodes/array/amap.js");
-/* harmony import */ var _src_nodes_array_famap_js__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./src/nodes/array/famap.js */ "./src/nodes/array/famap.js");
-/* harmony import */ var _src_nodes_array_areduce_js__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./src/nodes/array/areduce.js */ "./src/nodes/array/areduce.js");
-/* harmony import */ var _src_nodes_array_fareduce_js__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./src/nodes/array/fareduce.js */ "./src/nodes/array/fareduce.js");
-/* harmony import */ var _src_nodes_object_fomake_js__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./src/nodes/object/fomake.js */ "./src/nodes/object/fomake.js");
-/* harmony import */ var _src_nodes_object_fobreak_js__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./src/nodes/object/fobreak.js */ "./src/nodes/object/fobreak.js");
+/* harmony import */ var _src_core_env_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/core/env.mjs */ "./src/core/env.mjs");
+/* harmony import */ var _src_core_node_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _src_core_program_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/core/program.mjs */ "./src/core/program.mjs");
+/* harmony import */ var _src_core_socket_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _src_core_type_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/core/type.mjs */ "./src/core/type.mjs");
+/* harmony import */ var _src_nodes_call_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/nodes/call.mjs */ "./src/nodes/call.mjs");
+/* harmony import */ var _src_nodes_console_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./src/nodes/console.mjs */ "./src/nodes/console.mjs");
+/* harmony import */ var _src_nodes_log_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./src/nodes/log.mjs */ "./src/nodes/log.mjs");
+/* harmony import */ var _src_nodes_fgetvar_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./src/nodes/fgetvar.mjs */ "./src/nodes/fgetvar.mjs");
+/* harmony import */ var _src_nodes_for_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./src/nodes/for.mjs */ "./src/nodes/for.mjs");
+/* harmony import */ var _src_nodes_getvar_mjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./src/nodes/getvar.mjs */ "./src/nodes/getvar.mjs");
+/* harmony import */ var _src_nodes_if_mjs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./src/nodes/if.mjs */ "./src/nodes/if.mjs");
+/* harmony import */ var _src_nodes_setvar_mjs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./src/nodes/setvar.mjs */ "./src/nodes/setvar.mjs");
+/* harmony import */ var _src_nodes_while_mjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./src/nodes/while.mjs */ "./src/nodes/while.mjs");
+/* harmony import */ var _src_nodes_fif_mjs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/nodes/fif.mjs */ "./src/nodes/fif.mjs");
+/* harmony import */ var _src_nodes_wait_mjs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./src/nodes/wait.mjs */ "./src/nodes/wait.mjs");
+/* harmony import */ var _src_nodes_bool_fcompare_mjs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/nodes/bool/fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
+/* harmony import */ var _src_nodes_string_fsconst_mjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./src/nodes/string/fsconst.mjs */ "./src/nodes/string/fsconst.mjs");
+/* harmony import */ var _src_nodes_string_fconcat_mjs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/nodes/string/fconcat.mjs */ "./src/nodes/string/fconcat.mjs");
+/* harmony import */ var _src_nodes_math_fnconst_mjs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./src/nodes/math/fnconst.mjs */ "./src/nodes/math/fnconst.mjs");
+/* harmony import */ var _src_nodes_math_fadd_mjs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./src/nodes/math/fadd.mjs */ "./src/nodes/math/fadd.mjs");
+/* harmony import */ var _src_nodes_math_fdiv_mjs__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./src/nodes/math/fdiv.mjs */ "./src/nodes/math/fdiv.mjs");
+/* harmony import */ var _src_nodes_math_fmul_mjs__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./src/nodes/math/fmul.mjs */ "./src/nodes/math/fmul.mjs");
+/* harmony import */ var _src_nodes_math_fsqrt_mjs__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./src/nodes/math/fsqrt.mjs */ "./src/nodes/math/fsqrt.mjs");
+/* harmony import */ var _src_nodes_math_fmod_mjs__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./src/nodes/math/fmod.mjs */ "./src/nodes/math/fmod.mjs");
+/* harmony import */ var _src_nodes_math_ftofixed_mjs__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./src/nodes/math/ftofixed.mjs */ "./src/nodes/math/ftofixed.mjs");
+/* harmony import */ var _src_nodes_array_apush_mjs__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./src/nodes/array/apush.mjs */ "./src/nodes/array/apush.mjs");
+/* harmony import */ var _src_nodes_array_faconst_mjs__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./src/nodes/array/faconst.mjs */ "./src/nodes/array/faconst.mjs");
+/* harmony import */ var _src_nodes_array_famake_mjs__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./src/nodes/array/famake.mjs */ "./src/nodes/array/famake.mjs");
+/* harmony import */ var _src_nodes_array_faget_mjs__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./src/nodes/array/faget.mjs */ "./src/nodes/array/faget.mjs");
+/* harmony import */ var _src_nodes_array_falength_mjs__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./src/nodes/array/falength.mjs */ "./src/nodes/array/falength.mjs");
+/* harmony import */ var _src_nodes_array_amap_mjs__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./src/nodes/array/amap.mjs */ "./src/nodes/array/amap.mjs");
+/* harmony import */ var _src_nodes_array_famap_mjs__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./src/nodes/array/famap.mjs */ "./src/nodes/array/famap.mjs");
+/* harmony import */ var _src_nodes_array_areduce_mjs__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./src/nodes/array/areduce.mjs */ "./src/nodes/array/areduce.mjs");
+/* harmony import */ var _src_nodes_array_fareduce_mjs__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./src/nodes/array/fareduce.mjs */ "./src/nodes/array/fareduce.mjs");
+/* harmony import */ var _src_nodes_object_fomake_mjs__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./src/nodes/object/fomake.mjs */ "./src/nodes/object/fomake.mjs");
+/* harmony import */ var _src_nodes_object_fobreak_mjs__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./src/nodes/object/fobreak.mjs */ "./src/nodes/object/fobreak.mjs");
 /**
  * cnodes
  *
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 // Import core nodes
 
@@ -11769,20 +11769,20 @@ try {
 
 /***/ }),
 
-/***/ "./src/core/enter.js":
-/*!***************************!*\
-  !*** ./src/core/enter.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/core/enter.mjs":
+/*!****************************!*\
+  !*** ./src/core/enter.mjs ***!
+  \****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Enter": () => /* binding */ Enter
 /* harmony export */ });
-/* harmony import */ var _node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node.js */ "./src/core/node.js");
-/* harmony import */ var _socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./socket.js */ "./src/core/socket.js");
-/* harmony import */ var _type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./type.js */ "./src/core/type.js");
+/* harmony import */ var _node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -11821,7 +11821,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -11850,8 +11850,8 @@ var Enter = /*#__PURE__*/function (_Node) {
     _this.removable = false;
     _this.creatable = false;
     _this.inputs = [];
-    _this.outputs = [new _socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
-    _this.nexts = [new _socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Begin", _assertThisInitialized(_this))];
+    _this.outputs = [new _socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
+    _this.nexts = [new _socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Begin", _assertThisInitialized(_this))];
     _this.prev = null;
     return _this;
   }
@@ -11898,7 +11898,7 @@ var Enter = /*#__PURE__*/function (_Node) {
   }]);
 
   return Enter;
-}(_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(Enter, "instance", function () {
   return new Enter();
@@ -11906,60 +11906,60 @@ _defineProperty(Enter, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/core/env.js":
-/*!*************************!*\
-  !*** ./src/core/env.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/core/env.mjs":
+/*!**************************!*\
+  !*** ./src/core/env.mjs ***!
+  \**************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Env": () => /* binding */ Env
 /* harmony export */ });
-/* harmony import */ var _program_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./program.js */ "./src/core/program.js");
-/* harmony import */ var _enter_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./enter.js */ "./src/core/enter.js");
-/* harmony import */ var _exit_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./exit.js */ "./src/core/exit.js");
-/* harmony import */ var _nodes_call_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../nodes/call.js */ "./src/nodes/call.js");
-/* harmony import */ var _nodes_console_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../nodes/console.js */ "./src/nodes/console.js");
-/* harmony import */ var _nodes_fgetvar_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../nodes/fgetvar.js */ "./src/nodes/fgetvar.js");
-/* harmony import */ var _nodes_for_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../nodes/for.js */ "./src/nodes/for.js");
-/* harmony import */ var _nodes_getvar_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../nodes/getvar.js */ "./src/nodes/getvar.js");
-/* harmony import */ var _nodes_setvar_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../nodes/setvar.js */ "./src/nodes/setvar.js");
-/* harmony import */ var _nodes_while_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../nodes/while.js */ "./src/nodes/while.js");
-/* harmony import */ var _nodes_if_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../nodes/if.js */ "./src/nodes/if.js");
-/* harmony import */ var _nodes_array_apush_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../nodes/array/apush.js */ "./src/nodes/array/apush.js");
-/* harmony import */ var _nodes_array_faconst_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../nodes/array/faconst.js */ "./src/nodes/array/faconst.js");
-/* harmony import */ var _nodes_array_famake_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../nodes/array/famake.js */ "./src/nodes/array/famake.js");
-/* harmony import */ var _nodes_array_faget_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../nodes/array/faget.js */ "./src/nodes/array/faget.js");
-/* harmony import */ var _nodes_array_falength_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../nodes/array/falength.js */ "./src/nodes/array/falength.js");
-/* harmony import */ var _nodes_math_fadd_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../nodes/math/fadd.js */ "./src/nodes/math/fadd.js");
-/* harmony import */ var _nodes_math_fdiv_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../nodes/math/fdiv.js */ "./src/nodes/math/fdiv.js");
-/* harmony import */ var _nodes_math_fmul_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../nodes/math/fmul.js */ "./src/nodes/math/fmul.js");
-/* harmony import */ var _nodes_math_fsqrt_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../nodes/math/fsqrt.js */ "./src/nodes/math/fsqrt.js");
-/* harmony import */ var _nodes_bool_fequal_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../nodes/bool/fequal.js */ "./src/nodes/bool/fequal.js");
-/* harmony import */ var _nodes_bool_fgt_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../nodes/bool/fgt.js */ "./src/nodes/bool/fgt.js");
-/* harmony import */ var _nodes_bool_fgte_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../nodes/bool/fgte.js */ "./src/nodes/bool/fgte.js");
-/* harmony import */ var _nodes_bool_flt_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../nodes/bool/flt.js */ "./src/nodes/bool/flt.js");
-/* harmony import */ var _nodes_bool_flte_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../nodes/bool/flte.js */ "./src/nodes/bool/flte.js");
-/* harmony import */ var _nodes_bool_fnotequal_js__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../nodes/bool/fnotequal.js */ "./src/nodes/bool/fnotequal.js");
-/* harmony import */ var _socket_js__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./socket.js */ "./src/core/socket.js");
-/* harmony import */ var _node_js__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./node.js */ "./src/core/node.js");
-/* harmony import */ var _nodes_string_fsconst_js__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../nodes/string/fsconst.js */ "./src/nodes/string/fsconst.js");
-/* harmony import */ var _nodes_string_fconcat_js__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../nodes/string/fconcat.js */ "./src/nodes/string/fconcat.js");
-/* harmony import */ var _nodes_math_fmod_js__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../nodes/math/fmod.js */ "./src/nodes/math/fmod.js");
-/* harmony import */ var _nodes_fif_js__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../nodes/fif.js */ "./src/nodes/fif.js");
-/* harmony import */ var _nodes_math_fnconst_js__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../nodes/math/fnconst.js */ "./src/nodes/math/fnconst.js");
-/* harmony import */ var _nodes_object_fomake_js__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../nodes/object/fomake.js */ "./src/nodes/object/fomake.js");
-/* harmony import */ var _nodes_object_fobreak_js__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../nodes/object/fobreak.js */ "./src/nodes/object/fobreak.js");
-/* harmony import */ var _nodes_array_amap_js__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../nodes/array/amap.js */ "./src/nodes/array/amap.js");
-/* harmony import */ var _nodes_array_areduce_js__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../nodes/array/areduce.js */ "./src/nodes/array/areduce.js");
-/* harmony import */ var _nodes_array_famap_js__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../nodes/array/famap.js */ "./src/nodes/array/famap.js");
-/* harmony import */ var _type_js__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./type.js */ "./src/core/type.js");
-/* harmony import */ var _nodes_array_fareduce_js__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../nodes/array/fareduce.js */ "./src/nodes/array/fareduce.js");
-/* harmony import */ var _nodes_log_js__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../nodes/log.js */ "./src/nodes/log.js");
-/* harmony import */ var _nodes_math_ftofixed_js__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../nodes/math/ftofixed.js */ "./src/nodes/math/ftofixed.js");
-/* harmony import */ var _nodes_wait_js__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../nodes/wait.js */ "./src/nodes/wait.js");
+/* harmony import */ var _program_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./program.mjs */ "./src/core/program.mjs");
+/* harmony import */ var _enter_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./enter.mjs */ "./src/core/enter.mjs");
+/* harmony import */ var _exit_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./exit.mjs */ "./src/core/exit.mjs");
+/* harmony import */ var _nodes_call_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../nodes/call.mjs */ "./src/nodes/call.mjs");
+/* harmony import */ var _nodes_console_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../nodes/console.mjs */ "./src/nodes/console.mjs");
+/* harmony import */ var _nodes_fgetvar_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../nodes/fgetvar.mjs */ "./src/nodes/fgetvar.mjs");
+/* harmony import */ var _nodes_for_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../nodes/for.mjs */ "./src/nodes/for.mjs");
+/* harmony import */ var _nodes_getvar_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../nodes/getvar.mjs */ "./src/nodes/getvar.mjs");
+/* harmony import */ var _nodes_setvar_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../nodes/setvar.mjs */ "./src/nodes/setvar.mjs");
+/* harmony import */ var _nodes_while_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../nodes/while.mjs */ "./src/nodes/while.mjs");
+/* harmony import */ var _nodes_if_mjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../nodes/if.mjs */ "./src/nodes/if.mjs");
+/* harmony import */ var _nodes_array_apush_mjs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../nodes/array/apush.mjs */ "./src/nodes/array/apush.mjs");
+/* harmony import */ var _nodes_array_faconst_mjs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../nodes/array/faconst.mjs */ "./src/nodes/array/faconst.mjs");
+/* harmony import */ var _nodes_array_famake_mjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../nodes/array/famake.mjs */ "./src/nodes/array/famake.mjs");
+/* harmony import */ var _nodes_array_faget_mjs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../nodes/array/faget.mjs */ "./src/nodes/array/faget.mjs");
+/* harmony import */ var _nodes_array_falength_mjs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../nodes/array/falength.mjs */ "./src/nodes/array/falength.mjs");
+/* harmony import */ var _nodes_math_fadd_mjs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../nodes/math/fadd.mjs */ "./src/nodes/math/fadd.mjs");
+/* harmony import */ var _nodes_math_fdiv_mjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../nodes/math/fdiv.mjs */ "./src/nodes/math/fdiv.mjs");
+/* harmony import */ var _nodes_math_fmul_mjs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../nodes/math/fmul.mjs */ "./src/nodes/math/fmul.mjs");
+/* harmony import */ var _nodes_math_fsqrt_mjs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../nodes/math/fsqrt.mjs */ "./src/nodes/math/fsqrt.mjs");
+/* harmony import */ var _nodes_bool_fequal_mjs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../nodes/bool/fequal.mjs */ "./src/nodes/bool/fequal.mjs");
+/* harmony import */ var _nodes_bool_fgt_mjs__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../nodes/bool/fgt.mjs */ "./src/nodes/bool/fgt.mjs");
+/* harmony import */ var _nodes_bool_fgte_mjs__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../nodes/bool/fgte.mjs */ "./src/nodes/bool/fgte.mjs");
+/* harmony import */ var _nodes_bool_flt_mjs__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../nodes/bool/flt.mjs */ "./src/nodes/bool/flt.mjs");
+/* harmony import */ var _nodes_bool_flte_mjs__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../nodes/bool/flte.mjs */ "./src/nodes/bool/flte.mjs");
+/* harmony import */ var _nodes_bool_fnotequal_mjs__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../nodes/bool/fnotequal.mjs */ "./src/nodes/bool/fnotequal.mjs");
+/* harmony import */ var _socket_mjs__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _node_mjs__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _nodes_string_fsconst_mjs__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../nodes/string/fsconst.mjs */ "./src/nodes/string/fsconst.mjs");
+/* harmony import */ var _nodes_string_fconcat_mjs__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../nodes/string/fconcat.mjs */ "./src/nodes/string/fconcat.mjs");
+/* harmony import */ var _nodes_math_fmod_mjs__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../nodes/math/fmod.mjs */ "./src/nodes/math/fmod.mjs");
+/* harmony import */ var _nodes_fif_mjs__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../nodes/fif.mjs */ "./src/nodes/fif.mjs");
+/* harmony import */ var _nodes_math_fnconst_mjs__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../nodes/math/fnconst.mjs */ "./src/nodes/math/fnconst.mjs");
+/* harmony import */ var _nodes_object_fomake_mjs__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../nodes/object/fomake.mjs */ "./src/nodes/object/fomake.mjs");
+/* harmony import */ var _nodes_object_fobreak_mjs__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../nodes/object/fobreak.mjs */ "./src/nodes/object/fobreak.mjs");
+/* harmony import */ var _nodes_array_amap_mjs__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../nodes/array/amap.mjs */ "./src/nodes/array/amap.mjs");
+/* harmony import */ var _nodes_array_areduce_mjs__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../nodes/array/areduce.mjs */ "./src/nodes/array/areduce.mjs");
+/* harmony import */ var _nodes_array_famap_mjs__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../nodes/array/famap.mjs */ "./src/nodes/array/famap.mjs");
+/* harmony import */ var _type_mjs__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./type.mjs */ "./src/core/type.mjs");
+/* harmony import */ var _nodes_array_fareduce_mjs__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../nodes/array/fareduce.mjs */ "./src/nodes/array/fareduce.mjs");
+/* harmony import */ var _nodes_log_mjs__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../nodes/log.mjs */ "./src/nodes/log.mjs");
+/* harmony import */ var _nodes_math_ftofixed_mjs__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../nodes/math/ftofixed.mjs */ "./src/nodes/math/ftofixed.mjs");
+/* harmony import */ var _nodes_wait_mjs__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../nodes/wait.mjs */ "./src/nodes/wait.mjs");
 function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -11984,7 +11984,7 @@ function _classStaticPrivateFieldSpecSet(receiver, classConstructor, descriptor,
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -12056,57 +12056,57 @@ var Env = /*#__PURE__*/function () {
       _classStaticPrivateFieldSpecSet(Env, Env, _nodeRegistry, new Map()); // Core nodes
 
 
-      Env.registerNode("Program", "Core", _program_js__WEBPACK_IMPORTED_MODULE_0__.Program.instance);
-      Env.registerNode("Call", "Core", _nodes_call_js__WEBPACK_IMPORTED_MODULE_3__.Call.instance);
-      Env.registerNode("Console", "Core", _nodes_console_js__WEBPACK_IMPORTED_MODULE_4__.Console.instance);
-      Env.registerNode("Log", "Core", _nodes_log_js__WEBPACK_IMPORTED_MODULE_40__.Log.instance);
-      Env.registerNode("FGetvar", "Core", _nodes_fgetvar_js__WEBPACK_IMPORTED_MODULE_5__.FGetvar.instance);
-      Env.registerNode("For", "Core", _nodes_for_js__WEBPACK_IMPORTED_MODULE_6__.For.instance);
-      Env.registerNode("Getvar", "Core", _nodes_getvar_js__WEBPACK_IMPORTED_MODULE_7__.Getvar.instance);
-      Env.registerNode("If", "Core", _nodes_if_js__WEBPACK_IMPORTED_MODULE_10__.If.instance);
-      Env.registerNode("FIf", "Core", _nodes_fif_js__WEBPACK_IMPORTED_MODULE_31__.FIf.instance);
-      Env.registerNode("Setvar", "Core", _nodes_setvar_js__WEBPACK_IMPORTED_MODULE_8__.Setvar.instance);
-      Env.registerNode("While", "Core", _nodes_while_js__WEBPACK_IMPORTED_MODULE_9__.While.instance);
-      Env.registerNode("Enter", "Core", _enter_js__WEBPACK_IMPORTED_MODULE_1__.Enter.instance);
-      Env.registerNode("Exit", "Core", _exit_js__WEBPACK_IMPORTED_MODULE_2__.Exit.instance);
-      Env.registerNode("Wait", "Core", _nodes_wait_js__WEBPACK_IMPORTED_MODULE_42__.Wait.instance); // String nodes
+      Env.registerNode("Program", "Core", _program_mjs__WEBPACK_IMPORTED_MODULE_0__.Program.instance);
+      Env.registerNode("Call", "Core", _nodes_call_mjs__WEBPACK_IMPORTED_MODULE_3__.Call.instance);
+      Env.registerNode("Console", "Core", _nodes_console_mjs__WEBPACK_IMPORTED_MODULE_4__.Console.instance);
+      Env.registerNode("Log", "Core", _nodes_log_mjs__WEBPACK_IMPORTED_MODULE_40__.Log.instance);
+      Env.registerNode("FGetvar", "Core", _nodes_fgetvar_mjs__WEBPACK_IMPORTED_MODULE_5__.FGetvar.instance);
+      Env.registerNode("For", "Core", _nodes_for_mjs__WEBPACK_IMPORTED_MODULE_6__.For.instance);
+      Env.registerNode("Getvar", "Core", _nodes_getvar_mjs__WEBPACK_IMPORTED_MODULE_7__.Getvar.instance);
+      Env.registerNode("If", "Core", _nodes_if_mjs__WEBPACK_IMPORTED_MODULE_10__.If.instance);
+      Env.registerNode("FIf", "Core", _nodes_fif_mjs__WEBPACK_IMPORTED_MODULE_31__.FIf.instance);
+      Env.registerNode("Setvar", "Core", _nodes_setvar_mjs__WEBPACK_IMPORTED_MODULE_8__.Setvar.instance);
+      Env.registerNode("While", "Core", _nodes_while_mjs__WEBPACK_IMPORTED_MODULE_9__.While.instance);
+      Env.registerNode("Enter", "Core", _enter_mjs__WEBPACK_IMPORTED_MODULE_1__.Enter.instance);
+      Env.registerNode("Exit", "Core", _exit_mjs__WEBPACK_IMPORTED_MODULE_2__.Exit.instance);
+      Env.registerNode("Wait", "Core", _nodes_wait_mjs__WEBPACK_IMPORTED_MODULE_42__.Wait.instance); // String nodes
 
-      Env.registerNode("FSConst", "String", _nodes_string_fsconst_js__WEBPACK_IMPORTED_MODULE_28__.FSConst.instance);
-      Env.registerNode("FConcat", "String", _nodes_string_fconcat_js__WEBPACK_IMPORTED_MODULE_29__.FConcat.instance); // Math nodes
+      Env.registerNode("FSConst", "String", _nodes_string_fsconst_mjs__WEBPACK_IMPORTED_MODULE_28__.FSConst.instance);
+      Env.registerNode("FConcat", "String", _nodes_string_fconcat_mjs__WEBPACK_IMPORTED_MODULE_29__.FConcat.instance); // Math nodes
 
-      Env.registerNode("FNConst", "Math", _nodes_math_fnconst_js__WEBPACK_IMPORTED_MODULE_32__.FNConst.instance);
-      Env.registerNode("FAdd", "Math", _nodes_math_fadd_js__WEBPACK_IMPORTED_MODULE_16__.FAdd.instance);
-      Env.registerNode("FDiv", "Math", _nodes_math_fdiv_js__WEBPACK_IMPORTED_MODULE_17__.FDiv.instance);
-      Env.registerNode("FMod", "Math", _nodes_math_fmod_js__WEBPACK_IMPORTED_MODULE_30__.FMod.instance);
-      Env.registerNode("FMul", "Math", _nodes_math_fmul_js__WEBPACK_IMPORTED_MODULE_18__.FMul.instance);
-      Env.registerNode("FSqrt", "Math", _nodes_math_fsqrt_js__WEBPACK_IMPORTED_MODULE_19__.FSqrt.instance);
-      Env.registerNode("FTofixed", "Math", _nodes_math_ftofixed_js__WEBPACK_IMPORTED_MODULE_41__.FTofixed.instance); // Boolean Nodes
+      Env.registerNode("FNConst", "Math", _nodes_math_fnconst_mjs__WEBPACK_IMPORTED_MODULE_32__.FNConst.instance);
+      Env.registerNode("FAdd", "Math", _nodes_math_fadd_mjs__WEBPACK_IMPORTED_MODULE_16__.FAdd.instance);
+      Env.registerNode("FDiv", "Math", _nodes_math_fdiv_mjs__WEBPACK_IMPORTED_MODULE_17__.FDiv.instance);
+      Env.registerNode("FMod", "Math", _nodes_math_fmod_mjs__WEBPACK_IMPORTED_MODULE_30__.FMod.instance);
+      Env.registerNode("FMul", "Math", _nodes_math_fmul_mjs__WEBPACK_IMPORTED_MODULE_18__.FMul.instance);
+      Env.registerNode("FSqrt", "Math", _nodes_math_fsqrt_mjs__WEBPACK_IMPORTED_MODULE_19__.FSqrt.instance);
+      Env.registerNode("FTofixed", "Math", _nodes_math_ftofixed_mjs__WEBPACK_IMPORTED_MODULE_41__.FTofixed.instance); // Boolean Nodes
 
-      Env.registerNode("FEqual", "Boolean", _nodes_bool_fequal_js__WEBPACK_IMPORTED_MODULE_20__.FEqual.instance);
-      Env.registerNode("FGT", "Boolean", _nodes_bool_fgt_js__WEBPACK_IMPORTED_MODULE_21__.FGT.instance);
-      Env.registerNode("FGTE", "Boolean", _nodes_bool_fgte_js__WEBPACK_IMPORTED_MODULE_22__.FGTE.instance);
-      Env.registerNode("FLT", "Boolean", _nodes_bool_flt_js__WEBPACK_IMPORTED_MODULE_23__.FLT.instance);
-      Env.registerNode("FLTE", "Boolean", _nodes_bool_flte_js__WEBPACK_IMPORTED_MODULE_24__.FLTE.instance);
-      Env.registerNode("FNotEqual", "Boolean", _nodes_bool_fnotequal_js__WEBPACK_IMPORTED_MODULE_25__.FNotEqual.instance); // Arrays Nodes
+      Env.registerNode("FEqual", "Boolean", _nodes_bool_fequal_mjs__WEBPACK_IMPORTED_MODULE_20__.FEqual.instance);
+      Env.registerNode("FGT", "Boolean", _nodes_bool_fgt_mjs__WEBPACK_IMPORTED_MODULE_21__.FGT.instance);
+      Env.registerNode("FGTE", "Boolean", _nodes_bool_fgte_mjs__WEBPACK_IMPORTED_MODULE_22__.FGTE.instance);
+      Env.registerNode("FLT", "Boolean", _nodes_bool_flt_mjs__WEBPACK_IMPORTED_MODULE_23__.FLT.instance);
+      Env.registerNode("FLTE", "Boolean", _nodes_bool_flte_mjs__WEBPACK_IMPORTED_MODULE_24__.FLTE.instance);
+      Env.registerNode("FNotEqual", "Boolean", _nodes_bool_fnotequal_mjs__WEBPACK_IMPORTED_MODULE_25__.FNotEqual.instance); // Arrays Nodes
 
-      Env.registerNode("APush", "Arrays", _nodes_array_apush_js__WEBPACK_IMPORTED_MODULE_11__.APush.instance);
-      Env.registerNode("FAConst", "Arrays", _nodes_array_faconst_js__WEBPACK_IMPORTED_MODULE_12__.FAConst.instance);
-      Env.registerNode("FAMake", "Arrays", _nodes_array_famake_js__WEBPACK_IMPORTED_MODULE_13__.FAMake.instance);
-      Env.registerNode("FAGet", "Arrays", _nodes_array_faget_js__WEBPACK_IMPORTED_MODULE_14__.FAGet.instance);
-      Env.registerNode("FALength", "Arrays", _nodes_array_falength_js__WEBPACK_IMPORTED_MODULE_15__.FALength.instance);
-      Env.registerNode("AMap", "Arrays", _nodes_array_amap_js__WEBPACK_IMPORTED_MODULE_35__.AMap.instance);
-      Env.registerNode("FAMap", "Arrays", _nodes_array_famap_js__WEBPACK_IMPORTED_MODULE_37__.FAMap.instance);
-      Env.registerNode("AReduce", "Arrays", _nodes_array_areduce_js__WEBPACK_IMPORTED_MODULE_36__.AReduce.instance);
-      Env.registerNode("FAReduce", "Arrays", _nodes_array_fareduce_js__WEBPACK_IMPORTED_MODULE_39__.FAReduce.instance); // Object Nodes
+      Env.registerNode("APush", "Arrays", _nodes_array_apush_mjs__WEBPACK_IMPORTED_MODULE_11__.APush.instance);
+      Env.registerNode("FAConst", "Arrays", _nodes_array_faconst_mjs__WEBPACK_IMPORTED_MODULE_12__.FAConst.instance);
+      Env.registerNode("FAMake", "Arrays", _nodes_array_famake_mjs__WEBPACK_IMPORTED_MODULE_13__.FAMake.instance);
+      Env.registerNode("FAGet", "Arrays", _nodes_array_faget_mjs__WEBPACK_IMPORTED_MODULE_14__.FAGet.instance);
+      Env.registerNode("FALength", "Arrays", _nodes_array_falength_mjs__WEBPACK_IMPORTED_MODULE_15__.FALength.instance);
+      Env.registerNode("AMap", "Arrays", _nodes_array_amap_mjs__WEBPACK_IMPORTED_MODULE_35__.AMap.instance);
+      Env.registerNode("FAMap", "Arrays", _nodes_array_famap_mjs__WEBPACK_IMPORTED_MODULE_37__.FAMap.instance);
+      Env.registerNode("AReduce", "Arrays", _nodes_array_areduce_mjs__WEBPACK_IMPORTED_MODULE_36__.AReduce.instance);
+      Env.registerNode("FAReduce", "Arrays", _nodes_array_fareduce_mjs__WEBPACK_IMPORTED_MODULE_39__.FAReduce.instance); // Object Nodes
 
-      Env.registerNode("FOMake", "Objects", _nodes_object_fomake_js__WEBPACK_IMPORTED_MODULE_33__.FOMake.instance);
-      Env.registerNode("FOBreak", "Objects", _nodes_object_fobreak_js__WEBPACK_IMPORTED_MODULE_34__.FOBreak.instance);
+      Env.registerNode("FOMake", "Objects", _nodes_object_fomake_mjs__WEBPACK_IMPORTED_MODULE_33__.FOMake.instance);
+      Env.registerNode("FOBreak", "Objects", _nodes_object_fobreak_mjs__WEBPACK_IMPORTED_MODULE_34__.FOBreak.instance);
     }
     /**
      * Register a node type
      * @param {string} name The name of the node
      * @param {string} category The category of the node
-     * @param {any} factory A class that instantiate the node
+     * @param {any} factory A function that instantiate the node
      */
 
   }, {
@@ -12192,12 +12192,12 @@ var Env = /*#__PURE__*/function () {
        * instances of the OMake node for the user object
        */
       var createMake = function createMake() {
-        var makeNode = new _nodes_object_fomake_js__WEBPACK_IMPORTED_MODULE_33__.FOMake();
+        var makeNode = new _nodes_object_fomake_mjs__WEBPACK_IMPORTED_MODULE_33__.FOMake();
         makeNode.title = name;
         makeNode.inputs = [];
 
         for (var field in obj) {
-          var is = new _socket_js__WEBPACK_IMPORTED_MODULE_26__.InputSocket(field, makeNode, _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ANY, 0);
+          var is = new _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.InputSocket(field, makeNode, _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY, 0);
 
           if (opts.editableInputs) {
             is.canEditName = true;
@@ -12206,26 +12206,26 @@ var Env = /*#__PURE__*/function () {
 
           switch (_typeof(obj[field])) {
             case "string":
-              is.type = opts.forceTypes ? _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.STRING : _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
+              is.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.STRING : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
               is.value = opts.fillValues ? obj[field] : "";
               break;
 
             case "number":
-              is.type = opts.forceTypes ? _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.NUMBER : _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
+              is.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.NUMBER : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
               is.value = opts.fillValues ? obj[field] : opts.forceTypes ? 0 : "";
               break;
 
             case "boolean":
-              is.type = opts.forceTypes ? _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.BOOLEAN : _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
+              is.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.BOOLEAN : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
               is.value = opts.fillValues ? obj[field] : opts.forceTypes ? false : "";
               break;
 
             case "object":
               if (obj[field] instanceof Array) {
-                is.type = opts.forceTypes ? _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ARRAY : _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
+                is.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ARRAY : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
                 is.value = opts.fillValues ? obj[field] : opts.forceTypes ? [] : "";
               } else if (obj[field] instanceof Object) {
-                is.type = opts.forceTypes ? _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.OBJECT : _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
+                is.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.OBJECT : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
                 is.value = opts.fillValues ? obj[field] : opts.forceTypes ? {} : "";
               } else {
                 throw new Error("Unknown field type: " + field);
@@ -12278,12 +12278,12 @@ var Env = /*#__PURE__*/function () {
        * instances of the OBreak node for the user object
        */
       var createBreak = function createBreak() {
-        var breakNode = new _nodes_object_fobreak_js__WEBPACK_IMPORTED_MODULE_34__.FOBreak();
+        var breakNode = new _nodes_object_fobreak_mjs__WEBPACK_IMPORTED_MODULE_34__.FOBreak();
         breakNode.title = name;
         breakNode.outputs = [];
 
         for (var field in obj) {
-          var os = new _socket_js__WEBPACK_IMPORTED_MODULE_26__.OutputSocket(field, breakNode, _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ANY, 0);
+          var os = new _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.OutputSocket(field, breakNode, _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY, 0);
 
           if (opts.editableOutputs) {
             os.canEditName = true;
@@ -12292,22 +12292,22 @@ var Env = /*#__PURE__*/function () {
 
           switch (_typeof(obj[field])) {
             case "string":
-              os.type = opts.forceTypes ? _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.STRING : _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
+              os.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.STRING : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
               break;
 
             case "number":
-              os.type = opts.forceTypes ? _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.NUMBER : _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
+              os.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.NUMBER : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
               break;
 
             case "boolean":
-              os.type = opts.forceTypes ? _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.BOOLEAN : _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
+              os.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.BOOLEAN : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
               break;
 
             case "object":
               if (obj[field] instanceof Array) {
-                os.type = opts.forceTypes ? _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ARRAY : _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
+                os.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ARRAY : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
               } else if (obj[field] instanceof Object) {
-                os.type = opts.forceTypes ? _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.OBJECT : _type_js__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
+                os.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.OBJECT : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
               } else {
                 throw new Error("Unknown field type: " + field);
               }
@@ -12368,9 +12368,9 @@ var Env = /*#__PURE__*/function () {
     value: function _export(program) {
       var exp = {
         id: program.id,
-        version: _program_js__WEBPACK_IMPORTED_MODULE_0__.Program.version,
-        lastNodeIndex: _node_js__WEBPACK_IMPORTED_MODULE_27__.Node.lastNodeIdIndex,
-        lastSocketIndex: _socket_js__WEBPACK_IMPORTED_MODULE_26__.Socket.lastSocketIdIndex,
+        version: _program_mjs__WEBPACK_IMPORTED_MODULE_0__.Program.version,
+        lastNodeIndex: _node_mjs__WEBPACK_IMPORTED_MODULE_27__.Node.lastNodeIdIndex,
+        lastSocketIndex: _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.Socket.lastSocketIdIndex,
         enter: program.enter.id,
         exit: program.exit.id,
         nodes: [],
@@ -12389,7 +12389,7 @@ var Env = /*#__PURE__*/function () {
             title: node.title,
             functional: node.functional,
             meta: node.meta,
-            program: node instanceof _program_js__WEBPACK_IMPORTED_MODULE_0__.Program ? Env["export"](node) : undefined,
+            program: node instanceof _program_mjs__WEBPACK_IMPORTED_MODULE_0__.Program ? Env["export"](node) : undefined,
             inputs: node.inputs.map(function (inp) {
               return {
                 id: inp.id,
@@ -12586,12 +12586,12 @@ var Env = /*#__PURE__*/function () {
         throw new Error("Imported data must have version 1");
       }
 
-      var p = new _program_js__WEBPACK_IMPORTED_MODULE_0__.Program(); // Removes enter and exit auto-nodes, these
+      var p = new _program_mjs__WEBPACK_IMPORTED_MODULE_0__.Program(); // Removes enter and exit auto-nodes, these
       // will be re-created by import procedure
 
       p.removeNode(p.enter);
       p.removeNode(p.exit);
-      _program_js__WEBPACK_IMPORTED_MODULE_0__.Program.version = data.version; // Now import nodes without connections
+      _program_mjs__WEBPACK_IMPORTED_MODULE_0__.Program.version = data.version; // Now import nodes without connections
 
       var _iterator8 = _createForOfIteratorHelper(data.nodes),
           _step8;
@@ -12630,7 +12630,7 @@ var Env = /*#__PURE__*/function () {
           try {
             for (_iterator10.s(); !(_step10 = _iterator10.n()).done;) {
               var inpData = _step10.value;
-              var inp = new _socket_js__WEBPACK_IMPORTED_MODULE_26__.InputSocket(inpData.name, node, inpData.type, inpData.value);
+              var inp = new _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.InputSocket(inpData.name, node, inpData.type, inpData.value);
               inp.id = inpData.id;
               inp.canEditName = inpData.canEditName;
               node.inputs.push(inp);
@@ -12647,7 +12647,7 @@ var Env = /*#__PURE__*/function () {
           try {
             for (_iterator11.s(); !(_step11 = _iterator11.n()).done;) {
               var outpData = _step11.value;
-              var outp = new _socket_js__WEBPACK_IMPORTED_MODULE_26__.OutputSocket(outpData.name, node, outpData.type, outpData.value, outpData.cached);
+              var outp = new _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.OutputSocket(outpData.name, node, outpData.type, outpData.value, outpData.cached);
               outp.canEditName = outpData.canEditName;
               outp.id = outpData.id;
               node.outputs.push(outp);
@@ -12659,7 +12659,7 @@ var Env = /*#__PURE__*/function () {
           }
 
           if (nodeData.prev) {
-            var prev = new _socket_js__WEBPACK_IMPORTED_MODULE_26__.PrevSocket(nodeData.prev.name, node);
+            var prev = new _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.PrevSocket(nodeData.prev.name, node);
             prev.id = nodeData.prev.id;
             node.prev = prev;
           }
@@ -12670,7 +12670,7 @@ var Env = /*#__PURE__*/function () {
           try {
             for (_iterator12.s(); !(_step12 = _iterator12.n()).done;) {
               var nextData = _step12.value;
-              var next = new _socket_js__WEBPACK_IMPORTED_MODULE_26__.NextSocket(nextData.name, node);
+              var next = new _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.NextSocket(nextData.name, node);
               next.id = nextData.id;
               node.nexts.push(next);
             }
@@ -12730,8 +12730,8 @@ var Env = /*#__PURE__*/function () {
         _iterator9.f();
       }
 
-      _node_js__WEBPACK_IMPORTED_MODULE_27__.Node.lastNodeIdIndex = data.lastNodeIndex;
-      _socket_js__WEBPACK_IMPORTED_MODULE_26__.Socket.lastSocketIdIndex = data.lastSocketIndex;
+      _node_mjs__WEBPACK_IMPORTED_MODULE_27__.Node.lastNodeIdIndex = data.lastNodeIndex;
+      _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.Socket.lastSocketIdIndex = data.lastSocketIndex;
       return p;
     }
   }]);
@@ -12745,20 +12745,20 @@ var _nodeRegistry = {
 
 /***/ }),
 
-/***/ "./src/core/exit.js":
-/*!**************************!*\
-  !*** ./src/core/exit.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/core/exit.mjs":
+/*!***************************!*\
+  !*** ./src/core/exit.mjs ***!
+  \***************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Exit": () => /* binding */ Exit
 /* harmony export */ });
-/* harmony import */ var _node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node.js */ "./src/core/node.js");
-/* harmony import */ var _socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./socket.js */ "./src/core/socket.js");
-/* harmony import */ var _type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./type.js */ "./src/core/type.js");
+/* harmony import */ var _node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -12797,7 +12797,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -12825,10 +12825,10 @@ var Exit = /*#__PURE__*/function (_Node) {
     _this = _super.call(this, "Exit");
     _this.removable = false;
     _this.creatable = false;
-    _this.inputs = [new _socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
+    _this.inputs = [new _socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
     _this.outputs = [];
     _this.nexts = [];
-    _this.prev = new _socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("End", _assertThisInitialized(_this));
+    _this.prev = new _socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("End", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -12859,7 +12859,7 @@ var Exit = /*#__PURE__*/function (_Node) {
                 return this.evaluateInputs();
 
               case 2:
-                return _context.abrupt("return", new _node_js__WEBPACK_IMPORTED_MODULE_0__.Result());
+                return _context.abrupt("return", new _node_mjs__WEBPACK_IMPORTED_MODULE_0__.Result());
 
               case 3:
               case "end":
@@ -12878,7 +12878,7 @@ var Exit = /*#__PURE__*/function (_Node) {
   }]);
 
   return Exit;
-}(_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(Exit, "instance", function () {
   return new Exit();
@@ -12886,11 +12886,11 @@ _defineProperty(Exit, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/core/node.js":
-/*!**************************!*\
-  !*** ./src/core/node.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/core/node.mjs":
+/*!***************************!*\
+  !*** ./src/core/node.mjs ***!
+  \***************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -12898,8 +12898,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Node": () => /* binding */ Node,
 /* harmony export */   "Result": () => /* binding */ Result
 /* harmony export */ });
-/* harmony import */ var _socket_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./socket.js */ "./src/core/socket.js");
-/* harmony import */ var _type_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./type.js */ "./src/core/type.js");
+/* harmony import */ var _socket_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _type_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./type.mjs */ "./src/core/type.mjs");
 function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -12928,7 +12928,7 @@ function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = p
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -13312,7 +13312,7 @@ var Node = /*#__PURE__*/function () {
     /**
      * Can this node remove a specific input?
      * Subclass with variable number of input should override this method
-     * @param {InputsSocket} input The input to remove
+     * @param {InputSocket} input The input to remove
      */
 
   }, {
@@ -13368,19 +13368,19 @@ var Node = /*#__PURE__*/function () {
   }, {
     key: "canBeConnected",
     value: function canBeConnected(thisSocket, otherSocket) {
-      if (thisSocket instanceof _socket_js__WEBPACK_IMPORTED_MODULE_0__.FlowSocket && !(otherSocket instanceof _socket_js__WEBPACK_IMPORTED_MODULE_0__.FlowSocket)) {
+      if (thisSocket instanceof _socket_mjs__WEBPACK_IMPORTED_MODULE_0__.FlowSocket && !(otherSocket instanceof _socket_mjs__WEBPACK_IMPORTED_MODULE_0__.FlowSocket)) {
         return false;
       }
 
-      if (otherSocket instanceof _socket_js__WEBPACK_IMPORTED_MODULE_0__.FlowSocket && !(thisSocket instanceof _socket_js__WEBPACK_IMPORTED_MODULE_0__.FlowSocket)) {
+      if (otherSocket instanceof _socket_mjs__WEBPACK_IMPORTED_MODULE_0__.FlowSocket && !(thisSocket instanceof _socket_mjs__WEBPACK_IMPORTED_MODULE_0__.FlowSocket)) {
         return false;
       }
 
-      if (thisSocket instanceof _socket_js__WEBPACK_IMPORTED_MODULE_0__.FlowSocket || otherSocket instanceof _socket_js__WEBPACK_IMPORTED_MODULE_0__.FlowSocket) {
+      if (thisSocket instanceof _socket_mjs__WEBPACK_IMPORTED_MODULE_0__.FlowSocket || otherSocket instanceof _socket_mjs__WEBPACK_IMPORTED_MODULE_0__.FlowSocket) {
         return true;
       }
 
-      if (thisSocket.type === _type_js__WEBPACK_IMPORTED_MODULE_1__.Types.ANY || otherSocket.type === _type_js__WEBPACK_IMPORTED_MODULE_1__.Types.ANY) {
+      if (thisSocket.type === _type_mjs__WEBPACK_IMPORTED_MODULE_1__.Types.ANY || otherSocket.type === _type_mjs__WEBPACK_IMPORTED_MODULE_1__.Types.ANY) {
         return true;
       }
 
@@ -13683,11 +13683,11 @@ var Result = /*#__PURE__*/function () {
 
 /***/ }),
 
-/***/ "./src/core/program.js":
-/*!*****************************!*\
-  !*** ./src/core/program.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/core/program.mjs":
+/*!******************************!*\
+  !*** ./src/core/program.mjs ***!
+  \******************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -13695,12 +13695,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Program": () => /* binding */ Program
 /* harmony export */ });
 /* harmony import */ var events__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! events */ "./node_modules/events/events.js");
-/* harmony import */ var events__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(events__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _enter_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./enter.js */ "./src/core/enter.js");
-/* harmony import */ var _exit_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./exit.js */ "./src/core/exit.js");
-/* harmony import */ var _node_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node.js */ "./src/core/node.js");
-/* harmony import */ var _socket_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./socket.js */ "./src/core/socket.js");
-/* harmony import */ var _type_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./type.js */ "./src/core/type.js");
+/* harmony import */ var _enter_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./enter.mjs */ "./src/core/enter.mjs");
+/* harmony import */ var _exit_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./exit.mjs */ "./src/core/exit.mjs");
+/* harmony import */ var _node_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _socket_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _type_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
@@ -13749,7 +13748,7 @@ function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = p
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -13832,12 +13831,12 @@ var Program = /*#__PURE__*/function (_Node) {
 
     _defineProperty(_assertThisInitialized(_this), "events", new events__WEBPACK_IMPORTED_MODULE_0__.EventEmitter());
 
-    _this.inputs = [new _socket_js__WEBPACK_IMPORTED_MODULE_4__.InputSocket("Val", _assertThisInitialized(_this), _type_js__WEBPACK_IMPORTED_MODULE_5__.Types.ANY, 0)];
-    _this.outputs = [new _socket_js__WEBPACK_IMPORTED_MODULE_4__.OutputSocket("Val", _assertThisInitialized(_this), _type_js__WEBPACK_IMPORTED_MODULE_5__.Types.ANY, 0)];
-    _this.nexts = [new _socket_js__WEBPACK_IMPORTED_MODULE_4__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _socket_js__WEBPACK_IMPORTED_MODULE_4__.PrevSocket("In", _assertThisInitialized(_this)); // Create default enter, exit nodes
+    _this.inputs = [new _socket_mjs__WEBPACK_IMPORTED_MODULE_4__.InputSocket("Val", _assertThisInitialized(_this), _type_mjs__WEBPACK_IMPORTED_MODULE_5__.Types.ANY, 0)];
+    _this.outputs = [new _socket_mjs__WEBPACK_IMPORTED_MODULE_4__.OutputSocket("Val", _assertThisInitialized(_this), _type_mjs__WEBPACK_IMPORTED_MODULE_5__.Types.ANY, 0)];
+    _this.nexts = [new _socket_mjs__WEBPACK_IMPORTED_MODULE_4__.NextSocket("Out", _assertThisInitialized(_this))];
+    _this.prev = new _socket_mjs__WEBPACK_IMPORTED_MODULE_4__.PrevSocket("In", _assertThisInitialized(_this)); // Create default enter, exit nodes
 
-    _this.addNode(_classPrivateFieldSet(_assertThisInitialized(_this), _enter, new _enter_js__WEBPACK_IMPORTED_MODULE_1__.Enter())).addNode(_classPrivateFieldSet(_assertThisInitialized(_this), _exit, new _exit_js__WEBPACK_IMPORTED_MODULE_2__.Exit()));
+    _this.addNode(_classPrivateFieldSet(_assertThisInitialized(_this), _enter, new _enter_mjs__WEBPACK_IMPORTED_MODULE_1__.Enter())).addNode(_classPrivateFieldSet(_assertThisInitialized(_this), _exit, new _exit_mjs__WEBPACK_IMPORTED_MODULE_2__.Exit()));
 
     _this.events.on("log", function (msg) {
       console.log("catched: ", msg);
@@ -13862,10 +13861,10 @@ var Program = /*#__PURE__*/function (_Node) {
       retNode.nodes = Program.cloneNodes(_classPrivateFieldGet(this, _nodes)); // Connect actual Enter and Exit
 
       retNode.enter = retNode.nodes.find(function (n) {
-        return n instanceof _enter_js__WEBPACK_IMPORTED_MODULE_1__.Enter;
+        return n instanceof _enter_mjs__WEBPACK_IMPORTED_MODULE_1__.Enter;
       });
       retNode.exit = retNode.nodes.find(function (n) {
-        return n instanceof _exit_js__WEBPACK_IMPORTED_MODULE_2__.Exit;
+        return n instanceof _exit_mjs__WEBPACK_IMPORTED_MODULE_2__.Exit;
       });
       return retNode;
     }
@@ -14159,7 +14158,7 @@ var Program = /*#__PURE__*/function (_Node) {
   }]);
 
   return Program;
-}(_node_js__WEBPACK_IMPORTED_MODULE_3__.Node);
+}(_node_mjs__WEBPACK_IMPORTED_MODULE_3__.Node);
 
 _defineProperty(Program, "instance", function () {
   return new Program();
@@ -14169,11 +14168,11 @@ _defineProperty(Program, "version", 1);
 
 /***/ }),
 
-/***/ "./src/core/socket.js":
-/*!****************************!*\
-  !*** ./src/core/socket.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/core/socket.mjs":
+/*!*****************************!*\
+  !*** ./src/core/socket.mjs ***!
+  \*****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -14186,7 +14185,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "PrevSocket": () => /* binding */ PrevSocket,
 /* harmony export */   "NextSocket": () => /* binding */ NextSocket
 /* harmony export */ });
-/* harmony import */ var _type_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./type.js */ "./src/core/type.js");
+/* harmony import */ var _type_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -14225,7 +14224,7 @@ function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = p
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 /**
@@ -14365,7 +14364,7 @@ var ValueSocket = /*#__PURE__*/function (_Socket) {
   function ValueSocket(name, node) {
     var _this;
 
-    var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _type_js__WEBPACK_IMPORTED_MODULE_0__.Types.NUMBER;
+    var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _type_mjs__WEBPACK_IMPORTED_MODULE_0__.Types.NUMBER;
     var value = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
 
     _classCallCheck(this, ValueSocket);
@@ -14374,7 +14373,7 @@ var ValueSocket = /*#__PURE__*/function (_Socket) {
 
     _type.set(_assertThisInitialized(_this), {
       writable: true,
-      value: _type_js__WEBPACK_IMPORTED_MODULE_0__.Types.NUMBER
+      value: _type_mjs__WEBPACK_IMPORTED_MODULE_0__.Types.NUMBER
     });
 
     _value.set(_assertThisInitialized(_this), {
@@ -14476,7 +14475,7 @@ var InputSocket = /*#__PURE__*/function (_ValueSocket) {
   function InputSocket(name, node) {
     var _this2;
 
-    var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _type_js__WEBPACK_IMPORTED_MODULE_0__.Types.NUMBER;
+    var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _type_mjs__WEBPACK_IMPORTED_MODULE_0__.Types.NUMBER;
     var value = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
 
     _classCallCheck(this, InputSocket);
@@ -14626,11 +14625,12 @@ var OutputSocket = /*#__PURE__*/function (_ValueSocket2) {
    * @param {Node} node The parent node
    * @param {Type} type The type of the socket
    * @param {any} value The default value of the socket
+   * @param {boolean} [cached] This socket is cached?
    */
   function OutputSocket(name, node) {
     var _this5;
 
-    var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _type_js__WEBPACK_IMPORTED_MODULE_0__.Types.NUMBER;
+    var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _type_mjs__WEBPACK_IMPORTED_MODULE_0__.Types.NUMBER;
     var value = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
     var cached = arguments.length > 4 ? arguments[4] : undefined;
 
@@ -14649,7 +14649,7 @@ var OutputSocket = /*#__PURE__*/function (_ValueSocket2) {
       value: true
     });
 
-    _classPrivateFieldSet(_assertThisInitialized(_this5), _cached, cached !== null && cached !== void 0 ? cached : !node.functional);
+    _classPrivateFieldSet(_assertThisInitialized(_this5), _cached, cached || !node.functional);
 
     return _this5;
   }
@@ -14671,13 +14671,11 @@ var OutputSocket = /*#__PURE__*/function (_ValueSocket2) {
      */
     value: function () {
       var _evaluate2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
-        var _this$node;
-
         return regeneratorRuntime.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                if (!((_this$node = this.node) !== null && _this$node !== void 0 && _this$node.functional && !this.cached)) {
+                if (!(this.node && this.node.functional && !this.cached)) {
                   _context2.next = 3;
                   break;
                 }
@@ -14987,11 +14985,11 @@ var NextSocket = /*#__PURE__*/function (_FlowSocket2) {
 
 /***/ }),
 
-/***/ "./src/core/type.js":
-/*!**************************!*\
-  !*** ./src/core/type.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/core/type.mjs":
+/*!***************************!*\
+  !*** ./src/core/type.mjs ***!
+  \***************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15004,7 +15002,7 @@ __webpack_require__.r(__webpack_exports__);
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 /**
@@ -15021,20 +15019,20 @@ var Types = {
 
 /***/ }),
 
-/***/ "./src/nodes/array/amap.js":
-/*!*********************************!*\
-  !*** ./src/nodes/array/amap.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/array/amap.mjs":
+/*!**********************************!*\
+  !*** ./src/nodes/array/amap.mjs ***!
+  \**********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AMap": () => /* binding */ AMap
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -15087,7 +15085,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -15113,12 +15111,12 @@ var AMap = /*#__PURE__*/function (_Node) {
     _classCallCheck(this, AMap);
 
     _this = _super.call(this, "AMap");
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Mapped", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Array", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, [], false), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Item", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", true), // cached
-    new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, true) // cached
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Mapped", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, [], false), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Item", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", true), // cached
+    new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, true) // cached
     ];
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
+    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -15141,7 +15139,7 @@ var AMap = /*#__PURE__*/function (_Node) {
     key: "process",
     value: function () {
       var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var arr, outArr, _iterator, _step, _this$next$peer, _step$value, index, item;
+        var arr, outArr, _iterator, _step, _step$value, index, item;
 
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
@@ -15180,7 +15178,7 @@ var AMap = /*#__PURE__*/function (_Node) {
 
                 this.output("Item").value = item; // If there's a node connected to the "Item" next socket...
 
-                if (!((_this$next$peer = this.next("Do").peer) !== null && _this$next$peer !== void 0 && _this$next$peer.node)) {
+                if (!(this.next("Do").peer && this.next("Do").peer.node)) {
                   _context.next = 17;
                   break;
                 }
@@ -15244,7 +15242,7 @@ var AMap = /*#__PURE__*/function (_Node) {
   }]);
 
   return AMap;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(AMap, "instance", function () {
   return new AMap();
@@ -15252,20 +15250,20 @@ _defineProperty(AMap, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/array/apush.js":
-/*!**********************************!*\
-  !*** ./src/nodes/array/apush.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/array/apush.mjs":
+/*!***********************************!*\
+  !*** ./src/nodes/array/apush.mjs ***!
+  \***********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "APush": () => /* binding */ APush
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -15304,7 +15302,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -15330,10 +15328,10 @@ var APush = /*#__PURE__*/function (_Node) {
     _classCallCheck(this, APush);
 
     _this = _super.call(this, "APush");
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
+    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -15393,7 +15391,7 @@ var APush = /*#__PURE__*/function (_Node) {
   }]);
 
   return APush;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(APush, "instance", function () {
   return new APush();
@@ -15401,20 +15399,20 @@ _defineProperty(APush, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/array/areduce.js":
-/*!************************************!*\
-  !*** ./src/nodes/array/areduce.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/array/areduce.mjs":
+/*!*************************************!*\
+  !*** ./src/nodes/array/areduce.mjs ***!
+  \*************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AReduce": () => /* binding */ AReduce
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -15467,7 +15465,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -15493,10 +15491,10 @@ var AReduce = /*#__PURE__*/function (_Node) {
     _classCallCheck(this, AReduce);
 
     _this = _super.call(this, "AReduce");
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Acc0", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Acc", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Item", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, false, true), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Acc", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", true), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, true)];
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Acc0", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Acc", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Item", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, false, true), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Acc", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", true), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, true)];
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
+    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -15519,7 +15517,7 @@ var AReduce = /*#__PURE__*/function (_Node) {
     key: "process",
     value: function () {
       var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var arr, acc0, acc, _iterator, _step, _this$next$peer, _step$value, index, elem;
+        var arr, acc0, acc, _iterator, _step, _step$value, index, elem;
 
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
@@ -15561,7 +15559,7 @@ var AReduce = /*#__PURE__*/function (_Node) {
 
                 this.output("Acc").value = acc; // If there's a node connected to the "Item" next socket...
 
-                if (!((_this$next$peer = this.next("Do").peer) !== null && _this$next$peer !== void 0 && _this$next$peer.node)) {
+                if (!(this.next("Do").peer && this.next("Do").peer.node)) {
                   _context.next = 19;
                   break;
                 }
@@ -15625,7 +15623,7 @@ var AReduce = /*#__PURE__*/function (_Node) {
   }]);
 
   return AReduce;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(AReduce, "instance", function () {
   return new AReduce();
@@ -15633,20 +15631,20 @@ _defineProperty(AReduce, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/array/faconst.js":
-/*!************************************!*\
-  !*** ./src/nodes/array/faconst.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/array/faconst.mjs":
+/*!*************************************!*\
+  !*** ./src/nodes/array/faconst.mjs ***!
+  \*************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FAConst": () => /* binding */ FAConst
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -15685,7 +15683,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -15712,8 +15710,8 @@ var FAConst = /*#__PURE__*/function (_Node) {
 
     _this = _super.call(this, "FAConst");
     _this.functional = true;
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "[0, 1, 2]")];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, [], false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "[0, 1, 2]")];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, [], false)];
     _this.nexts = [];
     _this.prev = null;
     return _this;
@@ -15783,7 +15781,7 @@ var FAConst = /*#__PURE__*/function (_Node) {
   }]);
 
   return FAConst;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FAConst, "instance", function () {
   return new FAConst();
@@ -15791,20 +15789,20 @@ _defineProperty(FAConst, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/array/faget.js":
-/*!**********************************!*\
-  !*** ./src/nodes/array/faget.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/array/faget.mjs":
+/*!***********************************!*\
+  !*** ./src/nodes/array/faget.mjs ***!
+  \***********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FAGet": () => /* binding */ FAGet
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -15843,7 +15841,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -15872,8 +15870,8 @@ var FAGet = /*#__PURE__*/function (_Node) {
 
     _this.functional = true; // Default to two numeric inputs
 
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, 0), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Index", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0, false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0, false)];
     _this.prev = null;
     _this.nexts = [];
     return _this;
@@ -15932,7 +15930,7 @@ var FAGet = /*#__PURE__*/function (_Node) {
   }]);
 
   return FAGet;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FAGet, "instance", function () {
   return new FAGet();
@@ -15940,20 +15938,20 @@ _defineProperty(FAGet, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/array/falength.js":
-/*!*************************************!*\
-  !*** ./src/nodes/array/falength.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/array/falength.mjs":
+/*!**************************************!*\
+  !*** ./src/nodes/array/falength.mjs ***!
+  \**************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FALength": () => /* binding */ FALength
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -15992,7 +15990,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -16021,8 +16019,8 @@ var FALength = /*#__PURE__*/function (_Node) {
 
     _this.functional = true; // Default to two numeric inputs
 
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
     _this.prev = null;
     _this.nexts = [];
     return _this;
@@ -16080,7 +16078,7 @@ var FALength = /*#__PURE__*/function (_Node) {
   }]);
 
   return FALength;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FALength, "instance", function () {
   return new FALength();
@@ -16088,20 +16086,20 @@ _defineProperty(FALength, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/array/famake.js":
-/*!***********************************!*\
-  !*** ./src/nodes/array/famake.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/array/famake.mjs":
+/*!************************************!*\
+  !*** ./src/nodes/array/famake.mjs ***!
+  \************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FAMake": () => /* binding */ FAMake
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -16162,7 +16160,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -16190,8 +16188,8 @@ var FAMake = /*#__PURE__*/function (_Node) {
     _this = _super.call(this, "FAMake");
     _this.canAddInput = true;
     _this.functional = true;
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("0", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, ""), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("1", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, [], false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("0", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, ""), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, [], false)];
     _this.nexts = [];
     _this.prev = null;
     return _this;
@@ -16265,7 +16263,7 @@ var FAMake = /*#__PURE__*/function (_Node) {
     key: "addInput",
     value: function addInput() {
       if (this.canAddInput) {
-        this.inputs.push(new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")); // Rename all inputs to its ordinal number in the inputs array
+        this.inputs.push(new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")); // Rename all inputs to its ordinal number in the inputs array
 
         var _iterator = _createForOfIteratorHelper(this.inputs.entries()),
             _step;
@@ -16324,7 +16322,7 @@ var FAMake = /*#__PURE__*/function (_Node) {
   }]);
 
   return FAMake;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FAMake, "instance", function () {
   return new FAMake();
@@ -16332,19 +16330,19 @@ _defineProperty(FAMake, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/array/famap.js":
-/*!**********************************!*\
-  !*** ./src/nodes/array/famap.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/array/famap.mjs":
+/*!***********************************!*\
+  !*** ./src/nodes/array/famap.mjs ***!
+  \***********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FAMap": () => /* binding */ FAMap
 /* harmony export */ });
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _amap_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./amap.js */ "./src/nodes/array/amap.js");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _amap_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./amap.mjs */ "./src/nodes/array/amap.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16379,7 +16377,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -16406,7 +16404,7 @@ var FAMap = /*#__PURE__*/function (_AMap) {
     _this.name = "FAMap";
     _this.title = "FAMap";
     _this.functional = true;
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_0__.NextSocket("Do", _assertThisInitialized(_this))];
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_0__.NextSocket("Do", _assertThisInitialized(_this))];
     _this.prev = null;
     return _this;
   }
@@ -16425,7 +16423,7 @@ var FAMap = /*#__PURE__*/function (_AMap) {
   }]);
 
   return FAMap;
-}(_amap_js__WEBPACK_IMPORTED_MODULE_1__.AMap);
+}(_amap_mjs__WEBPACK_IMPORTED_MODULE_1__.AMap);
 
 _defineProperty(FAMap, "instance", function () {
   return new FAMap();
@@ -16433,19 +16431,19 @@ _defineProperty(FAMap, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/array/fareduce.js":
-/*!*************************************!*\
-  !*** ./src/nodes/array/fareduce.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/array/fareduce.mjs":
+/*!**************************************!*\
+  !*** ./src/nodes/array/fareduce.mjs ***!
+  \**************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FAReduce": () => /* binding */ FAReduce
 /* harmony export */ });
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _areduce_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./areduce.js */ "./src/nodes/array/areduce.js");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _areduce_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./areduce.mjs */ "./src/nodes/array/areduce.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16480,7 +16478,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -16507,7 +16505,7 @@ var FAReduce = /*#__PURE__*/function (_AReduce) {
     _this.name = "FAReduce";
     _this.title = "FAReduce";
     _this.functional = true;
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_0__.NextSocket("Do", _assertThisInitialized(_this))];
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_0__.NextSocket("Do", _assertThisInitialized(_this))];
     _this.prev = null;
     return _this;
   }
@@ -16526,7 +16524,7 @@ var FAReduce = /*#__PURE__*/function (_AReduce) {
   }]);
 
   return FAReduce;
-}(_areduce_js__WEBPACK_IMPORTED_MODULE_1__.AReduce);
+}(_areduce_mjs__WEBPACK_IMPORTED_MODULE_1__.AReduce);
 
 _defineProperty(FAReduce, "instance", function () {
   return new FAReduce();
@@ -16534,11 +16532,11 @@ _defineProperty(FAReduce, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/bool/fcompare.js":
-/*!************************************!*\
-  !*** ./src/nodes/bool/fcompare.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/bool/fcompare.mjs":
+/*!*************************************!*\
+  !*** ./src/nodes/bool/fcompare.mjs ***!
+  \*************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16546,9 +16544,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Comparision": () => /* binding */ Comparision,
 /* harmony export */   "FCompare": () => /* binding */ FCompare
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -16591,7 +16589,7 @@ function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = p
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -16646,8 +16644,8 @@ var FCompare = /*#__PURE__*/function (_Node) {
 
     _this.functional = true; // Default to two numeric inputs
 
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val1", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val2", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.BOOLEAN, 0, false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val2", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.BOOLEAN, 0, false)];
     _this.prev = null;
     _this.nexts = [];
     return _this;
@@ -16742,7 +16740,7 @@ var FCompare = /*#__PURE__*/function (_Node) {
   }]);
 
   return FCompare;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FCompare, "instance", function () {
   return new FCompare();
@@ -16750,18 +16748,18 @@ _defineProperty(FCompare, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/bool/fequal.js":
-/*!**********************************!*\
-  !*** ./src/nodes/bool/fequal.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/bool/fequal.mjs":
+/*!***********************************!*\
+  !*** ./src/nodes/bool/fequal.mjs ***!
+  \***********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FEqual": () => /* binding */ FEqual
 /* harmony export */ });
-/* harmony import */ var _fcompare_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.js */ "./src/nodes/bool/fcompare.js");
+/* harmony import */ var _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16796,7 +16794,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -16819,7 +16817,7 @@ var FEqual = /*#__PURE__*/function (_FCompare) {
 
     _classCallCheck(this, FEqual);
 
-    _this = _super.call(this, _fcompare_js__WEBPACK_IMPORTED_MODULE_0__.Comparision.EQUAL);
+    _this = _super.call(this, _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.Comparision.EQUAL);
     _this.name = "FEqual";
     _this.title = "==";
     return _this;
@@ -16839,7 +16837,7 @@ var FEqual = /*#__PURE__*/function (_FCompare) {
   }]);
 
   return FEqual;
-}(_fcompare_js__WEBPACK_IMPORTED_MODULE_0__.FCompare);
+}(_fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.FCompare);
 
 _defineProperty(FEqual, "instance", function () {
   return new FEqual();
@@ -16847,18 +16845,18 @@ _defineProperty(FEqual, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/bool/fgt.js":
-/*!*******************************!*\
-  !*** ./src/nodes/bool/fgt.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/bool/fgt.mjs":
+/*!********************************!*\
+  !*** ./src/nodes/bool/fgt.mjs ***!
+  \********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FGT": () => /* binding */ FGT
 /* harmony export */ });
-/* harmony import */ var _fcompare_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.js */ "./src/nodes/bool/fcompare.js");
+/* harmony import */ var _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16893,7 +16891,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -16916,7 +16914,7 @@ var FGT = /*#__PURE__*/function (_FCompare) {
 
     _classCallCheck(this, FGT);
 
-    _this = _super.call(this, _fcompare_js__WEBPACK_IMPORTED_MODULE_0__.Comparision.GT);
+    _this = _super.call(this, _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.Comparision.GT);
     _this.name = "FGT";
     _this.title = ">";
     return _this;
@@ -16936,7 +16934,7 @@ var FGT = /*#__PURE__*/function (_FCompare) {
   }]);
 
   return FGT;
-}(_fcompare_js__WEBPACK_IMPORTED_MODULE_0__.FCompare);
+}(_fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.FCompare);
 
 _defineProperty(FGT, "instance", function () {
   return new FGT();
@@ -16944,18 +16942,18 @@ _defineProperty(FGT, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/bool/fgte.js":
-/*!********************************!*\
-  !*** ./src/nodes/bool/fgte.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/bool/fgte.mjs":
+/*!*********************************!*\
+  !*** ./src/nodes/bool/fgte.mjs ***!
+  \*********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FGTE": () => /* binding */ FGTE
 /* harmony export */ });
-/* harmony import */ var _fcompare_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.js */ "./src/nodes/bool/fcompare.js");
+/* harmony import */ var _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16990,7 +16988,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -17013,7 +17011,7 @@ var FGTE = /*#__PURE__*/function (_FCompare) {
 
     _classCallCheck(this, FGTE);
 
-    _this = _super.call(this, _fcompare_js__WEBPACK_IMPORTED_MODULE_0__.Comparision.GTE);
+    _this = _super.call(this, _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.Comparision.GTE);
     _this.name = "FGTE";
     _this.title = ">=";
     return _this;
@@ -17033,7 +17031,7 @@ var FGTE = /*#__PURE__*/function (_FCompare) {
   }]);
 
   return FGTE;
-}(_fcompare_js__WEBPACK_IMPORTED_MODULE_0__.FCompare);
+}(_fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.FCompare);
 
 _defineProperty(FGTE, "instance", function () {
   return new FGTE();
@@ -17041,18 +17039,18 @@ _defineProperty(FGTE, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/bool/flt.js":
-/*!*******************************!*\
-  !*** ./src/nodes/bool/flt.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/bool/flt.mjs":
+/*!********************************!*\
+  !*** ./src/nodes/bool/flt.mjs ***!
+  \********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FLT": () => /* binding */ FLT
 /* harmony export */ });
-/* harmony import */ var _fcompare_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.js */ "./src/nodes/bool/fcompare.js");
+/* harmony import */ var _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -17087,7 +17085,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -17110,7 +17108,7 @@ var FLT = /*#__PURE__*/function (_FCompare) {
 
     _classCallCheck(this, FLT);
 
-    _this = _super.call(this, _fcompare_js__WEBPACK_IMPORTED_MODULE_0__.Comparision.LT);
+    _this = _super.call(this, _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.Comparision.LT);
     _this.name = "FLT";
     _this.title = "<";
     return _this;
@@ -17130,7 +17128,7 @@ var FLT = /*#__PURE__*/function (_FCompare) {
   }]);
 
   return FLT;
-}(_fcompare_js__WEBPACK_IMPORTED_MODULE_0__.FCompare);
+}(_fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.FCompare);
 
 _defineProperty(FLT, "instance", function () {
   return new FLT();
@@ -17138,18 +17136,18 @@ _defineProperty(FLT, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/bool/flte.js":
-/*!********************************!*\
-  !*** ./src/nodes/bool/flte.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/bool/flte.mjs":
+/*!*********************************!*\
+  !*** ./src/nodes/bool/flte.mjs ***!
+  \*********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FLTE": () => /* binding */ FLTE
 /* harmony export */ });
-/* harmony import */ var _fcompare_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.js */ "./src/nodes/bool/fcompare.js");
+/* harmony import */ var _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -17184,7 +17182,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -17207,7 +17205,7 @@ var FLTE = /*#__PURE__*/function (_FCompare) {
 
     _classCallCheck(this, FLTE);
 
-    _this = _super.call(this, _fcompare_js__WEBPACK_IMPORTED_MODULE_0__.Comparision.LTE);
+    _this = _super.call(this, _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.Comparision.LTE);
     _this.name = "FLTE";
     _this.title = "<=";
     return _this;
@@ -17227,7 +17225,7 @@ var FLTE = /*#__PURE__*/function (_FCompare) {
   }]);
 
   return FLTE;
-}(_fcompare_js__WEBPACK_IMPORTED_MODULE_0__.FCompare);
+}(_fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.FCompare);
 
 _defineProperty(FLTE, "instance", function () {
   return new FLTE();
@@ -17235,18 +17233,18 @@ _defineProperty(FLTE, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/bool/fnotequal.js":
-/*!*************************************!*\
-  !*** ./src/nodes/bool/fnotequal.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/bool/fnotequal.mjs":
+/*!**************************************!*\
+  !*** ./src/nodes/bool/fnotequal.mjs ***!
+  \**************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FNotEqual": () => /* binding */ FNotEqual
 /* harmony export */ });
-/* harmony import */ var _fcompare_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.js */ "./src/nodes/bool/fcompare.js");
+/* harmony import */ var _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -17281,7 +17279,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -17304,7 +17302,7 @@ var FNotEqual = /*#__PURE__*/function (_FCompare) {
 
     _classCallCheck(this, FNotEqual);
 
-    _this = _super.call(this, _fcompare_js__WEBPACK_IMPORTED_MODULE_0__.Comparision.NOT_EQUAL);
+    _this = _super.call(this, _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.Comparision.NOT_EQUAL);
     _this.name = "FNotEqual";
     _this.title = "!=";
     return _this;
@@ -17324,7 +17322,7 @@ var FNotEqual = /*#__PURE__*/function (_FCompare) {
   }]);
 
   return FNotEqual;
-}(_fcompare_js__WEBPACK_IMPORTED_MODULE_0__.FCompare);
+}(_fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.FCompare);
 
 _defineProperty(FNotEqual, "instance", function () {
   return new FNotEqual();
@@ -17332,19 +17330,19 @@ _defineProperty(FNotEqual, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/call.js":
-/*!***************************!*\
-  !*** ./src/nodes/call.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/call.mjs":
+/*!****************************!*\
+  !*** ./src/nodes/call.mjs ***!
+  \****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Call": () => /* binding */ Call
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.js */ "./src/core/socket.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -17383,7 +17381,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -17409,8 +17407,8 @@ var Call = /*#__PURE__*/function (_Node) {
     _this = _super.call(this, "Call");
     _this.inputs = [];
     _this.outputs = [];
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Call", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Call", _assertThisInitialized(_this))];
+    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -17466,7 +17464,7 @@ var Call = /*#__PURE__*/function (_Node) {
   }]);
 
   return Call;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(Call, "instance", function () {
   return new Call();
@@ -17474,20 +17472,20 @@ _defineProperty(Call, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/console.js":
-/*!******************************!*\
-  !*** ./src/nodes/console.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/console.mjs":
+/*!*******************************!*\
+  !*** ./src/nodes/console.mjs ***!
+  \*******************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Console": () => /* binding */ Console
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -17526,7 +17524,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -17552,10 +17550,10 @@ var Console = /*#__PURE__*/function (_Node) {
     _classCallCheck(this, Console);
 
     _this = _super.call(this, "Console");
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
     _this.outputs = [];
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
+    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -17606,7 +17604,7 @@ var Console = /*#__PURE__*/function (_Node) {
   }]);
 
   return Console;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(Console, "instance", function () {
   return new Console();
@@ -17614,20 +17612,20 @@ _defineProperty(Console, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/fgetvar.js":
-/*!******************************!*\
-  !*** ./src/nodes/fgetvar.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/fgetvar.mjs":
+/*!*******************************!*\
+  !*** ./src/nodes/fgetvar.mjs ***!
+  \*******************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FGetvar": () => /* binding */ FGetvar
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -17666,7 +17664,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -17694,8 +17692,8 @@ var FGetvar = /*#__PURE__*/function (_Node) {
 
     _this = _super.call(this, "FGetvar");
     _this.functional = true;
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Name", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "")];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Name", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "")];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false)];
     _this.nexts = [];
     _this.prev = null;
     return _this;
@@ -17749,7 +17747,7 @@ var FGetvar = /*#__PURE__*/function (_Node) {
   }]);
 
   return FGetvar;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FGetvar, "instance", function () {
   return new FGetvar();
@@ -17757,20 +17755,20 @@ _defineProperty(FGetvar, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/fif.js":
-/*!**************************!*\
-  !*** ./src/nodes/fif.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/fif.mjs":
+/*!***************************!*\
+  !*** ./src/nodes/fif.mjs ***!
+  \***************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FIf": () => /* binding */ FIf
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -17809,7 +17807,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -17837,8 +17835,8 @@ var FIf = /*#__PURE__*/function (_Node) {
 
     _this.functional = true; // Default to two any inputs
 
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Condition", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.BOOLEAN, false), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("True", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("False", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0, false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Condition", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.BOOLEAN, false), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("True", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("False", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0, false)];
     _this.prev = null;
     _this.nexts = [];
     return _this;
@@ -17890,7 +17888,7 @@ var FIf = /*#__PURE__*/function (_Node) {
   }]);
 
   return FIf;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FIf, "instance", function () {
   return new FIf();
@@ -17898,20 +17896,20 @@ _defineProperty(FIf, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/for.js":
-/*!**************************!*\
-  !*** ./src/nodes/for.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/for.mjs":
+/*!***************************!*\
+  !*** ./src/nodes/for.mjs ***!
+  \***************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "For": () => /* binding */ For
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -17950,7 +17948,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -17977,10 +17975,10 @@ var For = /*#__PURE__*/function (_Node) {
     _classCallCheck(this, For);
 
     _this = _super.call(this, "For");
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("From", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("To", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("From", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("To", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
+    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -18067,7 +18065,7 @@ var For = /*#__PURE__*/function (_Node) {
   }]);
 
   return For;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(For, "instance", function () {
   return new For();
@@ -18075,20 +18073,20 @@ _defineProperty(For, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/getvar.js":
-/*!*****************************!*\
-  !*** ./src/nodes/getvar.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/getvar.mjs":
+/*!******************************!*\
+  !*** ./src/nodes/getvar.mjs ***!
+  \******************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Getvar": () => /* binding */ Getvar
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -18127,7 +18125,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -18154,10 +18152,10 @@ var Getvar = /*#__PURE__*/function (_Node) {
     _classCallCheck(this, Getvar);
 
     _this = _super.call(this, "Getvar");
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Name", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "")];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")];
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Name", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "")];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")];
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
+    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -18210,7 +18208,7 @@ var Getvar = /*#__PURE__*/function (_Node) {
   }]);
 
   return Getvar;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(Getvar, "instance", function () {
   return new Getvar();
@@ -18218,20 +18216,20 @@ _defineProperty(Getvar, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/if.js":
-/*!*************************!*\
-  !*** ./src/nodes/if.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/if.mjs":
+/*!**************************!*\
+  !*** ./src/nodes/if.mjs ***!
+  \**************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "If": () => /* binding */ If
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -18270,7 +18268,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -18297,10 +18295,10 @@ var If = /*#__PURE__*/function (_Node) {
     _classCallCheck(this, If);
 
     _this = _super.call(this, "If");
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Condition", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.BOOLEAN, false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Condition", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.BOOLEAN, false)];
     _this.outputs = [];
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Then", _assertThisInitialized(_this)), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Else", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Then", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Else", _assertThisInitialized(_this))];
+    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -18359,7 +18357,7 @@ var If = /*#__PURE__*/function (_Node) {
   }]);
 
   return If;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(If, "instance", function () {
   return new If();
@@ -18367,20 +18365,20 @@ _defineProperty(If, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/log.js":
-/*!**************************!*\
-  !*** ./src/nodes/log.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/log.mjs":
+/*!***************************!*\
+  !*** ./src/nodes/log.mjs ***!
+  \***************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Log": () => /* binding */ Log
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -18419,7 +18417,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -18445,10 +18443,10 @@ var Log = /*#__PURE__*/function (_Node) {
     _classCallCheck(this, Log);
 
     _this = _super.call(this, "Log");
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
     _this.outputs = [];
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
+    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -18500,7 +18498,7 @@ var Log = /*#__PURE__*/function (_Node) {
   }]);
 
   return Log;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(Log, "instance", function () {
   return new Log();
@@ -18508,20 +18506,20 @@ _defineProperty(Log, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/math/fadd.js":
-/*!********************************!*\
-  !*** ./src/nodes/math/fadd.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/math/fadd.mjs":
+/*!*********************************!*\
+  !*** ./src/nodes/math/fadd.mjs ***!
+  \*********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FAdd": () => /* binding */ FAdd
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -18574,7 +18572,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -18605,8 +18603,8 @@ var FAdd = /*#__PURE__*/function (_Node) {
 
     _this.canAddInput = true; // Default to two numeric inputs
 
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("0", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("1", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("0", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
     _this.prev = null;
     _this.nexts = [];
     return _this;
@@ -18669,7 +18667,7 @@ var FAdd = /*#__PURE__*/function (_Node) {
     key: "addInput",
     value: function addInput() {
       if (this.canAddInput) {
-        this.inputs.push(new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, "")); // Rename all inputs to its ordinal number in the inputs array
+        this.inputs.push(new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, "")); // Rename all inputs to its ordinal number in the inputs array
 
         var _iterator2 = _createForOfIteratorHelper(this.inputs.entries()),
             _step2;
@@ -18750,7 +18748,7 @@ var FAdd = /*#__PURE__*/function (_Node) {
   }]);
 
   return FAdd;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FAdd, "instance", function () {
   return new FAdd();
@@ -18758,20 +18756,20 @@ _defineProperty(FAdd, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/math/fdiv.js":
-/*!********************************!*\
-  !*** ./src/nodes/math/fdiv.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/math/fdiv.mjs":
+/*!*********************************!*\
+  !*** ./src/nodes/math/fdiv.mjs ***!
+  \*********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FDiv": () => /* binding */ FDiv
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -18810,7 +18808,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -18838,8 +18836,8 @@ var FDiv = /*#__PURE__*/function (_Node) {
 
     _this.functional = true; // Default to two numeric inputs
 
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val1", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val2", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val2", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
     _this.prev = null;
     _this.nexts = [];
     return _this;
@@ -18891,7 +18889,7 @@ var FDiv = /*#__PURE__*/function (_Node) {
   }]);
 
   return FDiv;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FDiv, "instance", function () {
   return new FDiv();
@@ -18899,20 +18897,20 @@ _defineProperty(FDiv, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/math/fmod.js":
-/*!********************************!*\
-  !*** ./src/nodes/math/fmod.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/math/fmod.mjs":
+/*!*********************************!*\
+  !*** ./src/nodes/math/fmod.mjs ***!
+  \*********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FMod": () => /* binding */ FMod
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -18951,7 +18949,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -18979,8 +18977,8 @@ var FMod = /*#__PURE__*/function (_Node) {
 
     _this.functional = true; // Default to two numeric inputs
 
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val1", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val2", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val2", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
     _this.prev = null;
     _this.nexts = [];
     return _this;
@@ -19032,7 +19030,7 @@ var FMod = /*#__PURE__*/function (_Node) {
   }]);
 
   return FMod;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FMod, "instance", function () {
   return new FMod();
@@ -19040,20 +19038,20 @@ _defineProperty(FMod, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/math/fmul.js":
-/*!********************************!*\
-  !*** ./src/nodes/math/fmul.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/math/fmul.mjs":
+/*!*********************************!*\
+  !*** ./src/nodes/math/fmul.mjs ***!
+  \*********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FMul": () => /* binding */ FMul
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -19106,7 +19104,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -19137,8 +19135,8 @@ var FMul = /*#__PURE__*/function (_Node) {
 
     _this.canAddInput = true; // Default to two numeric inputs
 
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("0", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("1", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("0", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
     _this.prev = null;
     _this.nexts = [];
     return _this;
@@ -19212,7 +19210,7 @@ var FMul = /*#__PURE__*/function (_Node) {
     key: "addInput",
     value: function addInput() {
       if (this.canAddInput) {
-        this.inputs.push(new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, "")); // Rename all inputs to its ordinal number in the inputs array
+        this.inputs.push(new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, "")); // Rename all inputs to its ordinal number in the inputs array
 
         var _iterator2 = _createForOfIteratorHelper(this.inputs.entries()),
             _step2;
@@ -19282,7 +19280,7 @@ var FMul = /*#__PURE__*/function (_Node) {
   }]);
 
   return FMul;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FMul, "instance", function () {
   return new FMul();
@@ -19290,20 +19288,20 @@ _defineProperty(FMul, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/math/fnconst.js":
-/*!***********************************!*\
-  !*** ./src/nodes/math/fnconst.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/math/fnconst.mjs":
+/*!************************************!*\
+  !*** ./src/nodes/math/fnconst.mjs ***!
+  \************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FNConst": () => /* binding */ FNConst
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -19342,7 +19340,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -19369,8 +19367,8 @@ var FNConst = /*#__PURE__*/function (_Node) {
 
     _this = _super.call(this, "FNConst");
     _this.functional = true;
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
     _this.nexts = [];
     _this.prev = null;
     return _this;
@@ -19423,7 +19421,7 @@ var FNConst = /*#__PURE__*/function (_Node) {
   }]);
 
   return FNConst;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FNConst, "instance", function () {
   return new FNConst();
@@ -19431,20 +19429,20 @@ _defineProperty(FNConst, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/math/fsqrt.js":
-/*!*********************************!*\
-  !*** ./src/nodes/math/fsqrt.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/math/fsqrt.mjs":
+/*!**********************************!*\
+  !*** ./src/nodes/math/fsqrt.mjs ***!
+  \**********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FSqrt": () => /* binding */ FSqrt
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -19483,7 +19481,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -19511,8 +19509,8 @@ var FSqrt = /*#__PURE__*/function (_Node) {
 
     _this.functional = true; // Default to one numeric inputs
 
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
     _this.prev = null;
     _this.nexts = [];
     return _this;
@@ -19564,7 +19562,7 @@ var FSqrt = /*#__PURE__*/function (_Node) {
   }]);
 
   return FSqrt;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FSqrt, "instance", function () {
   return new FSqrt();
@@ -19572,20 +19570,20 @@ _defineProperty(FSqrt, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/math/ftofixed.js":
-/*!************************************!*\
-  !*** ./src/nodes/math/ftofixed.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/math/ftofixed.mjs":
+/*!*************************************!*\
+  !*** ./src/nodes/math/ftofixed.mjs ***!
+  \*************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FTofixed": () => /* binding */ FTofixed
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -19624,7 +19622,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -19653,8 +19651,8 @@ var FTofixed = /*#__PURE__*/function (_Node) {
 
     _this.functional = true; // Two numeric inputs
 
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Digits", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Digits", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
     _this.prev = null;
     _this.nexts = [];
     return _this;
@@ -19706,7 +19704,7 @@ var FTofixed = /*#__PURE__*/function (_Node) {
   }]);
 
   return FTofixed;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FTofixed, "instance", function () {
   return new FTofixed();
@@ -19714,20 +19712,20 @@ _defineProperty(FTofixed, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/object/fobreak.js":
-/*!*************************************!*\
-  !*** ./src/nodes/object/fobreak.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/object/fobreak.mjs":
+/*!**************************************!*\
+  !*** ./src/nodes/object/fobreak.mjs ***!
+  \**************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FOBreak": () => /* binding */ FOBreak
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -19772,7 +19770,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -19800,8 +19798,8 @@ var FOBreak = /*#__PURE__*/function (_Node) {
     _this = _super.call(this, "FOBreak");
     _this.canAddOutput = true;
     _this.functional = true;
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.OBJECT, {})];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("field1", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("field2", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false)]; // Sets all output as changeable in terms of name and type
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.OBJECT, {})];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("field1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("field2", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false)]; // Sets all output as changeable in terms of name and type
 
     var _iterator = _createForOfIteratorHelper(_this.outputs),
         _step;
@@ -19890,7 +19888,7 @@ var FOBreak = /*#__PURE__*/function (_Node) {
     value: function addOutput(o) {
       if (this.canAddOutput) {
         if (!o) {
-          o = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("", this, _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "");
+          o = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("", this, _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "");
           o.canEditName = true;
           o.canEditType = true;
         }
@@ -19930,7 +19928,7 @@ var FOBreak = /*#__PURE__*/function (_Node) {
   }]);
 
   return FOBreak;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FOBreak, "instance", function () {
   return new FOBreak();
@@ -19938,20 +19936,20 @@ _defineProperty(FOBreak, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/object/fomake.js":
-/*!************************************!*\
-  !*** ./src/nodes/object/fomake.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/object/fomake.mjs":
+/*!*************************************!*\
+  !*** ./src/nodes/object/fomake.mjs ***!
+  \*************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FOMake": () => /* binding */ FOMake
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -20000,7 +19998,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -20028,7 +20026,7 @@ var FOMake = /*#__PURE__*/function (_Node) {
     _this = _super.call(this, "FOMake");
     _this.canAddInput = true;
     _this.functional = true;
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("field1", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, ""), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("field2", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")]; // Sets all input as changeable in terms of name
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("field1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, ""), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("field2", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")]; // Sets all input as changeable in terms of name
 
     var _iterator = _createForOfIteratorHelper(_this.inputs),
         _step;
@@ -20045,7 +20043,7 @@ var FOMake = /*#__PURE__*/function (_Node) {
       _iterator.f();
     }
 
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.OBJECT, {}, false)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.OBJECT, {}, false)];
     _this.nexts = [];
     _this.prev = null;
     return _this;
@@ -20119,7 +20117,7 @@ var FOMake = /*#__PURE__*/function (_Node) {
   }, {
     key: "addInput",
     value: function addInput() {
-      var is = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "");
+      var is = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "");
       is.canEditName = true;
       is.canEditType = true;
       this.inputs.push(is);
@@ -20143,7 +20141,7 @@ var FOMake = /*#__PURE__*/function (_Node) {
   }]);
 
   return FOMake;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FOMake, "instance", function () {
   return new FOMake();
@@ -20151,20 +20149,20 @@ _defineProperty(FOMake, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/setvar.js":
-/*!*****************************!*\
-  !*** ./src/nodes/setvar.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/setvar.mjs":
+/*!******************************!*\
+  !*** ./src/nodes/setvar.mjs ***!
+  \******************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Setvar": () => /* binding */ Setvar
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -20203,7 +20201,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -20230,10 +20228,10 @@ var Setvar = /*#__PURE__*/function (_Node) {
     _classCallCheck(this, Setvar);
 
     _this = _super.call(this, "Setvar");
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Name", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, 0), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")];
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Name", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")];
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
+    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -20288,7 +20286,7 @@ var Setvar = /*#__PURE__*/function (_Node) {
   }]);
 
   return Setvar;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(Setvar, "instance", function () {
   return new Setvar();
@@ -20296,20 +20294,20 @@ _defineProperty(Setvar, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/string/fconcat.js":
-/*!*************************************!*\
-  !*** ./src/nodes/string/fconcat.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/string/fconcat.mjs":
+/*!**************************************!*\
+  !*** ./src/nodes/string/fconcat.mjs ***!
+  \**************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FConcat": () => /* binding */ FConcat
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -20362,7 +20360,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -20390,8 +20388,8 @@ var FConcat = /*#__PURE__*/function (_Node) {
     _this = _super.call(this, "FConcat");
     _this.functional = true;
     _this.canAddInput = true;
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("0", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, ""), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("1", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "")];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "", false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("0", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, ""), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "")];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "", false)];
     _this.nexts = [];
     _this.prev = null;
     return _this;
@@ -20466,7 +20464,7 @@ var FConcat = /*#__PURE__*/function (_Node) {
     key: "addInput",
     value: function addInput() {
       if (this.canAddInput) {
-        this.inputs.push(new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "")); // Rename all inputs to its ordinal number in the inputs array
+        this.inputs.push(new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "")); // Rename all inputs to its ordinal number in the inputs array
 
         var _iterator2 = _createForOfIteratorHelper(this.inputs.entries()),
             _step2;
@@ -20536,7 +20534,7 @@ var FConcat = /*#__PURE__*/function (_Node) {
   }]);
 
   return FConcat;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FConcat, "instance", function () {
   return new FConcat();
@@ -20544,20 +20542,20 @@ _defineProperty(FConcat, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/string/fsconst.js":
-/*!*************************************!*\
-  !*** ./src/nodes/string/fsconst.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/string/fsconst.mjs":
+/*!**************************************!*\
+  !*** ./src/nodes/string/fsconst.mjs ***!
+  \**************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FSConst": () => /* binding */ FSConst
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -20596,7 +20594,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -20623,8 +20621,8 @@ var FSConst = /*#__PURE__*/function (_Node) {
 
     _this = _super.call(this, "FSConst");
     _this.functional = true;
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "", false)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "", false)];
     _this.nexts = [];
     _this.prev = null;
     return _this;
@@ -20677,7 +20675,7 @@ var FSConst = /*#__PURE__*/function (_Node) {
   }]);
 
   return FSConst;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(FSConst, "instance", function () {
   return new FSConst();
@@ -20685,20 +20683,20 @@ _defineProperty(FSConst, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/wait.js":
-/*!***************************!*\
-  !*** ./src/nodes/wait.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/wait.mjs":
+/*!****************************!*\
+  !*** ./src/nodes/wait.mjs ***!
+  \****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Wait": () => /* binding */ Wait
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -20737,7 +20735,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -20763,10 +20761,10 @@ var Wait = /*#__PURE__*/function (_Node) {
     _classCallCheck(this, Wait);
 
     _this = _super.call(this, "Wait");
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Secs", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER)];
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Secs", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER)];
     _this.outputs = [];
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
+    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -20826,7 +20824,7 @@ var Wait = /*#__PURE__*/function (_Node) {
   }]);
 
   return Wait;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(Wait, "instance", function () {
   return new Wait();
@@ -20834,20 +20832,20 @@ _defineProperty(Wait, "instance", function () {
 
 /***/ }),
 
-/***/ "./src/nodes/while.js":
-/*!****************************!*\
-  !*** ./src/nodes/while.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/nodes/while.mjs":
+/*!*****************************!*\
+  !*** ./src/nodes/while.mjs ***!
+  \*****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "While": () => /* binding */ While
 /* harmony export */ });
-/* harmony import */ var _core_node_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.js */ "./src/core/node.js");
-/* harmony import */ var _core_socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.js */ "./src/core/socket.js");
-/* harmony import */ var _core_type_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.js */ "./src/core/type.js");
+/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
+/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
+/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -20886,7 +20884,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * A representation-agnostic library to define and execute nodes based processes
  * License: MIT
  * Author: Marco Jacovone
- * Year: 2020
+ * Year: 2020-2021
  */
 
 
@@ -20913,10 +20911,10 @@ var While = /*#__PURE__*/function (_Node) {
     _classCallCheck(this, While);
 
     _this = _super.call(this, "While");
-    _this.inputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Index", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Condition", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.BOOLEAN, false)];
-    _this.outputs = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_js__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.nexts = [new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_js__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
+    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Condition", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.BOOLEAN, false)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
+    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
+    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;
   }
   /**
@@ -21005,7 +21003,7 @@ var While = /*#__PURE__*/function (_Node) {
   }]);
 
   return While;
-}(_core_node_js__WEBPACK_IMPORTED_MODULE_0__.Node);
+}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
 
 _defineProperty(While, "instance", function () {
   return new While();
@@ -21042,18 +21040,6 @@ _defineProperty(While, "instance", function () {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => module['default'] :
-/******/ 				() => module;
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -21096,7 +21082,7 @@ _defineProperty(While, "instance", function () {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	__webpack_require__("./node_modules/@babel/polyfill/lib/index.js");
-/******/ 	return __webpack_require__("./index.js");
+/******/ 	return __webpack_require__("./index.mjs");
 /******/ })()
 ;
 //# sourceMappingURL=cnodes.bundle.js.map
