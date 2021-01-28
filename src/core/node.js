@@ -272,7 +272,7 @@ export class Node {
   /**
    * Can this node remove a specific input?
    * Subclass with variable number of input should override this method
-   * @param {InputsSocket} input The input to remove
+   * @param {InputSocket} input The input to remove
    */
   canRemoveInput(input) {
     return false;

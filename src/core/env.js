@@ -134,7 +134,7 @@ export class Env {
    * Register a node type
    * @param {string} name The name of the node
    * @param {string} category The category of the node
-   * @param {any} factory A class that instantiate the node
+   * @param {any} factory A function that instantiate the node
    */
   static registerNode(name, category, factory) {
     Env.#nodeRegistry.set(name, { category: category, factory: factory });

@@ -15,7 +15,7 @@
   },
   "author": "Marco Jacovone",
   "license": "MIT",
-  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "bugs": {
     "url": "https://github.com/marco-jacovone/cnodes/issues"
   },

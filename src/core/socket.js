@@ -244,6 +244,7 @@ export class OutputSocket extends ValueSocket {
    * @param {Node} node The parent node
    * @param {Type} type The type of the socket
    * @param {any} value The default value of the socket
+   * @param {boolean} [cached] This socket is cached?
    */
   constructor(name, node, type = Types.NUMBER, value = 0, cached) {
     super(name, node, type, value);
