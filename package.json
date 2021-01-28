@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/marco-jacovone/cnodes#readme",
   "dependencies": {
-    "@std/esm": "^0.26.0"
+    "esm": "^3.2.25"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
