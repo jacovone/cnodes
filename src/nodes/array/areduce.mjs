@@ -36,7 +36,7 @@ export class AReduce extends Node {
     ];
     this.outputs = [
       new OutputSocket("Val", this, Types.ANY, "", false),
-      new OutputSocket("Item", this, Types.ANY, false, true),
+      new OutputSocket("Item", this, Types.ANY, "", true),
       new OutputSocket("Acc", this, Types.ANY, "", true),
       new OutputSocket("Index", this, Types.NUMBER, 0, true),
     ];

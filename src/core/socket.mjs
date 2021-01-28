@@ -251,7 +251,7 @@ export class OutputSocket extends ValueSocket {
 
     // default to true if the node is not functional and false
     // if the node is functional
-    this.#cached = cached || !node.functional;
+    this.#cached = cached !== undefined ? cached : !node.functional;
   }
   get peers() {
     return this.#peers;
