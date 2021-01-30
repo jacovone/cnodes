@@ -14649,7 +14649,7 @@ var OutputSocket = /*#__PURE__*/function (_ValueSocket2) {
       value: true
     });
 
-    _classPrivateFieldSet(_assertThisInitialized(_this5), _cached, cached || !node.functional);
+    _classPrivateFieldSet(_assertThisInitialized(_this5), _cached, cached !== undefined ? cached : !node.functional);
 
     return _this5;
   }
@@ -15492,7 +15492,7 @@ var AReduce = /*#__PURE__*/function (_Node) {
 
     _this = _super.call(this, "AReduce");
     _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Acc0", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Acc", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Item", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, false, true), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Acc", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", true), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, true)];
+    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Item", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", true), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Acc", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", true), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, true)];
     _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
     _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
     return _this;

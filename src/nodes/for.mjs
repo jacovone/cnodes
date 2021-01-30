@@ -72,7 +72,7 @@ export class For extends Node {
       this.output("Index").value = index;
 
       // If there's a node connected to the "Do" next socket...
-      if (this.next("Do").peer !== null && this.next("Do").peer.node !== null) {
+      if (this.next("Do").peer?.node !== null) {
         // Execute a sub program beginning on that node
         await this.program.processFrom(this.next("Do").peer.node);
       }

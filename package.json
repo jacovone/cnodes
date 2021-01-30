@@ -7,7 +7,7 @@
     "coverage": "nyc npm run test",
     "jsdoc": "jsdoc -r -p -d ./doc/docs ./lib/*",
     "build": "webpack",
-    "all": "npm run build && npm run jsdoc && npm version patch && npm publish"
+    "babel": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -15,18 +15,18 @@
   },
   "author": "Marco Jacovone",
   "license": "MIT",
-  "types": "index.d.ts",
+  "types": "lib/index.d.ts",
   "bugs": {
     "url": "https://github.com/marco-jacovone/cnodes/issues"
   },
   "homepage": "https://github.com/marco-jacovone/cnodes#readme",
-  "dependencies": {
-    "esm": "^3.2.25"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/plugin-proposal-private-methods": "^7.12.1",
+    "@babel/plugin-syntax-class-properties": "^7.12.1",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
     "babel-loader": "^8.2.2",

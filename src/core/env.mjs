@@ -452,7 +452,7 @@ export class Env {
     }
 
     for (let node of program.nodes) {
-      if (node.prev && node.prev.peers && node.prev.peers.length > 0) {
+      if (node.prev?.peers?.length > 0) {
         for (let peer of node.prev.peers) {
           let connectionExp = {
             type: "pn",
