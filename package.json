@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/marco-jacovone/cnodes#readme",
   "dependencies": {
-    "core-js": "^2.6.5"
+    "core-js": "^2"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
