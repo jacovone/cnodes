@@ -33,10 +33,10 @@ declare module cn {
     get id(): string;
     set name(arg: string);
     get name(): string;
-    set node(arg: any);
-    get node(): any;
+    set node(arg: Node);
+    get node(): Node;
     /** Clone the spcket */
-    clone(): void;
+    clone(): Socket;
     #private;
   }
   /**
@@ -48,10 +48,10 @@ declare module cn {
      * Construct a new ValueSocket
      * @param {string} name Name of the socket
      * @param {Node} node The parent node
-     * @param {Type} type The type of this socket
+     * @param {string} type The type of this socket
      * @param {any} value The default value of the socket
      */
-    constructor(name: string, node: Node, type?: any, value?: any);
+    constructor(name: string, node: Node, type?: string, value?: any);
     set type(arg: string);
     get type(): string;
     set value(arg: number);
@@ -65,7 +65,7 @@ declare module cn {
      * that is staying inside. The meaning is different in case of
      * InputSocket and OutputSocket, that re-defines this method
      */
-    evaluate(): void;
+    evaluate(): Promise<void>;
     #private;
   }
   /**
@@ -78,12 +78,12 @@ declare module cn {
      * Construct a new InputSocket
      * @param {string} name The name of the socket
      * @param {Node} node The parent node
-     * @param {Type} type The type of the socket
+     * @param {string} type The type of the socket
      * @param {any} value The default value of the socket
      */
-    constructor(name: string, node: Node, type?: any, value?: any);
-    set peer(arg: any);
-    get peer(): any;
+    constructor(name: string, node: Node, type?: string, value?: any);
+    set peer(arg: Socket);
+    get peer(): Socket;
     /**
      * Connect this socket to another (output) socket
      * @param {Socket} socket The output socket to connect
@@ -106,12 +106,19 @@ declare module cn {
      * Construct a new OutputSocket
      * @param {string} name The name of the socket
      * @param {Node} node The parent node
-     * @param {Type} type The type of the socket
+     * @param {string} type The type of the socket
      * @param {any} value The default value of the socket
+     * @param {boolean} cached The default value of the socket
      */
-    constructor(name: string, node: Node, type: any, value: any, cached: any);
-    set peers(arg: any[]);
-    get peers(): any[];
+    constructor(
+      name: string,
+      node: Node,
+      type: string,
+      value: any,
+      cached?: boolean
+    );
+    set peers(arg: Socket[]);
+    get peers(): Socket[];
     set cached(arg: boolean);
     get cached(): boolean;
     /**
@@ -136,7 +143,7 @@ declare module cn {
      * @param {sring} name Name of the socket
      * @param {Node} node The parent node
      */
-    constructor(name: any, node: Node);
+    constructor(name: string, node: Node);
     #private;
   }
   /**
@@ -152,8 +159,8 @@ declare module cn {
      * @param {Node} node Parent node
      */
     constructor(name: string, node: Node);
-    set peers(arg: any[]);
-    get peers(): any[];
+    set peers(arg: Socket[]);
+    get peers(): Socket[];
     /**
      * Connect this socket to a next socket
      * @param {Socket} socket The next socket to connect
@@ -179,8 +186,8 @@ declare module cn {
      * @param {Node} node The parent node of the socket
      */
     constructor(name: string, node: Node);
-    set peer(arg: any);
-    get peer(): any;
+    set peer(arg: Socket);
+    get peer(): Socket;
     /**
      * Connect this socket to another (prev) socket
      * @param {Socket} socket The prev socket to connect to
@@ -192,6 +199,14 @@ declare module cn {
     disconnect(): void;
     #private;
   }
+
+  /**
+   * This is a function passed to the method clone of the class Node.
+   * Its is used to create an instance of the correct type of the node
+   * before cloning all its values in terms of IO and other characteristics
+   */
+  export type CloneFactoryFn = () => Node;
+
   /**
    * This is the base node class. A node have some input and output
    * to exchange data with other nodes, some nexts to determine next
@@ -210,24 +225,24 @@ declare module cn {
      * @param {string} [title] The title of the node
      */
     constructor(name?: string, title?: string);
-    set id(arg: any);
-    get id(): any;
+    set id(arg: string);
+    get id(): string;
     set name(arg: string);
     get name(): string;
     set title(arg: string);
     get title(): string;
     set functional(arg: boolean);
     get functional(): boolean;
-    set inputs(arg: any[]);
-    get inputs(): any[];
-    set outputs(arg: any[]);
-    get outputs(): any[];
-    set nexts(arg: any[]);
-    get nexts(): any[];
-    set prev(arg: any);
-    get prev(): any;
-    set program(arg: any);
-    get program(): any;
+    set inputs(arg: InputSocket[]);
+    get inputs(): InputSocket[];
+    set outputs(arg: OutputSocket[]);
+    get outputs(): OutputSocket[];
+    set nexts(arg: NextSocket[]);
+    get nexts(): NextSocket[];
+    set prev(arg: PrevSocket);
+    get prev(): PrevSocket;
+    set program(arg: Program);
+    get program(): Program;
     set removable(arg: boolean);
     get removable(): boolean;
     set creatable(arg: boolean);
@@ -244,17 +259,17 @@ declare module cn {
      * Returns the input by name
      * @param {string} name Name of the input
      */
-    input(name: string): any;
+    input(name: string): InputSocket;
     /**
      * Returns the output by name
      * @param {string} name The name of the output
      */
-    output(name: string): any;
+    output(name: string): OutputSocket;
     /**
      * Returns the next by name
      * @param {string} name The name of the next
      */
-    next(name: string): any;
+    next(name: string): NextSocket;
     /**
      * Evaluate all imputs of this node. Inputs are sockets.
      * If the socket is connected the evaluation will search
@@ -284,13 +299,13 @@ declare module cn {
      * Subclass with variable number of input should override this method
      * @param {InputSocket} input The input to remove
      */
-    removeInput(input: any): void;
+    removeInput(input: InputSocket): void;
     /**
      * Can this node remove a specific input?
      * Subclass with variable number of input should override this method
      * @param {InputsSocket} input The input to remove
      */
-    canRemoveInput(input: any): boolean;
+    canRemoveInput(input: InputSocket): boolean;
     /**
      * If this.#canAddOutput is true, the user can add an output
      * Subclass with variable number of output should override this method
@@ -321,7 +336,14 @@ declare module cn {
      * @param {Socket} otherSocket The other socket
      */
     canBeConnected(thisSocket: Socket, otherSocket: Socket): boolean;
-    /** The base version of the node does nothing */
+    /**
+     * This method is called when the engine need to compute outputs
+     * and the next socket on which pass, based on inputs and current state.
+     * The engine calls the methos and expects back a instance of Result
+     * class to know where to go for the next step. The method is asynchronous
+     * so the engine will await it, this allow this method to perform
+     * asynchronous calls in turn
+     */
     process(): Promise<Result>;
     /**
      * This method clones the node. Cloning will create a new node
@@ -332,9 +354,9 @@ declare module cn {
      * the instance and clone all sockets, and other propertiesthat
      * is a same process for all different instances
      *
-     * @param {Function} factory A function that return a new instance of the class
+     * @param {CloneFactoryFn} factory A function that return a new instance of the class
      */
-    clone(factory?: Function): any;
+    clone(factory?: CloneFactoryFn): Node;
     #private;
   }
   /**
@@ -344,11 +366,11 @@ declare module cn {
   export class Result {
     /**
      * Construct a new Result
-     * @param {Socket} next The next socket to follow
+     * @param {NextSocket} next The next socket to follow
      */
-    constructor(next?: Socket);
-    set next(arg: any);
-    get next(): any;
+    constructor(next?: NextSocket);
+    set next(arg: NextSocket);
+    get next(): NextSocket;
     #private;
   }
   /**
@@ -383,19 +405,19 @@ declare module cn {
      * outside this set will be not reconstructed.
      * @param {Node[]} nodes Nodes (and) connections to clone
      */
-    static cloneNodes(nodes: Node[]): any[];
+    static cloneNodes(nodes: Node[]): Node[];
     /** The event emitter connected to the program */
-    events: any;
-    set vars(arg: Map<any, any>);
-    get vars(): Map<any, any>;
-    set enter(arg: any);
-    get enter(): any;
-    set exit(arg: any);
-    get exit(): any;
-    set currentNode(arg: any);
-    get currentNode(): any;
-    set nodes(arg: any[]);
-    get nodes(): any[];
+    events: import("events").EventEmitter;
+    set vars(arg: Map<string, any>);
+    get vars(): Map<string, any>;
+    set enter(arg: Enter);
+    get enter(): Enter;
+    set exit(arg: Exit);
+    get exit(): Exit;
+    set currentNode(arg: Node);
+    get currentNode(): Node;
+    set nodes(arg: Node[]);
+    get nodes(): Node[];
     /**
      * Add a new node to this program
      * @param {Node} node The node to add
@@ -728,6 +750,26 @@ declare module cn {
     static instance: () => Wait;
     #private;
   }
+
+  export interface RegisterMakerOpts {
+    recursive?: boolean;
+    fillValues?: boolean;
+    forceTypes?: boolean;
+    editableInputs?: boolean;
+  }
+  export interface RegisterBreakerOpts {
+    recursive?: boolean;
+    forceTypes?: boolean;
+    editableOutputs?: boolean;
+  }
+  export interface RegisterObjectOpts {
+    recursive?: boolean;
+    fillValues?: boolean;
+    forceTypes?: boolean;
+    editableInputs?: boolean;
+    editableOutputs?: boolean;
+  }
+
   /**
    * This class represents a main global environment for cnodes.
    * The class is a "static" class that is responible for maintaining a global
@@ -739,7 +781,10 @@ declare module cn {
    */
   export class Env {
     /** The internal node registry */
-    static "__#11@#nodeRegistry": Map<any, any>;
+    static "__#11@#nodeRegistry": Map<
+      string,
+      { category: string; factory: () => Node }
+    >;
     /**
      * Initialize the CNodes global environment
      */
@@ -748,24 +793,30 @@ declare module cn {
      * Register a node type
      * @param {string} name The name of the node
      * @param {string} category The category of the node
-     * @param {any} factory A class that instantiate the node
+     * @param {() => Node} factory A class that instantiate the node
      */
-    static registerNode(name: string, category: string, factory: any): void;
+    static registerNode(
+      name: string,
+      category: string,
+      factory: () => Node
+    ): void;
     /**
      * Return the list of unique registered categories
      */
-    static getCategories(): any[];
+    static getCategories(): string[];
     /**
      * Return an array of registrations for nodes.
      * Registrations have the sign: {name, category, factory}
      * @param {string} category The category for which seacrh registrations
      */
-    static getCategoryNodes(category: string): any[];
+    static getCategoryNodes(
+      category: string
+    ): { name: string; category: string; factory: () => Node }[];
     /**
      * Instantiate a node by name
      * @param {string} name The name of the node
      */
-    static getInstance(name: string): any;
+    static getInstance(name: string): Node;
     /**
      * Create helper maker nodes to support user with dealing with
      * specific object structures. This method accepts optional
@@ -777,10 +828,15 @@ declare module cn {
      *   editableInputs: true
      * }
      *
+     * @param {string} name The name of generated structure
      * @param {any} obj The object structure to consider whiel create nodes
-     * @param {any} opts The options on create nodes
+     * @param {RegisterMakerOpts} opts The options on create nodes
      */
-    static registerMaker(name: any, obj: any, opts?: any): void;
+    static registerMaker(
+      name: string,
+      obj: any,
+      opts?: RegisterMakerOpts
+    ): void;
     /**
      * Create helper breaker nodes to support user with dealing with
      * specific object structures. This method accepts optional
@@ -791,10 +847,15 @@ declare module cn {
      *   editableOutputs: true
      * }
      *
+     * @param {string} name The name of generated structure
      * @param {any} obj The object structure to consider whiel create nodes
-     * @param {any} opts The options on create nodes
+     * @param {RegisterBreakerOpts} opts The options on create nodes
      */
-    static registerBreaker(name: any, obj: any, opts?: any): void;
+    static registerBreaker(
+      name: string,
+      obj: any,
+      opts?: RegisterBreakerOpts
+    ): void;
     /**
      * Create both helper maker and breaker nodes to support user with dealing with
      * specific object structures. This method accepts optional
@@ -807,26 +868,20 @@ declare module cn {
      *   editableOutputs: true
      * }
      *
+     * @param {string} name The name of generated structure
      * @param {any} obj The object structure to consider whiel create nodes
-     * @param {any} opts The options on create nodes
+     * @param {RegisterObjectOpts} opts The options on create nodes
      */
-    static registerObject(name: any, obj: any, opts?: any): void;
+    static registerObject(
+      name: string,
+      obj: any,
+      opts?: RegisterObjectOpts
+    ): void;
     /**
      * Creates and returns a JSON representation of the entire program
      * @param {Program} program The program to export
      */
-    static export(
-      program: Program
-    ): {
-      id: any;
-      version: number;
-      lastNodeIndex: number;
-      lastSocketIndex: number;
-      enter: any;
-      exit: any;
-      nodes: any[];
-      connections: any[];
-    };
+    static export(program: Program): any;
     /**
      * Create a program instance based on export data created with export() method
      * @param {any} data A object with the export data format

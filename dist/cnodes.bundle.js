@@ -1,149 +1,7 @@
 var cn;cn =
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./index.mjs":
-/*!*******************!*\
-  !*** ./index.mjs ***!
-  \*******************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Env": () => /* reexport safe */ _src_core_env_mjs__WEBPACK_IMPORTED_MODULE_0__.Env,
-/* harmony export */   "Node": () => /* reexport safe */ _src_core_node_mjs__WEBPACK_IMPORTED_MODULE_1__.Node,
-/* harmony export */   "Program": () => /* reexport safe */ _src_core_program_mjs__WEBPACK_IMPORTED_MODULE_2__.Program,
-/* harmony export */   "Socket": () => /* reexport safe */ _src_core_socket_mjs__WEBPACK_IMPORTED_MODULE_3__.Socket,
-/* harmony export */   "InputSocket": () => /* reexport safe */ _src_core_socket_mjs__WEBPACK_IMPORTED_MODULE_3__.InputSocket,
-/* harmony export */   "OutputSocket": () => /* reexport safe */ _src_core_socket_mjs__WEBPACK_IMPORTED_MODULE_3__.OutputSocket,
-/* harmony export */   "PrevSocket": () => /* reexport safe */ _src_core_socket_mjs__WEBPACK_IMPORTED_MODULE_3__.PrevSocket,
-/* harmony export */   "NextSocket": () => /* reexport safe */ _src_core_socket_mjs__WEBPACK_IMPORTED_MODULE_3__.NextSocket,
-/* harmony export */   "Types": () => /* reexport safe */ _src_core_type_mjs__WEBPACK_IMPORTED_MODULE_4__.Types,
-/* harmony export */   "Call": () => /* reexport safe */ _src_nodes_call_mjs__WEBPACK_IMPORTED_MODULE_5__.Call,
-/* harmony export */   "Console": () => /* reexport safe */ _src_nodes_console_mjs__WEBPACK_IMPORTED_MODULE_6__.Console,
-/* harmony export */   "Log": () => /* reexport safe */ _src_nodes_log_mjs__WEBPACK_IMPORTED_MODULE_7__.Log,
-/* harmony export */   "FGetvar": () => /* reexport safe */ _src_nodes_fgetvar_mjs__WEBPACK_IMPORTED_MODULE_8__.FGetvar,
-/* harmony export */   "For": () => /* reexport safe */ _src_nodes_for_mjs__WEBPACK_IMPORTED_MODULE_9__.For,
-/* harmony export */   "Getvar": () => /* reexport safe */ _src_nodes_getvar_mjs__WEBPACK_IMPORTED_MODULE_10__.Getvar,
-/* harmony export */   "If": () => /* reexport safe */ _src_nodes_if_mjs__WEBPACK_IMPORTED_MODULE_11__.If,
-/* harmony export */   "Setvar": () => /* reexport safe */ _src_nodes_setvar_mjs__WEBPACK_IMPORTED_MODULE_12__.Setvar,
-/* harmony export */   "While": () => /* reexport safe */ _src_nodes_while_mjs__WEBPACK_IMPORTED_MODULE_13__.While,
-/* harmony export */   "FIf": () => /* reexport safe */ _src_nodes_fif_mjs__WEBPACK_IMPORTED_MODULE_14__.FIf,
-/* harmony export */   "Wait": () => /* reexport safe */ _src_nodes_wait_mjs__WEBPACK_IMPORTED_MODULE_15__.Wait,
-/* harmony export */   "FCompare": () => /* reexport safe */ _src_nodes_bool_fcompare_mjs__WEBPACK_IMPORTED_MODULE_16__.FCompare,
-/* harmony export */   "FSConst": () => /* reexport safe */ _src_nodes_string_fsconst_mjs__WEBPACK_IMPORTED_MODULE_17__.FSConst,
-/* harmony export */   "FConcat": () => /* reexport safe */ _src_nodes_string_fconcat_mjs__WEBPACK_IMPORTED_MODULE_18__.FConcat,
-/* harmony export */   "FNConst": () => /* reexport safe */ _src_nodes_math_fnconst_mjs__WEBPACK_IMPORTED_MODULE_19__.FNConst,
-/* harmony export */   "FAdd": () => /* reexport safe */ _src_nodes_math_fadd_mjs__WEBPACK_IMPORTED_MODULE_20__.FAdd,
-/* harmony export */   "FDiv": () => /* reexport safe */ _src_nodes_math_fdiv_mjs__WEBPACK_IMPORTED_MODULE_21__.FDiv,
-/* harmony export */   "FMul": () => /* reexport safe */ _src_nodes_math_fmul_mjs__WEBPACK_IMPORTED_MODULE_22__.FMul,
-/* harmony export */   "FSqrt": () => /* reexport safe */ _src_nodes_math_fsqrt_mjs__WEBPACK_IMPORTED_MODULE_23__.FSqrt,
-/* harmony export */   "FMod": () => /* reexport safe */ _src_nodes_math_fmod_mjs__WEBPACK_IMPORTED_MODULE_24__.FMod,
-/* harmony export */   "FTofixed": () => /* reexport safe */ _src_nodes_math_ftofixed_mjs__WEBPACK_IMPORTED_MODULE_25__.FTofixed,
-/* harmony export */   "APush": () => /* reexport safe */ _src_nodes_array_apush_mjs__WEBPACK_IMPORTED_MODULE_26__.APush,
-/* harmony export */   "FAConst": () => /* reexport safe */ _src_nodes_array_faconst_mjs__WEBPACK_IMPORTED_MODULE_27__.FAConst,
-/* harmony export */   "FAMake": () => /* reexport safe */ _src_nodes_array_famake_mjs__WEBPACK_IMPORTED_MODULE_28__.FAMake,
-/* harmony export */   "FAGet": () => /* reexport safe */ _src_nodes_array_faget_mjs__WEBPACK_IMPORTED_MODULE_29__.FAGet,
-/* harmony export */   "FALength": () => /* reexport safe */ _src_nodes_array_falength_mjs__WEBPACK_IMPORTED_MODULE_30__.FALength,
-/* harmony export */   "AMap": () => /* reexport safe */ _src_nodes_array_amap_mjs__WEBPACK_IMPORTED_MODULE_31__.AMap,
-/* harmony export */   "FAMap": () => /* reexport safe */ _src_nodes_array_famap_mjs__WEBPACK_IMPORTED_MODULE_32__.FAMap,
-/* harmony export */   "AReduce": () => /* reexport safe */ _src_nodes_array_areduce_mjs__WEBPACK_IMPORTED_MODULE_33__.AReduce,
-/* harmony export */   "FAReduce": () => /* reexport safe */ _src_nodes_array_fareduce_mjs__WEBPACK_IMPORTED_MODULE_34__.FAReduce,
-/* harmony export */   "FOMake": () => /* reexport safe */ _src_nodes_object_fomake_mjs__WEBPACK_IMPORTED_MODULE_35__.FOMake,
-/* harmony export */   "FOBreak": () => /* reexport safe */ _src_nodes_object_fobreak_mjs__WEBPACK_IMPORTED_MODULE_36__.FOBreak
-/* harmony export */ });
-/* harmony import */ var _src_core_env_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/core/env.mjs */ "./src/core/env.mjs");
-/* harmony import */ var _src_core_node_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _src_core_program_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/core/program.mjs */ "./src/core/program.mjs");
-/* harmony import */ var _src_core_socket_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _src_core_type_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/core/type.mjs */ "./src/core/type.mjs");
-/* harmony import */ var _src_nodes_call_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/nodes/call.mjs */ "./src/nodes/call.mjs");
-/* harmony import */ var _src_nodes_console_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./src/nodes/console.mjs */ "./src/nodes/console.mjs");
-/* harmony import */ var _src_nodes_log_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./src/nodes/log.mjs */ "./src/nodes/log.mjs");
-/* harmony import */ var _src_nodes_fgetvar_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./src/nodes/fgetvar.mjs */ "./src/nodes/fgetvar.mjs");
-/* harmony import */ var _src_nodes_for_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./src/nodes/for.mjs */ "./src/nodes/for.mjs");
-/* harmony import */ var _src_nodes_getvar_mjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./src/nodes/getvar.mjs */ "./src/nodes/getvar.mjs");
-/* harmony import */ var _src_nodes_if_mjs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./src/nodes/if.mjs */ "./src/nodes/if.mjs");
-/* harmony import */ var _src_nodes_setvar_mjs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./src/nodes/setvar.mjs */ "./src/nodes/setvar.mjs");
-/* harmony import */ var _src_nodes_while_mjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./src/nodes/while.mjs */ "./src/nodes/while.mjs");
-/* harmony import */ var _src_nodes_fif_mjs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/nodes/fif.mjs */ "./src/nodes/fif.mjs");
-/* harmony import */ var _src_nodes_wait_mjs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./src/nodes/wait.mjs */ "./src/nodes/wait.mjs");
-/* harmony import */ var _src_nodes_bool_fcompare_mjs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/nodes/bool/fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
-/* harmony import */ var _src_nodes_string_fsconst_mjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./src/nodes/string/fsconst.mjs */ "./src/nodes/string/fsconst.mjs");
-/* harmony import */ var _src_nodes_string_fconcat_mjs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/nodes/string/fconcat.mjs */ "./src/nodes/string/fconcat.mjs");
-/* harmony import */ var _src_nodes_math_fnconst_mjs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./src/nodes/math/fnconst.mjs */ "./src/nodes/math/fnconst.mjs");
-/* harmony import */ var _src_nodes_math_fadd_mjs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./src/nodes/math/fadd.mjs */ "./src/nodes/math/fadd.mjs");
-/* harmony import */ var _src_nodes_math_fdiv_mjs__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./src/nodes/math/fdiv.mjs */ "./src/nodes/math/fdiv.mjs");
-/* harmony import */ var _src_nodes_math_fmul_mjs__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./src/nodes/math/fmul.mjs */ "./src/nodes/math/fmul.mjs");
-/* harmony import */ var _src_nodes_math_fsqrt_mjs__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./src/nodes/math/fsqrt.mjs */ "./src/nodes/math/fsqrt.mjs");
-/* harmony import */ var _src_nodes_math_fmod_mjs__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./src/nodes/math/fmod.mjs */ "./src/nodes/math/fmod.mjs");
-/* harmony import */ var _src_nodes_math_ftofixed_mjs__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./src/nodes/math/ftofixed.mjs */ "./src/nodes/math/ftofixed.mjs");
-/* harmony import */ var _src_nodes_array_apush_mjs__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./src/nodes/array/apush.mjs */ "./src/nodes/array/apush.mjs");
-/* harmony import */ var _src_nodes_array_faconst_mjs__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./src/nodes/array/faconst.mjs */ "./src/nodes/array/faconst.mjs");
-/* harmony import */ var _src_nodes_array_famake_mjs__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./src/nodes/array/famake.mjs */ "./src/nodes/array/famake.mjs");
-/* harmony import */ var _src_nodes_array_faget_mjs__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./src/nodes/array/faget.mjs */ "./src/nodes/array/faget.mjs");
-/* harmony import */ var _src_nodes_array_falength_mjs__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./src/nodes/array/falength.mjs */ "./src/nodes/array/falength.mjs");
-/* harmony import */ var _src_nodes_array_amap_mjs__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./src/nodes/array/amap.mjs */ "./src/nodes/array/amap.mjs");
-/* harmony import */ var _src_nodes_array_famap_mjs__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./src/nodes/array/famap.mjs */ "./src/nodes/array/famap.mjs");
-/* harmony import */ var _src_nodes_array_areduce_mjs__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./src/nodes/array/areduce.mjs */ "./src/nodes/array/areduce.mjs");
-/* harmony import */ var _src_nodes_array_fareduce_mjs__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./src/nodes/array/fareduce.mjs */ "./src/nodes/array/fareduce.mjs");
-/* harmony import */ var _src_nodes_object_fomake_mjs__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./src/nodes/object/fomake.mjs */ "./src/nodes/object/fomake.mjs");
-/* harmony import */ var _src_nodes_object_fobreak_mjs__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./src/nodes/object/fobreak.mjs */ "./src/nodes/object/fobreak.mjs");
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-// Import core nodes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- // Import boolean nodes
-
- // Import string nodes
-
-
- // Import math nodes
-
-
-
-
-
-
-
- // Import arrays nodes
-
-
-
-
-
-
-
-
-
- // Import objects nodes
-
-
-
-
-
-/***/ }),
 
 /***/ "./node_modules/@babel/polyfill/lib/index.js":
 /*!***************************************************!*\
@@ -151,7 +9,6 @@ __webpack_require__.r(__webpack_exports__);
   \***************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 __webpack_require__(/*! ./noConflict */ "./node_modules/@babel/polyfill/lib/noConflict.js");
@@ -178,7 +35,6 @@ _global["default"]._babelPolyfill = true;
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 __webpack_require__(/*! core-js/es6 */ "./node_modules/core-js/es6/index.js");
@@ -216,6 +72,8 @@ __webpack_require__(/*! regenerator-runtime/runtime */ "./node_modules/regenerat
   !*** ./node_modules/core-js/es6/index.js ***!
   \*******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 __webpack_require__(/*! ../modules/es6.symbol */ "./node_modules/core-js/modules/es6.symbol.js");
 
@@ -503,6 +361,8 @@ module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/cor
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ../../modules/es7.array.flat-map */ "./node_modules/core-js/modules/es7.array.flat-map.js");
 
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/modules/_core.js").Array.flatMap;
@@ -514,6 +374,8 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
   !*** ./node_modules/core-js/fn/array/includes.js ***!
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 __webpack_require__(/*! ../../modules/es7.array.includes */ "./node_modules/core-js/modules/es7.array.includes.js");
 
@@ -527,6 +389,8 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ../../modules/es7.object.entries */ "./node_modules/core-js/modules/es7.object.entries.js");
 
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/modules/_core.js").Object.entries;
@@ -538,6 +402,8 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
   !*** ./node_modules/core-js/fn/object/get-own-property-descriptors.js ***!
   \************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 __webpack_require__(/*! ../../modules/es7.object.get-own-property-descriptors */ "./node_modules/core-js/modules/es7.object.get-own-property-descriptors.js");
 
@@ -551,6 +417,8 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
   \**************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ../../modules/es7.object.values */ "./node_modules/core-js/modules/es7.object.values.js");
 
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/modules/_core.js").Object.values;
@@ -563,7 +431,6 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 __webpack_require__(/*! ../../modules/es6.promise */ "./node_modules/core-js/modules/es6.promise.js");
@@ -580,6 +447,8 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ../../modules/es7.string.pad-end */ "./node_modules/core-js/modules/es7.string.pad-end.js");
 
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/modules/_core.js").String.padEnd;
@@ -591,6 +460,8 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
   !*** ./node_modules/core-js/fn/string/pad-start.js ***!
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 __webpack_require__(/*! ../../modules/es7.string.pad-start */ "./node_modules/core-js/modules/es7.string.pad-start.js");
 
@@ -604,6 +475,8 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ../../modules/es7.string.trim-right */ "./node_modules/core-js/modules/es7.string.trim-right.js");
 
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/modules/_core.js").String.trimRight;
@@ -615,6 +488,8 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
   !*** ./node_modules/core-js/fn/string/trim-start.js ***!
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 __webpack_require__(/*! ../../modules/es7.string.trim-left */ "./node_modules/core-js/modules/es7.string.trim-left.js");
 
@@ -628,6 +503,8 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
   \**********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ../../modules/es7.symbol.async-iterator */ "./node_modules/core-js/modules/es7.symbol.async-iterator.js");
 
 module.exports = __webpack_require__(/*! ../../modules/_wks-ext */ "./node_modules/core-js/modules/_wks-ext.js").f('asyncIterator');
@@ -639,6 +516,8 @@ module.exports = __webpack_require__(/*! ../../modules/_wks-ext */ "./node_modul
   !*** ./node_modules/core-js/library/fn/global.js ***!
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 __webpack_require__(/*! ../modules/es7.global */ "./node_modules/core-js/library/modules/es7.global.js");
 
@@ -652,6 +531,8 @@ module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/cor
   \*************************************************************/
 /***/ ((module) => {
 
+
+
 module.exports = function (it) {
   if (typeof it != 'function') throw TypeError(it + ' is not a function!');
   return it;
@@ -664,6 +545,8 @@ module.exports = function (it) {
   !*** ./node_modules/core-js/library/modules/_an-object.js ***!
   \************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
 
@@ -680,6 +563,8 @@ module.exports = function (it) {
   \*******************************************************/
 /***/ ((module) => {
 
+
+
 var core = module.exports = {
   version: '2.6.12'
 };
@@ -692,6 +577,8 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
   !*** ./node_modules/core-js/library/modules/_ctx.js ***!
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // optional / simple context binding
 var aFunction = __webpack_require__(/*! ./_a-function */ "./node_modules/core-js/library/modules/_a-function.js");
@@ -732,6 +619,8 @@ module.exports = function (fn, that, length) {
   \**************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // Thank's IE8 for his funny defineProperty
 module.exports = !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js")(function () {
   return Object.defineProperty({}, 'a', {
@@ -748,6 +637,8 @@ module.exports = !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/li
   !*** ./node_modules/core-js/library/modules/_dom-create.js ***!
   \*************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
 
@@ -767,6 +658,8 @@ module.exports = function (it) {
   !*** ./node_modules/core-js/library/modules/_export.js ***!
   \*********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
 
@@ -861,6 +754,8 @@ module.exports = $export;
   \********************************************************/
 /***/ ((module) => {
 
+
+
 module.exports = function (exec) {
   try {
     return !!exec();
@@ -877,6 +772,8 @@ module.exports = function (exec) {
   \*********************************************************/
 /***/ ((module) => {
 
+
+
 // https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
 var global = module.exports = typeof window != 'undefined' && window.Math == Math ? window : typeof self != 'undefined' && self.Math == Math ? self // eslint-disable-next-line no-new-func
 : Function('return this')();
@@ -889,6 +786,8 @@ if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
   !*** ./node_modules/core-js/library/modules/_has.js ***!
   \******************************************************/
 /***/ ((module) => {
+
+
 
 var hasOwnProperty = {}.hasOwnProperty;
 
@@ -903,6 +802,8 @@ module.exports = function (it, key) {
   !*** ./node_modules/core-js/library/modules/_hide.js ***!
   \*******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js");
 
@@ -923,6 +824,8 @@ module.exports = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-
   \*****************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 module.exports = !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js") && !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js")(function () {
   return Object.defineProperty(__webpack_require__(/*! ./_dom-create */ "./node_modules/core-js/library/modules/_dom-create.js")('div'), 'a', {
     get: function get() {
@@ -939,6 +842,8 @@ module.exports = !__webpack_require__(/*! ./_descriptors */ "./node_modules/core
   \************************************************************/
 /***/ ((module) => {
 
+
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 module.exports = function (it) {
@@ -952,6 +857,8 @@ module.exports = function (it) {
   !*** ./node_modules/core-js/library/modules/_object-dp.js ***!
   \************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
 
 var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
 
@@ -982,6 +889,8 @@ exports.f = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/li
   \****************************************************************/
 /***/ ((module) => {
 
+
+
 module.exports = function (bitmap, value) {
   return {
     enumerable: !(bitmap & 1),
@@ -998,6 +907,8 @@ module.exports = function (bitmap, value) {
   !*** ./node_modules/core-js/library/modules/_to-primitive.js ***!
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 7.1.1 ToPrimitive(input [, PreferredType])
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js"); // instead of the ES6 spec version, we didn't implement @@toPrimitive case
@@ -1021,6 +932,8 @@ module.exports = function (it, S) {
   \************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // https://github.com/tc39/proposal-global
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
 
@@ -1036,6 +949,8 @@ $export($export.G, {
   \*****************************************************/
 /***/ ((module) => {
 
+
+
 module.exports = function (it) {
   if (typeof it != 'function') throw TypeError(it + ' is not a function!');
   return it;
@@ -1048,6 +963,8 @@ module.exports = function (it) {
   !*** ./node_modules/core-js/modules/_a-number-value.js ***!
   \*********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/modules/_cof.js");
 
@@ -1063,6 +980,8 @@ module.exports = function (it, msg) {
   !*** ./node_modules/core-js/modules/_add-to-unscopables.js ***!
   \*************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 22.1.3.31 Array.prototype[@@unscopables]
 var UNSCOPABLES = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js")('unscopables');
@@ -1082,7 +1001,6 @@ module.exports = function (key) {
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var at = __webpack_require__(/*! ./_string-at */ "./node_modules/core-js/modules/_string-at.js")(true); // `AdvanceStringIndex` abstract operation
@@ -1101,6 +1019,8 @@ module.exports = function (S, index, unicode) {
   \******************************************************/
 /***/ ((module) => {
 
+
+
 module.exports = function (it, Constructor, name, forbiddenField) {
   if (!(it instanceof Constructor) || forbiddenField !== undefined && forbiddenField in it) {
     throw TypeError(name + ': incorrect invocation!');
@@ -1117,6 +1037,8 @@ module.exports = function (it, Constructor, name, forbiddenField) {
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
 
 module.exports = function (it) {
@@ -1132,7 +1054,6 @@ module.exports = function (it) {
   \************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 // 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 
 
@@ -1178,7 +1099,6 @@ module.exports = [].copyWithin || function copyWithin(target
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 // 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 
 
@@ -1212,6 +1132,8 @@ module.exports = function fill(value
   !*** ./node_modules/core-js/modules/_array-includes.js ***!
   \*********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // false -> Array#indexOf
 // true  -> Array#includes
@@ -1249,6 +1171,8 @@ module.exports = function (IS_INCLUDES) {
   !*** ./node_modules/core-js/modules/_array-methods.js ***!
   \********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 0 -> Array#forEach
 // 1 -> Array#map
@@ -1324,6 +1248,8 @@ module.exports = function (TYPE, $create) {
   \*******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var aFunction = __webpack_require__(/*! ./_a-function */ "./node_modules/core-js/modules/_a-function.js");
 
 var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/modules/_to-object.js");
@@ -1370,6 +1296,8 @@ module.exports = function (that, callbackfn, aLen, memo, isRight) {
   \********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
 
 var isArray = __webpack_require__(/*! ./_is-array */ "./node_modules/core-js/modules/_is-array.js");
@@ -1401,6 +1329,8 @@ module.exports = function (original) {
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 9.4.2.3 ArraySpeciesCreate(originalArray, length)
 var speciesConstructor = __webpack_require__(/*! ./_array-species-constructor */ "./node_modules/core-js/modules/_array-species-constructor.js");
 
@@ -1416,7 +1346,6 @@ module.exports = function (original, length) {
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var aFunction = __webpack_require__(/*! ./_a-function */ "./node_modules/core-js/modules/_a-function.js");
@@ -1466,6 +1395,8 @@ module.exports = Function.bind || function bind(that
   \**************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // getting tag from 19.1.3.6 Object.prototype.toString()
 var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/modules/_cof.js");
 
@@ -1500,6 +1431,8 @@ module.exports = function (it) {
   \**********************************************/
 /***/ ((module) => {
 
+
+
 var toString = {}.toString;
 
 module.exports = function (it) {
@@ -1514,7 +1447,6 @@ module.exports = function (it) {
   \************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js").f;
@@ -1707,7 +1639,6 @@ module.exports = {
   \**********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var redefineAll = __webpack_require__(/*! ./_redefine-all */ "./node_modules/core-js/modules/_redefine-all.js");
@@ -1814,7 +1745,6 @@ module.exports = {
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
@@ -1935,6 +1865,8 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
   \***********************************************/
 /***/ ((module) => {
 
+
+
 var core = module.exports = {
   version: '2.6.12'
 };
@@ -1948,7 +1880,6 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
   \**********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $defineProperty = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js");
@@ -1966,6 +1897,8 @@ module.exports = function (object, index, value) {
   !*** ./node_modules/core-js/modules/_ctx.js ***!
   \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // optional / simple context binding
 var aFunction = __webpack_require__(/*! ./_a-function */ "./node_modules/core-js/modules/_a-function.js");
@@ -2006,7 +1939,6 @@ module.exports = function (fn, that, length) {
   \*************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // 20.3.4.36 / 15.9.5.43 Date.prototype.toISOString()
 
 var fails = __webpack_require__(/*! ./_fails */ "./node_modules/core-js/modules/_fails.js");
@@ -2040,7 +1972,6 @@ module.exports = fails(function () {
   \************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
@@ -2062,6 +1993,8 @@ module.exports = function (hint) {
   \**************************************************/
 /***/ ((module) => {
 
+
+
 // 7.2.1 RequireObjectCoercible(argument)
 module.exports = function (it) {
   if (it == undefined) throw TypeError("Can't call method on  " + it);
@@ -2075,6 +2008,8 @@ module.exports = function (it) {
   !*** ./node_modules/core-js/modules/_descriptors.js ***!
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // Thank's IE8 for his funny defineProperty
 module.exports = !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/modules/_fails.js")(function () {
@@ -2092,6 +2027,8 @@ module.exports = !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/mo
   !*** ./node_modules/core-js/modules/_dom-create.js ***!
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
 
@@ -2112,6 +2049,8 @@ module.exports = function (it) {
   \********************************************************/
 /***/ ((module) => {
 
+
+
 // IE 8- don't enum bug keys
 module.exports = 'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'.split(',');
 
@@ -2122,6 +2061,8 @@ module.exports = 'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,
   !*** ./node_modules/core-js/modules/_enum-keys.js ***!
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // all enumerable object keys, includes symbols
 var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/modules/_object-keys.js");
@@ -2155,6 +2096,8 @@ module.exports = function (it) {
   !*** ./node_modules/core-js/modules/_export.js ***!
   \*************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
 
@@ -2223,6 +2166,8 @@ module.exports = $export;
   \**********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var MATCH = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js")('match');
 
 module.exports = function (KEY) {
@@ -2250,6 +2195,8 @@ module.exports = function (KEY) {
   \************************************************/
 /***/ ((module) => {
 
+
+
 module.exports = function (exec) {
   try {
     return !!exec();
@@ -2266,7 +2213,6 @@ module.exports = function (exec) {
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 __webpack_require__(/*! ./es6.regexp.exec */ "./node_modules/core-js/modules/es6.regexp.exec.js");
@@ -2397,7 +2343,6 @@ module.exports = function (KEY, length, exec) {
   \************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // 21.2.5.3 get RegExp.prototype.flags
 
 var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
@@ -2421,7 +2366,6 @@ module.exports = function () {
   \*************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // https://tc39.github.io/proposal-flatMap/#sec-FlattenIntoArray
 
 var isArray = __webpack_require__(/*! ./_is-array */ "./node_modules/core-js/modules/_is-array.js");
@@ -2476,6 +2420,8 @@ module.exports = flattenIntoArray;
   \*************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/modules/_ctx.js");
 
 var call = __webpack_require__(/*! ./_iter-call */ "./node_modules/core-js/modules/_iter-call.js");
@@ -2491,7 +2437,7 @@ var getIterFn = __webpack_require__(/*! ./core.get-iterator-method */ "./node_mo
 var BREAK = {};
 var RETURN = {};
 
-var exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {
+var _exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {
   var iterFn = ITERATOR ? function () {
     return iterable;
   } : getIterFn(iterable);
@@ -2509,8 +2455,8 @@ var exports = module.exports = function (iterable, entries, fn, that, ITERATOR) 
   }
 };
 
-exports.BREAK = BREAK;
-exports.RETURN = RETURN;
+_exports.BREAK = BREAK;
+_exports.RETURN = RETURN;
 
 /***/ }),
 
@@ -2519,6 +2465,8 @@ exports.RETURN = RETURN;
   !*** ./node_modules/core-js/modules/_function-to-string.js ***!
   \*************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 module.exports = __webpack_require__(/*! ./_shared */ "./node_modules/core-js/modules/_shared.js")('native-function-to-string', Function.toString);
 
@@ -2529,6 +2477,8 @@ module.exports = __webpack_require__(/*! ./_shared */ "./node_modules/core-js/mo
   !*** ./node_modules/core-js/modules/_global.js ***!
   \*************************************************/
 /***/ ((module) => {
+
+
 
 // https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
 var global = module.exports = typeof window != 'undefined' && window.Math == Math ? window : typeof self != 'undefined' && self.Math == Math ? self // eslint-disable-next-line no-new-func
@@ -2543,6 +2493,8 @@ if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
   \**********************************************/
 /***/ ((module) => {
 
+
+
 var hasOwnProperty = {}.hasOwnProperty;
 
 module.exports = function (it, key) {
@@ -2556,6 +2508,8 @@ module.exports = function (it, key) {
   !*** ./node_modules/core-js/modules/_hide.js ***!
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js");
 
@@ -2576,6 +2530,8 @@ module.exports = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var document = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js").document;
 
 module.exports = document && document.documentElement;
@@ -2587,6 +2543,8 @@ module.exports = document && document.documentElement;
   !*** ./node_modules/core-js/modules/_ie8-dom-define.js ***!
   \*********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 module.exports = !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/modules/_descriptors.js") && !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/modules/_fails.js")(function () {
   return Object.defineProperty(__webpack_require__(/*! ./_dom-create */ "./node_modules/core-js/modules/_dom-create.js")('div'), 'a', {
@@ -2603,6 +2561,8 @@ module.exports = !__webpack_require__(/*! ./_descriptors */ "./node_modules/core
   !*** ./node_modules/core-js/modules/_inherit-if-required.js ***!
   \**************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
 
@@ -2626,6 +2586,8 @@ module.exports = function (that, target, C) {
   !*** ./node_modules/core-js/modules/_invoke.js ***!
   \*************************************************/
 /***/ ((module) => {
+
+
 
 // fast apply, http://jsperf.lnkit.com/fast-apply/5
 module.exports = function (fn, args, that) {
@@ -2659,6 +2621,8 @@ module.exports = function (fn, args, that) {
   \**************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
 var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/modules/_cof.js"); // eslint-disable-next-line no-prototype-builtins
 
@@ -2674,6 +2638,8 @@ module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
   !*** ./node_modules/core-js/modules/_is-array-iter.js ***!
   \********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // check on default Array iterator
 var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/modules/_iterators.js");
@@ -2694,6 +2660,8 @@ module.exports = function (it) {
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 7.2.2 IsArray(argument)
 var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/modules/_cof.js");
 
@@ -2708,6 +2676,8 @@ module.exports = Array.isArray || function isArray(arg) {
   !*** ./node_modules/core-js/modules/_is-integer.js ***!
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 20.1.2.3 Number.isInteger(number)
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
@@ -2726,6 +2696,8 @@ module.exports = function isInteger(it) {
   \****************************************************/
 /***/ ((module) => {
 
+
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 module.exports = function (it) {
@@ -2739,6 +2711,8 @@ module.exports = function (it) {
   !*** ./node_modules/core-js/modules/_is-regexp.js ***!
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 7.2.8 IsRegExp(argument)
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
@@ -2759,6 +2733,8 @@ module.exports = function (it) {
   !*** ./node_modules/core-js/modules/_iter-call.js ***!
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // call something on iterator step with safe closing on error
 var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
@@ -2781,7 +2757,6 @@ module.exports = function (iterator, fn, value, entries) {
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var create = __webpack_require__(/*! ./_object-create */ "./node_modules/core-js/modules/_object-create.js");
@@ -2811,7 +2786,6 @@ module.exports = function (Constructor, NAME, next) {
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var LIBRARY = __webpack_require__(/*! ./_library */ "./node_modules/core-js/modules/_library.js");
@@ -2926,6 +2900,8 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js")('iterator');
 
 var SAFE_CLOSING = false;
@@ -2979,6 +2955,8 @@ module.exports = function (exec, skipClosing) {
   \****************************************************/
 /***/ ((module) => {
 
+
+
 module.exports = function (done, value) {
   return {
     value: value,
@@ -2994,6 +2972,8 @@ module.exports = function (done, value) {
   \****************************************************/
 /***/ ((module) => {
 
+
+
 module.exports = {};
 
 /***/ }),
@@ -3004,6 +2984,8 @@ module.exports = {};
   \**************************************************/
 /***/ ((module) => {
 
+
+
 module.exports = false;
 
 /***/ }),
@@ -3013,6 +2995,8 @@ module.exports = false;
   !*** ./node_modules/core-js/modules/_math-expm1.js ***!
   \*****************************************************/
 /***/ ((module) => {
+
+
 
 // 20.2.2.14 Math.expm1(x)
 var $expm1 = Math.expm1;
@@ -3029,6 +3013,8 @@ module.exports = !$expm1 // Old FF bug
   !*** ./node_modules/core-js/modules/_math-fround.js ***!
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 20.2.2.16 Math.fround(x)
 var sign = __webpack_require__(/*! ./_math-sign */ "./node_modules/core-js/modules/_math-sign.js");
@@ -3063,6 +3049,8 @@ module.exports = Math.fround || function fround(x) {
   \*****************************************************/
 /***/ ((module) => {
 
+
+
 // 20.2.2.20 Math.log1p(x)
 module.exports = Math.log1p || function log1p(x) {
   return (x = +x) > -1e-8 && x < 1e-8 ? x - x * x / 2 : Math.log(1 + x);
@@ -3075,6 +3063,8 @@ module.exports = Math.log1p || function log1p(x) {
   !*** ./node_modules/core-js/modules/_math-sign.js ***!
   \****************************************************/
 /***/ ((module) => {
+
+
 
 // 20.2.2.28 Math.sign(x)
 module.exports = Math.sign || function sign(x) {
@@ -3089,6 +3079,8 @@ module.exports = Math.sign || function sign(x) {
   !*** ./node_modules/core-js/modules/_meta.js ***!
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -3171,6 +3163,8 @@ var meta = module.exports = {
   !*** ./node_modules/core-js/modules/_microtask.js ***!
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
 
@@ -3265,7 +3259,6 @@ module.exports = function () {
   \*****************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // 25.4.1.5 NewPromiseCapability(C)
 
 var aFunction = __webpack_require__(/*! ./_a-function */ "./node_modules/core-js/modules/_a-function.js");
@@ -3293,7 +3286,6 @@ module.exports.f = function (C) {
   \********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // 19.1.2.1 Object.assign(target, source, ...)
 
 var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/modules/_descriptors.js");
@@ -3352,6 +3344,8 @@ module.exports = !$assign || __webpack_require__(/*! ./_fails */ "./node_modules
   !*** ./node_modules/core-js/modules/_object-create.js ***!
   \********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
@@ -3419,6 +3413,8 @@ module.exports = Object.create || function create(O, Properties) {
   \****************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+
+
 var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
 
 var IE8_DOM_DEFINE = __webpack_require__(/*! ./_ie8-dom-define */ "./node_modules/core-js/modules/_ie8-dom-define.js");
@@ -3448,6 +3444,8 @@ exports.f = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/mo
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js");
 
 var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
@@ -3475,6 +3473,8 @@ module.exports = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-
   !*** ./node_modules/core-js/modules/_object-gopd.js ***!
   \******************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
 
 var pIE = __webpack_require__(/*! ./_object-pie */ "./node_modules/core-js/modules/_object-pie.js");
 
@@ -3508,6 +3508,8 @@ exports.f = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/mo
   \**********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 // fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
@@ -3538,6 +3540,8 @@ module.exports.f = function getOwnPropertyNames(it) {
   \******************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+
+
 // 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
 var $keys = __webpack_require__(/*! ./_object-keys-internal */ "./node_modules/core-js/modules/_object-keys-internal.js");
 
@@ -3555,6 +3559,8 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
   \******************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
+
+
 exports.f = Object.getOwnPropertySymbols;
 
 /***/ }),
@@ -3564,6 +3570,8 @@ exports.f = Object.getOwnPropertySymbols;
   !*** ./node_modules/core-js/modules/_object-gpo.js ***!
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
 var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/modules/_has.js");
@@ -3592,6 +3600,8 @@ module.exports = Object.getPrototypeOf || function (O) {
   !*** ./node_modules/core-js/modules/_object-keys-internal.js ***!
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/modules/_has.js");
 
@@ -3629,6 +3639,8 @@ module.exports = function (object, names) {
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
 var $keys = __webpack_require__(/*! ./_object-keys-internal */ "./node_modules/core-js/modules/_object-keys-internal.js");
 
@@ -3646,6 +3658,8 @@ module.exports = Object.keys || function keys(O) {
   \*****************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
+
+
 exports.f = {}.propertyIsEnumerable;
 
 /***/ }),
@@ -3655,6 +3669,8 @@ exports.f = {}.propertyIsEnumerable;
   !*** ./node_modules/core-js/modules/_object-sap.js ***!
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // most Object methods by ES6 should accept primitives
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -3679,6 +3695,8 @@ module.exports = function (KEY, exec) {
   !*** ./node_modules/core-js/modules/_object-to-array.js ***!
   \**********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/modules/_descriptors.js");
 
@@ -3717,6 +3735,8 @@ module.exports = function (isEntries) {
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // all object keys, includes non-enumerable and symbols
 var gOPN = __webpack_require__(/*! ./_object-gopn */ "./node_modules/core-js/modules/_object-gopn.js");
 
@@ -3740,6 +3760,8 @@ module.exports = Reflect && Reflect.ownKeys || function ownKeys(it) {
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var $parseFloat = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js").parseFloat;
 
 var $trim = __webpack_require__(/*! ./_string-trim */ "./node_modules/core-js/modules/_string-trim.js").trim;
@@ -3757,6 +3779,8 @@ module.exports = 1 / $parseFloat(__webpack_require__(/*! ./_string-ws */ "./node
   !*** ./node_modules/core-js/modules/_parse-int.js ***!
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var $parseInt = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js").parseInt;
 
@@ -3777,6 +3801,8 @@ module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? f
   !*** ./node_modules/core-js/modules/_perform.js ***!
   \**************************************************/
 /***/ ((module) => {
+
+
 
 module.exports = function (exec) {
   try {
@@ -3799,6 +3825,8 @@ module.exports = function (exec) {
   !*** ./node_modules/core-js/modules/_promise-resolve.js ***!
   \**********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
 
@@ -3823,6 +3851,8 @@ module.exports = function (C, x) {
   \********************************************************/
 /***/ ((module) => {
 
+
+
 module.exports = function (bitmap, value) {
   return {
     enumerable: !(bitmap & 1),
@@ -3839,6 +3869,8 @@ module.exports = function (bitmap, value) {
   !*** ./node_modules/core-js/modules/_redefine-all.js ***!
   \*******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var redefine = __webpack_require__(/*! ./_redefine */ "./node_modules/core-js/modules/_redefine.js");
 
@@ -3857,6 +3889,8 @@ module.exports = function (target, src, safe) {
   !*** ./node_modules/core-js/modules/_redefine.js ***!
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
 
@@ -3904,7 +3938,6 @@ __webpack_require__(/*! ./_core */ "./node_modules/core-js/modules/_core.js").in
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -3942,7 +3975,6 @@ module.exports = function (R, S) {
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var regexpFlags = __webpack_require__(/*! ./_flags */ "./node_modules/core-js/modules/_flags.js");
@@ -4008,6 +4040,8 @@ module.exports = patchedExec;
   \*****************************************************/
 /***/ ((module) => {
 
+
+
 // 7.2.9 SameValue(x, y)
 module.exports = Object.is || function is(x, y) {
   // eslint-disable-next-line no-self-compare
@@ -4021,6 +4055,8 @@ module.exports = Object.is || function is(x, y) {
   !*** ./node_modules/core-js/modules/_set-proto.js ***!
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // Works with __proto__ only. Old v8 can't work with null proto objects.
 
@@ -4062,7 +4098,6 @@ module.exports = {
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
@@ -4091,6 +4126,8 @@ module.exports = function (KEY) {
   \************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var def = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js").f;
 
 var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/modules/_has.js");
@@ -4112,6 +4149,8 @@ module.exports = function (it, tag, stat) {
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var shared = __webpack_require__(/*! ./_shared */ "./node_modules/core-js/modules/_shared.js")('keys');
 
 var uid = __webpack_require__(/*! ./_uid */ "./node_modules/core-js/modules/_uid.js");
@@ -4127,6 +4166,8 @@ module.exports = function (key) {
   !*** ./node_modules/core-js/modules/_shared.js ***!
   \*************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var core = __webpack_require__(/*! ./_core */ "./node_modules/core-js/modules/_core.js");
 
@@ -4150,6 +4191,8 @@ var store = global[SHARED] || (global[SHARED] = {});
   \**************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 7.3.20 SpeciesConstructor(O, defaultConstructor)
 var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
 
@@ -4171,7 +4214,6 @@ module.exports = function (O, D) {
   \********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var fails = __webpack_require__(/*! ./_fails */ "./node_modules/core-js/modules/_fails.js");
@@ -4192,6 +4234,8 @@ module.exports = function (method, arg) {
   !*** ./node_modules/core-js/modules/_string-at.js ***!
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/modules/_to-integer.js");
 
@@ -4219,6 +4263,8 @@ module.exports = function (TO_STRING) {
   \*********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // helper for String#{startsWith, endsWith, includes}
 var isRegExp = __webpack_require__(/*! ./_is-regexp */ "./node_modules/core-js/modules/_is-regexp.js");
 
@@ -4236,6 +4282,8 @@ module.exports = function (that, searchString, NAME) {
   !*** ./node_modules/core-js/modules/_string-html.js ***!
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -4269,6 +4317,8 @@ module.exports = function (NAME, exec) {
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // https://github.com/tc39/proposal-string-pad-start-end
 var toLength = __webpack_require__(/*! ./_to-length */ "./node_modules/core-js/modules/_to-length.js");
 
@@ -4296,7 +4346,6 @@ module.exports = function (that, maxLength, fillString, left) {
   \********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/modules/_to-integer.js");
@@ -4323,6 +4372,8 @@ module.exports = function repeat(count) {
   !*** ./node_modules/core-js/modules/_string-trim.js ***!
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -4367,6 +4418,8 @@ module.exports = exporter;
   \****************************************************/
 /***/ ((module) => {
 
+
+
 module.exports = "\t\n\x0B\f\r \xA0\u1680\u180E\u2000\u2001\u2002\u2003" + "\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF";
 
 /***/ }),
@@ -4376,6 +4429,8 @@ module.exports = "\t\n\x0B\f\r \xA0\u1680\u180E\u2000\u2001\u2002\u2003" + "\u20
   !*** ./node_modules/core-js/modules/_task.js ***!
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/modules/_ctx.js");
 
@@ -4485,6 +4540,8 @@ module.exports = {
   \************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/modules/_to-integer.js");
 
 var max = Math.max;
@@ -4502,6 +4559,8 @@ module.exports = function (index, length) {
   !*** ./node_modules/core-js/modules/_to-index.js ***!
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // https://tc39.github.io/ecma262/#sec-toindex
 var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/modules/_to-integer.js");
@@ -4524,6 +4583,8 @@ module.exports = function (it) {
   \*****************************************************/
 /***/ ((module) => {
 
+
+
 // 7.1.4 ToInteger
 var ceil = Math.ceil;
 var floor = Math.floor;
@@ -4539,6 +4600,8 @@ module.exports = function (it) {
   !*** ./node_modules/core-js/modules/_to-iobject.js ***!
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // to indexed object, toObject with fallback for non-array-like ES3 strings
 var IObject = __webpack_require__(/*! ./_iobject */ "./node_modules/core-js/modules/_iobject.js");
@@ -4557,6 +4620,8 @@ module.exports = function (it) {
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 7.1.15 ToLength
 var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/modules/_to-integer.js");
 
@@ -4574,6 +4639,8 @@ module.exports = function (it) {
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 7.1.13 ToObject(argument)
 var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/modules/_defined.js");
 
@@ -4588,6 +4655,8 @@ module.exports = function (it) {
   !*** ./node_modules/core-js/modules/_to-primitive.js ***!
   \*******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 7.1.1 ToPrimitive(input [, PreferredType])
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js"); // instead of the ES6 spec version, we didn't implement @@toPrimitive case
@@ -4611,7 +4680,6 @@ module.exports = function (it, S) {
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -5208,7 +5276,6 @@ if (__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/modules/_d
   \*******************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-"use strict";
 
 
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
@@ -5577,6 +5644,8 @@ exports[DATA_VIEW] = $DataView;
   \************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
 
 var hide = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/modules/_hide.js");
@@ -5614,6 +5683,8 @@ module.exports = {
   \**********************************************/
 /***/ ((module) => {
 
+
+
 var id = 0;
 var px = Math.random();
 
@@ -5629,6 +5700,8 @@ module.exports = function (key) {
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
 
 var navigator = global.navigator;
@@ -5641,6 +5714,8 @@ module.exports = navigator && navigator.userAgent || '';
   !*** ./node_modules/core-js/modules/_validate-collection.js ***!
   \**************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
 
@@ -5656,6 +5731,8 @@ module.exports = function (it, TYPE) {
   !*** ./node_modules/core-js/modules/_wks-define.js ***!
   \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
 
@@ -5682,6 +5759,8 @@ module.exports = function (name) {
   \**************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+
+
 exports.f = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js");
 
 /***/ }),
@@ -5691,6 +5770,8 @@ exports.f = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_w
   !*** ./node_modules/core-js/modules/_wks.js ***!
   \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var store = __webpack_require__(/*! ./_shared */ "./node_modules/core-js/modules/_shared.js")('wks');
 
@@ -5714,6 +5795,8 @@ $exports.store = store;
   \******************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var classof = __webpack_require__(/*! ./_classof */ "./node_modules/core-js/modules/_classof.js");
 
 var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js")('iterator');
@@ -5732,6 +5815,8 @@ module.exports = __webpack_require__(/*! ./_core */ "./node_modules/core-js/modu
   \***************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -5749,7 +5834,6 @@ __webpack_require__(/*! ./_add-to-unscopables */ "./node_modules/core-js/modules
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -5773,6 +5857,8 @@ $export($export.P + $export.F * !__webpack_require__(/*! ./_strict-method */ "./
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -5790,7 +5876,6 @@ __webpack_require__(/*! ./_add-to-unscopables */ "./node_modules/core-js/modules
   \**********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -5814,7 +5899,6 @@ $export($export.P + $export.F * !__webpack_require__(/*! ./_strict-method */ "./
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // 22.1.3.9 Array.prototype.findIndex(predicate, thisArg = undefined)
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -5845,7 +5929,6 @@ __webpack_require__(/*! ./_add-to-unscopables */ "./node_modules/core-js/modules
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // 22.1.3.8 Array.prototype.find(predicate, thisArg = undefined)
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -5876,7 +5959,6 @@ __webpack_require__(/*! ./_add-to-unscopables */ "./node_modules/core-js/modules
   \************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -5902,7 +5984,6 @@ $export($export.P + $export.F * !STRICT, 'Array', {
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/modules/_ctx.js");
@@ -5963,7 +6044,6 @@ $export($export.S + $export.F * !__webpack_require__(/*! ./_iter-detect */ "./no
   \************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -5990,6 +6070,8 @@ $export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(/*! ./_st
   \************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6005,7 +6087,6 @@ $export($export.S, 'Array', {
   \************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var addToUnscopables = __webpack_require__(/*! ./_add-to-unscopables */ "./node_modules/core-js/modules/_add-to-unscopables.js");
@@ -6055,7 +6136,6 @@ addToUnscopables('entries');
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // 22.1.3.13 Array.prototype.join(separator)
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6078,7 +6158,6 @@ $export($export.P + $export.F * (__webpack_require__(/*! ./_iobject */ "./node_m
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6120,7 +6199,6 @@ $export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(/*! ./_st
   \*******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6144,7 +6222,6 @@ $export($export.P + $export.F * !__webpack_require__(/*! ./_strict-method */ "./
   \******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6184,7 +6261,6 @@ $export($export.S + $export.F * __webpack_require__(/*! ./_fails */ "./node_modu
   \****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6208,7 +6284,6 @@ $export($export.P + $export.F * !__webpack_require__(/*! ./_strict-method */ "./
   \**********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6232,7 +6307,6 @@ $export($export.P + $export.F * !__webpack_require__(/*! ./_strict-method */ "./
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6277,7 +6351,6 @@ $export($export.P + $export.F * __webpack_require__(/*! ./_fails */ "./node_modu
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6301,7 +6374,6 @@ $export($export.P + $export.F * !__webpack_require__(/*! ./_strict-method */ "./
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6335,6 +6407,8 @@ $export($export.P + $export.F * (fails(function () {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ./_set-species */ "./node_modules/core-js/modules/_set-species.js")('Array');
 
 /***/ }),
@@ -6344,6 +6418,8 @@ __webpack_require__(/*! ./_set-species */ "./node_modules/core-js/modules/_set-s
   !*** ./node_modules/core-js/modules/es6.date.now.js ***!
   \******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 20.3.3.1 / 15.9.4.4 Date.now()
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6361,6 +6437,8 @@ $export($export.S, 'Date', {
   !*** ./node_modules/core-js/modules/es6.date.to-iso-string.js ***!
   \****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 20.3.4.36 / 15.9.5.43 Date.prototype.toISOString()
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6380,7 +6458,6 @@ $export($export.P + $export.F * (Date.prototype.toISOString !== toISOString), 'D
   \**********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6412,6 +6489,8 @@ $export($export.P + $export.F * __webpack_require__(/*! ./_fails */ "./node_modu
   \***************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var TO_PRIMITIVE = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js")('toPrimitive');
 
 var proto = Date.prototype;
@@ -6424,6 +6503,8 @@ if (!(TO_PRIMITIVE in proto)) __webpack_require__(/*! ./_hide */ "./node_modules
   !*** ./node_modules/core-js/modules/es6.date.to-string.js ***!
   \************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var DateProto = Date.prototype;
 var INVALID_DATE = 'Invalid Date';
@@ -6447,6 +6528,8 @@ if (new Date(NaN) + '' != INVALID_DATE) {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6462,7 +6545,6 @@ $export($export.P, 'Function', {
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
@@ -6494,6 +6576,8 @@ if (!(HAS_INSTANCE in FunctionProto)) __webpack_require__(/*! ./_object-dp */ ".
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js").f;
 
 var FProto = Function.prototype;
@@ -6519,7 +6603,6 @@ NAME in FProto || __webpack_require__(/*! ./_descriptors */ "./node_modules/core
   \*************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var strong = __webpack_require__(/*! ./_collection-strong */ "./node_modules/core-js/modules/_collection-strong.js");
@@ -6552,6 +6635,8 @@ module.exports = __webpack_require__(/*! ./_collection */ "./node_modules/core-j
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.2.2.3 Math.acosh(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6575,6 +6660,8 @@ $export($export.S + $export.F * !($acosh // V8 bug: https://code.google.com/p/v8
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.2.2.5 Math.asinh(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6597,6 +6684,8 @@ $export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.2.2.7 Math.atanh(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6615,6 +6704,8 @@ $export($export.S + $export.F * !($atanh && 1 / $atanh(-0) < 0), 'Math', {
   !*** ./node_modules/core-js/modules/es6.math.cbrt.js ***!
   \*******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 20.2.2.9 Math.cbrt(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6635,6 +6726,8 @@ $export($export.S, 'Math', {
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.2.2.11 Math.clz32(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6651,6 +6744,8 @@ $export($export.S, 'Math', {
   !*** ./node_modules/core-js/modules/es6.math.cosh.js ***!
   \*******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 20.2.2.12 Math.cosh(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6670,6 +6765,8 @@ $export($export.S, 'Math', {
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.2.2.14 Math.expm1(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6687,6 +6784,8 @@ $export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.2.2.16 Math.fround(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6701,6 +6800,8 @@ $export($export.S, 'Math', {
   !*** ./node_modules/core-js/modules/es6.math.hypot.js ***!
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 20.2.2.17 Math.hypot([value1[, value2[, … ]]])
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6740,6 +6841,8 @@ $export($export.S, 'Math', {
   \*******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.2.2.18 Math.imul(x, y)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6766,6 +6869,8 @@ $export($export.S + $export.F * __webpack_require__(/*! ./_fails */ "./node_modu
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.2.2.21 Math.log10(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6783,6 +6888,8 @@ $export($export.S, 'Math', {
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.2.2.20 Math.log1p(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6797,6 +6904,8 @@ $export($export.S, 'Math', {
   !*** ./node_modules/core-js/modules/es6.math.log2.js ***!
   \*******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 20.2.2.22 Math.log2(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6815,6 +6924,8 @@ $export($export.S, 'Math', {
   \*******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.2.2.28 Math.sign(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6829,6 +6940,8 @@ $export($export.S, 'Math', {
   !*** ./node_modules/core-js/modules/es6.math.sinh.js ***!
   \*******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 20.2.2.30 Math.sinh(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -6853,6 +6966,8 @@ $export($export.S + $export.F * __webpack_require__(/*! ./_fails */ "./node_modu
   \*******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.2.2.33 Math.tanh(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6875,6 +6990,8 @@ $export($export.S, 'Math', {
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.2.2.34 Math.trunc(x)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -6892,7 +7009,6 @@ $export($export.S, 'Math', {
   \****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
@@ -7000,6 +7116,8 @@ if (!$Number(' 0o1') || !$Number('0b1') || $Number('+0x1')) {
   \************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.1.2.1 Number.EPSILON
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -7014,6 +7132,8 @@ $export($export.S, 'Number', {
   !*** ./node_modules/core-js/modules/es6.number.is-finite.js ***!
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 20.1.2.2 Number.isFinite(number)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -7034,6 +7154,8 @@ $export($export.S, 'Number', {
   \***************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.1.2.3 Number.isInteger(number)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -7048,6 +7170,8 @@ $export($export.S, 'Number', {
   !*** ./node_modules/core-js/modules/es6.number.is-nan.js ***!
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 20.1.2.4 Number.isNaN(number)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -7066,6 +7190,8 @@ $export($export.S, 'Number', {
   !*** ./node_modules/core-js/modules/es6.number.is-safe-integer.js ***!
   \********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 20.1.2.5 Number.isSafeInteger(number)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -7087,6 +7213,8 @@ $export($export.S, 'Number', {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.1.2.6 Number.MAX_SAFE_INTEGER
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -7102,6 +7230,8 @@ $export($export.S, 'Number', {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 20.1.2.10 Number.MIN_SAFE_INTEGER
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -7116,6 +7246,8 @@ $export($export.S, 'Number', {
   !*** ./node_modules/core-js/modules/es6.number.parse-float.js ***!
   \****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -7134,6 +7266,8 @@ $export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
 var $parseInt = __webpack_require__(/*! ./_parse-int */ "./node_modules/core-js/modules/_parse-int.js"); // 20.1.2.13 Number.parseInt(string, radix)
@@ -7151,7 +7285,6 @@ $export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {
   \*************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -7298,7 +7431,6 @@ $export($export.P + $export.F * (!!$toFixed && (0.00008.toFixed(3) !== '0.000' |
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -7329,6 +7461,8 @@ $export($export.P + $export.F * ($fails(function () {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 19.1.3.1 Object.assign(target, source)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -7343,6 +7477,8 @@ $export($export.S + $export.F, 'Object', {
   !*** ./node_modules/core-js/modules/es6.object.create.js ***!
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js"); // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 
@@ -7359,6 +7495,8 @@ $export($export.S, 'Object', {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js"); // 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
 
 
@@ -7374,6 +7512,8 @@ $export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./no
   \********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js"); // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
 
 
@@ -7388,6 +7528,8 @@ $export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./no
   !*** ./node_modules/core-js/modules/es6.object.freeze.js ***!
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 19.1.2.5 Object.freeze(O)
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
@@ -7408,6 +7550,8 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object
   \********************************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
 var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/modules/_to-iobject.js");
 
@@ -7427,6 +7571,8 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object
   \***************************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 19.1.2.7 Object.getOwnPropertyNames(O)
 __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object-sap.js")('getOwnPropertyNames', function () {
   return __webpack_require__(/*! ./_object-gopn-ext */ "./node_modules/core-js/modules/_object-gopn-ext.js").f;
@@ -7439,6 +7585,8 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object
   !*** ./node_modules/core-js/modules/es6.object.get-prototype-of.js ***!
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 19.1.2.9 Object.getPrototypeOf(O)
 var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/modules/_to-object.js");
@@ -7459,6 +7607,8 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object
   \******************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 19.1.2.11 Object.isExtensible(O)
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
 
@@ -7475,6 +7625,8 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object
   !*** ./node_modules/core-js/modules/es6.object.is-frozen.js ***!
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 19.1.2.12 Object.isFrozen(O)
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
@@ -7493,6 +7645,8 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 19.1.2.13 Object.isSealed(O)
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
 
@@ -7510,6 +7664,8 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object
   \*******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 19.1.3.10 Object.is(value1, value2)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -7524,6 +7680,8 @@ $export($export.S, 'Object', {
   !*** ./node_modules/core-js/modules/es6.object.keys.js ***!
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 19.1.2.14 Object.keys(O)
 var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/modules/_to-object.js");
@@ -7544,6 +7702,8 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 19.1.2.15 Object.preventExtensions(O)
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
 
@@ -7562,6 +7722,8 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object
   !*** ./node_modules/core-js/modules/es6.object.seal.js ***!
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 19.1.2.17 Object.seal(O)
 var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
@@ -7582,6 +7744,8 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 19.1.3.19 Object.setPrototypeOf(O, proto)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -7597,7 +7761,6 @@ $export($export.S, 'Object', {
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // 19.1.3.6 Object.prototype.toString()
 
 var classof = __webpack_require__(/*! ./_classof */ "./node_modules/core-js/modules/_classof.js");
@@ -7619,6 +7782,8 @@ if (test + '' != '[object z]') {
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
 var $parseFloat = __webpack_require__(/*! ./_parse-float */ "./node_modules/core-js/modules/_parse-float.js"); // 18.2.4 parseFloat(string)
@@ -7635,6 +7800,8 @@ $export($export.G + $export.F * (parseFloat != $parseFloat), {
   !*** ./node_modules/core-js/modules/es6.parse-int.js ***!
   \*******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -7653,7 +7820,6 @@ $export($export.G + $export.F * (parseInt != $parseInt), {
   \*****************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var LIBRARY = __webpack_require__(/*! ./_library */ "./node_modules/core-js/modules/_library.js");
@@ -8019,6 +8185,8 @@ $export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(/*! ./_iter-
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -8048,6 +8216,8 @@ $export($export.S + $export.F * !__webpack_require__(/*! ./_fails */ "./node_mod
   !*** ./node_modules/core-js/modules/es6.reflect.construct.js ***!
   \***************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -8131,6 +8301,8 @@ $export($export.S + $export.F * (NEW_TARGET_BUG || ARGS_BUG), 'Reflect', {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
 var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js");
 
@@ -8171,6 +8343,8 @@ $export($export.S + $export.F * __webpack_require__(/*! ./_fails */ "./node_modu
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 26.1.4 Reflect.deleteProperty(target, propertyKey)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -8193,7 +8367,6 @@ $export($export.S, 'Reflect', {
   \***************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // 26.1.5 Reflect.enumerate(target)
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -8246,6 +8419,8 @@ $export($export.S, 'Reflect', {
   \*********************************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
 var gOPD = __webpack_require__(/*! ./_object-gopd */ "./node_modules/core-js/modules/_object-gopd.js");
 
@@ -8267,6 +8442,8 @@ $export($export.S, 'Reflect', {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 26.1.8 Reflect.getPrototypeOf(target)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -8287,6 +8464,8 @@ $export($export.S, 'Reflect', {
   !*** ./node_modules/core-js/modules/es6.reflect.get.js ***!
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 26.1.6 Reflect.get(target, propertyKey [, receiver])
 var gOPD = __webpack_require__(/*! ./_object-gopd */ "./node_modules/core-js/modules/_object-gopd.js");
@@ -8323,6 +8502,8 @@ $export($export.S, 'Reflect', {
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 26.1.9 Reflect.has(target, propertyKey)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -8339,6 +8520,8 @@ $export($export.S, 'Reflect', {
   !*** ./node_modules/core-js/modules/es6.reflect.is-extensible.js ***!
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 26.1.10 Reflect.isExtensible(target)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -8361,6 +8544,8 @@ $export($export.S, 'Reflect', {
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 26.1.11 Reflect.ownKeys(target)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -8375,6 +8560,8 @@ $export($export.S, 'Reflect', {
   !*** ./node_modules/core-js/modules/es6.reflect.prevent-extensions.js ***!
   \************************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 26.1.12 Reflect.preventExtensions(target)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -8403,6 +8590,8 @@ $export($export.S, 'Reflect', {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 26.1.14 Reflect.setPrototypeOf(target, proto)
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -8428,6 +8617,8 @@ if (setProto) $export($export.S, 'Reflect', {
   !*** ./node_modules/core-js/modules/es6.reflect.set.js ***!
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
 var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js");
@@ -8487,6 +8678,8 @@ $export($export.S, 'Reflect', {
   !*** ./node_modules/core-js/modules/es6.regexp.constructor.js ***!
   \****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
 
@@ -8552,7 +8745,6 @@ __webpack_require__(/*! ./_set-species */ "./node_modules/core-js/modules/_set-s
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var regexpExec = __webpack_require__(/*! ./_regexp-exec */ "./node_modules/core-js/modules/_regexp-exec.js");
@@ -8573,6 +8765,8 @@ __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js"
   \**********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // 21.2.5.3 get RegExp.prototype.flags()
 if (__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/modules/_descriptors.js") && /./g.flags != 'g') __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js").f(RegExp.prototype, 'flags', {
   configurable: true,
@@ -8587,7 +8781,6 @@ if (__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/modules/_d
   \**********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
@@ -8639,7 +8832,6 @@ __webpack_require__(/*! ./_fix-re-wks */ "./node_modules/core-js/modules/_fix-re
   \************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
@@ -8793,7 +8985,6 @@ __webpack_require__(/*! ./_fix-re-wks */ "./node_modules/core-js/modules/_fix-re
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
@@ -8833,7 +9024,6 @@ __webpack_require__(/*! ./_fix-re-wks */ "./node_modules/core-js/modules/_fix-re
   \**********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var isRegExp = __webpack_require__(/*! ./_is-regexp */ "./node_modules/core-js/modules/_is-regexp.js");
@@ -8972,7 +9162,6 @@ __webpack_require__(/*! ./_fix-re-wks */ "./node_modules/core-js/modules/_fix-re
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 __webpack_require__(/*! ./es6.regexp.flags */ "./node_modules/core-js/modules/es6.regexp.flags.js");
@@ -9015,7 +9204,6 @@ if (__webpack_require__(/*! ./_fails */ "./node_modules/core-js/modules/_fails.j
   \*************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var strong = __webpack_require__(/*! ./_collection-strong */ "./node_modules/core-js/modules/_collection-strong.js");
@@ -9043,7 +9231,6 @@ module.exports = __webpack_require__(/*! ./_collection */ "./node_modules/core-j
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.2 String.prototype.anchor(name)
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('anchor', function (createHTML) {
@@ -9060,7 +9247,6 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.3 String.prototype.big()
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('big', function (createHTML) {
@@ -9077,7 +9263,6 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   \**********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.4 String.prototype.blink()
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('blink', function (createHTML) {
@@ -9094,7 +9279,6 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.5 String.prototype.bold()
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('bold', function (createHTML) {
@@ -9111,7 +9295,6 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   \******************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -9133,7 +9316,6 @@ $export($export.P, 'String', {
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 // 21.1.3.6 String.prototype.endsWith(searchString [, endPosition])
 
 
@@ -9166,7 +9348,6 @@ $export($export.P + $export.F * __webpack_require__(/*! ./_fails-is-regexp */ ".
   \**********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.6 String.prototype.fixed()
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('fixed', function (createHTML) {
@@ -9183,7 +9364,6 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.7 String.prototype.fontcolor(color)
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('fontcolor', function (createHTML) {
@@ -9200,7 +9380,6 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   \*************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.8 String.prototype.fontsize(size)
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('fontsize', function (createHTML) {
@@ -9216,6 +9395,8 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   !*** ./node_modules/core-js/modules/es6.string.from-code-point.js ***!
   \********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -9251,7 +9432,6 @@ $export($export.S + $export.F * (!!$fromCodePoint && $fromCodePoint.length != 1)
   \*************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 // 21.1.3.7 String.prototype.includes(searchString, position = 0)
 
 
@@ -9276,7 +9456,6 @@ $export($export.P + $export.F * __webpack_require__(/*! ./_fails-is-regexp */ ".
   \************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.9 String.prototype.italics()
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('italics', function (createHTML) {
@@ -9293,7 +9472,6 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   \*************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $at = __webpack_require__(/*! ./_string-at */ "./node_modules/core-js/modules/_string-at.js")(true); // 21.1.3.27 String.prototype[@@iterator]()
@@ -9328,7 +9506,6 @@ __webpack_require__(/*! ./_iter-define */ "./node_modules/core-js/modules/_iter-
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.10 String.prototype.link(url)
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('link', function (createHTML) {
@@ -9344,6 +9521,8 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   !*** ./node_modules/core-js/modules/es6.string.raw.js ***!
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -9377,6 +9556,8 @@ $export($export.S, 'String', {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
 $export($export.P, 'String', {
@@ -9392,7 +9573,6 @@ $export($export.P, 'String', {
   \**********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.11 String.prototype.small()
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('small', function (createHTML) {
@@ -9409,7 +9589,6 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   \****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 // 21.1.3.18 String.prototype.startsWith(searchString [, position ])
 
 
@@ -9440,7 +9619,6 @@ $export($export.P + $export.F * __webpack_require__(/*! ./_fails-is-regexp */ ".
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.12 String.prototype.strike()
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('strike', function (createHTML) {
@@ -9457,7 +9635,6 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.13 String.prototype.sub()
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('sub', function (createHTML) {
@@ -9474,7 +9651,6 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   \********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // B.2.3.14 String.prototype.sup()
 
 __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_string-html.js")('sup', function (createHTML) {
@@ -9491,7 +9667,6 @@ __webpack_require__(/*! ./_string-html */ "./node_modules/core-js/modules/_strin
   \*********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // 21.1.3.25 String.prototype.trim()
 
 __webpack_require__(/*! ./_string-trim */ "./node_modules/core-js/modules/_string-trim.js")('trim', function ($trim) {
@@ -9508,7 +9683,6 @@ __webpack_require__(/*! ./_string-trim */ "./node_modules/core-js/modules/_strin
   \****************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // ECMAScript 6 symbols shim
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -9840,7 +10014,6 @@ setToStringTag(global.JSON, 'JSON', true);
   \****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -9909,6 +10082,8 @@ __webpack_require__(/*! ./_set-species */ "./node_modules/core-js/modules/_set-s
   \*************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
 $export($export.G + $export.W + $export.F * !__webpack_require__(/*! ./_typed */ "./node_modules/core-js/modules/_typed.js").ABV, {
@@ -9922,6 +10097,8 @@ $export($export.G + $export.W + $export.F * !__webpack_require__(/*! ./_typed */
   !*** ./node_modules/core-js/modules/es6.typed.float32-array.js ***!
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed-array.js")('Float32', 4, function (init) {
   return function Float32Array(data, byteOffset, length) {
@@ -9937,6 +10114,8 @@ __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed-array.js")('Float64', 8, function (init) {
   return function Float64Array(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
@@ -9950,6 +10129,8 @@ __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed
   !*** ./node_modules/core-js/modules/es6.typed.int16-array.js ***!
   \***************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed-array.js")('Int16', 2, function (init) {
   return function Int16Array(data, byteOffset, length) {
@@ -9965,6 +10146,8 @@ __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed
   \***************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed-array.js")('Int32', 4, function (init) {
   return function Int32Array(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
@@ -9978,6 +10161,8 @@ __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed
   !*** ./node_modules/core-js/modules/es6.typed.int8-array.js ***!
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed-array.js")('Int8', 1, function (init) {
   return function Int8Array(data, byteOffset, length) {
@@ -9993,6 +10178,8 @@ __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed
   \****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed-array.js")('Uint16', 2, function (init) {
   return function Uint16Array(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
@@ -10006,6 +10193,8 @@ __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed
   !*** ./node_modules/core-js/modules/es6.typed.uint32-array.js ***!
   \****************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed-array.js")('Uint32', 4, function (init) {
   return function Uint32Array(data, byteOffset, length) {
@@ -10021,6 +10210,8 @@ __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed
   \***************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed-array.js")('Uint8', 1, function (init) {
   return function Uint8Array(data, byteOffset, length) {
     return init(this, data, byteOffset, length);
@@ -10034,6 +10225,8 @@ __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed
   !*** ./node_modules/core-js/modules/es6.typed.uint8-clamped-array.js ***!
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed-array.js")('Uint8', 1, function (init) {
   return function Uint8ClampedArray(data, byteOffset, length) {
@@ -10049,7 +10242,6 @@ __webpack_require__(/*! ./_typed-array */ "./node_modules/core-js/modules/_typed
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
@@ -10131,7 +10323,6 @@ if (NATIVE_WEAK_MAP && IS_IE11) {
   \******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 var weak = __webpack_require__(/*! ./_collection-weak */ "./node_modules/core-js/modules/_collection-weak.js");
@@ -10159,7 +10350,6 @@ __webpack_require__(/*! ./_collection */ "./node_modules/core-js/modules/_collec
   \************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // https://tc39.github.io/proposal-flatMap/#sec-Array.prototype.flatMap
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -10198,7 +10388,6 @@ __webpack_require__(/*! ./_add-to-unscopables */ "./node_modules/core-js/modules
   \************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // https://github.com/tc39/Array.prototype.includes
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -10223,6 +10412,8 @@ __webpack_require__(/*! ./_add-to-unscopables */ "./node_modules/core-js/modules
   \************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // https://github.com/tc39/proposal-object-values-entries
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -10241,6 +10432,8 @@ $export($export.S, 'Object', {
   !*** ./node_modules/core-js/modules/es7.object.get-own-property-descriptors.js ***!
   \*********************************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // https://github.com/tc39/proposal-object-getownpropertydescriptors
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -10279,6 +10472,8 @@ $export($export.S, 'Object', {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 // https://github.com/tc39/proposal-object-values-entries
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
@@ -10298,7 +10493,6 @@ $export($export.S, 'Object', {
   \*************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 // https://github.com/tc39/proposal-promise-finally
 
 
@@ -10336,7 +10530,6 @@ $export($export.P + $export.R, 'Promise', {
   \************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // https://github.com/tc39/proposal-string-pad-start-end
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -10363,7 +10556,6 @@ $export($export.P + $export.F * WEBKIT_BUG, 'String', {
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // https://github.com/tc39/proposal-string-pad-start-end
 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
@@ -10390,7 +10582,6 @@ $export($export.P + $export.F * WEBKIT_BUG, 'String', {
   \**************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // https://github.com/sebmarkbage/ecmascript-string-left-right-trim
 
 __webpack_require__(/*! ./_string-trim */ "./node_modules/core-js/modules/_string-trim.js")('trimLeft', function ($trim) {
@@ -10407,7 +10598,6 @@ __webpack_require__(/*! ./_string-trim */ "./node_modules/core-js/modules/_strin
   \***************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
  // https://github.com/sebmarkbage/ecmascript-string-left-right-trim
 
 __webpack_require__(/*! ./_string-trim */ "./node_modules/core-js/modules/_string-trim.js")('trimRight', function ($trim) {
@@ -10424,6 +10614,8 @@ __webpack_require__(/*! ./_string-trim */ "./node_modules/core-js/modules/_strin
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ./_wks-define */ "./node_modules/core-js/modules/_wks-define.js")('asyncIterator');
 
 /***/ }),
@@ -10433,6 +10625,8 @@ __webpack_require__(/*! ./_wks-define */ "./node_modules/core-js/modules/_wks-de
   !*** ./node_modules/core-js/modules/web.dom.iterable.js ***!
   \**********************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 var $iterators = __webpack_require__(/*! ./es6.array.iterator */ "./node_modules/core-js/modules/es6.array.iterator.js");
 
@@ -10513,6 +10707,8 @@ for (var collections = getKeys(DOMIterables), i = 0; i < collections.length; i++
   \*******************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
 
 var $task = __webpack_require__(/*! ./_task */ "./node_modules/core-js/modules/_task.js");
@@ -10529,6 +10725,8 @@ $export($export.G + $export.B, {
   !*** ./node_modules/core-js/modules/web.timers.js ***!
   \****************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
 
 // ie9- setTimeout & setInterval additional parameters fix
 var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
@@ -10566,6 +10764,8 @@ $export($export.G + $export.B + $export.F * MSIE, {
   \*******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+
+
 __webpack_require__(/*! ../modules/web.timers */ "./node_modules/core-js/modules/web.timers.js");
 
 __webpack_require__(/*! ../modules/web.immediate */ "./node_modules/core-js/modules/web.immediate.js");
@@ -10576,465 +10776,6 @@ module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/cor
 
 /***/ }),
 
-/***/ "./node_modules/events/events.js":
-/*!***************************************!*\
-  !*** ./node_modules/events/events.js ***!
-  \***************************************/
-/***/ ((module) => {
-
-"use strict";
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-var R = (typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === 'object' ? Reflect : null;
-var ReflectApply = R && typeof R.apply === 'function' ? R.apply : function ReflectApply(target, receiver, args) {
-  return Function.prototype.apply.call(target, receiver, args);
-};
-var ReflectOwnKeys;
-
-if (R && typeof R.ownKeys === 'function') {
-  ReflectOwnKeys = R.ownKeys;
-} else if (Object.getOwnPropertySymbols) {
-  ReflectOwnKeys = function ReflectOwnKeys(target) {
-    return Object.getOwnPropertyNames(target).concat(Object.getOwnPropertySymbols(target));
-  };
-} else {
-  ReflectOwnKeys = function ReflectOwnKeys(target) {
-    return Object.getOwnPropertyNames(target);
-  };
-}
-
-function ProcessEmitWarning(warning) {
-  if (console && console.warn) console.warn(warning);
-}
-
-var NumberIsNaN = Number.isNaN || function NumberIsNaN(value) {
-  return value !== value;
-};
-
-function EventEmitter() {
-  EventEmitter.init.call(this);
-}
-
-module.exports = EventEmitter;
-module.exports.once = once; // Backwards-compat with node 0.10.x
-
-EventEmitter.EventEmitter = EventEmitter;
-EventEmitter.prototype._events = undefined;
-EventEmitter.prototype._eventsCount = 0;
-EventEmitter.prototype._maxListeners = undefined; // By default EventEmitters will print a warning if more than 10 listeners are
-// added to it. This is a useful default which helps finding memory leaks.
-
-var defaultMaxListeners = 10;
-
-function checkListener(listener) {
-  if (typeof listener !== 'function') {
-    throw new TypeError('The "listener" argument must be of type Function. Received type ' + _typeof(listener));
-  }
-}
-
-Object.defineProperty(EventEmitter, 'defaultMaxListeners', {
-  enumerable: true,
-  get: function get() {
-    return defaultMaxListeners;
-  },
-  set: function set(arg) {
-    if (typeof arg !== 'number' || arg < 0 || NumberIsNaN(arg)) {
-      throw new RangeError('The value of "defaultMaxListeners" is out of range. It must be a non-negative number. Received ' + arg + '.');
-    }
-
-    defaultMaxListeners = arg;
-  }
-});
-
-EventEmitter.init = function () {
-  if (this._events === undefined || this._events === Object.getPrototypeOf(this)._events) {
-    this._events = Object.create(null);
-    this._eventsCount = 0;
-  }
-
-  this._maxListeners = this._maxListeners || undefined;
-}; // Obviously not all Emitters should be limited to 10. This function allows
-// that to be increased. Set to zero for unlimited.
-
-
-EventEmitter.prototype.setMaxListeners = function setMaxListeners(n) {
-  if (typeof n !== 'number' || n < 0 || NumberIsNaN(n)) {
-    throw new RangeError('The value of "n" is out of range. It must be a non-negative number. Received ' + n + '.');
-  }
-
-  this._maxListeners = n;
-  return this;
-};
-
-function _getMaxListeners(that) {
-  if (that._maxListeners === undefined) return EventEmitter.defaultMaxListeners;
-  return that._maxListeners;
-}
-
-EventEmitter.prototype.getMaxListeners = function getMaxListeners() {
-  return _getMaxListeners(this);
-};
-
-EventEmitter.prototype.emit = function emit(type) {
-  var args = [];
-
-  for (var i = 1; i < arguments.length; i++) {
-    args.push(arguments[i]);
-  }
-
-  var doError = type === 'error';
-  var events = this._events;
-  if (events !== undefined) doError = doError && events.error === undefined;else if (!doError) return false; // If there is no 'error' event listener then throw.
-
-  if (doError) {
-    var er;
-    if (args.length > 0) er = args[0];
-
-    if (er instanceof Error) {
-      // Note: The comments on the `throw` lines are intentional, they show
-      // up in Node's output if this results in an unhandled exception.
-      throw er; // Unhandled 'error' event
-    } // At least give some kind of context to the user
-
-
-    var err = new Error('Unhandled error.' + (er ? ' (' + er.message + ')' : ''));
-    err.context = er;
-    throw err; // Unhandled 'error' event
-  }
-
-  var handler = events[type];
-  if (handler === undefined) return false;
-
-  if (typeof handler === 'function') {
-    ReflectApply(handler, this, args);
-  } else {
-    var len = handler.length;
-    var listeners = arrayClone(handler, len);
-
-    for (var i = 0; i < len; ++i) {
-      ReflectApply(listeners[i], this, args);
-    }
-  }
-
-  return true;
-};
-
-function _addListener(target, type, listener, prepend) {
-  var m;
-  var events;
-  var existing;
-  checkListener(listener);
-  events = target._events;
-
-  if (events === undefined) {
-    events = target._events = Object.create(null);
-    target._eventsCount = 0;
-  } else {
-    // To avoid recursion in the case that type === "newListener"! Before
-    // adding it to the listeners, first emit "newListener".
-    if (events.newListener !== undefined) {
-      target.emit('newListener', type, listener.listener ? listener.listener : listener); // Re-assign `events` because a newListener handler could have caused the
-      // this._events to be assigned to a new object
-
-      events = target._events;
-    }
-
-    existing = events[type];
-  }
-
-  if (existing === undefined) {
-    // Optimize the case of one listener. Don't need the extra array object.
-    existing = events[type] = listener;
-    ++target._eventsCount;
-  } else {
-    if (typeof existing === 'function') {
-      // Adding the second element, need to change to array.
-      existing = events[type] = prepend ? [listener, existing] : [existing, listener]; // If we've already got an array, just append.
-    } else if (prepend) {
-      existing.unshift(listener);
-    } else {
-      existing.push(listener);
-    } // Check for listener leak
-
-
-    m = _getMaxListeners(target);
-
-    if (m > 0 && existing.length > m && !existing.warned) {
-      existing.warned = true; // No error code for this since it is a Warning
-      // eslint-disable-next-line no-restricted-syntax
-
-      var w = new Error('Possible EventEmitter memory leak detected. ' + existing.length + ' ' + String(type) + ' listeners ' + 'added. Use emitter.setMaxListeners() to ' + 'increase limit');
-      w.name = 'MaxListenersExceededWarning';
-      w.emitter = target;
-      w.type = type;
-      w.count = existing.length;
-      ProcessEmitWarning(w);
-    }
-  }
-
-  return target;
-}
-
-EventEmitter.prototype.addListener = function addListener(type, listener) {
-  return _addListener(this, type, listener, false);
-};
-
-EventEmitter.prototype.on = EventEmitter.prototype.addListener;
-
-EventEmitter.prototype.prependListener = function prependListener(type, listener) {
-  return _addListener(this, type, listener, true);
-};
-
-function onceWrapper() {
-  if (!this.fired) {
-    this.target.removeListener(this.type, this.wrapFn);
-    this.fired = true;
-    if (arguments.length === 0) return this.listener.call(this.target);
-    return this.listener.apply(this.target, arguments);
-  }
-}
-
-function _onceWrap(target, type, listener) {
-  var state = {
-    fired: false,
-    wrapFn: undefined,
-    target: target,
-    type: type,
-    listener: listener
-  };
-  var wrapped = onceWrapper.bind(state);
-  wrapped.listener = listener;
-  state.wrapFn = wrapped;
-  return wrapped;
-}
-
-EventEmitter.prototype.once = function once(type, listener) {
-  checkListener(listener);
-  this.on(type, _onceWrap(this, type, listener));
-  return this;
-};
-
-EventEmitter.prototype.prependOnceListener = function prependOnceListener(type, listener) {
-  checkListener(listener);
-  this.prependListener(type, _onceWrap(this, type, listener));
-  return this;
-}; // Emits a 'removeListener' event if and only if the listener was removed.
-
-
-EventEmitter.prototype.removeListener = function removeListener(type, listener) {
-  var list, events, position, i, originalListener;
-  checkListener(listener);
-  events = this._events;
-  if (events === undefined) return this;
-  list = events[type];
-  if (list === undefined) return this;
-
-  if (list === listener || list.listener === listener) {
-    if (--this._eventsCount === 0) this._events = Object.create(null);else {
-      delete events[type];
-      if (events.removeListener) this.emit('removeListener', type, list.listener || listener);
-    }
-  } else if (typeof list !== 'function') {
-    position = -1;
-
-    for (i = list.length - 1; i >= 0; i--) {
-      if (list[i] === listener || list[i].listener === listener) {
-        originalListener = list[i].listener;
-        position = i;
-        break;
-      }
-    }
-
-    if (position < 0) return this;
-    if (position === 0) list.shift();else {
-      spliceOne(list, position);
-    }
-    if (list.length === 1) events[type] = list[0];
-    if (events.removeListener !== undefined) this.emit('removeListener', type, originalListener || listener);
-  }
-
-  return this;
-};
-
-EventEmitter.prototype.off = EventEmitter.prototype.removeListener;
-
-EventEmitter.prototype.removeAllListeners = function removeAllListeners(type) {
-  var listeners, events, i;
-  events = this._events;
-  if (events === undefined) return this; // not listening for removeListener, no need to emit
-
-  if (events.removeListener === undefined) {
-    if (arguments.length === 0) {
-      this._events = Object.create(null);
-      this._eventsCount = 0;
-    } else if (events[type] !== undefined) {
-      if (--this._eventsCount === 0) this._events = Object.create(null);else delete events[type];
-    }
-
-    return this;
-  } // emit removeListener for all listeners on all events
-
-
-  if (arguments.length === 0) {
-    var keys = Object.keys(events);
-    var key;
-
-    for (i = 0; i < keys.length; ++i) {
-      key = keys[i];
-      if (key === 'removeListener') continue;
-      this.removeAllListeners(key);
-    }
-
-    this.removeAllListeners('removeListener');
-    this._events = Object.create(null);
-    this._eventsCount = 0;
-    return this;
-  }
-
-  listeners = events[type];
-
-  if (typeof listeners === 'function') {
-    this.removeListener(type, listeners);
-  } else if (listeners !== undefined) {
-    // LIFO order
-    for (i = listeners.length - 1; i >= 0; i--) {
-      this.removeListener(type, listeners[i]);
-    }
-  }
-
-  return this;
-};
-
-function _listeners(target, type, unwrap) {
-  var events = target._events;
-  if (events === undefined) return [];
-  var evlistener = events[type];
-  if (evlistener === undefined) return [];
-  if (typeof evlistener === 'function') return unwrap ? [evlistener.listener || evlistener] : [evlistener];
-  return unwrap ? unwrapListeners(evlistener) : arrayClone(evlistener, evlistener.length);
-}
-
-EventEmitter.prototype.listeners = function listeners(type) {
-  return _listeners(this, type, true);
-};
-
-EventEmitter.prototype.rawListeners = function rawListeners(type) {
-  return _listeners(this, type, false);
-};
-
-EventEmitter.listenerCount = function (emitter, type) {
-  if (typeof emitter.listenerCount === 'function') {
-    return emitter.listenerCount(type);
-  } else {
-    return listenerCount.call(emitter, type);
-  }
-};
-
-EventEmitter.prototype.listenerCount = listenerCount;
-
-function listenerCount(type) {
-  var events = this._events;
-
-  if (events !== undefined) {
-    var evlistener = events[type];
-
-    if (typeof evlistener === 'function') {
-      return 1;
-    } else if (evlistener !== undefined) {
-      return evlistener.length;
-    }
-  }
-
-  return 0;
-}
-
-EventEmitter.prototype.eventNames = function eventNames() {
-  return this._eventsCount > 0 ? ReflectOwnKeys(this._events) : [];
-};
-
-function arrayClone(arr, n) {
-  var copy = new Array(n);
-
-  for (var i = 0; i < n; ++i) {
-    copy[i] = arr[i];
-  }
-
-  return copy;
-}
-
-function spliceOne(list, index) {
-  for (; index + 1 < list.length; index++) {
-    list[index] = list[index + 1];
-  }
-
-  list.pop();
-}
-
-function unwrapListeners(arr) {
-  var ret = new Array(arr.length);
-
-  for (var i = 0; i < ret.length; ++i) {
-    ret[i] = arr[i].listener || arr[i];
-  }
-
-  return ret;
-}
-
-function once(emitter, name) {
-  return new Promise(function (resolve, reject) {
-    function eventListener() {
-      if (errorListener !== undefined) {
-        emitter.removeListener('error', errorListener);
-      }
-
-      resolve([].slice.call(arguments));
-    }
-
-    ;
-    var errorListener; // Adding an error listener is not optional because
-    // if an error is thrown on an event emitter we cannot
-    // guarantee that the actual event we are waiting will
-    // be fired. The result could be a silent way to create
-    // memory or file descriptor leaks, which is something
-    // we should avoid.
-
-    if (name !== 'error') {
-      errorListener = function errorListener(err) {
-        emitter.removeListener(name, eventListener);
-        reject(err);
-      };
-
-      emitter.once('error', errorListener);
-    }
-
-    emitter.once(name, eventListener);
-  });
-}
-
-/***/ }),
-
 /***/ "./node_modules/regenerator-runtime/runtime.js":
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
@@ -11042,6 +10783,8 @@ function once(emitter, name) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /* module decorator */ module = __webpack_require__.nmd(module);
+
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /**
@@ -11769,9245 +11512,338 @@ try {
 
 /***/ }),
 
-/***/ "./src/core/enter.mjs":
-/*!****************************!*\
-  !*** ./src/core/enter.mjs ***!
-  \****************************/
+/***/ "./src/index.mjs":
+/*!***********************!*\
+  !*** ./src/index.mjs ***!
+  \***********************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Enter": () => /* binding */ Enter
-/* harmony export */ });
-/* harmony import */ var _node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
 
 
-
-/**
- * This class implements a cnode that is the starting point for a
- * program. The program can be top-level or not
- */
-
-var Enter = /*#__PURE__*/function (_Node) {
-  _inherits(Enter, _Node);
-
-  var _super = _createSuper(Enter);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new Enter node
-   */
-  function Enter() {
-    var _this;
-
-    _classCallCheck(this, Enter);
-
-    _this = _super.call(this, "Enter");
-    _this.removable = false;
-    _this.creatable = false;
-    _this.inputs = [];
-    _this.outputs = [new _socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
-    _this.nexts = [new _socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Begin", _assertThisInitialized(_this))];
-    _this.prev = null;
-    return _this;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "Env", {
+  enumerable: true,
+  get: function get() {
+    return _env.Env;
   }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(Enter, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : Enter.instance;
-      return _get(_getPrototypeOf(Enter.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process method
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                return _context.abrupt("return", this.getFlowResult(this.next("Begin")));
-
-              case 1:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return Enter;
-}(_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(Enter, "instance", function () {
-  return new Enter();
+});
+Object.defineProperty(exports, "Node", {
+  enumerable: true,
+  get: function get() {
+    return _node.Node;
+  }
+});
+Object.defineProperty(exports, "Program", {
+  enumerable: true,
+  get: function get() {
+    return _program.Program;
+  }
+});
+Object.defineProperty(exports, "Socket", {
+  enumerable: true,
+  get: function get() {
+    return _socket.Socket;
+  }
+});
+Object.defineProperty(exports, "PrevSocket", {
+  enumerable: true,
+  get: function get() {
+    return _socket.PrevSocket;
+  }
+});
+Object.defineProperty(exports, "NextSocket", {
+  enumerable: true,
+  get: function get() {
+    return _socket.NextSocket;
+  }
+});
+Object.defineProperty(exports, "InputSocket", {
+  enumerable: true,
+  get: function get() {
+    return _socket.InputSocket;
+  }
+});
+Object.defineProperty(exports, "OutputSocket", {
+  enumerable: true,
+  get: function get() {
+    return _socket.OutputSocket;
+  }
+});
+Object.defineProperty(exports, "Types", {
+  enumerable: true,
+  get: function get() {
+    return _type.Types;
+  }
+});
+Object.defineProperty(exports, "Call", {
+  enumerable: true,
+  get: function get() {
+    return _call.Call;
+  }
+});
+Object.defineProperty(exports, "Console", {
+  enumerable: true,
+  get: function get() {
+    return _console.Console;
+  }
+});
+Object.defineProperty(exports, "Log", {
+  enumerable: true,
+  get: function get() {
+    return _log.Log;
+  }
+});
+Object.defineProperty(exports, "FGetvar", {
+  enumerable: true,
+  get: function get() {
+    return _fgetvar.FGetvar;
+  }
+});
+Object.defineProperty(exports, "For", {
+  enumerable: true,
+  get: function get() {
+    return _for.For;
+  }
+});
+Object.defineProperty(exports, "Getvar", {
+  enumerable: true,
+  get: function get() {
+    return _getvar.Getvar;
+  }
+});
+Object.defineProperty(exports, "If", {
+  enumerable: true,
+  get: function get() {
+    return _if.If;
+  }
+});
+Object.defineProperty(exports, "Setvar", {
+  enumerable: true,
+  get: function get() {
+    return _setvar.Setvar;
+  }
+});
+Object.defineProperty(exports, "While", {
+  enumerable: true,
+  get: function get() {
+    return _while.While;
+  }
+});
+Object.defineProperty(exports, "FIf", {
+  enumerable: true,
+  get: function get() {
+    return _fif.FIf;
+  }
+});
+Object.defineProperty(exports, "Wait", {
+  enumerable: true,
+  get: function get() {
+    return _wait.Wait;
+  }
+});
+Object.defineProperty(exports, "FCompare", {
+  enumerable: true,
+  get: function get() {
+    return _fcompare.FCompare;
+  }
+});
+Object.defineProperty(exports, "FSConst", {
+  enumerable: true,
+  get: function get() {
+    return _fsconst.FSConst;
+  }
+});
+Object.defineProperty(exports, "FConcat", {
+  enumerable: true,
+  get: function get() {
+    return _fconcat.FConcat;
+  }
+});
+Object.defineProperty(exports, "FNConst", {
+  enumerable: true,
+  get: function get() {
+    return _fnconst.FNConst;
+  }
+});
+Object.defineProperty(exports, "FAdd", {
+  enumerable: true,
+  get: function get() {
+    return _fadd.FAdd;
+  }
+});
+Object.defineProperty(exports, "FDiv", {
+  enumerable: true,
+  get: function get() {
+    return _fdiv.FDiv;
+  }
+});
+Object.defineProperty(exports, "FMul", {
+  enumerable: true,
+  get: function get() {
+    return _fmul.FMul;
+  }
+});
+Object.defineProperty(exports, "FSqrt", {
+  enumerable: true,
+  get: function get() {
+    return _fsqrt.FSqrt;
+  }
+});
+Object.defineProperty(exports, "FMod", {
+  enumerable: true,
+  get: function get() {
+    return _fmod.FMod;
+  }
+});
+Object.defineProperty(exports, "FTofixed", {
+  enumerable: true,
+  get: function get() {
+    return _ftofixed.FTofixed;
+  }
+});
+Object.defineProperty(exports, "APush", {
+  enumerable: true,
+  get: function get() {
+    return _apush.APush;
+  }
+});
+Object.defineProperty(exports, "FAConst", {
+  enumerable: true,
+  get: function get() {
+    return _faconst.FAConst;
+  }
+});
+Object.defineProperty(exports, "FAMake", {
+  enumerable: true,
+  get: function get() {
+    return _famake.FAMake;
+  }
+});
+Object.defineProperty(exports, "FAGet", {
+  enumerable: true,
+  get: function get() {
+    return _faget.FAGet;
+  }
+});
+Object.defineProperty(exports, "FALength", {
+  enumerable: true,
+  get: function get() {
+    return _falength.FALength;
+  }
+});
+Object.defineProperty(exports, "AMap", {
+  enumerable: true,
+  get: function get() {
+    return _amap.AMap;
+  }
+});
+Object.defineProperty(exports, "FAMap", {
+  enumerable: true,
+  get: function get() {
+    return _famap.FAMap;
+  }
+});
+Object.defineProperty(exports, "AReduce", {
+  enumerable: true,
+  get: function get() {
+    return _areduce.AReduce;
+  }
+});
+Object.defineProperty(exports, "FAReduce", {
+  enumerable: true,
+  get: function get() {
+    return _fareduce.FAReduce;
+  }
+});
+Object.defineProperty(exports, "FOMake", {
+  enumerable: true,
+  get: function get() {
+    return _fomake.FOMake;
+  }
+});
+Object.defineProperty(exports, "FOBreak", {
+  enumerable: true,
+  get: function get() {
+    return _fobreak.FOBreak;
+  }
 });
 
-/***/ }),
+var _env = require("./core/env.js");
 
-/***/ "./src/core/env.mjs":
-/*!**************************!*\
-  !*** ./src/core/env.mjs ***!
-  \**************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+var _node = require("./core/node.js");
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Env": () => /* binding */ Env
-/* harmony export */ });
-/* harmony import */ var _program_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./program.mjs */ "./src/core/program.mjs");
-/* harmony import */ var _enter_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./enter.mjs */ "./src/core/enter.mjs");
-/* harmony import */ var _exit_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./exit.mjs */ "./src/core/exit.mjs");
-/* harmony import */ var _nodes_call_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../nodes/call.mjs */ "./src/nodes/call.mjs");
-/* harmony import */ var _nodes_console_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../nodes/console.mjs */ "./src/nodes/console.mjs");
-/* harmony import */ var _nodes_fgetvar_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../nodes/fgetvar.mjs */ "./src/nodes/fgetvar.mjs");
-/* harmony import */ var _nodes_for_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../nodes/for.mjs */ "./src/nodes/for.mjs");
-/* harmony import */ var _nodes_getvar_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../nodes/getvar.mjs */ "./src/nodes/getvar.mjs");
-/* harmony import */ var _nodes_setvar_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../nodes/setvar.mjs */ "./src/nodes/setvar.mjs");
-/* harmony import */ var _nodes_while_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../nodes/while.mjs */ "./src/nodes/while.mjs");
-/* harmony import */ var _nodes_if_mjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../nodes/if.mjs */ "./src/nodes/if.mjs");
-/* harmony import */ var _nodes_array_apush_mjs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../nodes/array/apush.mjs */ "./src/nodes/array/apush.mjs");
-/* harmony import */ var _nodes_array_faconst_mjs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../nodes/array/faconst.mjs */ "./src/nodes/array/faconst.mjs");
-/* harmony import */ var _nodes_array_famake_mjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../nodes/array/famake.mjs */ "./src/nodes/array/famake.mjs");
-/* harmony import */ var _nodes_array_faget_mjs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../nodes/array/faget.mjs */ "./src/nodes/array/faget.mjs");
-/* harmony import */ var _nodes_array_falength_mjs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../nodes/array/falength.mjs */ "./src/nodes/array/falength.mjs");
-/* harmony import */ var _nodes_math_fadd_mjs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../nodes/math/fadd.mjs */ "./src/nodes/math/fadd.mjs");
-/* harmony import */ var _nodes_math_fdiv_mjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../nodes/math/fdiv.mjs */ "./src/nodes/math/fdiv.mjs");
-/* harmony import */ var _nodes_math_fmul_mjs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../nodes/math/fmul.mjs */ "./src/nodes/math/fmul.mjs");
-/* harmony import */ var _nodes_math_fsqrt_mjs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../nodes/math/fsqrt.mjs */ "./src/nodes/math/fsqrt.mjs");
-/* harmony import */ var _nodes_bool_fequal_mjs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../nodes/bool/fequal.mjs */ "./src/nodes/bool/fequal.mjs");
-/* harmony import */ var _nodes_bool_fgt_mjs__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../nodes/bool/fgt.mjs */ "./src/nodes/bool/fgt.mjs");
-/* harmony import */ var _nodes_bool_fgte_mjs__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../nodes/bool/fgte.mjs */ "./src/nodes/bool/fgte.mjs");
-/* harmony import */ var _nodes_bool_flt_mjs__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../nodes/bool/flt.mjs */ "./src/nodes/bool/flt.mjs");
-/* harmony import */ var _nodes_bool_flte_mjs__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../nodes/bool/flte.mjs */ "./src/nodes/bool/flte.mjs");
-/* harmony import */ var _nodes_bool_fnotequal_mjs__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../nodes/bool/fnotequal.mjs */ "./src/nodes/bool/fnotequal.mjs");
-/* harmony import */ var _socket_mjs__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _node_mjs__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _nodes_string_fsconst_mjs__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../nodes/string/fsconst.mjs */ "./src/nodes/string/fsconst.mjs");
-/* harmony import */ var _nodes_string_fconcat_mjs__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../nodes/string/fconcat.mjs */ "./src/nodes/string/fconcat.mjs");
-/* harmony import */ var _nodes_math_fmod_mjs__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../nodes/math/fmod.mjs */ "./src/nodes/math/fmod.mjs");
-/* harmony import */ var _nodes_fif_mjs__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../nodes/fif.mjs */ "./src/nodes/fif.mjs");
-/* harmony import */ var _nodes_math_fnconst_mjs__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../nodes/math/fnconst.mjs */ "./src/nodes/math/fnconst.mjs");
-/* harmony import */ var _nodes_object_fomake_mjs__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../nodes/object/fomake.mjs */ "./src/nodes/object/fomake.mjs");
-/* harmony import */ var _nodes_object_fobreak_mjs__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../nodes/object/fobreak.mjs */ "./src/nodes/object/fobreak.mjs");
-/* harmony import */ var _nodes_array_amap_mjs__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../nodes/array/amap.mjs */ "./src/nodes/array/amap.mjs");
-/* harmony import */ var _nodes_array_areduce_mjs__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../nodes/array/areduce.mjs */ "./src/nodes/array/areduce.mjs");
-/* harmony import */ var _nodes_array_famap_mjs__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../nodes/array/famap.mjs */ "./src/nodes/array/famap.mjs");
-/* harmony import */ var _type_mjs__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./type.mjs */ "./src/core/type.mjs");
-/* harmony import */ var _nodes_array_fareduce_mjs__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../nodes/array/fareduce.mjs */ "./src/nodes/array/fareduce.mjs");
-/* harmony import */ var _nodes_log_mjs__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../nodes/log.mjs */ "./src/nodes/log.mjs");
-/* harmony import */ var _nodes_math_ftofixed_mjs__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../nodes/math/ftofixed.mjs */ "./src/nodes/math/ftofixed.mjs");
-/* harmony import */ var _nodes_wait_mjs__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../nodes/wait.mjs */ "./src/nodes/wait.mjs");
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+var _program = require("./core/program.js");
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+var _socket = require("./core/socket.js");
 
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+var _type = require("./core/type.js");
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+var _call = require("./nodes/call.js");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var _console = require("./nodes/console.js");
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+var _log = require("./nodes/log.js");
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+var _fgetvar = require("./nodes/fgetvar.js");
 
-function _classStaticPrivateFieldSpecGet(receiver, classConstructor, descriptor) { if (receiver !== classConstructor) { throw new TypeError("Private static access of wrong provenance"); } if (descriptor.get) { return descriptor.get.call(receiver); } return descriptor.value; }
+var _for = require("./nodes/for.js");
 
-function _classStaticPrivateFieldSpecSet(receiver, classConstructor, descriptor, value) { if (receiver !== classConstructor) { throw new TypeError("Private static access of wrong provenance"); } if (descriptor.set) { descriptor.set.call(receiver, value); } else { if (!descriptor.writable) { throw new TypeError("attempted to set read only private field"); } descriptor.value = value; } return value; }
+var _getvar = require("./nodes/getvar.js");
 
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
+var _if = require("./nodes/if.js");
 
+var _setvar = require("./nodes/setvar.js");
 
+var _while = require("./nodes/while.js");
 
+var _fif = require("./nodes/fif.js");
 
+var _wait = require("./nodes/wait.js");
 
+var _fcompare = require("./nodes/bool/fcompare.js");
 
+var _fsconst = require("./nodes/string/fsconst.js");
 
+var _fconcat = require("./nodes/string/fconcat.js");
 
+var _fnconst = require("./nodes/math/fnconst.js");
 
+var _fadd = require("./nodes/math/fadd.js");
 
+var _fdiv = require("./nodes/math/fdiv.js");
 
+var _fmul = require("./nodes/math/fmul.js");
 
+var _fsqrt = require("./nodes/math/fsqrt.js");
 
+var _fmod = require("./nodes/math/fmod.js");
 
+var _ftofixed = require("./nodes/math/ftofixed.js");
 
+var _apush = require("./nodes/array/apush.js");
 
+var _faconst = require("./nodes/array/faconst.js");
 
+var _famake = require("./nodes/array/famake.js");
 
+var _faget = require("./nodes/array/faget.js");
 
+var _falength = require("./nodes/array/falength.js");
 
+var _amap = require("./nodes/array/amap.js");
 
+var _famap = require("./nodes/array/famap.js");
 
+var _areduce = require("./nodes/array/areduce.js");
 
+var _fareduce = require("./nodes/array/fareduce.js");
 
+var _fomake = require("./nodes/object/fomake.js");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * This class represents a main global environment for cnodes.
- * The class is a "static" class that is responible for maintaining a global
- * registry of registered nodes. A node registration is a object with three fields: a node name,
- * a category name and a factory, that returns a new instance for that node.
- * The global Env instance must be initialized one-time by calling the Env.init() method,
- * this method register all built-in nodes. Eventual custom nodes must be registered manually
- * via Env.registerNode(name, category, factory).
- */
-
-var Env = /*#__PURE__*/function () {
-  function Env() {
-    _classCallCheck(this, Env);
-  }
-
-  _createClass(Env, null, [{
-    key: "init",
-
-    /** The internal node registry */
-
-    /**
-     * Initialize the CNodes global environment
-     */
-    value: function init() {
-      _classStaticPrivateFieldSpecSet(Env, Env, _nodeRegistry, new Map()); // Core nodes
-
-
-      Env.registerNode("Program", "Core", _program_mjs__WEBPACK_IMPORTED_MODULE_0__.Program.instance);
-      Env.registerNode("Call", "Core", _nodes_call_mjs__WEBPACK_IMPORTED_MODULE_3__.Call.instance);
-      Env.registerNode("Console", "Core", _nodes_console_mjs__WEBPACK_IMPORTED_MODULE_4__.Console.instance);
-      Env.registerNode("Log", "Core", _nodes_log_mjs__WEBPACK_IMPORTED_MODULE_40__.Log.instance);
-      Env.registerNode("FGetvar", "Core", _nodes_fgetvar_mjs__WEBPACK_IMPORTED_MODULE_5__.FGetvar.instance);
-      Env.registerNode("For", "Core", _nodes_for_mjs__WEBPACK_IMPORTED_MODULE_6__.For.instance);
-      Env.registerNode("Getvar", "Core", _nodes_getvar_mjs__WEBPACK_IMPORTED_MODULE_7__.Getvar.instance);
-      Env.registerNode("If", "Core", _nodes_if_mjs__WEBPACK_IMPORTED_MODULE_10__.If.instance);
-      Env.registerNode("FIf", "Core", _nodes_fif_mjs__WEBPACK_IMPORTED_MODULE_31__.FIf.instance);
-      Env.registerNode("Setvar", "Core", _nodes_setvar_mjs__WEBPACK_IMPORTED_MODULE_8__.Setvar.instance);
-      Env.registerNode("While", "Core", _nodes_while_mjs__WEBPACK_IMPORTED_MODULE_9__.While.instance);
-      Env.registerNode("Enter", "Core", _enter_mjs__WEBPACK_IMPORTED_MODULE_1__.Enter.instance);
-      Env.registerNode("Exit", "Core", _exit_mjs__WEBPACK_IMPORTED_MODULE_2__.Exit.instance);
-      Env.registerNode("Wait", "Core", _nodes_wait_mjs__WEBPACK_IMPORTED_MODULE_42__.Wait.instance); // String nodes
-
-      Env.registerNode("FSConst", "String", _nodes_string_fsconst_mjs__WEBPACK_IMPORTED_MODULE_28__.FSConst.instance);
-      Env.registerNode("FConcat", "String", _nodes_string_fconcat_mjs__WEBPACK_IMPORTED_MODULE_29__.FConcat.instance); // Math nodes
-
-      Env.registerNode("FNConst", "Math", _nodes_math_fnconst_mjs__WEBPACK_IMPORTED_MODULE_32__.FNConst.instance);
-      Env.registerNode("FAdd", "Math", _nodes_math_fadd_mjs__WEBPACK_IMPORTED_MODULE_16__.FAdd.instance);
-      Env.registerNode("FDiv", "Math", _nodes_math_fdiv_mjs__WEBPACK_IMPORTED_MODULE_17__.FDiv.instance);
-      Env.registerNode("FMod", "Math", _nodes_math_fmod_mjs__WEBPACK_IMPORTED_MODULE_30__.FMod.instance);
-      Env.registerNode("FMul", "Math", _nodes_math_fmul_mjs__WEBPACK_IMPORTED_MODULE_18__.FMul.instance);
-      Env.registerNode("FSqrt", "Math", _nodes_math_fsqrt_mjs__WEBPACK_IMPORTED_MODULE_19__.FSqrt.instance);
-      Env.registerNode("FTofixed", "Math", _nodes_math_ftofixed_mjs__WEBPACK_IMPORTED_MODULE_41__.FTofixed.instance); // Boolean Nodes
-
-      Env.registerNode("FEqual", "Boolean", _nodes_bool_fequal_mjs__WEBPACK_IMPORTED_MODULE_20__.FEqual.instance);
-      Env.registerNode("FGT", "Boolean", _nodes_bool_fgt_mjs__WEBPACK_IMPORTED_MODULE_21__.FGT.instance);
-      Env.registerNode("FGTE", "Boolean", _nodes_bool_fgte_mjs__WEBPACK_IMPORTED_MODULE_22__.FGTE.instance);
-      Env.registerNode("FLT", "Boolean", _nodes_bool_flt_mjs__WEBPACK_IMPORTED_MODULE_23__.FLT.instance);
-      Env.registerNode("FLTE", "Boolean", _nodes_bool_flte_mjs__WEBPACK_IMPORTED_MODULE_24__.FLTE.instance);
-      Env.registerNode("FNotEqual", "Boolean", _nodes_bool_fnotequal_mjs__WEBPACK_IMPORTED_MODULE_25__.FNotEqual.instance); // Arrays Nodes
-
-      Env.registerNode("APush", "Arrays", _nodes_array_apush_mjs__WEBPACK_IMPORTED_MODULE_11__.APush.instance);
-      Env.registerNode("FAConst", "Arrays", _nodes_array_faconst_mjs__WEBPACK_IMPORTED_MODULE_12__.FAConst.instance);
-      Env.registerNode("FAMake", "Arrays", _nodes_array_famake_mjs__WEBPACK_IMPORTED_MODULE_13__.FAMake.instance);
-      Env.registerNode("FAGet", "Arrays", _nodes_array_faget_mjs__WEBPACK_IMPORTED_MODULE_14__.FAGet.instance);
-      Env.registerNode("FALength", "Arrays", _nodes_array_falength_mjs__WEBPACK_IMPORTED_MODULE_15__.FALength.instance);
-      Env.registerNode("AMap", "Arrays", _nodes_array_amap_mjs__WEBPACK_IMPORTED_MODULE_35__.AMap.instance);
-      Env.registerNode("FAMap", "Arrays", _nodes_array_famap_mjs__WEBPACK_IMPORTED_MODULE_37__.FAMap.instance);
-      Env.registerNode("AReduce", "Arrays", _nodes_array_areduce_mjs__WEBPACK_IMPORTED_MODULE_36__.AReduce.instance);
-      Env.registerNode("FAReduce", "Arrays", _nodes_array_fareduce_mjs__WEBPACK_IMPORTED_MODULE_39__.FAReduce.instance); // Object Nodes
-
-      Env.registerNode("FOMake", "Objects", _nodes_object_fomake_mjs__WEBPACK_IMPORTED_MODULE_33__.FOMake.instance);
-      Env.registerNode("FOBreak", "Objects", _nodes_object_fobreak_mjs__WEBPACK_IMPORTED_MODULE_34__.FOBreak.instance);
-    }
-    /**
-     * Register a node type
-     * @param {string} name The name of the node
-     * @param {string} category The category of the node
-     * @param {any} factory A function that instantiate the node
-     */
-
-  }, {
-    key: "registerNode",
-    value: function registerNode(name, category, factory) {
-      _classStaticPrivateFieldSpecGet(Env, Env, _nodeRegistry).set(name, {
-        category: category,
-        factory: factory
-      });
-    }
-    /**
-     * Return the list of unique registered categories
-     */
-
-  }, {
-    key: "getCategories",
-    value: function getCategories() {
-      var categoryMap = new Map();
-      Array.from(_classStaticPrivateFieldSpecGet(this, Env, _nodeRegistry).values()).forEach(function (element) {
-        categoryMap.set(element.category, 0);
-      });
-      return Array.from(categoryMap.keys());
-    }
-    /**
-     * Return an array of registrations for nodes.
-     * Registrations have the sign: {name, category, factory}
-     * @param {string} category The category for which seacrh registrations
-     */
-
-  }, {
-    key: "getCategoryNodes",
-    value: function getCategoryNodes(category) {
-      var registrations = [];
-      Array.from(_classStaticPrivateFieldSpecGet(this, Env, _nodeRegistry).entries()).forEach(function (entry) {
-        if (entry[1].category === category) {
-          registrations.push({
-            name: entry[0],
-            category: entry[1].category,
-            factory: entry[1].factory
-          });
-        }
-      });
-      return registrations;
-    }
-    /**
-     * Instantiate a node by name
-     * @param {string} name The name of the node
-     */
-
-  }, {
-    key: "getInstance",
-    value: function getInstance(name) {
-      var reg = _classStaticPrivateFieldSpecGet(this, Env, _nodeRegistry).get(name);
-
-      if (reg) {
-        return reg.factory();
-      } else {
-        return null;
-      }
-    }
-    /**
-     * Create helper maker nodes to support user with dealing with
-     * specific object structures. This method accepts optional
-     * options that let you specify what exactly create:
-     * {
-     *   recursive: true,
-     *   fillValues: true,
-     *   forceTypes: true
-     *   editableInputs: true
-     * }
-     *
-     * @param {any} obj The object structure to consider whiel create nodes
-     * @param {any} opts The options on create nodes
-     */
-
-  }, {
-    key: "registerMaker",
-    value: function registerMaker(name, obj) {
-      var opts = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-
-      /**
-       * This function will be registered as creator for
-       * instances of the OMake node for the user object
-       */
-      var createMake = function createMake() {
-        var makeNode = new _nodes_object_fomake_mjs__WEBPACK_IMPORTED_MODULE_33__.FOMake();
-        makeNode.title = name;
-        makeNode.inputs = [];
-
-        for (var field in obj) {
-          var is = new _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.InputSocket(field, makeNode, _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY, 0);
-
-          if (opts.editableInputs) {
-            is.canEditName = true;
-            is.canEditType = true;
-          }
-
-          switch (_typeof(obj[field])) {
-            case "string":
-              is.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.STRING : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
-              is.value = opts.fillValues ? obj[field] : "";
-              break;
-
-            case "number":
-              is.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.NUMBER : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
-              is.value = opts.fillValues ? obj[field] : opts.forceTypes ? 0 : "";
-              break;
-
-            case "boolean":
-              is.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.BOOLEAN : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
-              is.value = opts.fillValues ? obj[field] : opts.forceTypes ? false : "";
-              break;
-
-            case "object":
-              if (obj[field] instanceof Array) {
-                is.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ARRAY : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
-                is.value = opts.fillValues ? obj[field] : opts.forceTypes ? [] : "";
-              } else if (obj[field] instanceof Object) {
-                is.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.OBJECT : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
-                is.value = opts.fillValues ? obj[field] : opts.forceTypes ? {} : "";
-              } else {
-                throw new Error("Unknown field type: " + field);
-              }
-
-              break;
-
-            default:
-              throw new Error("Unknown field type: " + field);
-          }
-
-          makeNode.inputs.push(is);
-        }
-
-        return makeNode;
-      }; // Reigister factory objects
-
-
-      Env.registerNode(name, "Custom", createMake);
-
-      if (opts.recursive) {
-        for (var field in obj) {
-          if (_typeof(obj[field]) === "object" && !(obj[field] instanceof Array)) {
-            Env.registerMaker(name + "." + field, obj[field], opts);
-          }
-        }
-      }
-    }
-    /**
-     * Create helper breaker nodes to support user with dealing with
-     * specific object structures. This method accepts optional
-     * options that let you specify what exactly create:
-     * {
-     *   recursive: true,
-     *   forceTypes: true,
-     *   editableOutputs: true
-     * }
-     *
-     * @param {any} obj The object structure to consider whiel create nodes
-     * @param {any} opts The options on create nodes
-     */
-
-  }, {
-    key: "registerBreaker",
-    value: function registerBreaker(name, obj) {
-      var opts = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-
-      /**
-       * This function will be registered as creator for
-       * instances of the OBreak node for the user object
-       */
-      var createBreak = function createBreak() {
-        var breakNode = new _nodes_object_fobreak_mjs__WEBPACK_IMPORTED_MODULE_34__.FOBreak();
-        breakNode.title = name;
-        breakNode.outputs = [];
-
-        for (var field in obj) {
-          var os = new _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.OutputSocket(field, breakNode, _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY, 0);
-
-          if (opts.editableOutputs) {
-            os.canEditName = true;
-            os.canEditType = true;
-          }
-
-          switch (_typeof(obj[field])) {
-            case "string":
-              os.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.STRING : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
-              break;
-
-            case "number":
-              os.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.NUMBER : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
-              break;
-
-            case "boolean":
-              os.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.BOOLEAN : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
-              break;
-
-            case "object":
-              if (obj[field] instanceof Array) {
-                os.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ARRAY : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
-              } else if (obj[field] instanceof Object) {
-                os.type = opts.forceTypes ? _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.OBJECT : _type_mjs__WEBPACK_IMPORTED_MODULE_38__.Types.ANY;
-              } else {
-                throw new Error("Unknown field type: " + field);
-              }
-
-              break;
-
-            default:
-              throw new Error("Unknown field type: " + field);
-          }
-
-          breakNode.outputs.push(os);
-        }
-
-        return breakNode;
-      }; // Reigister factory objects
-
-
-      Env.registerNode(name, "Custom", createBreak);
-
-      if (opts.recursive) {
-        for (var field in obj) {
-          if (_typeof(obj[field]) === "object" && !(obj[field] instanceof Array)) {
-            Env.registerBreaker(name + "." + field, obj[field], opts);
-          }
-        }
-      }
-    }
-    /**
-     * Create both helper maker and breaker nodes to support user with dealing with
-     * specific object structures. This method accepts optional
-     * options that let you specify what exactly create:
-     * {
-     *   recursive: true,
-     *   fillValues: true,
-     *   forceTypes: true,
-     *   editableInputs: true
-     *   editableOutputs: true
-     * }
-     *
-     * @param {any} obj The object structure to consider whiel create nodes
-     * @param {any} opts The options on create nodes
-     */
-
-  }, {
-    key: "registerObject",
-    value: function registerObject(name, obj) {
-      var opts = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-      Env.registerMaker("Make " + name, obj, opts);
-      Env.registerBreaker("Break " + name, obj, opts);
-    }
-    /**
-     * Creates and returns a JSON representation of the entire program
-     * @param {Program} program The program to export
-     */
-
-  }, {
-    key: "export",
-    value: function _export(program) {
-      var exp = {
-        id: program.id,
-        version: _program_mjs__WEBPACK_IMPORTED_MODULE_0__.Program.version,
-        lastNodeIndex: _node_mjs__WEBPACK_IMPORTED_MODULE_27__.Node.lastNodeIdIndex,
-        lastSocketIndex: _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.Socket.lastSocketIdIndex,
-        enter: program.enter.id,
-        exit: program.exit.id,
-        nodes: [],
-        connections: []
-      };
-
-      var _iterator = _createForOfIteratorHelper(program.nodes),
-          _step;
-
-      try {
-        for (_iterator.s(); !(_step = _iterator.n()).done;) {
-          var node = _step.value;
-          var nodeExp = {
-            id: node.id,
-            name: node.name,
-            title: node.title,
-            functional: node.functional,
-            meta: node.meta,
-            program: node instanceof _program_mjs__WEBPACK_IMPORTED_MODULE_0__.Program ? Env["export"](node) : undefined,
-            inputs: node.inputs.map(function (inp) {
-              return {
-                id: inp.id,
-                name: inp.name,
-                node: null,
-                type: inp.type,
-                value: inp.value,
-                canEditName: inp.canEditName,
-                canEditType: inp.canEditType,
-                peer: null
-              };
-            }),
-            outputs: node.outputs.map(function (outp) {
-              return {
-                id: outp.id,
-                name: outp.name,
-                node: null,
-                type: outp.type,
-                value: outp.value,
-                cached: outp.cached,
-                canEditName: outp.canEditName,
-                canEditType: outp.canEditType,
-                peers: []
-              };
-            }),
-            prev: !node.prev ? null : {
-              id: node.prev.id,
-              name: node.prev.name,
-              node: null,
-              peers: []
-            },
-            nexts: node.nexts.map(function (next) {
-              return {
-                id: next.id,
-                name: next.name,
-                node: null,
-                peer: null
-              };
-            })
-          };
-          exp.nodes.push(nodeExp);
-        }
-        /**
-         * Define a inner-function that prevent duplicates connections
-         * @param {any} connection The connection to push
-         */
-
-      } catch (err) {
-        _iterator.e(err);
-      } finally {
-        _iterator.f();
-      }
-
-      function pushConnection(connection) {
-        if (exp.connections.findIndex(function (c) {
-          return c.type === connection.type && c.sourceNode === connection.sourceNode && c.sourceSocket === connection.sourceSocket && c.targetNode === connection.targetNode && c.targetSocket === connection.targetSocket;
-        }) === -1) {
-          exp.connections.push(connection);
-        }
-      }
-
-      var _iterator2 = _createForOfIteratorHelper(program.nodes),
-          _step2;
-
-      try {
-        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-          var _node = _step2.value;
-
-          if (_node.prev && _node.prev.peers && _node.prev.peers.length > 0) {
-            var _iterator3 = _createForOfIteratorHelper(_node.prev.peers),
-                _step3;
-
-            try {
-              for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-                var peer = _step3.value;
-                var connectionExp = {
-                  type: "pn",
-                  sourceNode: peer.node.id,
-                  sourceSocket: peer.id,
-                  targetNode: _node.id,
-                  targetSocket: _node.prev.id
-                };
-                pushConnection(connectionExp);
-              }
-            } catch (err) {
-              _iterator3.e(err);
-            } finally {
-              _iterator3.f();
-            }
-          }
-
-          var _iterator4 = _createForOfIteratorHelper(_node.inputs),
-              _step4;
-
-          try {
-            for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
-              var inp = _step4.value;
-
-              if (inp.peer) {
-                var _connectionExp = {
-                  type: "io",
-                  sourceNode: inp.peer.node.id,
-                  sourceSocket: inp.peer.id,
-                  targetNode: _node.id,
-                  targetSocket: inp.id
-                };
-                pushConnection(_connectionExp);
-              }
-            }
-          } catch (err) {
-            _iterator4.e(err);
-          } finally {
-            _iterator4.f();
-          }
-
-          var _iterator5 = _createForOfIteratorHelper(_node.outputs),
-              _step5;
-
-          try {
-            for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
-              var outp = _step5.value;
-
-              var _iterator7 = _createForOfIteratorHelper(outp.peers),
-                  _step7;
-
-              try {
-                for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
-                  var _peer = _step7.value;
-
-                  if (_peer) {
-                    var _connectionExp2 = {
-                      type: "io",
-                      sourceNode: _node.id,
-                      sourceSocket: outp.id,
-                      targetNode: _peer.node.id,
-                      targetSocket: _peer.id
-                    };
-                    pushConnection(_connectionExp2);
-                  }
-                }
-              } catch (err) {
-                _iterator7.e(err);
-              } finally {
-                _iterator7.f();
-              }
-            }
-          } catch (err) {
-            _iterator5.e(err);
-          } finally {
-            _iterator5.f();
-          }
-
-          var _iterator6 = _createForOfIteratorHelper(_node.nexts),
-              _step6;
-
-          try {
-            for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
-              var next = _step6.value;
-
-              if (next.peer) {
-                var _connectionExp3 = {
-                  type: "pn",
-                  sourceNode: _node.id,
-                  sourceSocket: next.id,
-                  targetNode: next.peer.node.id,
-                  targetSocket: next.peer.id
-                };
-                pushConnection(_connectionExp3);
-              }
-            }
-          } catch (err) {
-            _iterator6.e(err);
-          } finally {
-            _iterator6.f();
-          }
-        }
-      } catch (err) {
-        _iterator2.e(err);
-      } finally {
-        _iterator2.f();
-      }
-
-      return exp;
-    }
-    /**
-     * Create a program instance based on export data created with export() method
-     * @param {any} data A object with the export data format
-     */
-
-  }, {
-    key: "import",
-    value: function _import(data) {
-      if (data.version !== 1) {
-        throw new Error("Imported data must have version 1");
-      }
-
-      var p = new _program_mjs__WEBPACK_IMPORTED_MODULE_0__.Program(); // Removes enter and exit auto-nodes, these
-      // will be re-created by import procedure
-
-      p.removeNode(p.enter);
-      p.removeNode(p.exit);
-      _program_mjs__WEBPACK_IMPORTED_MODULE_0__.Program.version = data.version; // Now import nodes without connections
-
-      var _iterator8 = _createForOfIteratorHelper(data.nodes),
-          _step8;
-
-      try {
-        for (_iterator8.s(); !(_step8 = _iterator8.n()).done;) {
-          var nodeData = _step8.value;
-          var node = void 0; // If this node is a program node, let the import
-          // procedure to create the node
-
-          if (nodeData.program) {
-            node = Env["import"](nodeData.program);
-          } else {
-            // Otherwise import the node
-            node = Env.getInstance(nodeData.name);
-          } // Delete default sockets (created by getInstance())
-
-
-          node.inputs = [];
-          node.outputs = [];
-          node.prev = null;
-          node.nexts = [];
-
-          if (!node) {
-            throw new Error("Node type '".concat(nodeData.name, "' is not registered"));
-          }
-
-          node.title = nodeData.title;
-          node.id = nodeData.id;
-          node.functional = nodeData.functional;
-          node.meta = nodeData.meta;
-
-          var _iterator10 = _createForOfIteratorHelper(nodeData.inputs),
-              _step10;
-
-          try {
-            for (_iterator10.s(); !(_step10 = _iterator10.n()).done;) {
-              var inpData = _step10.value;
-              var inp = new _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.InputSocket(inpData.name, node, inpData.type, inpData.value);
-              inp.id = inpData.id;
-              inp.canEditName = inpData.canEditName;
-              node.inputs.push(inp);
-            }
-          } catch (err) {
-            _iterator10.e(err);
-          } finally {
-            _iterator10.f();
-          }
-
-          var _iterator11 = _createForOfIteratorHelper(nodeData.outputs),
-              _step11;
-
-          try {
-            for (_iterator11.s(); !(_step11 = _iterator11.n()).done;) {
-              var outpData = _step11.value;
-              var outp = new _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.OutputSocket(outpData.name, node, outpData.type, outpData.value, outpData.cached);
-              outp.canEditName = outpData.canEditName;
-              outp.id = outpData.id;
-              node.outputs.push(outp);
-            }
-          } catch (err) {
-            _iterator11.e(err);
-          } finally {
-            _iterator11.f();
-          }
-
-          if (nodeData.prev) {
-            var prev = new _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.PrevSocket(nodeData.prev.name, node);
-            prev.id = nodeData.prev.id;
-            node.prev = prev;
-          }
-
-          var _iterator12 = _createForOfIteratorHelper(nodeData.nexts),
-              _step12;
-
-          try {
-            for (_iterator12.s(); !(_step12 = _iterator12.n()).done;) {
-              var nextData = _step12.value;
-              var next = new _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.NextSocket(nextData.name, node);
-              next.id = nextData.id;
-              node.nexts.push(next);
-            }
-          } catch (err) {
-            _iterator12.e(err);
-          } finally {
-            _iterator12.f();
-          }
-
-          p.addNode(node);
-        }
-      } catch (err) {
-        _iterator8.e(err);
-      } finally {
-        _iterator8.f();
-      }
-
-      p.enter = p.nodes.find(function (n) {
-        return n.id === data.enter;
-      });
-      p.exit = p.nodes.find(function (n) {
-        return n.id === data.exit;
-      }); // Now import connections
-
-      var _iterator9 = _createForOfIteratorHelper(data.connections),
-          _step9;
-
-      try {
-        var _loop = function _loop() {
-          var connectionData = _step9.value;
-          var sourceNode = p.nodes.find(function (n) {
-            return n.id === connectionData.sourceNode;
-          });
-          var targetNode = p.nodes.find(function (n) {
-            return n.id === connectionData.targetNode;
-          });
-          var sourceSocket = connectionData.type === "pn" ? sourceNode.nexts.find(function (n) {
-            return n.id === connectionData.sourceSocket;
-          }) : sourceNode.outputs.find(function (o) {
-            return o.id === connectionData.sourceSocket;
-          });
-          var targetSocket = connectionData.type === "pn" ? targetNode.prev : targetNode.inputs.find(function (i) {
-            return i.id === connectionData.targetSocket;
-          });
-          sourceSocket.connect(targetSocket);
-        };
-
-        for (_iterator9.s(); !(_step9 = _iterator9.n()).done;) {
-          _loop();
-        } // These two static variable must be assigned at the end because
-        // the new InputSocket(), new OutputSocket(), ... increment it during
-        // the import phase
-
-      } catch (err) {
-        _iterator9.e(err);
-      } finally {
-        _iterator9.f();
-      }
-
-      _node_mjs__WEBPACK_IMPORTED_MODULE_27__.Node.lastNodeIdIndex = data.lastNodeIndex;
-      _socket_mjs__WEBPACK_IMPORTED_MODULE_26__.Socket.lastSocketIdIndex = data.lastSocketIndex;
-      return p;
-    }
-  }]);
-
-  return Env;
-}();
-var _nodeRegistry = {
-  writable: true,
-  value: new Map()
-};
-
-/***/ }),
-
-/***/ "./src/core/exit.mjs":
-/*!***************************!*\
-  !*** ./src/core/exit.mjs ***!
-  \***************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Exit": () => /* binding */ Exit
-/* harmony export */ });
-/* harmony import */ var _node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a cnode that is the starting point for a
- * program. The program can be top-level or not
- */
-
-var Exit = /*#__PURE__*/function (_Node) {
-  _inherits(Exit, _Node);
-
-  var _super = _createSuper(Exit);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new Exit node
-   */
-  function Exit() {
-    var _this;
-
-    _classCallCheck(this, Exit);
-
-    _this = _super.call(this, "Exit");
-    _this.removable = false;
-    _this.creatable = false;
-    _this.inputs = [new _socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
-    _this.outputs = [];
-    _this.nexts = [];
-    _this.prev = new _socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("End", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(Exit, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : Exit.instance;
-      return _get(_getPrototypeOf(Exit.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process method
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                return _context.abrupt("return", new _node_mjs__WEBPACK_IMPORTED_MODULE_0__.Result());
-
-              case 3:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return Exit;
-}(_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(Exit, "instance", function () {
-  return new Exit();
-});
-
-/***/ }),
-
-/***/ "./src/core/node.mjs":
-/*!***************************!*\
-  !*** ./src/core/node.mjs ***!
-  \***************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Node": () => /* binding */ Node,
-/* harmony export */   "Result": () => /* binding */ Result
-/* harmony export */ });
-/* harmony import */ var _socket_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _type_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./type.mjs */ "./src/core/type.mjs");
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classPrivateFieldGet(receiver, privateMap) { var descriptor = privateMap.get(receiver); if (!descriptor) { throw new TypeError("attempted to get private field on non-instance"); } if (descriptor.get) { return descriptor.get.call(receiver); } return descriptor.value; }
-
-function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = privateMap.get(receiver); if (!descriptor) { throw new TypeError("attempted to set private field on non-instance"); } if (descriptor.set) { descriptor.set.call(receiver, value); } else { if (!descriptor.writable) { throw new TypeError("attempted to set read only private field"); } descriptor.value = value; } return value; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-/**
- * This is the base node class. A node have some input and output
- * to exchange data with other nodes, some nexts to determine next
- * execution nodes, and a prev to identify the entry point.
- * A node can be functional or iterative. If the node is funcitonal
- * the execution of the process method is repeated each time other
- * nodes read the output values, otherwise output nodes reports
- * the last computed value. Each node has a unique id to identify it
- */
-
-var _id = new WeakMap();
-
-var _name = new WeakMap();
-
-var _title = new WeakMap();
-
-var _functional = new WeakMap();
-
-var _inputs = new WeakMap();
-
-var _outputs = new WeakMap();
-
-var _nexts = new WeakMap();
-
-var _prev = new WeakMap();
-
-var _program = new WeakMap();
-
-var _meta = new WeakMap();
-
-var _removable = new WeakMap();
-
-var _creatable = new WeakMap();
-
-var _canAddInput = new WeakMap();
-
-var _canAddOutput = new WeakMap();
-
-var _canAddNext = new WeakMap();
-
-var Node = /*#__PURE__*/function () {
-  /** An incremental index to generate unique node IDs */
-
-  /** The internal unique identifier */
-
-  /** The internal name of the node */
-
-  /** The external name of the node */
-
-  /** Is this node a functional node? */
-
-  /** List of node's inputs */
-
-  /** List of node's outputs */
-
-  /** List of node's nexts in execution */
-
-  /** The execution entry point */
-
-  /** Reference to the enclosing program */
-
-  /** Additional info (UIs can write anything to store graphical behaviors) */
-
-  /** Can the node be removed by the user? */
-
-  /** Can the node be created by the user? */
-
-  /** Can the user add an input? */
-
-  /** Can the user add an output? */
-
-  /** Can the user add a next? */
-
-  /**
-   * Construct a new Node
-   * @param {string} [name] The name of the node
-   * @param {string} [title] The title of the node
-   */
-  function Node(name) {
-    var title = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : name;
-
-    _classCallCheck(this, Node);
-
-    _id.set(this, {
-      writable: true,
-      value: null
-    });
-
-    _name.set(this, {
-      writable: true,
-      value: ""
-    });
-
-    _title.set(this, {
-      writable: true,
-      value: ""
-    });
-
-    _functional.set(this, {
-      writable: true,
-      value: false
-    });
-
-    _inputs.set(this, {
-      writable: true,
-      value: []
-    });
-
-    _outputs.set(this, {
-      writable: true,
-      value: []
-    });
-
-    _nexts.set(this, {
-      writable: true,
-      value: []
-    });
-
-    _prev.set(this, {
-      writable: true,
-      value: null
-    });
-
-    _program.set(this, {
-      writable: true,
-      value: null
-    });
-
-    _meta.set(this, {
-      writable: true,
-      value: null
-    });
-
-    _removable.set(this, {
-      writable: true,
-      value: true
-    });
-
-    _creatable.set(this, {
-      writable: true,
-      value: true
-    });
-
-    _canAddInput.set(this, {
-      writable: true,
-      value: false
-    });
-
-    _canAddOutput.set(this, {
-      writable: true,
-      value: false
-    });
-
-    _canAddNext.set(this, {
-      writable: true,
-      value: false
-    });
-
-    _classPrivateFieldSet(this, _name, name);
-
-    _classPrivateFieldSet(this, _title, title);
-
-    _classPrivateFieldSet(this, _id, "NID_" + Node.lastNodeIdIndex++);
-  }
-
-  _createClass(Node, [{
-    key: "input",
-
-    /**
-     * Returns the input by name
-     * @param {string} name Name of the input
-     */
-    value: function input(name) {
-      return this.inputs.find(function (i) {
-        return i.name === name;
-      });
-    }
-    /**
-     * Returns the output by name
-     * @param {string} name The name of the output
-     */
-
-  }, {
-    key: "output",
-    value: function output(name) {
-      return this.outputs.find(function (o) {
-        return o.name === name;
-      });
-    }
-    /**
-     * Returns the next by name
-     * @param {string} name The name of the next
-     */
-
-  }, {
-    key: "next",
-    value: function next(name) {
-      if (!name) {
-        return this.nexts[0];
-      }
-
-      return this.nexts.find(function (n) {
-        return n.name === name;
-      });
-    }
-    /**
-     * Evaluate all imputs of this node. Inputs are sockets.
-     * If the socket is connected the evaluation will search
-     * for the socket's peer and evaluate the output counterpart
-     * eventually reprocess the output's nod, if the node is
-     * functional
-     */
-
-  }, {
-    key: "evaluateInputs",
-    value: function () {
-      var _evaluateInputs = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var _iterator, _step, inp;
-
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _iterator = _createForOfIteratorHelper(this.inputs);
-                _context.prev = 1;
-
-                _iterator.s();
-
-              case 3:
-                if ((_step = _iterator.n()).done) {
-                  _context.next = 9;
-                  break;
-                }
-
-                inp = _step.value;
-                _context.next = 7;
-                return inp.evaluate();
-
-              case 7:
-                _context.next = 3;
-                break;
-
-              case 9:
-                _context.next = 14;
-                break;
-
-              case 11:
-                _context.prev = 11;
-                _context.t0 = _context["catch"](1);
-
-                _iterator.e(_context.t0);
-
-              case 14:
-                _context.prev = 14;
-
-                _iterator.f();
-
-                return _context.finish(14);
-
-              case 17:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this, [[1, 11, 14, 17]]);
-      }));
-
-      function evaluateInputs() {
-        return _evaluateInputs.apply(this, arguments);
-      }
-
-      return evaluateInputs;
-    }()
-    /**
-     * This is an helper method to construct a Result instance
-     * by name
-     * @param {Socket} socket The Socket on which construct the Result instance
-     */
-
-  }, {
-    key: "getFlowResult",
-    value: function getFlowResult(socket) {
-      if (socket.peer) {
-        return new Result(socket.peer.node);
-      } else {
-        return new Result();
-      }
-    }
-    /**
-     * This method disconnect all sockets from the node
-     */
-
-  }, {
-    key: "disconnectAllSockets",
-    value: function disconnectAllSockets() {
-      if (_classPrivateFieldGet(this, _prev)) {
-        while (_classPrivateFieldGet(this, _prev).peers.length > 0) {
-          _classPrivateFieldGet(this, _prev).disconnect(_classPrivateFieldGet(this, _prev).peers[0]);
-
-          _classPrivateFieldGet(this, _prev).peers.splice(0, 1);
-        }
-      }
-
-      var _iterator2 = _createForOfIteratorHelper(_classPrivateFieldGet(this, _inputs)),
-          _step2;
-
-      try {
-        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-          var i = _step2.value;
-
-          if (i.peer) {
-            i.disconnect();
-          }
-        }
-      } catch (err) {
-        _iterator2.e(err);
-      } finally {
-        _iterator2.f();
-      }
-
-      var _iterator3 = _createForOfIteratorHelper(_classPrivateFieldGet(this, _outputs)),
-          _step3;
-
-      try {
-        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-          var o = _step3.value;
-
-          while (o.peers.length > 0) {
-            o.peers[0].disconnect();
-            o.peers.splice(0, 1);
-          }
-        }
-      } catch (err) {
-        _iterator3.e(err);
-      } finally {
-        _iterator3.f();
-      }
-
-      var _iterator4 = _createForOfIteratorHelper(_classPrivateFieldGet(this, _nexts)),
-          _step4;
-
-      try {
-        for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
-          var n = _step4.value;
-
-          if (n.peer) {
-            n.disconnect();
-          }
-        }
-      } catch (err) {
-        _iterator4.e(err);
-      } finally {
-        _iterator4.f();
-      }
-    }
-    /**
-     * If this.#canAddInput is true, the user can add an input
-     * Subclass with variable number of input should override this method
-     */
-
-  }, {
-    key: "addInput",
-    value: function addInput() {
-      throw new Error("Can't add input!");
-    }
-    /**
-     * This method removes a specific input from the node, if
-     * this is possible whit this instance
-     * Subclass with variable number of input should override this method
-     * @param {InputSocket} input The input to remove
-     */
-
-  }, {
-    key: "removeInput",
-    value: function removeInput(input) {
-      throw new Error("Can't remove input");
-    }
-    /**
-     * Can this node remove a specific input?
-     * Subclass with variable number of input should override this method
-     * @param {InputSocket} input The input to remove
-     */
-
-  }, {
-    key: "canRemoveInput",
-    value: function canRemoveInput(input) {
-      return false;
-    }
-    /**
-     * If this.#canAddOutput is true, the user can add an output
-     * Subclass with variable number of output should override this method
-     */
-
-  }, {
-    key: "addOutput",
-    value: function addOutput() {
-      throw new Error("Can't add output!");
-    }
-    /**
-     * This method removes a specific output from the node, if
-     * this is possible whit this instance
-     * Subclass with variable number of output should override this method
-     * @param {OutputSocket} output The output to remove
-     */
-
-  }, {
-    key: "removeOutput",
-    value: function removeOutput(output) {
-      throw new Error("Can't remove output");
-    }
-    /**
-     * Can this node remove a specific output?
-     * Subclass with variable number of output should override this method
-     * @param {OutputSocket} output The output to remove
-     */
-
-  }, {
-    key: "canRemoveOutput",
-    value: function canRemoveOutput(output) {
-      return false;
-    }
-    /**
-     * This method defines if a particular socket of this node can
-     * be connected to another one, based on sockets type.
-     * Default implementation checks for types of sockets, following the rule:
-     * - if sockets are FlowSockets, return true
-     * - Otherwise if the type of one socket is Types.ANY, return true
-     * - Otherwise if the two types are the same, return true
-     * - Otherwise return false
-     * @param {Socket} thisSocket The instance of socket of this node
-     * @param {Socket} otherSocket The other socket
-     */
-
-  }, {
-    key: "canBeConnected",
-    value: function canBeConnected(thisSocket, otherSocket) {
-      if (thisSocket instanceof _socket_mjs__WEBPACK_IMPORTED_MODULE_0__.FlowSocket && !(otherSocket instanceof _socket_mjs__WEBPACK_IMPORTED_MODULE_0__.FlowSocket)) {
-        return false;
-      }
-
-      if (otherSocket instanceof _socket_mjs__WEBPACK_IMPORTED_MODULE_0__.FlowSocket && !(thisSocket instanceof _socket_mjs__WEBPACK_IMPORTED_MODULE_0__.FlowSocket)) {
-        return false;
-      }
-
-      if (thisSocket instanceof _socket_mjs__WEBPACK_IMPORTED_MODULE_0__.FlowSocket || otherSocket instanceof _socket_mjs__WEBPACK_IMPORTED_MODULE_0__.FlowSocket) {
-        return true;
-      }
-
-      if (thisSocket.type === _type_mjs__WEBPACK_IMPORTED_MODULE_1__.Types.ANY || otherSocket.type === _type_mjs__WEBPACK_IMPORTED_MODULE_1__.Types.ANY) {
-        return true;
-      }
-
-      if (thisSocket.type === otherSocket.type) {
-        return true;
-      }
-
-      return false;
-    }
-    /** The base version of the node does nothing */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
-        return regeneratorRuntime.wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                return _context2.abrupt("return", new Result());
-
-              case 1:
-              case "end":
-                return _context2.stop();
-            }
-          }
-        }, _callee2);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-    /**
-     * This method clones the node. Cloning will create a new node
-     * of the same type of the particular node, so each node must
-     * override this method to return the exact class type to the
-     * caller. The param "factory" is a function to create the specific
-     * class instance, to this base version of the method can create
-     * the instance and clone all sockets, and other propertiesthat
-     * is a same process for all different instances
-     *
-     * @param {Function} factory A function that return a new instance of the class
-     */
-
-  }, {
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : function () {
-        return new Node("Node");
-      };
-      var n = factory(); // Copy all inputs
-
-      n.inputs = [];
-
-      var _iterator5 = _createForOfIteratorHelper(this.inputs),
-          _step5;
-
-      try {
-        for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
-          var i = _step5.value;
-          var cloneI = i.clone();
-          cloneI.node = n;
-          n.inputs.push(cloneI);
-        } // Copy all outputs
-
-      } catch (err) {
-        _iterator5.e(err);
-      } finally {
-        _iterator5.f();
-      }
-
-      n.outputs = [];
-
-      var _iterator6 = _createForOfIteratorHelper(this.outputs),
-          _step6;
-
-      try {
-        for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
-          var o = _step6.value;
-          var cloneO = o.clone();
-          cloneO.node = n;
-          n.outputs.push(cloneO);
-        } // Copy all nexts
-
-      } catch (err) {
-        _iterator6.e(err);
-      } finally {
-        _iterator6.f();
-      }
-
-      n.nexts = [];
-
-      var _iterator7 = _createForOfIteratorHelper(this.nexts),
-          _step7;
-
-      try {
-        for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
-          var nx = _step7.value;
-          var cloneNx = nx.clone();
-          cloneNx.node = n;
-          n.nexts.push(cloneNx);
-        } // Copy prev
-
-      } catch (err) {
-        _iterator7.e(err);
-      } finally {
-        _iterator7.f();
-      }
-
-      n.prev = null;
-
-      if (this.prev) {
-        var clonePrev = this.prev.clone();
-        clonePrev.node = n;
-        n.prev = clonePrev;
-      } // Copy base properties
-
-
-      n.id = "NID_" + Node.lastNodeIdIndex++;
-      n.name = this.name;
-      n.title = this.title;
-      n.functional = this.functional;
-      n.program = this.program;
-      n.meta = this.meta ? JSON.parse(JSON.stringify(this.meta)) : null;
-      n.removable = this.removable;
-      n.creatable = this.creatable;
-      n.canAddInput = this.canAddInput;
-      n.canAddOutput = this.canAddOutput;
-      n.canAddNext = this.canAddNext;
-      return n;
-    }
-  }, {
-    key: "id",
-    get: function get() {
-      return _classPrivateFieldGet(this, _id);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _id, val);
-    }
-  }, {
-    key: "name",
-    get: function get() {
-      return _classPrivateFieldGet(this, _name);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _name, val);
-    }
-  }, {
-    key: "title",
-    get: function get() {
-      return _classPrivateFieldGet(this, _title);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _title, val);
-    }
-  }, {
-    key: "functional",
-    get: function get() {
-      return _classPrivateFieldGet(this, _functional);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _functional, val);
-    }
-  }, {
-    key: "inputs",
-    get: function get() {
-      return _classPrivateFieldGet(this, _inputs);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _inputs, val);
-    }
-  }, {
-    key: "outputs",
-    get: function get() {
-      return _classPrivateFieldGet(this, _outputs);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _outputs, val);
-    }
-  }, {
-    key: "nexts",
-    get: function get() {
-      return _classPrivateFieldGet(this, _nexts);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _nexts, val);
-    }
-  }, {
-    key: "prev",
-    get: function get() {
-      return _classPrivateFieldGet(this, _prev);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _prev, val);
-    }
-  }, {
-    key: "program",
-    get: function get() {
-      return _classPrivateFieldGet(this, _program);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _program, val);
-    }
-  }, {
-    key: "removable",
-    get: function get() {
-      return _classPrivateFieldGet(this, _removable);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _removable, val);
-    }
-  }, {
-    key: "creatable",
-    get: function get() {
-      return _classPrivateFieldGet(this, _creatable);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _creatable, val);
-    }
-  }, {
-    key: "canAddInput",
-    get: function get() {
-      return _classPrivateFieldGet(this, _canAddInput);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _canAddInput, val);
-    }
-  }, {
-    key: "canAddOutput",
-    get: function get() {
-      return _classPrivateFieldGet(this, _canAddOutput);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _canAddOutput, val);
-    }
-  }, {
-    key: "canAddNext",
-    get: function get() {
-      return _classPrivateFieldGet(this, _canAddNext);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _canAddNext, val);
-    }
-  }, {
-    key: "meta",
-    get: function get() {
-      return _classPrivateFieldGet(this, _meta);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _meta, val);
-    }
-  }]);
-
-  return Node;
-}();
-/**
- * The result class used by programs to receive
- * the next "next" in the flow
- */
-
-_defineProperty(Node, "lastNodeIdIndex", 0);
-
-var _next2 = new WeakMap();
-
-var Result = /*#__PURE__*/function () {
-  /** The next node */
-
-  /**
-   * Construct a new Result
-   * @param {Socket} next The next socket to follow
-   */
-  function Result() {
-    var next = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-
-    _classCallCheck(this, Result);
-
-    _next2.set(this, {
-      writable: true,
-      value: null
-    });
-
-    _classPrivateFieldSet(this, _next2, next);
-  }
-
-  _createClass(Result, [{
-    key: "next",
-    get: function get() {
-      return _classPrivateFieldGet(this, _next2);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _next2, val);
-    }
-  }]);
-
-  return Result;
-}();
-
-/***/ }),
-
-/***/ "./src/core/program.mjs":
-/*!******************************!*\
-  !*** ./src/core/program.mjs ***!
-  \******************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Program": () => /* binding */ Program
-/* harmony export */ });
-/* harmony import */ var events__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! events */ "./node_modules/events/events.js");
-/* harmony import */ var _enter_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./enter.mjs */ "./src/core/enter.mjs");
-/* harmony import */ var _exit_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./exit.mjs */ "./src/core/exit.mjs");
-/* harmony import */ var _node_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _socket_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _type_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classPrivateFieldGet(receiver, privateMap) { var descriptor = privateMap.get(receiver); if (!descriptor) { throw new TypeError("attempted to get private field on non-instance"); } if (descriptor.get) { return descriptor.get.call(receiver); } return descriptor.value; }
-
-function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = privateMap.get(receiver); if (!descriptor) { throw new TypeError("attempted to set private field on non-instance"); } if (descriptor.set) { descriptor.set.call(receiver, value); } else { if (!descriptor.writable) { throw new TypeError("attempted to set read only private field"); } descriptor.value = value; } return value; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-
-
-
-/**
- * A program is a special node that contains nodes. The program
- * manages the flow of the global execution by starting from the
- * "Enter" default, autocreated node, call its process() method and receive the next
- * "next". A program also store a global variable space
- */
-
-var _nodes = new WeakMap();
-
-var _enter = new WeakMap();
-
-var _exit = new WeakMap();
-
-var _currentNode = new WeakMap();
-
-var _vars = new WeakMap();
-
-var Program = /*#__PURE__*/function (_Node) {
-  _inherits(Program, _Node);
-
-  var _super = _createSuper(Program);
-
-  // Provide a node instance
-
-  /** Engine version */
-
-  /** The nodes in this program */
-
-  /** The Enter node */
-
-  /** The Exit node */
-
-  /** The instruction pointer equivalent :) */
-
-  /** The variable global space */
-
-  /** The event emitter connected to the program */
-
-  /**
-   * Construct a new Program node
-   */
-  function Program() {
-    var _this;
-
-    _classCallCheck(this, Program);
-
-    _this = _super.call(this, "Program");
-
-    _nodes.set(_assertThisInitialized(_this), {
-      writable: true,
-      value: []
-    });
-
-    _enter.set(_assertThisInitialized(_this), {
-      writable: true,
-      value: null
-    });
-
-    _exit.set(_assertThisInitialized(_this), {
-      writable: true,
-      value: null
-    });
-
-    _currentNode.set(_assertThisInitialized(_this), {
-      writable: true,
-      value: null
-    });
-
-    _vars.set(_assertThisInitialized(_this), {
-      writable: true,
-      value: new Map()
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "events", new events__WEBPACK_IMPORTED_MODULE_0__.EventEmitter());
-
-    _this.inputs = [new _socket_mjs__WEBPACK_IMPORTED_MODULE_4__.InputSocket("Val", _assertThisInitialized(_this), _type_mjs__WEBPACK_IMPORTED_MODULE_5__.Types.ANY, 0)];
-    _this.outputs = [new _socket_mjs__WEBPACK_IMPORTED_MODULE_4__.OutputSocket("Val", _assertThisInitialized(_this), _type_mjs__WEBPACK_IMPORTED_MODULE_5__.Types.ANY, 0)];
-    _this.nexts = [new _socket_mjs__WEBPACK_IMPORTED_MODULE_4__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _socket_mjs__WEBPACK_IMPORTED_MODULE_4__.PrevSocket("In", _assertThisInitialized(_this)); // Create default enter, exit nodes
-
-    _this.addNode(_classPrivateFieldSet(_assertThisInitialized(_this), _enter, new _enter_mjs__WEBPACK_IMPORTED_MODULE_1__.Enter())).addNode(_classPrivateFieldSet(_assertThisInitialized(_this), _exit, new _exit_mjs__WEBPACK_IMPORTED_MODULE_2__.Exit()));
-
-    _this.events.on("log", function (msg) {
-      console.log("catched: ", msg);
-    });
-
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(Program, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : Program.instance;
-
-      var retNode = _get(_getPrototypeOf(Program.prototype), "clone", this).call(this, factory); // Clone internal nodes
-
-
-      retNode.nodes = Program.cloneNodes(_classPrivateFieldGet(this, _nodes)); // Connect actual Enter and Exit
-
-      retNode.enter = retNode.nodes.find(function (n) {
-        return n instanceof _enter_mjs__WEBPACK_IMPORTED_MODULE_1__.Enter;
-      });
-      retNode.exit = retNode.nodes.find(function (n) {
-        return n instanceof _exit_mjs__WEBPACK_IMPORTED_MODULE_2__.Exit;
-      });
-      return retNode;
-    }
-    /**
-     * This method clone a group of nodes, by reconstructing the
-     * connections from sockets too. All connections involvong nodes
-     * outside this set will be not reconstructed.
-     * @param {Node[]} nodes Nodes (and) connections to clone
-     */
-
-  }, {
-    key: "addNode",
-
-    /**
-     * Add a new node to this program
-     * @param {Node} node The node to add
-     */
-    value: function addNode(node) {
-      _classPrivateFieldGet(this, _nodes).push(node); // Set this program to the node
-
-
-      node.program = this;
-      return this;
-    }
-    /**
-     * Removes a node from this program, disconnect all sockets
-     * @param {Node} node The node to remove
-     */
-
-  }, {
-    key: "removeNode",
-    value: function removeNode(node) {
-      // Disconnect its sockets
-      node.disconnectAllSockets();
-
-      _classPrivateFieldSet(this, _nodes, _classPrivateFieldGet(this, _nodes).filter(function (n) {
-        return n.id !== node.id;
-      }));
-
-      node.program = null;
-      return this;
-    }
-    /**
-     * The process method will start from the Enter node and
-     * cycle over nexts returned by the process functions of nodes.
-     * The Program node couldn't be a top-level program, but a sub-nod
-     * of another program. For that reason, the process() method copy the
-     * value of the only input in the Program node to the only one
-     * output of the "Enter" node.
-     * This is a limitation: The Program node can be actually only 1 input
-     * and only 1 output. At the same, Enter and Exit nodes will have only
-     * 1 output and 1 input respectively.
-     * At the end, the process() methos of the Program node, will copy the
-     * value of the Exit's intput to the unique output of the Program node
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                _classPrivateFieldGet(this, _enter).output("Val").value = this.input("Val").value;
-                _context.next = 5;
-                return this.processFrom(_classPrivateFieldGet(this, _enter));
-
-              case 5:
-                this.output("Val").value = _classPrivateFieldGet(this, _exit).input("Val").value;
-                return _context.abrupt("return", this.getFlowResult(this.next("Out")));
-
-              case 7:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-    /**
-     * Execute a program useng node as starting point
-     * @param {Node} node Starting point node
-     */
-
-  }, {
-    key: "processFrom",
-    value: function () {
-      var _processFrom = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(node) {
-        var result;
-        return regeneratorRuntime.wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                this.currentNode = node;
-
-              case 1:
-                if (!(this.currentNode !== null)) {
-                  _context2.next = 8;
-                  break;
-                }
-
-                _context2.next = 4;
-                return this.currentNode.process();
-
-              case 4:
-                result = _context2.sent;
-                this.currentNode = result.next;
-                _context2.next = 1;
-                break;
-
-              case 8:
-              case "end":
-                return _context2.stop();
-            }
-          }
-        }, _callee2, this);
-      }));
-
-      function processFrom(_x) {
-        return _processFrom.apply(this, arguments);
-      }
-
-      return processFrom;
-    }()
-  }, {
-    key: "vars",
-    get: function get() {
-      return _classPrivateFieldGet(this, _vars);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _vars, val);
-    }
-  }, {
-    key: "enter",
-    get: function get() {
-      return _classPrivateFieldGet(this, _enter);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _enter, val);
-    }
-  }, {
-    key: "exit",
-    get: function get() {
-      return _classPrivateFieldGet(this, _exit);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _exit, val);
-    }
-  }, {
-    key: "currentNode",
-    get: function get() {
-      return _classPrivateFieldGet(this, _currentNode);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _currentNode, val);
-    }
-  }, {
-    key: "nodes",
-    get: function get() {
-      return _classPrivateFieldGet(this, _nodes);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _nodes, val);
-    }
-  }], [{
-    key: "cloneNodes",
-    value: function cloneNodes(nodes) {
-      // First of all, clone all nodes
-      var retNodes = [];
-
-      var _iterator = _createForOfIteratorHelper(nodes),
-          _step;
-
-      try {
-        for (_iterator.s(); !(_step = _iterator.n()).done;) {
-          var _n = _step.value;
-
-          var cloneN = _n.clone(); // Setup a temporary link between each node and its peer
-
-
-          cloneN.__peer = _n;
-          _n.__peer = cloneN;
-          retNodes.push(cloneN);
-        } // Reconstruct all links by traversong all nodes and
-        // consider all output-->input and next-->prev connections
-        // and duplicate them in clone nodes
-
-      } catch (err) {
-        _iterator.e(err);
-      } finally {
-        _iterator.f();
-      }
-
-      var _iterator2 = _createForOfIteratorHelper(nodes),
-          _step2;
-
-      try {
-        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-          var _n2 = _step2.value;
-
-          // Clone output->input
-          var _iterator4 = _createForOfIteratorHelper(_n2.outputs),
-              _step4;
-
-          try {
-            for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
-              var o = _step4.value;
-
-              var _iterator6 = _createForOfIteratorHelper(o.peers),
-                  _step6;
-
-              try {
-                for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
-                  var p = _step6.value;
-
-                  if (nodes.includes(p.node)) {
-                    _n2.__peer.output(o.name).connect(p.node.__peer.input(p.name));
-                  }
-                }
-              } catch (err) {
-                _iterator6.e(err);
-              } finally {
-                _iterator6.f();
-              }
-            } // Clone next->prev
-
-          } catch (err) {
-            _iterator4.e(err);
-          } finally {
-            _iterator4.f();
-          }
-
-          var _iterator5 = _createForOfIteratorHelper(_n2.nexts),
-              _step5;
-
-          try {
-            for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
-              var nx = _step5.value;
-
-              if (nx.peer) {
-                if (nodes.includes(nx.peer.node)) {
-                  _n2.__peer.next(nx.name).connect(nx.peer.node.__peer.prev);
-                }
-              }
-            }
-          } catch (err) {
-            _iterator5.e(err);
-          } finally {
-            _iterator5.f();
-          }
-        } // Remove __peer fields
-
-      } catch (err) {
-        _iterator2.e(err);
-      } finally {
-        _iterator2.f();
-      }
-
-      var _iterator3 = _createForOfIteratorHelper(nodes),
-          _step3;
-
-      try {
-        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-          var _n3 = _step3.value;
-          _n3.__peer = undefined;
-        }
-      } catch (err) {
-        _iterator3.e(err);
-      } finally {
-        _iterator3.f();
-      }
-
-      for (var _i = 0, _retNodes = retNodes; _i < _retNodes.length; _i++) {
-        var n = _retNodes[_i];
-        n.__peer = undefined;
-      }
-
-      return retNodes;
-    }
-  }]);
-
-  return Program;
-}(_node_mjs__WEBPACK_IMPORTED_MODULE_3__.Node);
-
-_defineProperty(Program, "instance", function () {
-  return new Program();
-});
-
-_defineProperty(Program, "version", 1);
-
-/***/ }),
-
-/***/ "./src/core/socket.mjs":
-/*!*****************************!*\
-  !*** ./src/core/socket.mjs ***!
-  \*****************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Socket": () => /* binding */ Socket,
-/* harmony export */   "ValueSocket": () => /* binding */ ValueSocket,
-/* harmony export */   "InputSocket": () => /* binding */ InputSocket,
-/* harmony export */   "OutputSocket": () => /* binding */ OutputSocket,
-/* harmony export */   "FlowSocket": () => /* binding */ FlowSocket,
-/* harmony export */   "PrevSocket": () => /* binding */ PrevSocket,
-/* harmony export */   "NextSocket": () => /* binding */ NextSocket
-/* harmony export */ });
-/* harmony import */ var _type_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classPrivateFieldGet(receiver, privateMap) { var descriptor = privateMap.get(receiver); if (!descriptor) { throw new TypeError("attempted to get private field on non-instance"); } if (descriptor.get) { return descriptor.get.call(receiver); } return descriptor.value; }
-
-function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = privateMap.get(receiver); if (!descriptor) { throw new TypeError("attempted to set private field on non-instance"); } if (descriptor.set) { descriptor.set.call(receiver, value); } else { if (!descriptor.writable) { throw new TypeError("attempted to set read only private field"); } descriptor.value = value; } return value; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-/**
- * A socket is an object that represent an input,
- * output, next or prev for the node
- */
-
-var _id = new WeakMap();
-
-var _name = new WeakMap();
-
-var _node = new WeakMap();
-
-var Socket = /*#__PURE__*/function () {
-  /** An incremental index to generate unique socket IDs */
-
-  /** The internal id of the socket */
-
-  /** The name of this socket */
-
-  /** The parent node */
-
-  /**
-   * Construct a new socket on a node with a given name
-   * @param {string} name The name of the socket
-   * @param {Node} node The parent node of the socket
-   */
-  function Socket(name, node) {
-    _classCallCheck(this, Socket);
-
-    _id.set(this, {
-      writable: true,
-      value: ""
-    });
-
-    _name.set(this, {
-      writable: true,
-      value: ""
-    });
-
-    _node.set(this, {
-      writable: true,
-      value: null
-    });
-
-    _classPrivateFieldSet(this, _id, "SID_" + Socket.lastSocketIdIndex++);
-
-    _classPrivateFieldSet(this, _name, name);
-
-    _classPrivateFieldSet(this, _node, node);
-  }
-
-  _createClass(Socket, [{
-    key: "clone",
-
-    /** Clone the spcket */
-    value: function clone() {
-      throw new Error("You must override this method");
-    }
-  }, {
-    key: "id",
-    get: function get() {
-      return _classPrivateFieldGet(this, _id);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _id, val);
-    }
-  }, {
-    key: "name",
-    get: function get() {
-      return _classPrivateFieldGet(this, _name);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _name, val);
-    }
-  }, {
-    key: "node",
-    get: function get() {
-      return _classPrivateFieldGet(this, _node);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _node, val);
-    }
-  }]);
-
-  return Socket;
-}();
-/**
- * The value socket represent a input or a output value
- * for the node, so it has a value and a type
- */
-
-_defineProperty(Socket, "lastSocketIdIndex", 0);
-
-var _type = new WeakMap();
-
-var _value = new WeakMap();
-
-var _canEditName = new WeakMap();
-
-var _canEditType = new WeakMap();
-
-var ValueSocket = /*#__PURE__*/function (_Socket) {
-  _inherits(ValueSocket, _Socket);
-
-  var _super = _createSuper(ValueSocket);
-
-  /** The type for the socket's value */
-
-  /** The stored value */
-
-  /**
-   * Some input/output sockets needs to have a name that users can change.
-   * That's because the name of the socket is part of what the user can
-   * choose. Think for example at a node that can make a data structure,
-   * the user will want configure each field of the structure, in terms of
-   * data value and name. The node will have a single output with the structure
-   * as output. In this case the user can select a variable number of input
-   * sockets, and can configure values (or connection) for each input as well
-   * as the name of each socket, that whill be the name of the field in the structure.
-   * This type of socket should be represented as a text field in a UI library.
-   */
-
-  /**
-   * Some input/output sockets needs to change their type.
-   * Nodes are responsible to configure this behavior of
-   * sockets during the construction
-   */
-
-  /**
-   * Construct a new ValueSocket
-   * @param {string} name Name of the socket
-   * @param {Node} node The parent node
-   * @param {Type} type The type of this socket
-   * @param {any} value The default value of the socket
-   */
-  function ValueSocket(name, node) {
-    var _this;
-
-    var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _type_mjs__WEBPACK_IMPORTED_MODULE_0__.Types.NUMBER;
-    var value = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
-
-    _classCallCheck(this, ValueSocket);
-
-    _this = _super.call(this, name, node);
-
-    _type.set(_assertThisInitialized(_this), {
-      writable: true,
-      value: _type_mjs__WEBPACK_IMPORTED_MODULE_0__.Types.NUMBER
-    });
-
-    _value.set(_assertThisInitialized(_this), {
-      writable: true,
-      value: 0
-    });
-
-    _canEditName.set(_assertThisInitialized(_this), {
-      writable: true,
-      value: false
-    });
-
-    _canEditType.set(_assertThisInitialized(_this), {
-      writable: true,
-      value: false
-    });
-
-    _this.type = type;
-    _this.value = value;
-    return _this;
-  }
-
-  _createClass(ValueSocket, [{
-    key: "evaluate",
-
-    /**
-     * This method evaluates a socket in terms of the real value
-     * that is staying inside. The meaning is different in case of
-     * InputSocket and OutputSocket, that re-defines this method
-     */
-    value: function evaluate() {
-      throw new Error("This method must be redefined in a subclass!");
-    }
-    /** Clone the socket */
-
-  }, {
-    key: "clone",
-    value: function clone() {
-      throw new Error("You must override this method");
-    }
-  }, {
-    key: "type",
-    get: function get() {
-      return _classPrivateFieldGet(this, _type);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _type, val);
-    }
-  }, {
-    key: "value",
-    get: function get() {
-      return _classPrivateFieldGet(this, _value);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _value, val);
-    }
-  }, {
-    key: "canEditName",
-    get: function get() {
-      return _classPrivateFieldGet(this, _canEditName);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _canEditName, val);
-    }
-  }, {
-    key: "canEditType",
-    get: function get() {
-      return _classPrivateFieldGet(this, _canEditType);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _canEditType, val);
-    }
-  }]);
-
-  return ValueSocket;
-}(Socket);
-/**
- * This is an input socket value for the node, it
- * can have only a peer socket, because its value
- * have to be defined in a deterministic way
- */
-
-var _peer = new WeakMap();
-
-var InputSocket = /*#__PURE__*/function (_ValueSocket) {
-  _inherits(InputSocket, _ValueSocket);
-
-  var _super2 = _createSuper(InputSocket);
-
-  /** The only peer socket */
-
-  /**
-   * Construct a new InputSocket
-   * @param {string} name The name of the socket
-   * @param {Node} node The parent node
-   * @param {Type} type The type of the socket
-   * @param {any} value The default value of the socket
-   */
-  function InputSocket(name, node) {
-    var _this2;
-
-    var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _type_mjs__WEBPACK_IMPORTED_MODULE_0__.Types.NUMBER;
-    var value = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
-
-    _classCallCheck(this, InputSocket);
-
-    _this2 = _super2.call(this, name, node, type, value);
-
-    _peer.set(_assertThisInitialized(_this2), {
-      writable: true,
-      value: null
-    });
-
-    return _this2;
-  }
-
-  _createClass(InputSocket, [{
-    key: "evaluate",
-
-    /**
-     * Evaluate the socket value. If the socket is connected,
-     * this method goes to the peer socket and take the value.
-     * Else the current socket value remains unchanged
-     */
-    value: function () {
-      var _evaluate = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                if (!(this.peer !== null)) {
-                  _context.next = 4;
-                  break;
-                }
-
-                _context.next = 3;
-                return this.peer.evaluate();
-
-              case 3:
-                // OutputSocket
-                this.value = this.peer.value;
-
-              case 4:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function evaluate() {
-        return _evaluate.apply(this, arguments);
-      }
-
-      return evaluate;
-    }()
-    /**
-     * Connect this socket to another (output) socket
-     * @param {Socket} socket The output socket to connect
-     */
-
-  }, {
-    key: "connect",
-    value: function connect(socket) {
-      var _this3 = this;
-
-      this.peer = socket;
-
-      if (socket.peers.find(function (s) {
-        return s === _this3;
-      }) === undefined) {
-        socket.peers.push(this);
-      }
-    }
-    /**
-     * Disconnects this socket from its peer
-     */
-
-  }, {
-    key: "disconnect",
-    value: function disconnect() {
-      var _this4 = this;
-
-      if (this.peer) {
-        var index = this.peer.peers.findIndex(function (s) {
-          return s === _this4;
-        });
-
-        if (index !== -1) {
-          this.peer.peers.splice(index, 1);
-        }
-      }
-
-      this.peer = null;
-    }
-    /** Clone the spcket */
-
-  }, {
-    key: "clone",
-    value: function clone() {
-      var s = new InputSocket(this.name, null, this.type, this.value);
-      s.id = "SID_" + Socket.lastSocketIdIndex++;
-      s.peer = null;
-      s.canEditName = this.canEditName;
-      s.canEditType = this.canEditType;
-      return s;
-    }
-  }, {
-    key: "peer",
-    get: function get() {
-      return _classPrivateFieldGet(this, _peer);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _peer, val);
-    }
-  }]);
-
-  return InputSocket;
-}(ValueSocket);
-/**
- * This is a output value socket and represent an output
- * value for the node. Output value socket can be connected to
- * many peer input value sockets, because many socket would like
- * to take the value from this.
- */
-
-var _peers = new WeakMap();
-
-var _cached = new WeakMap();
-
-var OutputSocket = /*#__PURE__*/function (_ValueSocket2) {
-  _inherits(OutputSocket, _ValueSocket2);
-
-  var _super3 = _createSuper(OutputSocket);
-
-  /** A list of input value connected sockets */
-
-  /**
-   * This flag indicates that the socket don't try to
-   * cal the process() method of its node upon the
-   * evaluation. Normally, functional nodes have output
-   * sockets not cached, so an evaluation of its values
-   * will result in a call of process() method
-   */
-
-  /**
-   * Construct a new OutputSocket
-   * @param {string} name The name of the socket
-   * @param {Node} node The parent node
-   * @param {Type} type The type of the socket
-   * @param {any} value The default value of the socket
-   * @param {boolean} [cached] This socket is cached?
-   */
-  function OutputSocket(name, node) {
-    var _this5;
-
-    var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _type_mjs__WEBPACK_IMPORTED_MODULE_0__.Types.NUMBER;
-    var value = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
-    var cached = arguments.length > 4 ? arguments[4] : undefined;
-
-    _classCallCheck(this, OutputSocket);
-
-    _this5 = _super3.call(this, name, node, type, value); // default to true if the node is not functional and false
-    // if the node is functional
-
-    _peers.set(_assertThisInitialized(_this5), {
-      writable: true,
-      value: []
-    });
-
-    _cached.set(_assertThisInitialized(_this5), {
-      writable: true,
-      value: true
-    });
-
-    _classPrivateFieldSet(_assertThisInitialized(_this5), _cached, cached !== undefined ? cached : !node.functional);
-
-    return _this5;
-  }
-
-  _createClass(OutputSocket, [{
-    key: "evaluate",
-
-    /**
-     * The evaluation of a OutputSocket depends from two factors:
-     * - The node of the socket is functional
-     * - The socket is market to be "cached"
-     *
-     * If the parent node is not functional, simply does nothing, because
-     * the value of this socket have to be unchanged from mthe last process
-     * call
-     * Otherwise, if the node is functional, we have to check if this particular
-     * socket is marked to be "cached", in that case, the value have to remain unchanged,
-     * otherwise the process() method have to be called again
-     */
-    value: function () {
-      var _evaluate2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
-        return regeneratorRuntime.wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                if (!(this.node && this.node.functional && !this.cached)) {
-                  _context2.next = 3;
-                  break;
-                }
-
-                _context2.next = 3;
-                return this.node.process();
-
-              case 3:
-              case "end":
-                return _context2.stop();
-            }
-          }
-        }, _callee2, this);
-      }));
-
-      function evaluate() {
-        return _evaluate2.apply(this, arguments);
-      }
-
-      return evaluate;
-    }()
-    /**
-     * Connects this socket to a input socket
-     * @param {Socket} socket Socket to connect to
-     */
-
-  }, {
-    key: "connect",
-    value: function connect(socket) {
-      if (this.peers.find(function (s) {
-        return s === socket;
-      }) === undefined) {
-        this.peers.push(socket);
-      }
-
-      socket.peer = this;
-    }
-    /**
-     * Disconnect this socket from a specific input peer
-     * @param {Socket} socket The socket to disconnect
-     */
-
-  }, {
-    key: "disconnect",
-    value: function disconnect(socket) {
-      var index = this.peers.findIndex(function (s) {
-        return s === socket;
-      });
-
-      if (index !== undefined) {
-        this.peers.splice(index, 1);
-        socket.peer = null;
-      }
-    }
-    /** Clone the socket */
-
-  }, {
-    key: "clone",
-    value: function clone() {
-      var s = new OutputSocket(this.name, null, this.type, this.value, this.cached);
-      s.id = "SID_" + Socket.lastSocketIdIndex++;
-      s.peers = [];
-      s.canEditName = this.canEditName;
-      s.canEditType = this.canEditType;
-      return s;
-    }
-  }, {
-    key: "peers",
-    get: function get() {
-      return _classPrivateFieldGet(this, _peers);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _peers, val);
-    }
-  }, {
-    key: "cached",
-    get: function get() {
-      return _classPrivateFieldGet(this, _cached);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _cached, val);
-    }
-  }]);
-
-  return OutputSocket;
-}(ValueSocket);
-/**
- * A flow socket is a socket to connect two nodes in
- * terms of execution flow
- */
-
-var FlowSocket = /*#__PURE__*/function (_Socket2) {
-  _inherits(FlowSocket, _Socket2);
-
-  var _super4 = _createSuper(FlowSocket);
-
-  /**
-   * Construct a new FlowSocket
-   * @param {sring} name Name of the socket
-   * @param {Node} node The parent node
-   */
-  function FlowSocket(name, node) {
-    _classCallCheck(this, FlowSocket);
-
-    return _super4.call(this, name, node);
-  }
-  /** Clone the spcket */
-
-
-  _createClass(FlowSocket, [{
-    key: "clone",
-    value: function clone() {
-      throw new Error("You must override this method");
-    }
-  }]);
-
-  return FlowSocket;
-}(Socket);
-/**
- * This class representa a prev socket, a socket that
- * can be connected to other nexts sockets. The prev socket
- * cab have many peer (next) socket because the execution
- * can come from anywhere in the program
- */
-
-var _peers2 = new WeakMap();
-
-var PrevSocket = /*#__PURE__*/function (_FlowSocket) {
-  _inherits(PrevSocket, _FlowSocket);
-
-  var _super5 = _createSuper(PrevSocket);
-
-  /** List of (next) peer sockets */
-
-  /**
-   * Construct a new PrevSocket
-   * @param {string} name Name of the socket
-   * @param {Node} node Parent node
-   */
-  function PrevSocket(name, node) {
-    var _this6;
-
-    _classCallCheck(this, PrevSocket);
-
-    _this6 = _super5.call(this, name, node);
-
-    _peers2.set(_assertThisInitialized(_this6), {
-      writable: true,
-      value: []
-    });
-
-    return _this6;
-  }
-
-  _createClass(PrevSocket, [{
-    key: "connect",
-
-    /**
-     * Connect this socket to a next socket
-     * @param {Socket} socket The next socket to connect
-     */
-    value: function connect(socket) {
-      if (this.peers.find(function (s) {
-        return s === socket;
-      }) === undefined) {
-        this.peers.push(socket);
-      }
-
-      socket.peer = this;
-    }
-    /**
-     * Disconnect this socket from a next socket
-     * @param {Socket} socket The next socket to disconnect
-     */
-
-  }, {
-    key: "disconnect",
-    value: function disconnect(socket) {
-      var index = this.peers.findIndex(function (s) {
-        return s === socket;
-      });
-
-      if (index !== undefined) {
-        this.peers.splice(index, 1);
-        socket.peer = null;
-      }
-    }
-    /** Clone the socket */
-
-  }, {
-    key: "clone",
-    value: function clone() {
-      var s = new PrevSocket(this.name, null);
-      s.id = "SID_" + Socket.lastSocketIdIndex++;
-      s.peers = [];
-      return s;
-    }
-  }, {
-    key: "peers",
-    get: function get() {
-      return _classPrivateFieldGet(this, _peers2);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _peers2, val);
-    }
-  }]);
-
-  return PrevSocket;
-}(FlowSocket);
-/**
- * This class represents a socket to redirect the flow
- * to another node via a node's prev socket. This socket can
- * be connected to only one (prev) socket, because the program
- * flow have to be well defined
- */
-
-var _peer2 = new WeakMap();
-
-var NextSocket = /*#__PURE__*/function (_FlowSocket2) {
-  _inherits(NextSocket, _FlowSocket2);
-
-  var _super6 = _createSuper(NextSocket);
-
-  /** The peer (prev) socket */
-
-  /**
-   * Construct a new NextSocket
-   * @param {string} name Name of the socket
-   * @param {Node} node The parent node of the socket
-   */
-  function NextSocket(name, node) {
-    var _this7;
-
-    _classCallCheck(this, NextSocket);
-
-    _this7 = _super6.call(this, name, node);
-
-    _peer2.set(_assertThisInitialized(_this7), {
-      writable: true,
-      value: null
-    });
-
-    return _this7;
-  }
-
-  _createClass(NextSocket, [{
-    key: "connect",
-
-    /**
-     * Connect this socket to another (prev) socket
-     * @param {Socket} socket The prev socket to connect to
-     */
-    value: function connect(socket) {
-      var _this8 = this;
-
-      this.peer = socket;
-
-      if (socket.peers.find(function (s) {
-        return s === _this8;
-      }) === undefined) {
-        socket.peers.push(this);
-      }
-    }
-    /**
-     * Disconnect this socket from the peer
-     */
-
-  }, {
-    key: "disconnect",
-    value: function disconnect() {
-      var _this9 = this;
-
-      if (this.peer) {
-        var index = this.peer.peers.findIndex(function (s) {
-          return s === _this9;
-        });
-
-        if (index !== -1) {
-          this.peer.peers.splice(index, 1);
-        }
-
-        this.peer = null;
-      }
-    }
-    /** Clone the spcket */
-
-  }, {
-    key: "clone",
-    value: function clone() {
-      var s = new NextSocket(this.name, null);
-      s.id = "SID_" + Socket.lastSocketIdIndex++;
-      s.peer = null;
-      return s;
-    }
-  }, {
-    key: "peer",
-    get: function get() {
-      return _classPrivateFieldGet(this, _peer2);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _peer2, val);
-    }
-  }]);
-
-  return NextSocket;
-}(FlowSocket);
-
-/***/ }),
-
-/***/ "./src/core/type.mjs":
-/*!***************************!*\
-  !*** ./src/core/type.mjs ***!
-  \***************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Types": () => /* binding */ Types
-/* harmony export */ });
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-/**
- * Possible types for values
- */
-var Types = {
-  NUMBER: "number",
-  STRING: "string",
-  BOOLEAN: "boolean",
-  OBJECT: "object",
-  ARRAY: "array",
-  ANY: "any"
-};
-
-/***/ }),
-
-/***/ "./src/nodes/array/amap.mjs":
-/*!**********************************!*\
-  !*** ./src/nodes/array/amap.mjs ***!
-  \**********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AMap": () => /* binding */ AMap
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a cnode that map an array to another
- * by passing all items in sequence
- */
-
-var AMap = /*#__PURE__*/function (_Node) {
-  _inherits(AMap, _Node);
-
-  var _super = _createSuper(AMap);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new AMap node
-   */
-  function AMap() {
-    var _this;
-
-    _classCallCheck(this, AMap);
-
-    _this = _super.call(this, "AMap");
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Mapped", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, [], false), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Item", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", true), // cached
-    new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, true) // cached
-    ];
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(AMap, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : AMap.instance;
-      return _get(_getPrototypeOf(AMap.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process method
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var arr, outArr, _iterator, _step, _step$value, index, item;
-
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                arr = this.input("Array").value;
-                outArr = [];
-
-                if (Array.isArray(arr)) {
-                  _context.next = 7;
-                  break;
-                }
-
-                _context.next = 30;
-                break;
-
-              case 7:
-                _iterator = _createForOfIteratorHelper(arr.entries());
-                _context.prev = 8;
-
-                _iterator.s();
-
-              case 10:
-                if ((_step = _iterator.n()).done) {
-                  _context.next = 22;
-                  break;
-                }
-
-                _step$value = _slicedToArray(_step.value, 2), index = _step$value[0], item = _step$value[1];
-                // Set the "Index" output
-                this.output("Index").value = index; // Set the "Item" output
-
-                this.output("Item").value = item; // If there's a node connected to the "Item" next socket...
-
-                if (!(this.next("Do").peer && this.next("Do").peer.node)) {
-                  _context.next = 17;
-                  break;
-                }
-
-                _context.next = 17;
-                return this.program.processFrom(this.next("Do").peer.node);
-
-              case 17:
-                _context.next = 19;
-                return this.input("Mapped").evaluate();
-
-              case 19:
-                outArr.push(this.input("Mapped").value);
-
-              case 20:
-                _context.next = 10;
-                break;
-
-              case 22:
-                _context.next = 27;
-                break;
-
-              case 24:
-                _context.prev = 24;
-                _context.t0 = _context["catch"](8);
-
-                _iterator.e(_context.t0);
-
-              case 27:
-                _context.prev = 27;
-
-                _iterator.f();
-
-                return _context.finish(27);
-
-              case 30:
-                // Set the "Array" output
-                this.output("Array").value = outArr; // Compute result
-
-                if (this.functional) {
-                  _context.next = 33;
-                  break;
-                }
-
-                return _context.abrupt("return", this.getFlowResult(this.next("Out")));
-
-              case 33:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this, [[8, 24, 27, 30]]);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return AMap;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(AMap, "instance", function () {
-  return new AMap();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/array/apush.mjs":
-/*!***********************************!*\
-  !*** ./src/nodes/array/apush.mjs ***!
-  \***********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "APush": () => /* binding */ APush
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a cnode that pushes a value
- * into an array
- */
-
-var APush = /*#__PURE__*/function (_Node) {
-  _inherits(APush, _Node);
-
-  var _super = _createSuper(APush);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new APush node
-   */
-  function APush() {
-    var _this;
-
-    _classCallCheck(this, APush);
-
-    _this = _super.call(this, "APush");
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(APush, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : APush.instance;
-      return _get(_getPrototypeOf(APush.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process method
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var arr, val;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                arr = this.input("Array").value;
-                val = this.input("Val").value;
-
-                if (!Array.isArray(arr)) {// TODO: Manage error
-                } else {
-                  arr.push(val);
-                  this.output("Val").value = arr;
-                }
-
-                return _context.abrupt("return", this.getFlowResult(this.next("Out")));
-
-              case 6:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return APush;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(APush, "instance", function () {
-  return new APush();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/array/areduce.mjs":
-/*!*************************************!*\
-  !*** ./src/nodes/array/areduce.mjs ***!
-  \*************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AReduce": () => /* binding */ AReduce
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a cnode that reduces an array to
- * a value
- */
-
-var AReduce = /*#__PURE__*/function (_Node) {
-  _inherits(AReduce, _Node);
-
-  var _super = _createSuper(AReduce);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new AReduce node
-   */
-  function AReduce() {
-    var _this;
-
-    _classCallCheck(this, AReduce);
-
-    _this = _super.call(this, "AReduce");
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Acc0", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Acc", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Item", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", true), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Acc", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", true), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, true)];
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(AReduce, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : AReduce.instance;
-      return _get(_getPrototypeOf(AReduce.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process method
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var arr, acc0, acc, _iterator, _step, _step$value, index, elem;
-
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                arr = this.input("Array").value;
-                acc0 = this.input("Acc0").value;
-                acc = acc0;
-
-                if (Array.isArray(arr)) {
-                  _context.next = 8;
-                  break;
-                }
-
-                _context.next = 32;
-                break;
-
-              case 8:
-                _iterator = _createForOfIteratorHelper(arr.entries());
-                _context.prev = 9;
-
-                _iterator.s();
-
-              case 11:
-                if ((_step = _iterator.n()).done) {
-                  _context.next = 24;
-                  break;
-                }
-
-                _step$value = _slicedToArray(_step.value, 2), index = _step$value[0], elem = _step$value[1];
-                // Set the "Index" output
-                this.output("Index").value = index; // Set the "Item" output
-
-                this.output("Item").value = elem; // Set the "Acc" output
-
-                this.output("Acc").value = acc; // If there's a node connected to the "Item" next socket...
-
-                if (!(this.next("Do").peer && this.next("Do").peer.node)) {
-                  _context.next = 19;
-                  break;
-                }
-
-                _context.next = 19;
-                return this.program.processFrom(this.next("Do").peer.node);
-
-              case 19:
-                _context.next = 21;
-                return this.input("Acc").evaluate();
-
-              case 21:
-                acc = this.input("Acc").value;
-
-              case 22:
-                _context.next = 11;
-                break;
-
-              case 24:
-                _context.next = 29;
-                break;
-
-              case 26:
-                _context.prev = 26;
-                _context.t0 = _context["catch"](9);
-
-                _iterator.e(_context.t0);
-
-              case 29:
-                _context.prev = 29;
-
-                _iterator.f();
-
-                return _context.finish(29);
-
-              case 32:
-                // Set the "Val" output
-                this.output("Val").value = acc;
-
-                if (this.functional) {
-                  _context.next = 35;
-                  break;
-                }
-
-                return _context.abrupt("return", this.getFlowResult(this.next("Out")));
-
-              case 35:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this, [[9, 26, 29, 32]]);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return AReduce;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(AReduce, "instance", function () {
-  return new AReduce();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/array/faconst.mjs":
-/*!*************************************!*\
-  !*** ./src/nodes/array/faconst.mjs ***!
-  \*************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FAConst": () => /* binding */ FAConst
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a node to get an array
- * as a string constant by JSON.parse() the input string.
- */
-
-var FAConst = /*#__PURE__*/function (_Node) {
-  _inherits(FAConst, _Node);
-
-  var _super = _createSuper(FAConst);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FAConst node
-   */
-  function FAConst() {
-    var _this;
-
-    _classCallCheck(this, FAConst);
-
-    _this = _super.call(this, "FAConst");
-    _this.functional = true;
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "[0, 1, 2]")];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, [], false)];
-    _this.nexts = [];
-    _this.prev = null;
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FAConst, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FAConst.instance;
-      return _get(_getPrototypeOf(FAConst.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process function
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                _context.prev = 2;
-                this.output("Val").value = JSON.parse(this.input("Val").value);
-
-                if (Array.isArray(this.output("Val").value)) {
-                  _context.next = 6;
-                  break;
-                }
-
-                throw new Error("The input value (".concat(this.output("Val").value, ") is not an array"));
-
-              case 6:
-                _context.next = 11;
-                break;
-
-              case 8:
-                _context.prev = 8;
-                _context.t0 = _context["catch"](2);
-                // TODO: Manage error
-                console.log(_context.t0);
-
-              case 11:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this, [[2, 8]]);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return FAConst;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FAConst, "instance", function () {
-  return new FAConst();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/array/faget.mjs":
-/*!***********************************!*\
-  !*** ./src/nodes/array/faget.mjs ***!
-  \***********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FAGet": () => /* binding */ FAGet
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a functional node for pick
- * a single value from an array
- */
-
-var FAGet = /*#__PURE__*/function (_Node) {
-  _inherits(FAGet, _Node);
-
-  var _super = _createSuper(FAGet);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FAGet node
-   */
-  function FAGet() {
-    var _this;
-
-    _classCallCheck(this, FAGet);
-
-    _this = _super.call(this, "FAGet"); // The node is pure functional
-
-    _this.functional = true; // Default to two numeric inputs
-
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0, false)];
-    _this.prev = null;
-    _this.nexts = [];
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FAGet, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FAGet.instance;
-      return _get(_getPrototypeOf(FAGet.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process override
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var arr, index;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                arr = this.input("Array").value;
-                index = parseInt(this.input("Index").value, 10);
-
-                if (!Array.isArray(arr)) {// TODO: Manage error
-                } else {
-                  this.output("Val").value = arr[index];
-                }
-
-              case 5:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return FAGet;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FAGet, "instance", function () {
-  return new FAGet();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/array/falength.mjs":
-/*!**************************************!*\
-  !*** ./src/nodes/array/falength.mjs ***!
-  \**************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FALength": () => /* binding */ FALength
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a functional node for get
- * the length of an array
- */
-
-var FALength = /*#__PURE__*/function (_Node) {
-  _inherits(FALength, _Node);
-
-  var _super = _createSuper(FALength);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FALength node
-   */
-  function FALength() {
-    var _this;
-
-    _classCallCheck(this, FALength);
-
-    _this = _super.call(this, "FALength"); // The node is pure functional
-
-    _this.functional = true; // Default to two numeric inputs
-
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Array", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
-    _this.prev = null;
-    _this.nexts = [];
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FALength, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FALength.instance;
-      return _get(_getPrototypeOf(FALength.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process override
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var arr;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                arr = this.input("Array").value;
-
-                if (!Array.isArray(arr)) {// TODO: Manage error
-                } else {
-                  this.output("Val").value = arr.length;
-                }
-
-              case 4:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return FALength;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FALength, "instance", function () {
-  return new FALength();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/array/famake.mjs":
-/*!************************************!*\
-  !*** ./src/nodes/array/famake.mjs ***!
-  \************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FAMake": () => /* binding */ FAMake
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a node to get an array
- * from a list of inputs
- */
-
-var FAMake = /*#__PURE__*/function (_Node) {
-  _inherits(FAMake, _Node);
-
-  var _super = _createSuper(FAMake);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FAMake node
-   */
-  function FAMake() {
-    var _this;
-
-    _classCallCheck(this, FAMake);
-
-    _this = _super.call(this, "FAMake");
-    _this.canAddInput = true;
-    _this.functional = true;
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("0", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, ""), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ARRAY, [], false)];
-    _this.nexts = [];
-    _this.prev = null;
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FAMake, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FAMake.instance;
-      return _get(_getPrototypeOf(FAMake.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process function
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var arr;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                arr = [];
-                arr.push.apply(arr, _toConsumableArray(this.inputs.map(function (i) {
-                  return i.value;
-                })));
-                this.output("Val").value = arr;
-
-              case 5:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-    /**
-     * Can this node remove a specific input?
-     * In this case, there must be at least 1 input
-     * @param {InputsSocket} input The input to remove
-     */
-
-  }, {
-    key: "canRemoveInput",
-    value: function canRemoveInput(input) {
-      return this.inputs.length > 0;
-    }
-    /**
-     * If this.#canAddInput is true, the user can add an input
-     * equal to the (at least one) input that already exists
-     */
-
-  }, {
-    key: "addInput",
-    value: function addInput() {
-      if (this.canAddInput) {
-        this.inputs.push(new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")); // Rename all inputs to its ordinal number in the inputs array
-
-        var _iterator = _createForOfIteratorHelper(this.inputs.entries()),
-            _step;
-
-        try {
-          for (_iterator.s(); !(_step = _iterator.n()).done;) {
-            var _step$value = _slicedToArray(_step.value, 2),
-                idx = _step$value[0],
-                i = _step$value[1];
-
-            i.name = "" + idx;
-          }
-        } catch (err) {
-          _iterator.e(err);
-        } finally {
-          _iterator.f();
-        }
-      } else {
-        throw new Error("Can't add input!");
-      }
-    }
-    /**
-     * This method removes a specific input from the node, if
-     * this is possible whit this instance
-     * @param {InputSocket} input The input to remove
-     */
-
-  }, {
-    key: "removeInput",
-    value: function removeInput(input) {
-      if (this.canRemoveInput(input)) {
-        this.inputs = this.inputs.filter(function (i) {
-          return i !== input;
-        }); // Rename all inputs to its ordinal number in the inputs array
-
-        var _iterator2 = _createForOfIteratorHelper(this.inputs.entries()),
-            _step2;
-
-        try {
-          for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-            var _step2$value = _slicedToArray(_step2.value, 2),
-                idx = _step2$value[0],
-                i = _step2$value[1];
-
-            i.name = "" + idx;
-          }
-        } catch (err) {
-          _iterator2.e(err);
-        } finally {
-          _iterator2.f();
-        }
-      } else {
-        throw new Error("Can't remove input");
-      }
-    }
-  }]);
-
-  return FAMake;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FAMake, "instance", function () {
-  return new FAMake();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/array/famap.mjs":
-/*!***********************************!*\
-  !*** ./src/nodes/array/famap.mjs ***!
-  \***********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FAMap": () => /* binding */ FAMap
-/* harmony export */ });
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _amap_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./amap.mjs */ "./src/nodes/array/amap.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-/**
- * This is the functional version of the FAMap node
- */
-
-var FAMap = /*#__PURE__*/function (_AMap) {
-  _inherits(FAMap, _AMap);
-
-  var _super = _createSuper(FAMap);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FAMap node
-   */
-  function FAMap() {
-    var _this;
-
-    _classCallCheck(this, FAMap);
-
-    _this = _super.call(this);
-    _this.name = "FAMap";
-    _this.title = "FAMap";
-    _this.functional = true;
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_0__.NextSocket("Do", _assertThisInitialized(_this))];
-    _this.prev = null;
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FAMap, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FAMap.instance;
-      return _get(_getPrototypeOf(FAMap.prototype), "clone", this).call(this, factory);
-    }
-  }]);
-
-  return FAMap;
-}(_amap_mjs__WEBPACK_IMPORTED_MODULE_1__.AMap);
-
-_defineProperty(FAMap, "instance", function () {
-  return new FAMap();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/array/fareduce.mjs":
-/*!**************************************!*\
-  !*** ./src/nodes/array/fareduce.mjs ***!
-  \**************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FAReduce": () => /* binding */ FAReduce
-/* harmony export */ });
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _areduce_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./areduce.mjs */ "./src/nodes/array/areduce.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-/**
- * This is the functional version of the FAReduce node
- */
-
-var FAReduce = /*#__PURE__*/function (_AReduce) {
-  _inherits(FAReduce, _AReduce);
-
-  var _super = _createSuper(FAReduce);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FACompareNode
-   */
-  function FAReduce() {
-    var _this;
-
-    _classCallCheck(this, FAReduce);
-
-    _this = _super.call(this);
-    _this.name = "FAReduce";
-    _this.title = "FAReduce";
-    _this.functional = true;
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_0__.NextSocket("Do", _assertThisInitialized(_this))];
-    _this.prev = null;
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FAReduce, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FAReduce.instance;
-      return _get(_getPrototypeOf(FAReduce.prototype), "clone", this).call(this, factory);
-    }
-  }]);
-
-  return FAReduce;
-}(_areduce_mjs__WEBPACK_IMPORTED_MODULE_1__.AReduce);
-
-_defineProperty(FAReduce, "instance", function () {
-  return new FAReduce();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/bool/fcompare.mjs":
-/*!*************************************!*\
-  !*** ./src/nodes/bool/fcompare.mjs ***!
-  \*************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Comparision": () => /* binding */ Comparision,
-/* harmony export */   "FCompare": () => /* binding */ FCompare
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classPrivateFieldGet(receiver, privateMap) { var descriptor = privateMap.get(receiver); if (!descriptor) { throw new TypeError("attempted to get private field on non-instance"); } if (descriptor.get) { return descriptor.get.call(receiver); } return descriptor.value; }
-
-function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = privateMap.get(receiver); if (!descriptor) { throw new TypeError("attempted to set private field on non-instance"); } if (descriptor.set) { descriptor.set.call(receiver, value); } else { if (!descriptor.writable) { throw new TypeError("attempted to set read only private field"); } descriptor.value = value; } return value; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * Supported comparision types
- */
-
-var Comparision = {
-  EQUAL: "equal",
-  GT: "gt",
-  GTE: "gte",
-  LT: "lt",
-  LTE: "lte",
-  NOT_EQUAL: "not_equal"
-};
-/**
- * This class implements a functional node for compairing numeric values.
- */
-
-var _comparision = new WeakMap();
-
-var FCompare = /*#__PURE__*/function (_Node) {
-  _inherits(FCompare, _Node);
-
-  var _super = _createSuper(FCompare);
-
-  // Provide a node instance
-
-  /** Configured comparision for this node */
-
-  /**
-   * Construct a new FCompare node
-   * @param {Comparision} comparision The comparision type
-   */
-  function FCompare() {
-    var _this;
-
-    var comparision = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : Comparision.EQUAL;
-
-    _classCallCheck(this, FCompare);
-
-    _this = _super.call(this, "FCompare");
-
-    _comparision.set(_assertThisInitialized(_this), {
-      writable: true,
-      value: Comparision.EQUAL
-    });
-
-    _classPrivateFieldSet(_assertThisInitialized(_this), _comparision, comparision); // The node is pure functional
-
-
-    _this.functional = true; // Default to two numeric inputs
-
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val2", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.BOOLEAN, 0, false)];
-    _this.prev = null;
-    _this.nexts = [];
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FCompare, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FCompare.instance;
-      return _get(_getPrototypeOf(FCompare.prototype), "clone", this).call(this, factory);
-    }
-  }, {
-    key: "process",
-
-    /**
-     * The process override
-     */
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var val1, val2, ret;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                val1 = this.input("Val1").value;
-                val2 = this.input("Val2").value;
-                _context.t0 = this.comparision;
-                _context.next = _context.t0 === Comparision.EQUAL ? 7 : _context.t0 === Comparision.NOT_EQUAL ? 9 : _context.t0 === Comparision.GT ? 11 : _context.t0 === Comparision.GTE ? 13 : _context.t0 === Comparision.LT ? 15 : _context.t0 === Comparision.LTE ? 17 : 19;
-                break;
-
-              case 7:
-                ret = val1 === val2;
-                return _context.abrupt("break", 20);
-
-              case 9:
-                ret = val1 !== val2;
-                return _context.abrupt("break", 20);
-
-              case 11:
-                ret = val1 > val2;
-                return _context.abrupt("break", 20);
-
-              case 13:
-                ret = val1 >= val2;
-                return _context.abrupt("break", 20);
-
-              case 15:
-                ret = val1 < val2;
-                return _context.abrupt("break", 20);
-
-              case 17:
-                ret = val1 <= val2;
-                return _context.abrupt("break", 20);
-
-              case 19:
-                throw "Comparision type not valid";
-
-              case 20:
-                this.output("Val").value = ret;
-
-              case 21:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }, {
-    key: "comparision",
-    get: function get() {
-      return _classPrivateFieldGet(this, _comparision);
-    },
-    set: function set(val) {
-      _classPrivateFieldSet(this, _comparision, val);
-    }
-  }]);
-
-  return FCompare;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FCompare, "instance", function () {
-  return new FCompare();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/bool/fequal.mjs":
-/*!***********************************!*\
-  !*** ./src/nodes/bool/fequal.mjs ***!
-  \***********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FEqual": () => /* binding */ FEqual
-/* harmony export */ });
-/* harmony import */ var _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-/**
- * This class override the FCompare node with a comparision of EQUAL
- */
-
-var FEqual = /*#__PURE__*/function (_FCompare) {
-  _inherits(FEqual, _FCompare);
-
-  var _super = _createSuper(FEqual);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FEqual
-   */
-  function FEqual() {
-    var _this;
-
-    _classCallCheck(this, FEqual);
-
-    _this = _super.call(this, _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.Comparision.EQUAL);
-    _this.name = "FEqual";
-    _this.title = "==";
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FEqual, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FEqual.instance;
-      return _get(_getPrototypeOf(FEqual.prototype), "clone", this).call(this, factory);
-    }
-  }]);
-
-  return FEqual;
-}(_fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.FCompare);
-
-_defineProperty(FEqual, "instance", function () {
-  return new FEqual();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/bool/fgt.mjs":
-/*!********************************!*\
-  !*** ./src/nodes/bool/fgt.mjs ***!
-  \********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FGT": () => /* binding */ FGT
-/* harmony export */ });
-/* harmony import */ var _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-/**
- * This class override the FCompare node with a comparision of GT
- */
-
-var FGT = /*#__PURE__*/function (_FCompare) {
-  _inherits(FGT, _FCompare);
-
-  var _super = _createSuper(FGT);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FGT
-   */
-  function FGT() {
-    var _this;
-
-    _classCallCheck(this, FGT);
-
-    _this = _super.call(this, _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.Comparision.GT);
-    _this.name = "FGT";
-    _this.title = ">";
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FGT, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FGT.instance;
-      return _get(_getPrototypeOf(FGT.prototype), "clone", this).call(this, factory);
-    }
-  }]);
-
-  return FGT;
-}(_fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.FCompare);
-
-_defineProperty(FGT, "instance", function () {
-  return new FGT();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/bool/fgte.mjs":
-/*!*********************************!*\
-  !*** ./src/nodes/bool/fgte.mjs ***!
-  \*********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FGTE": () => /* binding */ FGTE
-/* harmony export */ });
-/* harmony import */ var _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-/**
- * This class override the FCompare node with a comparision of GTE
- */
-
-var FGTE = /*#__PURE__*/function (_FCompare) {
-  _inherits(FGTE, _FCompare);
-
-  var _super = _createSuper(FGTE);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FGTE
-   */
-  function FGTE() {
-    var _this;
-
-    _classCallCheck(this, FGTE);
-
-    _this = _super.call(this, _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.Comparision.GTE);
-    _this.name = "FGTE";
-    _this.title = ">=";
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FGTE, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FGTE.instance;
-      return _get(_getPrototypeOf(FGTE.prototype), "clone", this).call(this, factory);
-    }
-  }]);
-
-  return FGTE;
-}(_fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.FCompare);
-
-_defineProperty(FGTE, "instance", function () {
-  return new FGTE();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/bool/flt.mjs":
-/*!********************************!*\
-  !*** ./src/nodes/bool/flt.mjs ***!
-  \********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FLT": () => /* binding */ FLT
-/* harmony export */ });
-/* harmony import */ var _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-/**
- * This class override the FCompare node with a comparision of FLT
- */
-
-var FLT = /*#__PURE__*/function (_FCompare) {
-  _inherits(FLT, _FCompare);
-
-  var _super = _createSuper(FLT);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FLT
-   */
-  function FLT() {
-    var _this;
-
-    _classCallCheck(this, FLT);
-
-    _this = _super.call(this, _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.Comparision.LT);
-    _this.name = "FLT";
-    _this.title = "<";
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FLT, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FLT.instance;
-      return _get(_getPrototypeOf(FLT.prototype), "clone", this).call(this, factory);
-    }
-  }]);
-
-  return FLT;
-}(_fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.FCompare);
-
-_defineProperty(FLT, "instance", function () {
-  return new FLT();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/bool/flte.mjs":
-/*!*********************************!*\
-  !*** ./src/nodes/bool/flte.mjs ***!
-  \*********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FLTE": () => /* binding */ FLTE
-/* harmony export */ });
-/* harmony import */ var _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-/**
- * This class override the FCompare node with a comparision of FLTE
- */
-
-var FLTE = /*#__PURE__*/function (_FCompare) {
-  _inherits(FLTE, _FCompare);
-
-  var _super = _createSuper(FLTE);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FLTE
-   */
-  function FLTE() {
-    var _this;
-
-    _classCallCheck(this, FLTE);
-
-    _this = _super.call(this, _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.Comparision.LTE);
-    _this.name = "FLTE";
-    _this.title = "<=";
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FLTE, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FLTE.instance;
-      return _get(_getPrototypeOf(FLTE.prototype), "clone", this).call(this, factory);
-    }
-  }]);
-
-  return FLTE;
-}(_fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.FCompare);
-
-_defineProperty(FLTE, "instance", function () {
-  return new FLTE();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/bool/fnotequal.mjs":
-/*!**************************************!*\
-  !*** ./src/nodes/bool/fnotequal.mjs ***!
-  \**************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FNotEqual": () => /* binding */ FNotEqual
-/* harmony export */ });
-/* harmony import */ var _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fcompare.mjs */ "./src/nodes/bool/fcompare.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-/**
- * This class override the FCompare node with a comparision of NOT_EQUAL
- */
-
-var FNotEqual = /*#__PURE__*/function (_FCompare) {
-  _inherits(FNotEqual, _FCompare);
-
-  var _super = _createSuper(FNotEqual);
-
-  // Provide a node instance
-
-  /**
-   * COnstruct a new FNotEqual node
-   */
-  function FNotEqual() {
-    var _this;
-
-    _classCallCheck(this, FNotEqual);
-
-    _this = _super.call(this, _fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.Comparision.NOT_EQUAL);
-    _this.name = "FNotEqual";
-    _this.title = "!=";
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FNotEqual, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FNotEqual.instance;
-      return _get(_getPrototypeOf(FNotEqual.prototype), "clone", this).call(this, factory);
-    }
-  }]);
-
-  return FNotEqual;
-}(_fcompare_mjs__WEBPACK_IMPORTED_MODULE_0__.FCompare);
-
-_defineProperty(FNotEqual, "instance", function () {
-  return new FNotEqual();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/call.mjs":
-/*!****************************!*\
-  !*** ./src/nodes/call.mjs ***!
-  \****************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Call": () => /* binding */ Call
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-/**
- * This class implements a subroutine/function call
- */
-
-var Call = /*#__PURE__*/function (_Node) {
-  _inherits(Call, _Node);
-
-  var _super = _createSuper(Call);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new Call node
-   */
-  function Call() {
-    var _this;
-
-    _classCallCheck(this, Call);
-
-    _this = _super.call(this, "Call");
-    _this.inputs = [];
-    _this.outputs = [];
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Call", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(Call, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : Call.instance;
-      return _get(_getPrototypeOf(Call.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process function
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var prevCurrentNode;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                // Save the current program's node
-                prevCurrentNode = this.program.currentNode; // Execute a sub program beginning on that node
-
-                _context.next = 3;
-                return this.program.processFrom(this.next("Call").peer.node);
-
-              case 3:
-                // Restore the current program's node
-                this.program.currentNode = prevCurrentNode;
-                return _context.abrupt("return", this.getFlowResult(this.next("Out")));
-
-              case 5:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return Call;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(Call, "instance", function () {
-  return new Call();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/console.mjs":
-/*!*******************************!*\
-  !*** ./src/nodes/console.mjs ***!
-  \*******************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Console": () => /* binding */ Console
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a cnode that print to the
- * console the input value
- */
-
-var Console = /*#__PURE__*/function (_Node) {
-  _inherits(Console, _Node);
-
-  var _super = _createSuper(Console);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new Console node
-   */
-  function Console() {
-    var _this;
-
-    _classCallCheck(this, Console);
-
-    _this = _super.call(this, "Console");
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
-    _this.outputs = [];
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(Console, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : Console.instance;
-      return _get(_getPrototypeOf(Console.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process method
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                console.log(this.input("Val").value);
-                return _context.abrupt("return", this.getFlowResult(this.next("Out")));
-
-              case 4:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return Console;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(Console, "instance", function () {
-  return new Console();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/fgetvar.mjs":
-/*!*******************************!*\
-  !*** ./src/nodes/fgetvar.mjs ***!
-  \*******************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FGetvar": () => /* binding */ FGetvar
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a functional GetVar node,
- * a node to read a variable's value from the global
- * program's space
- */
-
-var FGetvar = /*#__PURE__*/function (_Node) {
-  _inherits(FGetvar, _Node);
-
-  var _super = _createSuper(FGetvar);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FGetvar node
-   */
-  function FGetvar() {
-    var _this;
-
-    _classCallCheck(this, FGetvar);
-
-    _this = _super.call(this, "FGetvar");
-    _this.functional = true;
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Name", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "")];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false)];
-    _this.nexts = [];
-    _this.prev = null;
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FGetvar, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FGetvar.instance;
-      return _get(_getPrototypeOf(FGetvar.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process method
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var varName;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                varName = this.input("Name").value;
-                this.output("Val").value = this.program.vars.get(varName);
-
-              case 4:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return FGetvar;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FGetvar, "instance", function () {
-  return new FGetvar();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/fif.mjs":
-/*!***************************!*\
-  !*** ./src/nodes/fif.mjs ***!
-  \***************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FIf": () => /* binding */ FIf
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a functional conditional node
- */
-
-var FIf = /*#__PURE__*/function (_Node) {
-  _inherits(FIf, _Node);
-
-  var _super = _createSuper(FIf);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FIf node
-   */
-  function FIf() {
-    var _this;
-
-    _classCallCheck(this, FIf);
-
-    _this = _super.call(this, "FIf"); // The node is pure functional
-
-    _this.functional = true; // Default to two any inputs
-
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Condition", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.BOOLEAN, false), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("True", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("False", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0, false)];
-    _this.prev = null;
-    _this.nexts = [];
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FIf, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FIf.instance;
-      return _get(_getPrototypeOf(FIf.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process override
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                this.output("Val").value = this.input("Condition").value ? this.input("True").value : this.input("False").value;
-
-              case 3:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return FIf;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FIf, "instance", function () {
-  return new FIf();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/for.mjs":
-/*!***************************!*\
-  !*** ./src/nodes/for.mjs ***!
-  \***************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "For": () => /* binding */ For
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a node that is able to
- * iterate over a range of integers, like the form
- * for(let i=start; i<end; i++) do();
- */
-
-var For = /*#__PURE__*/function (_Node) {
-  _inherits(For, _Node);
-
-  var _super = _createSuper(For);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new For node
-   */
-  function For() {
-    var _this;
-
-    _classCallCheck(this, For);
-
-    _this = _super.call(this, "For");
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("From", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("To", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(For, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : For.instance;
-      return _get(_getPrototypeOf(For.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process function
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var prevCurrentNode, index;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                // Save the current program's node
-                prevCurrentNode = this.program.currentNode; // Set the "Index" output value to Index
-
-                this.output("Index").value = parseInt(this.input("From").value); // Re evaluate inputs in case of Condition depends on Index output
-
-                _context.next = 6;
-                return this.evaluateInputs();
-
-              case 6:
-                index = parseInt(this.input("From").value);
-
-              case 7:
-                if (!(index < parseInt(this.input("To").value))) {
-                  _context.next = 15;
-                  break;
-                }
-
-                // Set the "Index" output value to Index
-                this.output("Index").value = index; // If there's a node connected to the "Do" next socket...
-
-                if (!(this.next("Do").peer !== null && this.next("Do").peer.node !== null)) {
-                  _context.next = 12;
-                  break;
-                }
-
-                _context.next = 12;
-                return this.program.processFrom(this.next("Do").peer.node);
-
-              case 12:
-                index++;
-                _context.next = 7;
-                break;
-
-              case 15:
-                // Restore the current program's node
-                this.program.currentNode = prevCurrentNode;
-                return _context.abrupt("return", this.getFlowResult(this.next("Out")));
-
-              case 17:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return For;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(For, "instance", function () {
-  return new For();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/getvar.mjs":
-/*!******************************!*\
-  !*** ./src/nodes/getvar.mjs ***!
-  \******************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Getvar": () => /* binding */ Getvar
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a node to get a variable's value
- * in the program's global space. This node has a functional
- * counterpart naamed FGetvar
- */
-
-var Getvar = /*#__PURE__*/function (_Node) {
-  _inherits(Getvar, _Node);
-
-  var _super = _createSuper(Getvar);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new Getvar node
-   */
-  function Getvar() {
-    var _this;
-
-    _classCallCheck(this, Getvar);
-
-    _this = _super.call(this, "Getvar");
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Name", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "")];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")];
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(Getvar, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : Getvar.instance;
-      return _get(_getPrototypeOf(Getvar.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process function
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var varName;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                varName = this.input("Name").value;
-                this.output("Val").value = this.program.vars.get(varName);
-                return _context.abrupt("return", this.getFlowResult(this.next("Out")));
-
-              case 5:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return Getvar;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(Getvar, "instance", function () {
-  return new Getvar();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/if.mjs":
-/*!**************************!*\
-  !*** ./src/nodes/if.mjs ***!
-  \**************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "If": () => /* binding */ If
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a node that is able to
- * redirect the flow of execution based on the
- * "condition" input value
- */
-
-var If = /*#__PURE__*/function (_Node) {
-  _inherits(If, _Node);
-
-  var _super = _createSuper(If);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new If node
-   */
-  function If() {
-    var _this;
-
-    _classCallCheck(this, If);
-
-    _this = _super.call(this, "If");
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Condition", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.BOOLEAN, false)];
-    _this.outputs = [];
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Then", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Else", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(If, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : If.instance;
-      return _get(_getPrototypeOf(If.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process function
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var flow;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                flow = null;
-
-                if (this.input("Condition").value) {
-                  flow = this.next("Then");
-                } else {
-                  flow = this.next("Else");
-                }
-
-                return _context.abrupt("return", this.getFlowResult(flow));
-
-              case 5:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return If;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(If, "instance", function () {
-  return new If();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/log.mjs":
-/*!***************************!*\
-  !*** ./src/nodes/log.mjs ***!
-  \***************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Log": () => /* binding */ Log
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a cnode that log a message through
- * the events system
- */
-
-var Log = /*#__PURE__*/function (_Node) {
-  _inherits(Log, _Node);
-
-  var _super = _createSuper(Log);
-
-  /** Return an instance of this node */
-
-  /**
-   * Construct a new Log node
-   */
-  function Log() {
-    var _this;
-
-    _classCallCheck(this, Log);
-
-    _this = _super.call(this, "Log");
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY)];
-    _this.outputs = [];
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(Log, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : Log.instance;
-      return _get(_getPrototypeOf(Log.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process method
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                // Send a "log" event
-                this.program.events.emit("cn:log", this.input("Val").value);
-                return _context.abrupt("return", this.getFlowResult(this.next("Out")));
-
-              case 4:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return Log;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(Log, "instance", function () {
-  return new Log();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/math/fadd.mjs":
-/*!*********************************!*\
-  !*** ./src/nodes/math/fadd.mjs ***!
-  \*********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FAdd": () => /* binding */ FAdd
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a functional node for adding numeric values.
- * Supports a indefinite number of value inputs and one single output
- */
-
-var FAdd = /*#__PURE__*/function (_Node) {
-  _inherits(FAdd, _Node);
-
-  var _super = _createSuper(FAdd);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FAdd node
-   */
-  function FAdd() {
-    var _this;
-
-    _classCallCheck(this, FAdd);
-
-    _this = _super.call(this, "FAdd"); // The node is pure functional
-
-    _this.functional = true; // This node has a variable number of inputs
-
-    _this.canAddInput = true; // Default to two numeric inputs
-
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("0", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
-    _this.prev = null;
-    _this.nexts = [];
-    return _this;
-  }
-  /**
-   * The process override
-   */
-
-
-  _createClass(FAdd, [{
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var sum, _iterator, _step, inp;
-
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                sum = 0;
-                _context.next = 3;
-                return this.evaluateInputs();
-
-              case 3:
-                _iterator = _createForOfIteratorHelper(this.inputs);
-
-                try {
-                  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-                    inp = _step.value;
-                    sum += parseFloat(inp.value);
-                  }
-                } catch (err) {
-                  _iterator.e(err);
-                } finally {
-                  _iterator.f();
-                }
-
-                this.output("Val").value = sum;
-
-              case 6:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-    /**
-     * If this.#canAddInput is true, the user can add an input
-     * equal to the (at least one) input that already exists
-     */
-
-  }, {
-    key: "addInput",
-    value: function addInput() {
-      if (this.canAddInput) {
-        this.inputs.push(new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, "")); // Rename all inputs to its ordinal number in the inputs array
-
-        var _iterator2 = _createForOfIteratorHelper(this.inputs.entries()),
-            _step2;
-
-        try {
-          for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-            var _step2$value = _slicedToArray(_step2.value, 2),
-                idx = _step2$value[0],
-                i = _step2$value[1];
-
-            i.name = "" + idx;
-          }
-        } catch (err) {
-          _iterator2.e(err);
-        } finally {
-          _iterator2.f();
-        }
-      } else {
-        throw new Error("Can't add input!");
-      }
-    }
-    /**
-     * This method removes a specific input from the node, if
-     * this is possible whit this instance
-     * @param {InputSocket} input The input to remove
-     */
-
-  }, {
-    key: "removeInput",
-    value: function removeInput(input) {
-      if (this.canRemoveInput(input)) {
-        this.inputs = this.inputs.filter(function (i) {
-          return i !== input;
-        }); // Rename all inputs to its ordinal number in the inputs array
-
-        var _iterator3 = _createForOfIteratorHelper(this.inputs.entries()),
-            _step3;
-
-        try {
-          for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-            var _step3$value = _slicedToArray(_step3.value, 2),
-                idx = _step3$value[0],
-                i = _step3$value[1];
-
-            i.name = "" + idx;
-          }
-        } catch (err) {
-          _iterator3.e(err);
-        } finally {
-          _iterator3.f();
-        }
-      } else {
-        throw new Error("Can't remove input");
-      }
-    }
-    /**
-     * Can this node remove a specific input?
-     * In this case, there must be at least 2 inputs
-     * @param {InputsSocket} input The input to remove
-     */
-
-  }, {
-    key: "canRemoveInput",
-    value: function canRemoveInput(input) {
-      return this.inputs.length > 2;
-    }
-    /**
-     * Clone this node
-     * @param {Function} factory The factory class function
-     */
-
-  }, {
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FAdd.instance;
-      return _get(_getPrototypeOf(FAdd.prototype), "clone", this).call(this, factory);
-    }
-  }]);
-
-  return FAdd;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FAdd, "instance", function () {
-  return new FAdd();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/math/fdiv.mjs":
-/*!*********************************!*\
-  !*** ./src/nodes/math/fdiv.mjs ***!
-  \*********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FDiv": () => /* binding */ FDiv
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a functional node for divide numeric values.
- */
-
-var FDiv = /*#__PURE__*/function (_Node) {
-  _inherits(FDiv, _Node);
-
-  var _super = _createSuper(FDiv);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FDiv node
-   */
-  function FDiv() {
-    var _this;
-
-    _classCallCheck(this, FDiv);
-
-    _this = _super.call(this, "FDiv"); // The node is pure functional
-
-    _this.functional = true; // Default to two numeric inputs
-
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val2", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
-    _this.prev = null;
-    _this.nexts = [];
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FDiv, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FDiv.instance;
-      return _get(_getPrototypeOf(FDiv.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process override
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                this.output("Val").value = parseFloat(this.input("Val1").value) / parseFloat(this.input("Val2").value);
-
-              case 3:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return FDiv;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FDiv, "instance", function () {
-  return new FDiv();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/math/fmod.mjs":
-/*!*********************************!*\
-  !*** ./src/nodes/math/fmod.mjs ***!
-  \*********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FMod": () => /* binding */ FMod
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a functional node for modulus (%)
- */
-
-var FMod = /*#__PURE__*/function (_Node) {
-  _inherits(FMod, _Node);
-
-  var _super = _createSuper(FMod);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FMod node
-   */
-  function FMod() {
-    var _this;
-
-    _classCallCheck(this, FMod);
-
-    _this = _super.call(this, "FMod"); // The node is pure functional
-
-    _this.functional = true; // Default to two numeric inputs
-
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val2", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
-    _this.prev = null;
-    _this.nexts = [];
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FMod, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FMod.instance;
-      return _get(_getPrototypeOf(FMod.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process override
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                this.output("Val").value = parseFloat(this.input("Val1").value) % parseFloat(this.input("Val2").value);
-
-              case 3:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return FMod;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FMod, "instance", function () {
-  return new FMod();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/math/fmul.mjs":
-/*!*********************************!*\
-  !*** ./src/nodes/math/fmul.mjs ***!
-  \*********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FMul": () => /* binding */ FMul
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a functional node for multiply numeric values.
- * Supports a indefinite number of value inputs and one single output
- */
-
-var FMul = /*#__PURE__*/function (_Node) {
-  _inherits(FMul, _Node);
-
-  var _super = _createSuper(FMul);
-
-  // Provide a node instance
-
-  /**
-   * COnstruct a new FMul node
-   */
-  function FMul() {
-    var _this;
-
-    _classCallCheck(this, FMul);
-
-    _this = _super.call(this, "FMul"); // The node is pure functional
-
-    _this.functional = true; // This node has a variable number of inputs
-
-    _this.canAddInput = true; // Default to two numeric inputs
-
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("0", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
-    _this.prev = null;
-    _this.nexts = [];
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FMul, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FMul.instance;
-      return _get(_getPrototypeOf(FMul.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process override
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var mul, _iterator, _step, inp;
-
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                mul = 1;
-                _context.next = 3;
-                return this.evaluateInputs();
-
-              case 3:
-                _iterator = _createForOfIteratorHelper(this.inputs);
-
-                try {
-                  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-                    inp = _step.value;
-                    mul *= parseFloat(inp.value);
-                  }
-                } catch (err) {
-                  _iterator.e(err);
-                } finally {
-                  _iterator.f();
-                }
-
-                this.output("Val").value = mul;
-
-              case 6:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-    /**
-     * If this.#canAddInput is true, the user can add an input
-     * equal to the (at least one) input that already exists
-     */
-
-  }, {
-    key: "addInput",
-    value: function addInput() {
-      if (this.canAddInput) {
-        this.inputs.push(new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, "")); // Rename all inputs to its ordinal number in the inputs array
-
-        var _iterator2 = _createForOfIteratorHelper(this.inputs.entries()),
-            _step2;
-
-        try {
-          for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-            var _step2$value = _slicedToArray(_step2.value, 2),
-                idx = _step2$value[0],
-                i = _step2$value[1];
-
-            i.name = "" + idx;
-          }
-        } catch (err) {
-          _iterator2.e(err);
-        } finally {
-          _iterator2.f();
-        }
-      } else {
-        throw new Error("Can't add input!");
-      }
-    }
-    /**
-     * This method removes a specific input from the node, if
-     * this is possible whit this instance
-     * @param {InputSocket} input The input to remove
-     */
-
-  }, {
-    key: "removeInput",
-    value: function removeInput(input) {
-      if (this.canRemoveInput(input)) {
-        this.inputs = this.inputs.filter(function (i) {
-          return i !== input;
-        }); // Rename all inputs to its ordinal number in the inputs array
-
-        var _iterator3 = _createForOfIteratorHelper(this.inputs.entries()),
-            _step3;
-
-        try {
-          for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-            var _step3$value = _slicedToArray(_step3.value, 2),
-                idx = _step3$value[0],
-                i = _step3$value[1];
-
-            i.name = "" + idx;
-          }
-        } catch (err) {
-          _iterator3.e(err);
-        } finally {
-          _iterator3.f();
-        }
-      } else {
-        throw new Error("Can't remove input");
-      }
-    }
-    /**
-     * Can this node remove a specific input?
-     * In this case, there must be at least 2 inputs
-     * @param {InputsSocket} input The input to remove
-     */
-
-  }, {
-    key: "canRemoveInput",
-    value: function canRemoveInput(input) {
-      return this.inputs.length > 2;
-    }
-  }]);
-
-  return FMul;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FMul, "instance", function () {
-  return new FMul();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/math/fnconst.mjs":
-/*!************************************!*\
-  !*** ./src/nodes/math/fnconst.mjs ***!
-  \************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FNConst": () => /* binding */ FNConst
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a node to get return a simple
- * number constant. This is a functional node.
- */
-
-var FNConst = /*#__PURE__*/function (_Node) {
-  _inherits(FNConst, _Node);
-
-  var _super = _createSuper(FNConst);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FNConst node
-   */
-  function FNConst() {
-    var _this;
-
-    _classCallCheck(this, FNConst);
-
-    _this = _super.call(this, "FNConst");
-    _this.functional = true;
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
-    _this.nexts = [];
-    _this.prev = null;
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FNConst, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FNConst.instance;
-      return _get(_getPrototypeOf(FNConst.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process function
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                // Convert the constant/input value to a string
-                this.output("Val").value = parseFloat(this.input("Val").value);
-
-              case 3:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return FNConst;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FNConst, "instance", function () {
-  return new FNConst();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/math/fsqrt.mjs":
-/*!**********************************!*\
-  !*** ./src/nodes/math/fsqrt.mjs ***!
-  \**********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FSqrt": () => /* binding */ FSqrt
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a functional node for Square Root.
- */
-
-var FSqrt = /*#__PURE__*/function (_Node) {
-  _inherits(FSqrt, _Node);
-
-  var _super = _createSuper(FSqrt);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FSqrt node
-   */
-  function FSqrt() {
-    var _this;
-
-    _classCallCheck(this, FSqrt);
-
-    _this = _super.call(this, "FSqrt"); // The node is pure functional
-
-    _this.functional = true; // Default to one numeric inputs
-
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
-    _this.prev = null;
-    _this.nexts = [];
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FSqrt, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FSqrt.instance;
-      return _get(_getPrototypeOf(FSqrt.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process override
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                this.output("Val").value = Math.sqrt(parseFloat(this.input("Val").value));
-
-              case 3:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return FSqrt;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FSqrt, "instance", function () {
-  return new FSqrt();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/math/ftofixed.mjs":
-/*!*************************************!*\
-  !*** ./src/nodes/math/ftofixed.mjs ***!
-  \*************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FTofixed": () => /* binding */ FTofixed
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a functional node for ToFixed()
- * javascript number method.
- */
-
-var FTofixed = /*#__PURE__*/function (_Node) {
-  _inherits(FTofixed, _Node);
-
-  var _super = _createSuper(FTofixed);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FTofixed node
-   */
-  function FTofixed() {
-    var _this;
-
-    _classCallCheck(this, FTofixed);
-
-    _this = _super.call(this, "FTofixed"); // The node is pure functional
-
-    _this.functional = true; // Two numeric inputs
-
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Digits", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0, false)];
-    _this.prev = null;
-    _this.nexts = [];
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FTofixed, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FTofixed.instance;
-      return _get(_getPrototypeOf(FTofixed.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process override
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                this.output("Val").value = parseFloat(this.input("Val").value).toFixed(this.input("Digits").value);
-
-              case 3:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return FTofixed;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FTofixed, "instance", function () {
-  return new FTofixed();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/object/fobreak.mjs":
-/*!**************************************!*\
-  !*** ./src/nodes/object/fobreak.mjs ***!
-  \**************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FOBreak": () => /* binding */ FOBreak
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a node to break down
- * an object to its fields, or part of them
- */
-
-var FOBreak = /*#__PURE__*/function (_Node) {
-  _inherits(FOBreak, _Node);
-
-  var _super = _createSuper(FOBreak);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FOBreak node
-   */
-  function FOBreak() {
-    var _this;
-
-    _classCallCheck(this, FOBreak);
-
-    _this = _super.call(this, "FOBreak");
-    _this.canAddOutput = true;
-    _this.functional = true;
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.OBJECT, {})];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("field1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("field2", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "", false)]; // Sets all output as changeable in terms of name and type
-
-    var _iterator = _createForOfIteratorHelper(_this.outputs),
-        _step;
-
-    try {
-      for (_iterator.s(); !(_step = _iterator.n()).done;) {
-        var o = _step.value;
-        o.canEditName = true;
-        o.canEditType = true;
-      }
-    } catch (err) {
-      _iterator.e(err);
-    } finally {
-      _iterator.f();
-    }
-
-    _this.nexts = [];
-    _this.prev = null;
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FOBreak, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FOBreak.instance;
-      return _get(_getPrototypeOf(FOBreak.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process function
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var _iterator2, _step2, o;
-
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                _iterator2 = _createForOfIteratorHelper(this.outputs);
-
-                try {
-                  for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-                    o = _step2.value;
-                    o.value = this.input("Val").value[o.name];
-                  }
-                } catch (err) {
-                  _iterator2.e(err);
-                } finally {
-                  _iterator2.f();
-                }
-
-              case 4:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-    /**
-     * If this.#canAddOutput is true, the user can add an output
-     * equal to the (at least one) output that already exists
-     * Subclass with variable number of input should override this method
-     */
-
-  }, {
-    key: "addOutput",
-    value: function addOutput(o) {
-      if (this.canAddOutput) {
-        if (!o) {
-          o = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("", this, _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "");
-          o.canEditName = true;
-          o.canEditType = true;
-        }
-
-        this.outputs.push(o);
-      } else {
-        throw new Error("Can't add output!");
-      }
-    }
-    /**
-     * This method removes a specific output from the node
-     * @param {OutputSocket} output The output to remove
-     */
-
-  }, {
-    key: "removeOutput",
-    value: function removeOutput(output) {
-      if (this.canRemoveOutput(output)) {
-        this.outputs = this.outputs.filter(function (o) {
-          return o !== output;
-        });
-      } else {
-        throw new Error("Can't remove input");
-      }
-    }
-    /**
-     * Can this node remove a specific output?
-     * There must be at least 1 output
-     * @param {OutputSocket} output The output to remove
-     */
-
-  }, {
-    key: "canRemoveOutput",
-    value: function canRemoveOutput(output) {
-      return this.outputs.length > 1;
-    }
-  }]);
-
-  return FOBreak;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FOBreak, "instance", function () {
-  return new FOBreak();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/object/fomake.mjs":
-/*!*************************************!*\
-  !*** ./src/nodes/object/fomake.mjs ***!
-  \*************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FOMake": () => /* binding */ FOMake
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a node to get an object
- * from a list of fields
- */
-
-var FOMake = /*#__PURE__*/function (_Node) {
-  _inherits(FOMake, _Node);
-
-  var _super = _createSuper(FOMake);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FOMake node
-   */
-  function FOMake() {
-    var _this;
-
-    _classCallCheck(this, FOMake);
-
-    _this = _super.call(this, "FOMake");
-    _this.canAddInput = true;
-    _this.functional = true;
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("field1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, ""), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("field2", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")]; // Sets all input as changeable in terms of name
-
-    var _iterator = _createForOfIteratorHelper(_this.inputs),
-        _step;
-
-    try {
-      for (_iterator.s(); !(_step = _iterator.n()).done;) {
-        var i = _step.value;
-        i.canEditName = true;
-        i.canEditType = true;
-      }
-    } catch (err) {
-      _iterator.e(err);
-    } finally {
-      _iterator.f();
-    }
-
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.OBJECT, {}, false)];
-    _this.nexts = [];
-    _this.prev = null;
-    return _this;
-  }
-  /**
-   * The process function
-   */
-
-
-  _createClass(FOMake, [{
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var obj;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                obj = this.inputs.reduce(function (acc, val) {
-                  return _objectSpread(_objectSpread({}, acc), {}, _defineProperty({}, val.name, val.value));
-                }, {});
-                this.output("Val").value = obj;
-
-              case 4:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-    /**
-     * Clone this node
-     * @param {Function} factory The factory class function
-     */
-
-  }, {
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FOMake.instance;
-      return _get(_getPrototypeOf(FOMake.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * Can this node remove a specific input?
-     * In this case, there must be at least 1 input
-     * @param {InputsSocket} input The input to remove
-     */
-
-  }, {
-    key: "canRemoveInput",
-    value: function canRemoveInput(input) {
-      return this.inputs.length > 0;
-    }
-    /**
-     * If this.#canAddInput is true, the user can add an input
-     * the new input must have this.#canEditName === true.
-     * in this particular case the name is editable, so let the user
-     * to choose and left it blank
-     */
-
-  }, {
-    key: "addInput",
-    value: function addInput() {
-      var is = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "");
-      is.canEditName = true;
-      is.canEditType = true;
-      this.inputs.push(is);
-    }
-    /**
-     * This method removes a specific input from the node
-     * @param {InputSocket} input The input to remove
-     */
-
-  }, {
-    key: "removeInput",
-    value: function removeInput(input) {
-      if (this.canRemoveInput(input)) {
-        this.inputs = this.inputs.filter(function (i) {
-          return i !== input;
-        });
-      } else {
-        throw new Error("Can't remove input");
-      }
-    }
-  }]);
-
-  return FOMake;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FOMake, "instance", function () {
-  return new FOMake();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/setvar.mjs":
-/*!******************************!*\
-  !*** ./src/nodes/setvar.mjs ***!
-  \******************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Setvar": () => /* binding */ Setvar
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a node to set a variable
- * value in the program's global space. If the variable
- * don't exists, the processo function will create it
- */
-
-var Setvar = /*#__PURE__*/function (_Node) {
-  _inherits(Setvar, _Node);
-
-  var _super = _createSuper(Setvar);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new Setvar node
-   */
-  function Setvar() {
-    var _this;
-
-    _classCallCheck(this, Setvar);
-
-    _this = _super.call(this, "Setvar");
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Name", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, 0)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")];
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(Setvar, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : Setvar.instance;
-      return _get(_getPrototypeOf(Setvar.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process fmethod
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var varName, varVal;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                varName = this.input("Name").value;
-                varVal = this.input("Val").value;
-                this.program.vars.set(varName, varVal);
-                this.output("Val").value = varVal;
-                return _context.abrupt("return", this.getFlowResult(this.next("Out")));
-
-              case 7:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return Setvar;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(Setvar, "instance", function () {
-  return new Setvar();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/string/fconcat.mjs":
-/*!**************************************!*\
-  !*** ./src/nodes/string/fconcat.mjs ***!
-  \**************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FConcat": () => /* binding */ FConcat
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a node that conctas two strings.
- * If other type are passed, these are converted to strings
- */
-
-var FConcat = /*#__PURE__*/function (_Node) {
-  _inherits(FConcat, _Node);
-
-  var _super = _createSuper(FConcat);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FConcat node
-   */
-  function FConcat() {
-    var _this;
-
-    _classCallCheck(this, FConcat);
-
-    _this = _super.call(this, "FConcat");
-    _this.functional = true;
-    _this.canAddInput = true;
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("0", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, ""), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("1", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "")];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "", false)];
-    _this.nexts = [];
-    _this.prev = null;
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FConcat, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FConcat.instance;
-      return _get(_getPrototypeOf(FConcat.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process function
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var res, _iterator, _step, i;
-
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                res = "";
-                _iterator = _createForOfIteratorHelper(this.inputs);
-
-                try {
-                  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-                    i = _step.value;
-                    res += i.value.toString();
-                  } // Convert the constant/input value to a string
-
-                } catch (err) {
-                  _iterator.e(err);
-                } finally {
-                  _iterator.f();
-                }
-
-                this.output("Val").value = res;
-
-              case 6:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-    /**
-     * If this.#canAddInput is true, the user can add an input
-     * equal to the (at least one) input that already exists
-     */
-
-  }, {
-    key: "addInput",
-    value: function addInput() {
-      if (this.canAddInput) {
-        this.inputs.push(new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("", this, _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "")); // Rename all inputs to its ordinal number in the inputs array
-
-        var _iterator2 = _createForOfIteratorHelper(this.inputs.entries()),
-            _step2;
-
-        try {
-          for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-            var _step2$value = _slicedToArray(_step2.value, 2),
-                idx = _step2$value[0],
-                i = _step2$value[1];
-
-            i.name = "" + idx;
-          }
-        } catch (err) {
-          _iterator2.e(err);
-        } finally {
-          _iterator2.f();
-        }
-      } else {
-        throw new Error("Can't add input!");
-      }
-    }
-    /**
-     * This method removes a specific input from the node, if
-     * this is possible whit this instance
-     * @param {InputSocket} input The input to remove
-     */
-
-  }, {
-    key: "removeInput",
-    value: function removeInput(input) {
-      if (this.canRemoveInput(input)) {
-        this.inputs = this.inputs.filter(function (i) {
-          return i !== input;
-        }); // Rename all inputs to its ordinal number in the inputs array
-
-        var _iterator3 = _createForOfIteratorHelper(this.inputs.entries()),
-            _step3;
-
-        try {
-          for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-            var _step3$value = _slicedToArray(_step3.value, 2),
-                idx = _step3$value[0],
-                i = _step3$value[1];
-
-            i.name = "" + idx;
-          }
-        } catch (err) {
-          _iterator3.e(err);
-        } finally {
-          _iterator3.f();
-        }
-      } else {
-        throw new Error("Can't remove input");
-      }
-    }
-    /**
-     * Can this node remove a specific input?
-     * In this case, there must be at least 2 inputs
-     * @param {InputsSocket} input The input to remove
-     */
-
-  }, {
-    key: "canRemoveInput",
-    value: function canRemoveInput(input) {
-      return this.inputs.length > 2;
-    }
-  }]);
-
-  return FConcat;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FConcat, "instance", function () {
-  return new FConcat();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/string/fsconst.mjs":
-/*!**************************************!*\
-  !*** ./src/nodes/string/fsconst.mjs ***!
-  \**************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FSConst": () => /* binding */ FSConst
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a node to get return a simple
- * string constant. This is a functional node.
- */
-
-var FSConst = /*#__PURE__*/function (_Node) {
-  _inherits(FSConst, _Node);
-
-  var _super = _createSuper(FSConst);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new FSConst node
-   */
-  function FSConst() {
-    var _this;
-
-    _classCallCheck(this, FSConst);
-
-    _this = _super.call(this, "FSConst");
-    _this.functional = true;
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.ANY, "")];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Val", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.STRING, "", false)];
-    _this.nexts = [];
-    _this.prev = null;
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(FSConst, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : FSConst.instance;
-      return _get(_getPrototypeOf(FSConst.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process function
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                // Convert the constant/input value to a string
-                this.output("Val").value = this.input("Val").value.toString();
-
-              case 3:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return FSConst;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(FSConst, "instance", function () {
-  return new FSConst();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/wait.mjs":
-/*!****************************!*\
-  !*** ./src/nodes/wait.mjs ***!
-  \****************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Wait": () => /* binding */ Wait
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a cnode that waits for a specified
- * number of seconds
- */
-
-var Wait = /*#__PURE__*/function (_Node) {
-  _inherits(Wait, _Node);
-
-  var _super = _createSuper(Wait);
-
-  /** Return an instance of this node */
-
-  /**
-   * Construct a new Wait node
-   */
-  function Wait() {
-    var _this;
-
-    _classCallCheck(this, Wait);
-
-    _this = _super.call(this, "Wait");
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Secs", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER)];
-    _this.outputs = [];
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(Wait, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : Wait.instance;
-      return _get(_getPrototypeOf(Wait.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process method
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var _this2 = this;
-
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                _context.next = 4;
-                return new Promise(function (res) {
-                  setTimeout(function () {
-                    res();
-                  }, parseFloat(_this2.input("Secs").value) * 1000);
-                });
-
-              case 4:
-                return _context.abrupt("return", this.getFlowResult(this.next("Out")));
-
-              case 5:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return Wait;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(Wait, "instance", function () {
-  return new Wait();
-});
-
-/***/ }),
-
-/***/ "./src/nodes/while.mjs":
-/*!*****************************!*\
-  !*** ./src/nodes/while.mjs ***!
-  \*****************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "While": () => /* binding */ While
-/* harmony export */ });
-/* harmony import */ var _core_node_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/node.mjs */ "./src/core/node.mjs");
-/* harmony import */ var _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/socket.mjs */ "./src/core/socket.mjs");
-/* harmony import */ var _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/type.mjs */ "./src/core/type.mjs");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
-
-function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
-
-
-
-/**
- * This class implements a node that is able to
- * iterate until a condition become false, like
- * while(condition) do();
- */
-
-var While = /*#__PURE__*/function (_Node) {
-  _inherits(While, _Node);
-
-  var _super = _createSuper(While);
-
-  // Provide a node instance
-
-  /**
-   * Construct a new While node
-   */
-  function While() {
-    var _this;
-
-    _classCallCheck(this, While);
-
-    _this = _super.call(this, "While");
-    _this.inputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.InputSocket("Condition", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.BOOLEAN, false)];
-    _this.outputs = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.OutputSocket("Index", _assertThisInitialized(_this), _core_type_mjs__WEBPACK_IMPORTED_MODULE_2__.Types.NUMBER, 0)];
-    _this.nexts = [new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Out", _assertThisInitialized(_this)), new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.NextSocket("Do", _assertThisInitialized(_this))];
-    _this.prev = new _core_socket_mjs__WEBPACK_IMPORTED_MODULE_1__.PrevSocket("In", _assertThisInitialized(_this));
-    return _this;
-  }
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-
-
-  _createClass(While, [{
-    key: "clone",
-    value: function clone() {
-      var factory = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : While.instance;
-      return _get(_getPrototypeOf(While.prototype), "clone", this).call(this, factory);
-    }
-    /**
-     * The process function
-     */
-
-  }, {
-    key: "process",
-    value: function () {
-      var _process = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var prevCurrentNode, index;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.evaluateInputs();
-
-              case 2:
-                // Save the current program's node
-                prevCurrentNode = this.program.currentNode; // A bouns index variable ;-)
-
-                index = parseFloat(this.input("Index").value); // Set the "Index" output value to Index
-
-                this.output("Index").value = index; // Re evaluate inputs in case of Condition depends on Index output
-
-                _context.next = 7;
-                return this.evaluateInputs();
-
-              case 7:
-                if (!this.input("Condition").value) {
-                  _context.next = 16;
-                  break;
-                }
-
-                if (!(this.next("Do").peer !== null && this.next("Do").peer.node !== null)) {
-                  _context.next = 14;
-                  break;
-                }
-
-                // Set the "Index" output value to Index
-                this.output("Index").value = index++; // Execute a sub program beginning on that node
-
-                _context.next = 12;
-                return this.program.processFrom(this.next("Do").peer.node);
-
-              case 12:
-                _context.next = 14;
-                return this.evaluateInputs();
-
-              case 14:
-                _context.next = 7;
-                break;
-
-              case 16:
-                // Restore the currentprogram's node
-                this.program.currentNode = prevCurrentNode;
-                return _context.abrupt("return", this.getFlowResult(this.next("Out")));
-
-              case 18:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function process() {
-        return _process.apply(this, arguments);
-      }
-
-      return process;
-    }()
-  }]);
-
-  return While;
-}(_core_node_mjs__WEBPACK_IMPORTED_MODULE_0__.Node);
-
-_defineProperty(While, "instance", function () {
-  return new While();
-});
+var _fobreak = require("./nodes/object/fobreak.js");
 
 /***/ })
 
@@ -21040,23 +11876,6 @@ _defineProperty(While, "instance", function () {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -21082,7 +11901,7 @@ _defineProperty(While, "instance", function () {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	__webpack_require__("./node_modules/@babel/polyfill/lib/index.js");
-/******/ 	return __webpack_require__("./index.mjs");
+/******/ 	return __webpack_require__("./src/index.mjs");
 /******/ })()
 ;
 //# sourceMappingURL=cnodes.bundle.js.map

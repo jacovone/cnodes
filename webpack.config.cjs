@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   devtool: "source-map",
   mode: "development",
-  entry: ["@babel/polyfill", "./index.mjs"],
+  entry: ["@babel/polyfill", "./src/index.mjs"],
   output: {
     library: "cn",
     filename: "cnodes.bundle.js",
