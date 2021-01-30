@@ -21,7 +21,9 @@
     "url": "https://github.com/marco-jacovone/cnodes/issues"
   },
   "homepage": "https://github.com/marco-jacovone/cnodes#readme",
-  "dependencies": {},
+  "dependencies": {
+    "core-js": "^3.8.3"
+  },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
