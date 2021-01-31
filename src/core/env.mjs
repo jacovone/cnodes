@@ -164,7 +164,7 @@ export class Env {
         registrations.push({
           name: entry[0],
           category: entry[1].category,
-          descrption: entry[1].description,
+          description: entry[1].description,
           factory: entry[1].factory,
         });
       }
