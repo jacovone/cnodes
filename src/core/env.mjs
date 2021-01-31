@@ -132,12 +132,13 @@ export class Env {
 
   /**
    * Register a node type
-   * @param {string} name The name of the node
+   * @param {string} description The name of the node
    * @param {string} category The category of the node
    * @param {any} factory A function that instantiate the node
    */
-  static registerNode(name, category, factory) {
-    Env.#nodeRegistry.set(name, { category: category, factory: factory });
+  static registerNode(description, category, factory) {
+    let inst = factory();
+    Env.#nodeRegistry.set(inst.name, { description, category, factory });
   }
 
   /**
@@ -163,6 +164,7 @@ export class Env {
         registrations.push({
           name: entry[0],
           category: entry[1].category,
+          descrption: entry[1].description,
           factory: entry[1].factory,
         });
       }

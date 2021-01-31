@@ -54,8 +54,8 @@ declare module cn {
     constructor(name: string, node: Node, type?: string, value?: any);
     set type(arg: string);
     get type(): string;
-    set value(arg: number);
-    get value(): number;
+    set value(arg: any);
+    get value(): any;
     set canEditName(arg: boolean);
     get canEditName(): boolean;
     set canEditType(arg: boolean);
@@ -791,12 +791,12 @@ declare module cn {
     static init(): void;
     /**
      * Register a node type
-     * @param {string} name The name of the node
+     * @param {string} description The name of the node
      * @param {string} category The category of the node
      * @param {() => Node} factory A class that instantiate the node
      */
     static registerNode(
-      name: string,
+      description: string,
       category: string,
       factory: () => Node
     ): void;
