@@ -206,7 +206,7 @@ export class Env {
      */
     let createMake = function () {
       let makeNode = new FOMake();
-      makeNode.name = name;
+      makeNode.name = makeNode.name + "::" + name;
       makeNode.title = name;
       makeNode.inputs = [];
 
@@ -295,7 +295,7 @@ export class Env {
      */
     let createBreak = function () {
       let breakNode = new FOBreak();
-      breakNode.name = name;
+      breakNode.name = breakNode.name + "::" + name;
       breakNode.title = name;
       breakNode.outputs = [];
 
