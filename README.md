@@ -50,7 +50,7 @@ The resulting graph with cnodes-ui looks like this:
 
 ## JSDoc Documentation
 
-Take a look at [Documentation](https://unpkg.com/@marco.jacovone/cnodes-ui/docs/jsdocs/index.html)
+Take a look at [Documentation](https://unpkg.com/@marco.jacovone/cnodes/docs/jsdocs/index.html)
 
 ## Demo
 
