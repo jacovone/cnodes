@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: ValueSocket</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: ValueSocket</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>ValueSocket<span class="signature">(name, node, type, value)</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">The value socket represent a input or a output value
+for the node, so it has a value and a type</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+    <h2>Constructor</h2>
+    
+
+    
+    <h4 class="name" id="ValueSocket"><span class="type-signature"></span>new ValueSocket<span class="signature">(name, node, type, value)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Construct a new ValueSocket
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Name of the socket</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>node</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Node.html">Node</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">The parent node</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Type</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">The type of this socket</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+
+            <td class="description last">The default value of the socket</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="core_socket.mjs.html">core/socket.mjs</a>, <a href="core_socket.mjs.html#line69">line 69</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="ValueSocket.html">ValueSocket</a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="canEditName"><span class="type-signature">(private) </span>canEditName<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Some input/output sockets needs to have a name that users can change.
+That's because the name of the socket is part of what the user can
+choose. Think for example at a node that can make a data structure,
+the user will want configure each field of the structure, in terms of
+data value and name. The node will have a single output with the structure
+as output. In this case the user can select a variable number of input
+sockets, and can configure values (or connection) for each input as well
+as the name of each socket, that whill be the name of the field in the structure.
+This type of socket should be represented as a text field in a UI library.
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="core_socket.mjs.html">core/socket.mjs</a>, <a href="core_socket.mjs.html#line87">line 87</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="canEditType"><span class="type-signature">(private) </span>canEditType<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Some input/output sockets needs to change their type.
+Nodes are responsible to configure this behavior of
+sockets during the construction
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="core_socket.mjs.html">core/socket.mjs</a>, <a href="core_socket.mjs.html#line94">line 94</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="type"><span class="type-signature">(private) </span>type<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    The type for the socket's value
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="core_socket.mjs.html">core/socket.mjs</a>, <a href="core_socket.mjs.html#line71">line 71</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="value"><span class="type-signature">(private) </span>value<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    The stored value
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="core_socket.mjs.html">core/socket.mjs</a>, <a href="core_socket.mjs.html#line74">line 74</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="clone"><span class="type-signature"></span>clone<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Clone the socket
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="core_socket.mjs.html">core/socket.mjs</a>, <a href="core_socket.mjs.html#line144">line 144</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="evaluate"><span class="type-signature"></span>evaluate<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    This method evaluates a socket in terms of the real value
+that is staying inside. The meaning is different in case of
+InputSocket and OutputSocket, that re-defines this method
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="core_socket.mjs.html">core/socket.mjs</a>, <a href="core_socket.mjs.html#line139">line 139</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AMap.html">AMap</a></li><li><a href="APush.html">APush</a></li><li><a href="AReduce.html">AReduce</a></li><li><a href="Call.html">Call</a></li><li><a href="Console.html">Console</a></li><li><a href="Enter.html">Enter</a></li><li><a href="Env.html">Env</a></li><li><a href="Exit.html">Exit</a></li><li><a href="FAConst.html">FAConst</a></li><li><a href="FAdd.html">FAdd</a></li><li><a href="FAGet.html">FAGet</a></li><li><a href="FALength.html">FALength</a></li><li><a href="FAMake.html">FAMake</a></li><li><a href="FAMap.html">FAMap</a></li><li><a href="FAReduce.html">FAReduce</a></li><li><a href="FCompare.html">FCompare</a></li><li><a href="FConcat.html">FConcat</a></li><li><a href="FDiv.html">FDiv</a></li><li><a href="FEqual.html">FEqual</a></li><li><a href="FGetvar.html">FGetvar</a></li><li><a href="FGT.html">FGT</a></li><li><a href="FGTE.html">FGTE</a></li><li><a href="FIf.html">FIf</a></li><li><a href="FlowSocket.html">FlowSocket</a></li><li><a href="FLT.html">FLT</a></li><li><a href="FLTE.html">FLTE</a></li><li><a href="FMod.html">FMod</a></li><li><a href="FMul.html">FMul</a></li><li><a href="FNConst.html">FNConst</a></li><li><a href="FNotEqual.html">FNotEqual</a></li><li><a href="FOBreak.html">FOBreak</a></li><li><a href="FOMake.html">FOMake</a></li><li><a href="For.html">For</a></li><li><a href="FSConst.html">FSConst</a></li><li><a href="FSqrt.html">FSqrt</a></li><li><a href="FTofixed.html">FTofixed</a></li><li><a href="Getvar.html">Getvar</a></li><li><a href="If.html">If</a></li><li><a href="InputSocket.html">InputSocket</a></li><li><a href="Log.html">Log</a></li><li><a href="NextSocket.html">NextSocket</a></li><li><a href="Node.html">Node</a></li><li><a href="OutputSocket.html">OutputSocket</a></li><li><a href="PrevSocket.html">PrevSocket</a></li><li><a href="Program.html">Program</a></li><li><a href="Result.html">Result</a></li><li><a href="Setvar.html">Setvar</a></li><li><a href="Socket.html">Socket</a></li><li><a href="ValueSocket.html">ValueSocket</a></li><li><a href="Wait.html">Wait</a></li><li><a href="While.html">While</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Comparision">Comparision</a></li><li><a href="global.html#Types">Types</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Tue Feb 02 2021 03:08:26 GMT+0100 (Central European Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

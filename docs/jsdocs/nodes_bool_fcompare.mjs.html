@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: nodes/bool/fcompare.mjs</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: nodes/bool/fcompare.mjs</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * cnodes
+ *
+ * A representation-agnostic library to define and execute nodes based processes
+ * License: MIT
+ * Author: Marco Jacovone
+ * Year: 2020-2021
+ */
+
+import { Node } from "../../core/node.mjs";
+import { InputSocket, OutputSocket } from "../../core/socket.mjs";
+import { Types } from "../../core/type.mjs";
+
+/**
+ * Supported comparision types
+ */
+export const Comparision = {
+  EQUAL: "equal",
+  GT: "gt",
+  GTE: "gte",
+  LT: "lt",
+  LTE: "lte",
+  NOT_EQUAL: "not_equal",
+};
+
+/**
+ * This class implements a functional node for compairing numeric values.
+ */
+export class FCompare extends Node {
+  // Provide a node instance
+  static instance = () => new FCompare();
+
+  /** Configured comparision for this node */
+  #comparision = Comparision.EQUAL;
+
+  /**
+   * Construct a new FCompare node
+   * @param {Comparision} comparision The comparision type
+   */
+  constructor(comparision = Comparision.EQUAL) {
+    super("FCompare");
+    this.#comparision = comparision;
+
+    // The node is pure functional
+    this.functional = true;
+    // Default to two numeric inputs
+    this.inputs = [
+      new InputSocket("Val1", this, Types.ANY, 0),
+      new InputSocket("Val2", this, Types.ANY, 0),
+    ];
+    this.outputs = [new OutputSocket("Val", this, Types.BOOLEAN, 0, false)];
+    this.prev = null;
+    this.nexts = [];
+  }
+
+  /**
+   * Clone this node
+   * @param {Function} factory The factory class function
+   */
+  clone(factory = FCompare.instance) {
+    return super.clone(factory);
+  }
+
+  get comparision() {
+    return this.#comparision;
+  }
+  set comparision(val) {
+    this.#comparision = val;
+  }
+
+  /**
+   * The process override
+   */
+  async process() {
+    await this.evaluateInputs();
+    let val1 = this.input("Val1").value;
+    let val2 = this.input("Val2").value;
+
+    let ret;
+    switch (this.comparision) {
+      case Comparision.EQUAL: {
+        ret = val1 === val2;
+        break;
+      }
+      case Comparision.NOT_EQUAL: {
+        ret = val1 !== val2;
+        break;
+      }
+      case Comparision.GT: {
+        ret = val1 > val2;
+        break;
+      }
+      case Comparision.GTE: {
+        ret = val1 >= val2;
+        break;
+      }
+      case Comparision.LT: {
+        ret = val1 &lt; val2;
+        break;
+      }
+      case Comparision.LTE: {
+        ret = val1 &lt;= val2;
+        break;
+      }
+      default: {
+        throw "Comparision type not valid";
+      }
+    }
+
+    this.output("Val").value = ret;
+  }
+
+  get comparision() {
+    return this.#comparision;
+  }
+  set comparision(val) {
+    this.#comparision = val;
+  }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AMap.html">AMap</a></li><li><a href="APush.html">APush</a></li><li><a href="AReduce.html">AReduce</a></li><li><a href="Call.html">Call</a></li><li><a href="Console.html">Console</a></li><li><a href="Enter.html">Enter</a></li><li><a href="Env.html">Env</a></li><li><a href="Exit.html">Exit</a></li><li><a href="FAConst.html">FAConst</a></li><li><a href="FAdd.html">FAdd</a></li><li><a href="FAGet.html">FAGet</a></li><li><a href="FALength.html">FALength</a></li><li><a href="FAMake.html">FAMake</a></li><li><a href="FAMap.html">FAMap</a></li><li><a href="FAReduce.html">FAReduce</a></li><li><a href="FCompare.html">FCompare</a></li><li><a href="FConcat.html">FConcat</a></li><li><a href="FDiv.html">FDiv</a></li><li><a href="FEqual.html">FEqual</a></li><li><a href="FGetvar.html">FGetvar</a></li><li><a href="FGT.html">FGT</a></li><li><a href="FGTE.html">FGTE</a></li><li><a href="FIf.html">FIf</a></li><li><a href="FlowSocket.html">FlowSocket</a></li><li><a href="FLT.html">FLT</a></li><li><a href="FLTE.html">FLTE</a></li><li><a href="FMod.html">FMod</a></li><li><a href="FMul.html">FMul</a></li><li><a href="FNConst.html">FNConst</a></li><li><a href="FNotEqual.html">FNotEqual</a></li><li><a href="FOBreak.html">FOBreak</a></li><li><a href="FOMake.html">FOMake</a></li><li><a href="For.html">For</a></li><li><a href="FSConst.html">FSConst</a></li><li><a href="FSqrt.html">FSqrt</a></li><li><a href="FTofixed.html">FTofixed</a></li><li><a href="Getvar.html">Getvar</a></li><li><a href="If.html">If</a></li><li><a href="InputSocket.html">InputSocket</a></li><li><a href="Log.html">Log</a></li><li><a href="NextSocket.html">NextSocket</a></li><li><a href="Node.html">Node</a></li><li><a href="OutputSocket.html">OutputSocket</a></li><li><a href="PrevSocket.html">PrevSocket</a></li><li><a href="Program.html">Program</a></li><li><a href="Result.html">Result</a></li><li><a href="Setvar.html">Setvar</a></li><li><a href="Socket.html">Socket</a></li><li><a href="ValueSocket.html">ValueSocket</a></li><li><a href="Wait.html">Wait</a></li><li><a href="While.html">While</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Comparision">Comparision</a></li><li><a href="global.html#Types">Types</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Tue Feb 02 2021 03:08:26 GMT+0100 (Central European Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # cnodes
 
-![cnodes-logo](https://raw.githubusercontent.com/marco-jacovone/cnodes/master/doc/images/cnodes-logo.png)
+![cnodes-logo](https://raw.githubusercontent.com/marco-jacovone/cnodes/master/docs/images/cnodes-logo.png)
 
 ## Introduction
 
@@ -46,7 +46,11 @@ console.log(JSON.stringify(dmp));
 
 The resulting graph with cnodes-ui looks like this:
 
-![Screenshot2](https://github.com/marco-jacovone/cnodes-ui/blob/main/doc/images/screenshot2.png?raw=true)
+![Screenshot2](https://marco-jacovone.github.io/cnodes-ui/images/screenshot2.png)
+
+## JSDoc Documentation
+
+Take a look at [Documentation](https://raw.githubusercontent.com/marco-jacovone/cnodes/master/docs/jsdocs/index.html)
 
 ## Demo
 

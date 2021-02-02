@@ -5,7 +5,7 @@
   "scripts": {
     "test": "tap --no-esm --no-coverage -R nyan",
     "coverage": "nyc npm run test",
-    "jsdoc": "jsdoc -r -p -d ./doc/docs ./lib/*",
+    "jsdoc": "jsdoc -c ./jsdoc.conf.json -R ./README.md -r -p -d ./docs/jsdocs ./src/*",
     "build": "webpack",
     "babel": "babel src --out-dir lib"
   },
@@ -34,6 +34,7 @@
     "babel-plugin-module-extension": "^0.1.3",
     "babel-preset-env": "^1.7.0",
     "events": "^3.2.0",
+    "jsdoc": "^3.6.6",
     "tap": "^14.11.0",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.0"
