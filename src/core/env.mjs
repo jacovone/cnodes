@@ -553,7 +553,7 @@ export class Env {
       node.title = nodeData.title;
       node.id = nodeData.id;
       node.functional = nodeData.functional;
-      node.meta = nodeData.meta;
+      node.meta = JSON.parse(JSON.stringify(nodeData.meta));
       for (let inpData of nodeData.inputs) {
         let inp = new InputSocket(
           inpData.name,
