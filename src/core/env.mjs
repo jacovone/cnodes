@@ -527,6 +527,7 @@ export class Env {
     p.removeNode(p.enter);
     p.removeNode(p.exit);
 
+    p.id = data.id;
     Program.version = data.version;
 
     // Now import nodes without connections
