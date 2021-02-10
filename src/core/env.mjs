@@ -388,7 +388,7 @@ export class Env {
         name: node.name,
         title: node.title,
         functional: node.functional,
-        meta: node.meta,
+        meta: JSON.parse(JSON.stringify(node.meta)),
         program: node instanceof Program ? Env.export(node) : undefined,
         inputs: node.inputs.map((inp) => {
           return {
