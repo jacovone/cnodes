@@ -542,15 +542,15 @@ export class Env {
         // Otherwise import the node
         node = Env.getInstance(nodeData.name);
       }
+      if (!node) {
+        throw new Error(`Node type '${nodeData.name}' is not registered`);
+      }
       // Delete default sockets (created by getInstance())
       node.inputs = [];
       node.outputs = [];
       node.prev = null;
       node.nexts = [];
 
-      if (!node) {
-        throw new Error(`Node type '${nodeData.name}' is not registered`);
-      }
       node.title = nodeData.title;
       node.id = nodeData.id;
       node.functional = nodeData.functional;
