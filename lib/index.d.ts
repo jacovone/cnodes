@@ -37,7 +37,6 @@ declare module cn {
     get node(): Node;
     /** Clone the spcket */
     clone(): Socket;
-    #private;
   }
   /**
    * The value socket represent a input or a output value
@@ -66,7 +65,6 @@ declare module cn {
      * InputSocket and OutputSocket, that re-defines this method
      */
     evaluate(): Promise<void>;
-    #private;
   }
   /**
    * This is an input socket value for the node, it
@@ -93,7 +91,6 @@ declare module cn {
      * Disconnects this socket from its peer
      */
     disconnect(): void;
-    #private;
   }
   /**
    * This is a output value socket and represent an output
@@ -131,7 +128,6 @@ declare module cn {
      * @param {Socket} socket The socket to disconnect
      */
     disconnect(socket: Socket): void;
-    #private;
   }
   /**
    * A flow socket is a socket to connect two nodes in
@@ -144,7 +140,6 @@ declare module cn {
      * @param {Node} node The parent node
      */
     constructor(name: string, node: Node);
-    #private;
   }
   /**
    * This class representa a prev socket, a socket that
@@ -171,7 +166,6 @@ declare module cn {
      * @param {Socket} socket The next socket to disconnect
      */
     disconnect(socket: Socket): void;
-    #private;
   }
   /**
    * This class represents a socket to redirect the flow
@@ -197,7 +191,6 @@ declare module cn {
      * Disconnect this socket from the peer
      */
     disconnect(): void;
-    #private;
   }
 
   /**
@@ -357,7 +350,6 @@ declare module cn {
      * @param {CloneFactoryFn} factory A function that return a new instance of the class
      */
     clone(factory?: CloneFactoryFn): Node;
-    #private;
   }
   /**
    * The result class used by programs to receive
@@ -371,7 +363,6 @@ declare module cn {
     constructor(next?: NextSocket);
     set next(arg: NextSocket);
     get next(): NextSocket;
-    #private;
   }
   /**
    * This class implements a cnode that is the starting point for a
@@ -379,7 +370,6 @@ declare module cn {
    */
   export class Enter extends Node {
     static instance: () => Enter;
-    #private;
   }
   /**
    * This class implements a cnode that is the starting point for a
@@ -387,7 +377,6 @@ declare module cn {
    */
   export class Exit extends Node {
     static instance: () => Exit;
-    #private;
   }
   /**
    * A program is a special node that contains nodes. The program
@@ -433,14 +422,12 @@ declare module cn {
      * @param {Node} node Starting point node
      */
     processFrom(node: Node): Promise<void>;
-    #private;
   }
   /**
    * This class implements a subroutine/function call
    */
   export class Call extends Node {
     static instance: () => Call;
-    #private;
   }
 
   /**
@@ -449,7 +436,6 @@ declare module cn {
    */
   export class Console extends Node {
     static instance: () => Console;
-    #private;
   }
   /**
    * This class implements a functional GetVar node,
@@ -458,7 +444,6 @@ declare module cn {
    */
   export class FGetvar extends Node {
     static instance: () => FGetvar;
-    #private;
   }
   /**
    * This class implements a node that is able to
@@ -467,7 +452,6 @@ declare module cn {
    */
   export class For extends Node {
     static instance: () => For;
-    #private;
   }
   /**
    * This class implements a node to get a variable's value
@@ -476,7 +460,6 @@ declare module cn {
    */
   export class Getvar extends Node {
     static instance: () => Getvar;
-    #private;
   }
   /**
    * This class implements a node to set a variable
@@ -485,7 +468,6 @@ declare module cn {
    */
   export class Setvar extends Node {
     static instance: () => Setvar;
-    #private;
   }
   /**
    * This class implements a node that is able to
@@ -494,7 +476,6 @@ declare module cn {
    */
   export class While extends Node {
     static instance: () => While;
-    #private;
   }
   /**
    * This class implements a node that is able to
@@ -503,7 +484,6 @@ declare module cn {
    */
   export class If extends Node {
     static instance: () => If;
-    #private;
   }
   /**
    * This class implements a cnode that pushes a value
@@ -511,7 +491,6 @@ declare module cn {
    */
   export class APush extends Node {
     static instance: () => APush;
-    #private;
   }
   /**
    * This class implements a node to get an array
@@ -519,7 +498,6 @@ declare module cn {
    */
   export class FAConst extends Node {
     static instance: () => FAConst;
-    #private;
   }
   /**
    * This class implements a node to get an array
@@ -527,7 +505,6 @@ declare module cn {
    */
   export class FAMake extends Node {
     static instance: () => FAMake;
-    #private;
   }
   /**
    * This class implements a functional node for pick
@@ -535,7 +512,6 @@ declare module cn {
    */
   export class FAGet extends Node {
     static instance: () => FAGet;
-    #private;
   }
   /**
    * This class implements a functional node for get
@@ -543,7 +519,6 @@ declare module cn {
    */
   export class FALength extends Node {
     static instance: () => FALength;
-    #private;
   }
   /**
    * This class implements a functional node for adding numeric values.
@@ -551,14 +526,12 @@ declare module cn {
    */
   export class FAdd extends Node {
     static instance: () => FAdd;
-    #private;
   }
   /**
    * This class implements a functional node for divide numeric values.
    */
   export class FDiv extends Node {
     static instance: () => FDiv;
-    #private;
   }
   /**
    * This class implements a functional node for multiply numeric values.
@@ -566,14 +539,12 @@ declare module cn {
    */
   export class FMul extends Node {
     static instance: () => FMul;
-    #private;
   }
   /**
    * This class implements a functional node for Square Root.
    */
   export class FSqrt extends Node {
     static instance: () => FSqrt;
-    #private;
   }
   export namespace Comparision {
     const EQUAL: string;
@@ -602,51 +573,37 @@ declare module cn {
     });
     set comparision(arg: string);
     get comparision(): string;
-    #private;
   }
   /**
    * This class override the FCompare node with a comparision of EQUAL
    */
-  export class FEqual extends FCompare {
-    #private;
-  }
+  export class FEqual extends FCompare {}
   /**
    * This class override the FCompare node with a comparision of GT
    */
-  export class FGT extends FCompare {
-    #private;
-  }
+  export class FGT extends FCompare {}
   /**
    * This class override the FCompare node with a comparision of GTE
    */
-  export class FGTE extends FCompare {
-    #private;
-  }
+  export class FGTE extends FCompare {}
   /**
    * This class override the FCompare node with a comparision of FLT
    */
-  export class FLT extends FCompare {
-    #private;
-  }
+  export class FLT extends FCompare {}
   /**
    * This class override the FCompare node with a comparision of FLTE
    */
-  export class FLTE extends FCompare {
-    #private;
-  }
+  export class FLTE extends FCompare {}
   /**
    * This class override the FCompare node with a comparision of NOT_EQUAL
    */
-  export class FNotEqual extends FCompare {
-    #private;
-  }
+  export class FNotEqual extends FCompare {}
   /**
    * This class implements a node to get return a simple
    * string constant. This is a functional node.
    */
   export class FSConst extends Node {
     static instance: () => FSConst;
-    #private;
   }
   /**
    * This class implements a node that conctas two strings.
@@ -654,21 +611,18 @@ declare module cn {
    */
   export class FConcat extends Node {
     static instance: () => FConcat;
-    #private;
   }
   /**
    * This class implements a functional node for modulus (%)
    */
   export class FMod extends Node {
     static instance: () => FMod;
-    #private;
   }
   /**
    * This class implements a functional conditional node
    */
   export class FIf extends Node {
     static instance: () => FIf;
-    #private;
   }
   /**
    * This class implements a node to get return a simple
@@ -676,7 +630,6 @@ declare module cn {
    */
   export class FNConst extends Node {
     static instance: () => FNConst;
-    #private;
   }
   /**
    * This class implements a node to get an object
@@ -684,7 +637,6 @@ declare module cn {
    */
   export class FOMake extends Node {
     static instance: () => FOMake;
-    #private;
   }
   /**
    * This class implements a node to break down
@@ -692,7 +644,6 @@ declare module cn {
    */
   export class FOBreak extends Node {
     static instance: () => FOBreak;
-    #private;
   }
   /**
    * This class implements a cnode that map an array to another
@@ -700,7 +651,6 @@ declare module cn {
    */
   export class AMap extends Node {
     static instance: () => AMap;
-    #private;
   }
   /**
    * This class implements a cnode that reduces an array to
@@ -708,21 +658,18 @@ declare module cn {
    */
   export class AReduce extends Node {
     static instance: () => AReduce;
-    #private;
   }
   /**
    * This is the functional version of the FAMap node
    */
   export class FAMap extends AMap {
     static instance: () => FAMap;
-    #private;
   }
   /**
    * This is the functional version of the FAReduce node
    */
   export class FAReduce extends AReduce {
     static instance: () => FAReduce;
-    #private;
   }
   /**
    * This class implements a cnode that log a message through
@@ -731,7 +678,6 @@ declare module cn {
   export class Log extends Node {
     /** Return an instance of this node */
     static instance: () => Log;
-    #private;
   }
   /**
    * This class implements a functional node for ToFixed()
@@ -739,7 +685,6 @@ declare module cn {
    */
   export class FTofixed extends Node {
     static instance: () => FTofixed;
-    #private;
   }
   /**
    * This class implements a cnode that waits for a specified
@@ -748,7 +693,6 @@ declare module cn {
   export class Wait extends Node {
     /** Return an instance of this node */
     static instance: () => Wait;
-    #private;
   }
 
   export interface RegisterMakerOpts {
