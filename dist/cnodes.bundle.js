@@ -11654,7 +11654,9 @@ exports.FAMap = _famap.FAMap;
 exports.AReduce = _areduce.AReduce;
 exports.FAReduce = _fareduce.FAReduce;
 exports.FOMake = _fomake.FOMake;
-exports.FOBreak = _fobreak.FOBreak;
+exports.FOBreak = _fobreak.FOBreak; // Register internal nodes
+
+_env.Env.init();
 
 /***/ })
 

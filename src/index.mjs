@@ -105,3 +105,6 @@ export {
   FOMake,
   FOBreak,
 };
+
+// Register internal nodes
+Env.init();
