@@ -1,6 +1,6 @@
 {
   "name": "@marco.jacovone/cnodes",
-  "version": "0.18.17",
+  "version": "0.18.18",
   "description": "A representation-agnostic process engine based on task/functional nodes",
   "scripts": {
     "test": "tap --no-esm --no-coverage -R nyan",
@@ -21,7 +21,6 @@
     "url": "https://github.com/marco-jacovone/cnodes/issues"
   },
   "homepage": "https://github.com/marco-jacovone/cnodes#readme",
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
