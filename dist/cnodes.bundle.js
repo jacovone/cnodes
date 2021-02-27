@@ -11524,7 +11524,7 @@ __webpack_require__.r(__webpack_exports__);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.FOBreak = exports.FOMake = exports.FAReduce = exports.AReduce = exports.FAMap = exports.AMap = exports.FALength = exports.FAGet = exports.FAMake = exports.FAConst = exports.APush = exports.FTofixed = exports.FMod = exports.FSqrt = exports.FMul = exports.FDiv = exports.FAdd = exports.FNConst = exports.FConcat = exports.FSConst = exports.FCompare = exports.Wait = exports.FIsUndefined = exports.FIsNull = exports.FIf = exports.While = exports.Setvar = exports.If = exports.Getvar = exports.For = exports.FGetvar = exports.Log = exports.Console = exports.Call = exports.Types = exports.NextSocket = exports.PrevSocket = exports.OutputSocket = exports.InputSocket = exports.Socket = exports.Program = exports.Node = exports.Env = undefined;
+exports.OSet = exports.FOBreak = exports.FOMake = exports.FAReduce = exports.AReduce = exports.FAMap = exports.AMap = exports.FALength = exports.FAGet = exports.FAMake = exports.FAConst = exports.APush = exports.FTofixed = exports.FMod = exports.FSqrt = exports.FMul = exports.FDiv = exports.FAdd = exports.FNConst = exports.FConcat = exports.FSConst = exports.FCompare = exports.Wait = exports.FIsUndefined = exports.FIsNull = exports.FIf = exports.While = exports.Setvar = exports.If = exports.Getvar = exports.For = exports.FGetvar = exports.Log = exports.Console = exports.Call = exports.Types = exports.NextSocket = exports.PrevSocket = exports.OutputSocket = exports.InputSocket = exports.Socket = exports.Program = exports.Node = exports.Env = undefined;
 
 var _env = require("./core/env.js");
 
@@ -11604,6 +11604,8 @@ var _fomake = require("./nodes/object/fomake.js");
 
 var _fobreak = require("./nodes/object/fobreak.js");
 
+var _oset = require("./nodes/object/oset.js");
+
 /**
  * cnodes
  *
@@ -11660,7 +11662,8 @@ exports.FAMap = _famap.FAMap;
 exports.AReduce = _areduce.AReduce;
 exports.FAReduce = _fareduce.FAReduce;
 exports.FOMake = _fomake.FOMake;
-exports.FOBreak = _fobreak.FOBreak; // Register internal nodes
+exports.FOBreak = _fobreak.FOBreak;
+exports.OSet = _oset.OSet; // Register internal nodes
 
 _env.Env.init();
 

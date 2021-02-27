@@ -50,6 +50,7 @@ import { FIsUndefined } from "../nodes/isundefined.mjs";
 import { FNConst } from "../nodes/math/fnconst.mjs";
 import { FOMake } from "../nodes/object/fomake.mjs";
 import { FOBreak } from "../nodes/object/fobreak.mjs";
+import { OSet } from "../nodes/object/oset.mjs";
 import { AMap } from "../nodes/array/amap.mjs";
 import { AReduce } from "../nodes/array/areduce.mjs";
 import { FAMap } from "../nodes/array/famap.mjs";
@@ -132,6 +133,7 @@ export class Env {
     // Object Nodes
     Env.registerNode("FOMake", "Objects", FOMake.instance);
     Env.registerNode("FOBreak", "Objects", FOBreak.instance);
+    Env.registerNode("OSet", "Objects", OSet.instance);
   }
 
   /**

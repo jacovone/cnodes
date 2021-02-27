@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: nodes/bool/fnotequal.mjs</title>
+    <title>JSDoc: Source: nodes/isnull.mjs</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: nodes/bool/fnotequal.mjs</h1>
+    <h1 class="page-title">Source: nodes/isnull.mjs</h1>
 
     
 
@@ -35,31 +35,49 @@
  * Year: 2020-2021
  */
 
-import { FCompare } from "./fcompare.mjs";
-import { Comparision } from "./fcompare.mjs";
+import { Node } from "../core/node.mjs";
+import { InputSocket, OutputSocket } from "../core/socket.mjs";
+import { Types } from "../core/type.mjs";
 
 /**
- * This class override the FCompare node with a comparision of NOT_EQUAL
+ * This class implements a functional conditional node
  */
-export class FNotEqual extends FCompare {
+export class FIsNull extends Node {
   // Provide a node instance
-  static instance = () => new FNotEqual();
+  static instance = () => new FIsNull();
 
   /**
-   * COnstruct a new FNotEqual node
+   * Construct a new FIf node
    */
   constructor() {
-    super(Comparision.NOT_EQUAL);
-    this.name = "FNotEqual";
-    this.title = "!=";
+    super("FIsNull");
+
+    // The node is pure functional
+    this.functional = true;
+
+    // One single input for any value
+    this.inputs = [new InputSocket("Val", this, Types.ANY, {})];
+
+    // The output value indicates if the input value is null
+    this.outputs = [new OutputSocket("Val", this, Types.BOOLEAN, false)];
+    this.prev = null;
+    this.nexts = [];
   }
 
   /**
    * Clone this node
    * @param {Function} factory The factory class function
    */
-  clone(factory = FNotEqual.instance) {
+  clone(factory = FIsNull.instance) {
     return super.clone(factory);
+  }
+
+  /**
+   * The process override
+   */
+  async process() {
+    await this.evaluateInputs();
+    this.output("Val").value = this.input("Val").value === null;
   }
 }
 </code></pre>
