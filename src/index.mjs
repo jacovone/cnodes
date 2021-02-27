@@ -63,7 +63,7 @@ import { FAReduce } from "./nodes/array/fareduce.mjs";
 // Import objects nodes
 import { FOMake } from "./nodes/object/fomake.mjs";
 import { FOBreak } from "./nodes/object/fobreak.mjs";
-import { OSet } from "./nodes/object/oset.mjs";
+import { OSet, FOSet } from "./nodes/object/oset.mjs";
 
 export {
   Env,
@@ -110,6 +110,7 @@ export {
   FOMake,
   FOBreak,
   OSet,
+  FOSet,
 };
 
 // Register internal nodes

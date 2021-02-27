@@ -30,6 +30,7 @@ export class OSet extends Node {
    */
   constructor() {
     super("OSet");
+    this.functional = false;
     this.inputs = [
       new InputSocket("Object", this, Types.OBJECT, 0),
       new InputSocket("Name", this, Types.STRING, 0),
@@ -64,6 +65,40 @@ export class OSet extends Node {
 
     this.output("Val").value = fieldVal;
 
-    return this.getFlowResult(this.next("Out"));
+    return this.processReturn();
+  }
+
+  /**
+   * This method returns the next step in the flow
+   */
+  processReturn() {
+    this.getFlowResult(this.next("Out"));
+  }
+}
+
+/**
+ * This is the functional counterpart of the OSet node
+ */
+export class FOSet extends OSet {
+  /**
+   * Clone this node
+   * @param {Function} factory The factory class function
+   */
+  clone(factory = FOSet.instance) {
+    return super.clone(factory);
+  }
+
+  constructor() {
+    super();
+    this.functional = true;
+    this.name = "FOSet";
+    this.nexts = [];
+    this.prev = null;
+  }
+
+  processReturn() {
+    // The functional node doesn't return anything as
+    // next step
+    return null;
   }
 }
