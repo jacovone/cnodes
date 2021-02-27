@@ -1,6 +1,6 @@
 {
   "name": "@marco.jacovone/cnodes",
-  "version": "0.18.20",
+  "version": "0.18.21",
   "description": "A representation-agnostic process engine based on task/functional nodes",
   "scripts": {
     "test": "tap --no-esm --no-coverage -R nyan",
