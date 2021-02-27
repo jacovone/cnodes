@@ -45,6 +45,8 @@ import { FSConst } from "../nodes/string/fsconst.mjs";
 import { FConcat } from "../nodes/string/fconcat.mjs";
 import { FMod } from "../nodes/math/fmod.mjs";
 import { FIf } from "../nodes/fif.mjs";
+import { FIsNull } from "../nodes/isnull.mjs";
+import { FIsUndefined } from "../nodes/isundefined.mjs";
 import { FNConst } from "../nodes/math/fnconst.mjs";
 import { FOMake } from "../nodes/object/fomake.mjs";
 import { FOBreak } from "../nodes/object/fobreak.mjs";
@@ -87,6 +89,8 @@ export class Env {
     Env.registerNode("Getvar", "Core", Getvar.instance);
     Env.registerNode("If", "Core", If.instance);
     Env.registerNode("FIf", "Core", FIf.instance);
+    Env.registerNode("FIsNull", "Core", FIsNull.instance);
+    Env.registerNode("FIsUndefined", "Core", FIsUndefined.instance);
     Env.registerNode("Setvar", "Core", Setvar.instance);
     Env.registerNode("While", "Core", While.instance);
     Env.registerNode("Enter", "Core", Enter.instance);
