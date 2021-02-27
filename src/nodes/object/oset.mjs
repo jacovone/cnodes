@@ -80,6 +80,9 @@ export class OSet extends Node {
  * This is the functional counterpart of the OSet node
  */
 export class FOSet extends OSet {
+  // Provide a node instance
+  static instance = () => new FOSet();
+
   /**
    * Clone this node
    * @param {Function} factory The factory class function
