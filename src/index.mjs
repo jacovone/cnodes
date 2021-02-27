@@ -29,8 +29,8 @@ import { If } from "./nodes/if.mjs";
 import { Setvar } from "./nodes/setvar.mjs";
 import { While } from "./nodes/while.mjs";
 import { FIf } from "./nodes/fif.mjs";
-import { FIsNull } from "./nodes/fisnull.mjs";
-import { FIsUndefined } from "./nodes/fisundefined.mjs";
+import { FIsNull } from "./nodes/isnull.mjs";
+import { FIsUndefined } from "./nodes/isundefined.mjs";
 import { Wait } from "./nodes/wait.mjs";
 
 // Import boolean nodes

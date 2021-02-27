@@ -11524,7 +11524,7 @@ __webpack_require__.r(__webpack_exports__);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.FOBreak = exports.FOMake = exports.FAReduce = exports.AReduce = exports.FAMap = exports.AMap = exports.FALength = exports.FAGet = exports.FAMake = exports.FAConst = exports.APush = exports.FTofixed = exports.FMod = exports.FSqrt = exports.FMul = exports.FDiv = exports.FAdd = exports.FNConst = exports.FConcat = exports.FSConst = exports.FCompare = exports.Wait = exports.FIf = exports.While = exports.Setvar = exports.If = exports.Getvar = exports.For = exports.FGetvar = exports.Log = exports.Console = exports.Call = exports.Types = exports.NextSocket = exports.PrevSocket = exports.OutputSocket = exports.InputSocket = exports.Socket = exports.Program = exports.Node = exports.Env = undefined;
+exports.FOBreak = exports.FOMake = exports.FAReduce = exports.AReduce = exports.FAMap = exports.AMap = exports.FALength = exports.FAGet = exports.FAMake = exports.FAConst = exports.APush = exports.FTofixed = exports.FMod = exports.FSqrt = exports.FMul = exports.FDiv = exports.FAdd = exports.FNConst = exports.FConcat = exports.FSConst = exports.FCompare = exports.Wait = exports.FIsUndefined = exports.FIsNull = exports.FIf = exports.While = exports.Setvar = exports.If = exports.Getvar = exports.For = exports.FGetvar = exports.Log = exports.Console = exports.Call = exports.Types = exports.NextSocket = exports.PrevSocket = exports.OutputSocket = exports.InputSocket = exports.Socket = exports.Program = exports.Node = exports.Env = undefined;
 
 var _env = require("./core/env.js");
 
@@ -11555,6 +11555,10 @@ var _setvar = require("./nodes/setvar.js");
 var _while = require("./nodes/while.js");
 
 var _fif = require("./nodes/fif.js");
+
+var _isnull = require("./nodes/isnull.js");
+
+var _isundefined = require("./nodes/isundefined.js");
 
 var _wait = require("./nodes/wait.js");
 
@@ -11633,6 +11637,8 @@ exports.If = _if.If;
 exports.Setvar = _setvar.Setvar;
 exports.While = _while.While;
 exports.FIf = _fif.FIf;
+exports.FIsNull = _isnull.FIsNull;
+exports.FIsUndefined = _isundefined.FIsUndefined;
 exports.Wait = _wait.Wait;
 exports.FCompare = _fcompare.FCompare;
 exports.FSConst = _fsconst.FSConst;
