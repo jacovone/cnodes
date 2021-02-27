@@ -7,14 +7,14 @@
  * Year: 2020-2021
  */
 
-import { Node } from "../core/node.mjs";
+import { Node } from "../../core/node.mjs";
 import {
   InputSocket,
   NextSocket,
   PrevSocket,
   OutputSocket,
-} from "../core/socket.mjs";
-import { Types } from "../core/type.mjs";
+} from "../../core/socket.mjs";
+import { Types } from "../../core/type.mjs";
 
 /**
  * This class implements a node to set a field
