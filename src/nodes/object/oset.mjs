@@ -65,14 +65,7 @@ export class OSet extends Node {
 
     this.output("Val").value = fieldVal;
 
-    return this.processReturn();
-  }
-
-  /**
-   * This method returns the next step in the flow
-   */
-  processReturn() {
-    this.getFlowResult(this.next("Out"));
+    return this.getFlowResult(this.next("Out"));
   }
 }
 
@@ -95,13 +88,25 @@ export class FOSet extends OSet {
     super();
     this.functional = true;
     this.name = "FOSet";
+    this.outputs = [new OutputSocket("Val", this, Types.OBJECT, {})];
     this.nexts = [];
     this.prev = null;
   }
 
-  processReturn() {
-    // The functional node doesn't return anything as
-    // next step
-    return null;
+  /**
+   * The process fmethod
+   */
+  async process() {
+    await this.evaluateInputs();
+
+    let fieldName = this.input("Name").value;
+    let fieldVal = this.input("Val").value;
+    let object = this.input("Object").value;
+
+    if (object) {
+      object[fieldName] = fieldVal;
+    }
+
+    this.output("Val").value = object;
   }
 }
