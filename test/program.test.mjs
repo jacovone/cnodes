@@ -27,7 +27,7 @@ tap.test("Program will export, import then executes", async (test) => {
   prg.addNode(fn).addNode(ln);
 
   let count = 0;
-  prg.events.on("cn:log", (msg) => {
+  Program.events.on("cn:log", (msg) => {
     count++;
   });
 

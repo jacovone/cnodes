@@ -8,6 +8,7 @@
  */
 
 import { Node } from "../core/node.mjs";
+import { Program } from "../core/program.mjs";
 import { InputSocket, NextSocket, PrevSocket } from "../core/socket.mjs";
 import { Types } from "../core/type.mjs";
 
