@@ -48,7 +48,7 @@ export class Program extends Node {
   #vars = new Map();
 
   /** The event emitter connected to the program */
-  events = new EventEmitter();
+  static events = new EventEmitter();
 
   /**
    * Construct a new Program node
