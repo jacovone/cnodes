@@ -64,10 +64,6 @@ export class Program extends Node {
     this.addNode((this.#enter = new Enter())).addNode(
       (this.#exit = new Exit())
     );
-
-    this.events.on("log", (msg) => {
-      console.log("catched: ", msg);
-    });
   }
 
   /**
