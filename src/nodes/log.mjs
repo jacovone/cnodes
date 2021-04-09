@@ -45,7 +45,7 @@ export class Log extends Node {
     await this.evaluateInputs();
 
     // Send a "log" event
-    this.program.events.emit("cn:log", this.input("Val").value);
+    Program.events.emit("cn:log", this.input("Val").value);
 
     return this.getFlowResult(this.next("Out"));
   }
