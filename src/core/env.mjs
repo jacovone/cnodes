@@ -159,6 +159,21 @@ export class Env {
   }
 
   /**
+   * Unregister a node
+   * @param {string} instance The instance static function of the node
+   */
+  static unregisterNode(instance) {
+    Env.#nodeRegistry.delete(instance().name);
+  }
+
+  /**
+   * Unregister all nodes
+   */
+  static unregisterAllNodes() {
+    Env.#nodeRegistry.clear();
+  }
+
+  /**
    * Return the list of unique registered categories
    */
   static getCategories() {

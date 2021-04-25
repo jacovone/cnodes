@@ -745,6 +745,15 @@ declare module cn {
       factory: () => Node
     ): void;
     /**
+     * Unregister a node from the registry
+     * @param instance The instance of the node
+     */
+    static unregisterNode(instance: () => Node);
+    /**
+     * Unregister aall nodes from the registry
+     */
+    static unregisterAllNodes();
+    /**
      * Return the list of unique registered categories
      */
     static getCategories(): string[];
