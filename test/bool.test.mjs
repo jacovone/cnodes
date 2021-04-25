@@ -1,7 +1,9 @@
 import tap from "tap";
 import { Types } from "../src/core/type.mjs";
 import { FAnd } from "../src/nodes/bool/fand.mjs";
+import { FFalse } from "../src/nodes/bool/ffalse.mjs";
 import { FNot } from "../src/nodes/bool/fnot.mjs";
+import { FTrue } from "../src/nodes/bool/ftrue.mjs";
 import { FOr } from "../src/nodes/bool/f_or.mjs";
 
 tap.test("And true && true equals to true", async (test) => {
@@ -90,5 +92,19 @@ tap.test("Not of true equals to false", async (test) => {
   await n.process();
 
   test.same(n.output("Val").value, false);
+  test.end();
+});
+tap.test("False equals to false", async (test) => {
+  let n = new FFalse();
+  await n.process();
+
+  test.same(n.output("Val").value, false);
+  test.end();
+});
+tap.test("True equals to true", async (test) => {
+  let n = new FTrue();
+  await n.process();
+
+  test.same(n.output("Val").value, true);
   test.end();
 });
