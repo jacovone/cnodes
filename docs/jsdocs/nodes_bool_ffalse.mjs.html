@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: nodes/math/fadd.mjs</title>
+    <title>JSDoc: Source: nodes/bool/ffalse.mjs</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: nodes/math/fadd.mjs</h1>
+    <h1 class="page-title">Source: nodes/bool/ffalse.mjs</h1>
 
     
 
@@ -40,97 +40,40 @@ import { InputSocket, OutputSocket } from "../../core/socket.mjs";
 import { Types } from "../../core/type.mjs";
 
 /**
- * This class implements a functional node for adding numeric values.
- * Supports a indefinite number of value inputs and one single output
+ * This class implements a functional constant node
  */
-export class FAdd extends Node {
+export class FFalse extends Node {
   // Provide a node instance
-  static instance = () => new FAdd();
+  static instance = () => new FFalse();
 
   /**
-   * Construct a new FAdd node
+   * Construct a new FFalse node
    */
   constructor() {
-    super("FAdd");
+    super("FFalse");
+
     // The node is pure functional
     this.functional = true;
-
-    // This node has a variable number of inputs
-    this.canAddInput = true;
-
     // Default to two numeric inputs
-    this.inputs = [
-      new InputSocket("0", this, Types.NUMBER, 0),
-      new InputSocket("1", this, Types.NUMBER, 0),
-    ];
-
-    this.outputs = [new OutputSocket("Val", this, Types.NUMBER, 0, false)];
+    this.inputs = [];
+    this.outputs = [new OutputSocket("Val", this, Types.BOOLEAN, 0, false)];
     this.prev = null;
     this.nexts = [];
-  }
-
-  /**
-   * The process override
-   */
-  async process() {
-    let sum = 0;
-    await this.evaluateInputs();
-    for (let inp of this.inputs) {
-      sum += parseFloat(inp.value);
-    }
-    this.output("Val").value = sum;
-  }
-
-  /**
-   * If this.#canAddInput is true, the user can add an input
-   * equal to the (at least one) input that already exists
-   */
-  addInput() {
-    if (this.canAddInput) {
-      this.inputs.push(new InputSocket("", this, Types.NUMBER, ""));
-
-      // Rename all inputs to its ordinal number in the inputs array
-      for (let [idx, i] of this.inputs.entries()) {
-        i.name = "" + idx;
-      }
-    } else {
-      throw new Error("Can't add input!");
-    }
-  }
-
-  /**
-   * This method removes a specific input from the node, if
-   * this is possible whit this instance
-   * @param {InputSocket} input The input to remove
-   */
-  removeInput(input) {
-    if (this.canRemoveInput(input)) {
-      this.inputs = this.inputs.filter((i) => i !== input);
-
-      // Rename all inputs to its ordinal number in the inputs array
-      for (let [idx, i] of this.inputs.entries()) {
-        i.name = "" + idx;
-      }
-    } else {
-      throw new Error("Can't remove input");
-    }
-  }
-
-  /**
-   * Can this node remove a specific input?
-   * In this case, there must be at least 2 inputs
-   * @param {InputsSocket} input The input to remove
-   */
-  canRemoveInput(input) {
-    return this.inputs.length > 2;
   }
 
   /**
    * Clone this node
    * @param {Function} factory The factory class function
    */
-  clone(factory = FAdd.instance) {
+  clone(factory = FFalse.instance) {
     return super.clone(factory);
+  }
+
+  /**
+   * The process override
+   */
+  async process() {
+    this.output("Val").value = false;
   }
 }
 </code></pre>

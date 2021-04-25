@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: nodes/math/fadd.mjs</title>
+    <title>JSDoc: Class: FTrue</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,125 +17,377 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: nodes/math/fadd.mjs</h1>
+    <h1 class="page-title">Class: FTrue</h1>
 
     
 
 
 
+
+<section>
+
+<header>
     
-    <section>
-        <article>
-            <pre class="prettyprint source linenums"><code>/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
+        <h2><span class="attribs"><span class="type-signature"></span></span>FTrue<span class="signature">()</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">This class implements a functional constant node</div>
+        
+    
+</header>
 
-import { Node } from "../../core/node.mjs";
-import { InputSocket, OutputSocket } from "../../core/socket.mjs";
-import { Types } from "../../core/type.mjs";
+<article>
+    <div class="container-overview">
+    
+        
 
-/**
- * This class implements a functional node for adding numeric values.
- * Supports a indefinite number of value inputs and one single output
- */
-export class FAdd extends Node {
-  // Provide a node instance
-  static instance = () => new FAdd();
+    
+    <h2>Constructor</h2>
+    
 
-  /**
-   * Construct a new FAdd node
-   */
-  constructor() {
-    super("FAdd");
-    // The node is pure functional
-    this.functional = true;
+    
+    <h4 class="name" id="FTrue"><span class="type-signature"></span>new FTrue<span class="signature">()</span><span class="type-signature"></span></h4>
+    
 
-    // This node has a variable number of inputs
-    this.canAddInput = true;
+    
 
-    // Default to two numeric inputs
-    this.inputs = [
-      new InputSocket("0", this, Types.NUMBER, 0),
-      new InputSocket("1", this, Types.NUMBER, 0),
-    ];
 
-    this.outputs = [new OutputSocket("Val", this, Types.NUMBER, 0, false)];
-    this.prev = null;
-    this.nexts = [];
-  }
 
-  /**
-   * The process override
-   */
-  async process() {
-    let sum = 0;
-    await this.evaluateInputs();
-    for (let inp of this.inputs) {
-      sum += parseFloat(inp.value);
-    }
-    this.output("Val").value = sum;
-  }
+<div class="description">
+    Construct a new FTrue node
+</div>
 
-  /**
-   * If this.#canAddInput is true, the user can add an input
-   * equal to the (at least one) input that already exists
-   */
-  addInput() {
-    if (this.canAddInput) {
-      this.inputs.push(new InputSocket("", this, Types.NUMBER, ""));
 
-      // Rename all inputs to its ordinal number in the inputs array
-      for (let [idx, i] of this.inputs.entries()) {
-        i.name = "" + idx;
-      }
-    } else {
-      throw new Error("Can't add input!");
-    }
-  }
 
-  /**
-   * This method removes a specific input from the node, if
-   * this is possible whit this instance
-   * @param {InputSocket} input The input to remove
-   */
-  removeInput(input) {
-    if (this.canRemoveInput(input)) {
-      this.inputs = this.inputs.filter((i) => i !== input);
 
-      // Rename all inputs to its ordinal number in the inputs array
-      for (let [idx, i] of this.inputs.entries()) {
-        i.name = "" + idx;
-      }
-    } else {
-      throw new Error("Can't remove input");
-    }
-  }
 
-  /**
-   * Can this node remove a specific input?
-   * In this case, there must be at least 2 inputs
-   * @param {InputsSocket} input The input to remove
-   */
-  canRemoveInput(input) {
-    return this.inputs.length > 2;
-  }
 
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-  clone(factory = FAdd.instance) {
-    return super.clone(factory);
-  }
-}
-</code></pre>
-        </article>
-    </section>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nodes_bool_ftrue.mjs.html">nodes/bool/ftrue.mjs</a>, <a href="nodes_bool_ftrue.mjs.html#line17">line 17</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="FTrue.html">FTrue</a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="clone"><span class="type-signature"></span>clone<span class="signature">(factory)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Clone this node
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>factory</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The factory class function</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nodes_bool_ftrue.mjs.html">nodes/bool/ftrue.mjs</a>, <a href="nodes_bool_ftrue.mjs.html#line40">line 40</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="process"><span class="type-signature">(async) </span>process<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    The process override
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nodes_bool_ftrue.mjs.html">nodes/bool/ftrue.mjs</a>, <a href="nodes_bool_ftrue.mjs.html#line47">line 47</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
 
 
 
