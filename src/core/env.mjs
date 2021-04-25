@@ -59,6 +59,9 @@ import { FAReduce } from "../nodes/array/fareduce.mjs";
 import { Log } from "../nodes/log.mjs";
 import { FTofixed } from "../nodes/math/ftofixed.mjs";
 import { Wait } from "../nodes/wait.mjs";
+import { FAnd } from "../nodes/bool/fand.mjs";
+import { FOr } from "../nodes/bool/f_or.mjs";
+import { FNot } from "../nodes/bool/fnot.mjs";
 
 /**
  * This class represents a main global environment for cnodes.
@@ -118,6 +121,9 @@ export class Env {
     Env.registerNode("FLT", "Boolean", FLT.instance);
     Env.registerNode("FLTE", "Boolean", FLTE.instance);
     Env.registerNode("FNotEqual", "Boolean", FNotEqual.instance);
+    Env.registerNode("FAnd", "Boolean", FAnd.instance);
+    Env.registerNode("FOr", "Boolean", FOr.instance);
+    Env.registerNode("FNot", "Boolean", FNot.instance);
 
     // Arrays Nodes
     Env.registerNode("APush", "Arrays", APush.instance);
