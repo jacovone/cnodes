@@ -62,6 +62,8 @@ import { Wait } from "../nodes/wait.mjs";
 import { FAnd } from "../nodes/bool/fand.mjs";
 import { FOr } from "../nodes/bool/f_or.mjs";
 import { FNot } from "../nodes/bool/fnot.mjs";
+import { FFalse } from "../nodes/bool/ffalse.mjs";
+import { FTrue } from "../nodes/bool/ftrue.mjs";
 
 /**
  * This class represents a main global environment for cnodes.
@@ -124,6 +126,8 @@ export class Env {
     Env.registerNode("FAnd", "Boolean", FAnd.instance);
     Env.registerNode("FOr", "Boolean", FOr.instance);
     Env.registerNode("FNot", "Boolean", FNot.instance);
+    Env.registerNode("FFalse", "Boolean", FFalse.instance);
+    Env.registerNode("FTrue", "Boolean", FTrue.instance);
 
     // Arrays Nodes
     Env.registerNode("APush", "Arrays", APush.instance);
