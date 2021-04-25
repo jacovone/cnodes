@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: nodes/bool/fgte.mjs</title>
+    <title>JSDoc: Class: FAnd</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,54 +17,377 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: nodes/bool/fgte.mjs</h1>
+    <h1 class="page-title">Class: FAnd</h1>
 
     
 
 
 
+
+<section>
+
+<header>
     
-    <section>
-        <article>
-            <pre class="prettyprint source linenums"><code>/**
- * cnodes
- *
- * A representation-agnostic library to define and execute nodes based processes
- * License: MIT
- * Author: Marco Jacovone
- * Year: 2020-2021
- */
+        <h2><span class="attribs"><span class="type-signature"></span></span>FAnd<span class="signature">()</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">This class implements a functional node for compairing boolean values.</div>
+        
+    
+</header>
 
-import { FCompare } from "./fcompare.mjs";
-import { Comparision } from "./fcompare.mjs";
+<article>
+    <div class="container-overview">
+    
+        
 
-/**
- * This class override the FCompare node with a comparision of GTE
- */
-export class FGTE extends FCompare {
-  // Provide a node instance
-  static instance = () => new FGTE();
+    
+    <h2>Constructor</h2>
+    
 
-  /**
-   * Construct a new FGTE
-   */
-  constructor() {
-    super(Comparision.GTE);
-    this.name = "FGTE";
-    this.title = ">=";
-  }
+    
+    <h4 class="name" id="FAnd"><span class="type-signature"></span>new FAnd<span class="signature">()</span><span class="type-signature"></span></h4>
+    
 
-  /**
-   * Clone this node
-   * @param {Function} factory The factory class function
-   */
-  clone(factory = FGTE.instance) {
-    return super.clone(factory);
-  }
-}
-</code></pre>
-        </article>
-    </section>
+    
+
+
+
+<div class="description">
+    Construct a new FAnd node
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nodes_bool_fand.mjs.html">nodes/bool/fand.mjs</a>, <a href="nodes_bool_fand.mjs.html#line17">line 17</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="FAnd.html">FAnd</a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="clone"><span class="type-signature"></span>clone<span class="signature">(factory)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Clone this node
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>factory</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The factory class function</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nodes_bool_fand.mjs.html">nodes/bool/fand.mjs</a>, <a href="nodes_bool_fand.mjs.html#line43">line 43</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="process"><span class="type-signature">(async) </span>process<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    The process override
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nodes_bool_fand.mjs.html">nodes/bool/fand.mjs</a>, <a href="nodes_bool_fand.mjs.html#line50">line 50</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
 
 
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: nodes/bool/fgte.mjs</title>
+    <title>JSDoc: Source: nodes/bool/fnot.mjs</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: nodes/bool/fgte.mjs</h1>
+    <h1 class="page-title">Source: nodes/bool/fnot.mjs</h1>
 
     
 
@@ -35,31 +35,48 @@
  * Year: 2020-2021
  */
 
-import { FCompare } from "./fcompare.mjs";
-import { Comparision } from "./fcompare.mjs";
+import { Node } from "../../core/node.mjs";
+import { InputSocket, OutputSocket } from "../../core/socket.mjs";
+import { Types } from "../../core/type.mjs";
 
 /**
- * This class override the FCompare node with a comparision of GTE
+ * This class implements a functional node FNot compairing boolean values.
  */
-export class FGTE extends FCompare {
+export class FNot extends Node {
   // Provide a node instance
-  static instance = () => new FGTE();
+  static instance = () => new FNot();
 
   /**
-   * Construct a new FGTE
+   * Construct a new FNot node
    */
   constructor() {
-    super(Comparision.GTE);
-    this.name = "FGTE";
-    this.title = ">=";
+    super("FNot");
+
+    // The node is pure functional
+    this.functional = true;
+    // Default to two numeric inputs
+    this.inputs = [new InputSocket("Val", this, Types.BOOLEAN, false)];
+    this.outputs = [new OutputSocket("Val", this, Types.BOOLEAN, 0, false)];
+    this.prev = null;
+    this.nexts = [];
   }
 
   /**
    * Clone this node
    * @param {Function} factory The factory class function
    */
-  clone(factory = FGTE.instance) {
+  clone(factory = FNot.instance) {
     return super.clone(factory);
+  }
+
+  /**
+   * The process override
+   */
+  async process() {
+    await this.evaluateInputs();
+    let val = this.input("Val").value;
+
+    this.output("Val").value = !val;
   }
 }
 </code></pre>
